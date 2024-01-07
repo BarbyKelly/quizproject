@@ -1,0 +1,6 @@
+/* testing background image, color temp, work-in-progress, background-blend-mode research, image not showing yet */
+.quiz {
+    background-color: blueviolet;
+    background-image: url("assets/images/booksvideos.jpg");
+    color: #333333;
+}
