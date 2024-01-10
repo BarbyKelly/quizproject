@@ -20,6 +20,9 @@ You can see the live site [here] (.... link....).
 
 * [Interactive elements](#interactive-elements)
 
+* [Features]
+  * [Existing Features]
+
 * [Languages Used](#languages-used)
 
 * [Sites, Apps Used](#sites-apps-used)
@@ -63,24 +66,24 @@ This website includes three pages: home page, quiz results page and info page. C
 
 ## Design
 
-#### Images
+### Images
 
-#### Color
+### Color
 * Background color 'cornflower blue', found from this website: 
 https://htmlcolorcodes.com/colors/cornflower-blue/
 
-![CORNFLOWER BLUE COLOR](../images/cornflowerblue.png)
+![CORNFLOWER BLUE COLOR](docs/readmeimg/cornflowerblue.png)
 
 * Color palette from this website:
 https://mycolor.space/?hex=%236495ED&sub=1
 
 ...Natural Palette or Neighbor Palette, which suits better. Add screenshot then of the palette used...
 
-#### Font/style
+### Font/style
 
 [Back to top](#contents)
 
-### Interactive elements
+## Interactive elements
 ...screenshots of different parts of the quiz...
 ...choose the language...
 ...page with extra info, links
@@ -88,17 +91,19 @@ https://mycolor.space/?hex=%236495ED&sub=1
 
 [Back to top](#contents)
 
-### Languages Used
+##
+
+## Languages Used
 ...list of html, css, javascript, other
 
 [Back to top](#contents)
 
-### Sites, Apps Used
+## Sites, Apps Used
 ...list here balsamiq, github, vs code etc
 
 [Back to top](#contents)
 
-### Testing
+## Testing
 ... html
 ...css
 ...javascript
@@ -110,28 +115,28 @@ https://mycolor.space/?hex=%236495ED&sub=1
 
 [Back to top](#contents)
 
-### Bug fixing
+## Bug fixing
 
 [Back to top](#contents)
 
-### Known Bugs
+## Known Bugs
 ...if not showing properly on some sites/phones
 
 [Back to top](#contents)
 
-### Deployment
+## Deployment
 ...do we need to share those steps, how deployed?
 
 [Back to top](#contents)
 
-### Credits
+## Credits
 ...Parts of the Readme template from https://github.com/Code-Institute-Solutions/SampleREADME?tab=readme-ov-file 
 and https://github.com/Tony118g/the-everything-quiz/blob/main/README.md 
 Reading The Everything Quiz README, highlighted for me the level of details that Quiz website README needs. 
 
-#### Code
-#### Questions
-#### Images 
+### Code
+### Questions
+### Images 
 All images used for Estonia Quiz background, and favicon image, are created by the developer
 ...use developer instead of creator!...
 
