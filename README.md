@@ -54,7 +54,7 @@ You can see the live site [here] (.... link....).
 [Back to top](#contents)
 
 ## Website Structure
-This website include three pages: home page, quiz results page and info page.
+This website includes three pages: home page, quiz results page and info page. Call it something else?
 
 ### Wireframes
 ...different pages...
