@@ -186,6 +186,22 @@ https://www.atlassian.com/agile/project-management/user-stories
 
   ![Articulate article screenshot](docs/readmeimg/articulate.png)
 
+
+  Learned how to use Wirefame from this video:
+  https://www.youtube.com/watch?v=9Pv002d0Kls&list=PLVlyYfbClWxQDCGC-A1FkbGyIxtuIN5IM&index=1
+
+
+  * Screenshot of Estonia Quiz home page, created with Balsamiq Wireframes:
+
+  ![Image of books, videos, and quiz box](wireframehomepage.png)
+
+  * Screenshot of Estonia Quiz test score page, created with Balsamiq Wireframes:
+
+
+
+  * Screenshot of Estonia Quiz Extra page, created with Balsamiq Wireframes:
+
+
 ### Code
 ### Questions
 ### Images 

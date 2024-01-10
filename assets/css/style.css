@@ -1,5 +1,5 @@
 /* testing background image, color temp, work-in-progress, background-blend-mode research, image not showing yet */
-.quiz {
+body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
