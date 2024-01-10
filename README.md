@@ -99,6 +99,13 @@ This website includes three pages: home page, quiz results page and info page. C
   * click on links/images
   * click on "Extra page"
   
+
+  Screenshot of Estonia Quiz Home Page, Wireframes 
+![Image of Estonian books, dvds](wireframehomepage.png)
+
+  Screenshot of Estonia Quiz Score Page, Wireframes
+![Wireframe screenshot ](wireframequizscore.png)
+
 ...add wireframe screenshots...
 
 [Back to top](#contents)
@@ -108,7 +115,7 @@ This website includes three pages: home page, quiz results page and info page. C
 ### Images
 
 ### Color
-* Background color 'cornflower blue', found from this website: 
+* As Estonian national flower is Cornflower, I chose Background color 'cornflower blue', found from this website: 
 https://htmlcolorcodes.com/colors/cornflower-blue/
 
 ![CORNFLOWER BLUE COLOR](docs/readmeimg/cornflowerblue.png)
