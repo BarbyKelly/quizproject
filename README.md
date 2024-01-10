@@ -1,6 +1,6 @@
 # Estonia Quiz
 
-This quiz has been created to test visitor's knowledge of Estonia, and to share extra links so visitor may learn various things about Estonia, if they wish.
+This quiz has been created for anyone who would like to test their knowledge of Estonia. Website also includes extra links if visitor is curious to find out more about Estonia.
 
 You can see the live site [here] (.... link....).
 
@@ -46,13 +46,32 @@ You can see the live site [here] (.... link....).
 ## User Experience
 
 ### User Stories
-...list of points....
-*
-*
-*
-*
-*
-*
+
+#### First Time User:
+
+As a first time user, I want to:
+
+* Check my knowledge about Estonia.
+
+* Learn something new about Estonia.
+
+* Click on Extra tab to access links.
+
+* See that all of the links work.
+
+#### Returning User:
+
+As a returning user I want to:
+
+* See different quiz options.
+
+* Test my knowledge again.
+
+* See updated info on the website.
+
+* Improve my score.
+
+* See that all of the links work.
 
 [Back to top](#contents)
 
@@ -60,7 +79,27 @@ You can see the live site [here] (.... link....).
 This website includes three pages: home page, quiz results page and info page. Call it something else?
 
 ### Wireframes
-...different pages...
+
+* This website is for anyone interested in doing a quiz, or who wants to learn more about Estonia.
+
+* Goal of the quiz is to:
+  * test knowledge
+  * play a game
+  * get a score
+  * see score on the page
+  * try quiz again
+  * see the correct answers/images pop-up
+
+* Website visitors are likely to:
+  * click on "Start quiz"
+  * read the questions
+  * answer the questions
+  * want to see their score
+  * try again
+  * click on links/images
+  * click on "Extra page"
+  
+...add wireframe screenshots...
 
 [Back to top](#contents)
 
@@ -125,14 +164,27 @@ https://mycolor.space/?hex=%236495ED&sub=1
 [Back to top](#contents)
 
 ## Deployment
-...do we need to share those steps, how deployed?
+...add clone, fork....
 
 [Back to top](#contents)
 
 ## Credits
-...Parts of the Readme template from https://github.com/Code-Institute-Solutions/SampleREADME?tab=readme-ov-file 
-and https://github.com/Tony118g/the-everything-quiz/blob/main/README.md 
-Reading The Everything Quiz README, highlighted for me the level of details that Quiz website README needs. 
+* Parts of the Readme template used from:
+https://github.com/Code-Institute-Solutions/SampleREADME?tab=readme-ov-file 
+
+   and https://github.com/Tony118g/the-everything-quiz/blob/main/README.md 
+
+   Reading The Everything Quiz README, highlighted for me the level of details that Quiz website README needs.
+
+* User Stories:
+Template used from:
+https://www.atlassian.com/agile/project-management/user-stories
+
+* Wirefames
+
+  Ideas, how to articulate user's goals, written down after reading this article: https://balsamiq.com/learn/articles/five-steps-to-great-wireframes/
+
+  ![Articulate article screenshot](docs/readmeimg/articulate.png)
 
 ### Code
 ### Questions
