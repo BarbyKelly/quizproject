@@ -62,8 +62,20 @@ This website include three pages: home page, quiz results page and info page.
 [Back to top](#contents)
 
 ## Design
+
 #### Images
+
 #### Color
+* Background color 'cornflower blue', found from this website: 
+https://htmlcolorcodes.com/colors/cornflower-blue/
+
+![CORNFLOWER BLUE COLOR](../images/cornflowerblue.png)
+
+* Color palette from this website:
+https://mycolor.space/?hex=%236495ED&sub=1
+
+...Natural Palette or Neighbor Palette, which suits better. Add screenshot then of the palette used...
+
 #### Font/style
 
 [Back to top](#contents)
