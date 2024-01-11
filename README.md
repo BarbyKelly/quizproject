@@ -103,10 +103,27 @@ This website includes three pages: home page, quiz results page and info page. C
   Screenshot of Estonia Quiz Home Page, Wireframes 
 ![Image of Estonian books, dvds](wireframehomepage.png)
 
+  Buttons top left, languages:
+  * English
+  * Eesti (Estonian)
+
+  Translation and explanation for "Image of Estonian books, dvds" (from top left):
+    * Book: "Muti Juhan ja tema lapsed" by Raely Viirsalu ("Muti Juhan and his kids", book about the developer's great-great-great-grandfather)
+    * Book: "Avastades Eestimaad" by Marko Kaldur ("Discovering Estonia")
+    * DVD: "Suvi" directed by Arvo Kruusement, story by Oskar Luts ("Summer")
+    * Children's Book: "Naksitrallid" by Eno Raud ("Three Jolly Fellows")
+    * DVD: "Kevade" directed by Arvo Kruusement, story by Oskar Luts ("Spring")
+    * Book: "Eesti Köök" by editor Lia Virkus ("Estonian Cooking")
+
+
   Screenshot of Estonia Quiz Score Page, Wireframes
 ![Wireframe screenshot ](wireframequizscore.png)
 
-...add wireframe screenshots...
+Buttons top left, languages:
+  * English
+  * Eesti (Estonian)
+
+...add extra wireframe screenshots...
 
 [Back to top](#contents)
 
