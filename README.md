@@ -135,6 +135,23 @@ Buttons top left, languages:
 
 ### Images
 
+* FAVICON
+
+Developer used an image of a cornflower (Estonian national flower), from her own collection, to create Favicon.
+
+The original image: 
+
+![cornflower](cornflower.jpg)
+
+
+This website helped to convert the image into Favicon:
+https://favicon.io/favicon-converter/
+
+Screenshot of favicon on the website:
+
+![cornflower favicon image](faviconreadme.png)
+
+
 ### Color
 * As Estonian national flower is Cornflower, I chose Background color 'cornflower blue', found from this website: 
 https://htmlcolorcodes.com/colors/cornflower-blue/
@@ -145,6 +162,7 @@ https://htmlcolorcodes.com/colors/cornflower-blue/
 https://mycolor.space/?hex=%236495ED&sub=1
 
 ...Natural Palette or Neighbor Palette, which suits better. Add screenshot then of the palette used...
+
 
 ### Font/style
 
@@ -184,6 +202,17 @@ https://mycolor.space/?hex=%236495ED&sub=1
 
 ## Bug fixing
 
+* Favicon
+
+At first favicon icon did not appear on the website. Developer had used the four line code from favicon.io
+https://favicon.io/favicon-converter/
+
+![screenshot of favicon codes](faviconcodes.png)
+
+After comparing Favicon codes to the codes from Love Running, developer noticed that path needed to be adjusted. After adjusting the path, favicon appeared on the website. 
+
+
+
 [Back to top](#contents)
 
 ## Known Bugs
@@ -197,16 +226,37 @@ https://mycolor.space/?hex=%236495ED&sub=1
 [Back to top](#contents)
 
 ## Credits
-* Parts of the Readme template used from:
+
+* Favicon 
+
+  * Favicon created using
+https://favicon.io/favicon-converter/
+
+  * These 3 lines of code, for favicon, were copied from Love Running:
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+
+  * This line of code:
+  <link rel="manifest" href="/site.webmanifest"> 
+  for Favicon, was copied from
+  https://favicon.io/favicon-converter/
+
+
+* Readme
+
+  * Parts of the Readme template used from:
 https://github.com/Code-Institute-Solutions/SampleREADME?tab=readme-ov-file 
 
    and https://github.com/Tony118g/the-everything-quiz/blob/main/README.md 
 
    Reading The Everything Quiz README, highlighted for me the level of details that Quiz website README needs.
 
+
 * User Stories:
 Template used from:
 https://www.atlassian.com/agile/project-management/user-stories
+
 
 * Wirefames
 
