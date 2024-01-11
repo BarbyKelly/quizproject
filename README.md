@@ -2,7 +2,7 @@
 
 This quiz has been created for anyone who would like to test their knowledge of Estonia. Website also includes extra links if visitor is curious to find out more about Estonia.
 
-You can see the live site [here] (.... link....).
+Link to the live site: https://barbykelly.github.io/Estonia-Quiz/
 
 ...image of my website on different gadgets ... place here...from am I responsive.
 
