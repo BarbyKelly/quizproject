@@ -280,6 +280,12 @@ https://www.atlassian.com/agile/project-management/user-stories
   * Screenshot of Estonia Quiz Extra page, created with Balsamiq Wireframes:
 
 
+* Script
+  I learned from this site how page is loading faster, if scripts are placed at the bottom of the body in html.
+  [link to w3 schools website](https://www.w3schools.com/js/js_whereto.asp)
+  ![screenshot of text](script.png)
+
+
 ### Code
 ### Questions
 ### Images 
