@@ -22,7 +22,7 @@ Link to the live site: https://barbykelly.github.io/Estonia-Quiz/
 
 * [Features]
   * [Existing Features]
-
+  
 * [Languages Used](#languages-used)
 
 * [Sites, Apps Used](#sites-apps-used)
@@ -281,10 +281,14 @@ https://www.atlassian.com/agile/project-management/user-stories
 
 
 * Script
-  I learned from this site how page is loading faster, if scripts are placed at the bottom of the body in html.
-  [link to w3 schools website](https://www.w3schools.com/js/js_whereto.asp)
+  Developer learned how page is loading faster, if scripts are placed at the bottom of the body in html, from this site:
+  [w3 schools website](https://www.w3schools.com/js/js_whereto.asp)
   ![screenshot of text](script.png)
 
+
+* Footer
+  Developer learned how to make Copyright sign from this project:
+  [Mental-Arithmetic-Quiz project](https://github.com/Shida18719/Mental-Arithmetic-Quiz/blob/main/index.html)
 
 ### Code
 ### Questions
