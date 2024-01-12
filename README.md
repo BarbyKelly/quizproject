@@ -18,10 +18,11 @@ Link to the live site: https://barbykelly.github.io/Estonia-Quiz/
   * [Color](#color)
   * [Font/Style](#fontstyle)
 
-* [Interactive elements](#interactive-elements)
+* [Features](#features)
 
-* [Features]
-  * [Existing Features]
+  * [Existing Features](#existing-features)
+
+  * [Future Features](#future-features)
   
 * [Languages Used](#languages-used)
 
@@ -100,7 +101,8 @@ This website includes three pages: home page, quiz results page and info page. C
   * click on "Extra page"
   
 
-  Screenshot of Estonia Quiz Home Page, Wireframes 
+  Screenshot of Estonia Quiz Home Page, Wireframes:
+
 ![Image of Estonian books, dvds](wireframehomepageestquiz.png)
 
   Buttons top left, languages:
@@ -168,15 +170,19 @@ https://mycolor.space/?hex=%236495ED&sub=1
 
 [Back to top](#contents)
 
-## Interactive elements
-...screenshots of different parts of the quiz...
-...choose the language...
-...page with extra info, links
-...image pops up when the correct answer is chosen
+## Features
+
+### Existing Features 
+
+.....
+
+### Future Features
+
+* Add variations of the quiz eg wildlife, culture, music, authors, movies, national symbols and so on.
+
+* Add difficulty levels: easy, medium, difficult (credit: difficulty levels were suggested by developer's older child)
 
 [Back to top](#contents)
-
-##
 
 ## Languages Used
 ...list of html, css, javascript, other
@@ -287,7 +293,7 @@ https://www.atlassian.com/agile/project-management/user-stories
 
 
 * Footer
-  Developer learned how to make Copyright sign from this project:
+  Developer learned how to make Copyright sign &copy; from this project:
   [Mental-Arithmetic-Quiz project](https://github.com/Shida18719/Mental-Arithmetic-Quiz/blob/main/index.html)
 
 ### Code
