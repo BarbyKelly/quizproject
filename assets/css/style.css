@@ -1,8 +1,66 @@
-/* testing background image, color temp, work-in-progress, background-blend-mode research, image not showing yet */
+/* This 'before, after' code (except font), parts of body code, and .container, copied from https://youtu.be/riDzcEQbX6k?feature=shared */
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Comfortaa;
+}
+
+/* Background image, see which image suits better when the quiz is in place, contrast */
 body {
+    background-image: url("../images/cornflower.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-color: #6495ED;
     color: #333333;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: #E6F4F1;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+    display: grid;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    border: 1px solid #8090BC 100%, 30%;
+    background-color: #F4F9FF;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.btn.hover {
+    border-color: #8090BC;
+}
+
+/* Colors for correct and incorrect answers, copied from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/css/style.css*/
+.correct {
+background-color: green;
+color: black
+}
+
+.incorrect {
+    background-color: red;
+    color: black;
+}
+
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
 }
