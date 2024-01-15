@@ -109,7 +109,7 @@ https://www.visitestonia.com/en/lynx-and-bear-watching-tour-in-alutaguse-and-lah
 
 {
     numb: 9,
-    question: "How often does Estonian Singing and dancing festival take place?",
+    question: "How often does 'Estonian Singing and Dancing Festival' take place?",
     answer: "every 5 years",
     options: ["every 3 years",
               "every 5 years",
@@ -125,11 +125,14 @@ Estonia-Quiz/questions/differentyears.png */
 
 {
     numb: 10,
-    question: "",
-    answer: "",
-    options: [
+    question: "How do you say 'One, two, three' in Estonian?",
+    answer: "Kolm",
+    options: ["Üks, kaks, kolm",
+              "Yksi, kaksi, kolme"
+              "Eins, zwei, drei"
 
-/* maybe national symbols, like dark rye bread, cornflower, etc something a clear answer */
+/* You can watch this to hear numbers in Estonian: https://youtube.com/shorts/y2RQWWda-Nc?feature=shared
+or maybe question with national symbols, like dark rye bread, cornflower, etc */
 
     ]
 };
