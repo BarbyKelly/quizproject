@@ -15,19 +15,13 @@
     <link rel="manifest" href="/site.webmanifest">
     <!-- Title -->
     <title>Estonia Quiz</title>
-    
+    <style></style>
 </head>
 <body>
-
-    <!-- Header -->
-    <header>
-        <h1 id="heading">Welcome to Estonia Quiz</h1>
-    </header>
-
     <!-- Main Menu created following steps from https://youtu.be/riDzcEQbX6k?feature=shared -->
-    
-        <div class="container">
-        <div id="question-container" class="hide">
+            <div class="container">
+            <h1 id="heading">Welcome to Estonia Quiz</h1>
+            <div id="question-container" class="hide">
             <div id="question">Question</div>
             <div id="answer-buttons" class="btn-grid">
             <button class="btn">Answer 1</button>
@@ -40,10 +34,13 @@
             <button id="next-btn" class="next-btn btn hide">Next</button>
         </div>
     </div>
-
-    <!-- Footer -->
-    &copy; 2024 Estonia Quiz by Barby Kelly <br> Created as part of a project for Software Development course
+    <!-- Footer copyright script code from this video: https://youtu.be/US_3XvufMLU?feature=shared -->
+    <footer>
+        <p>Copyright &copy; <script>document.write(newDate().getFullYear()); Estonia Quiz by Barby Kelly <br> Created as
+        part of a project for Software Development course. No commercial intention.</p>
+    </footer>
     <!-- Script placed back here, credit in readme -->
     <script defer src="assets/js/script.js"></script>
+
 </body>
 </html>
