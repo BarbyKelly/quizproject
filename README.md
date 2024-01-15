@@ -291,6 +291,10 @@ https://www.atlassian.com/agile/project-management/user-stories
   [w3 schools website](https://www.w3schools.com/js/js_whereto.asp)
   ![screenshot of text](script.png)
 
+* How to make quiz learned from this video:.... check in case chose to go with a different one in the end
+[text](https://youtu.be/riDzcEQbX6k?feature=shared)
+
+
 
 * Footer
   Developer learned how to make Copyright sign &copy; from this project:

@@ -24,16 +24,26 @@
         <h1 id="heading">Welcome to Estonia Quiz</h1>
     </header>
 
-    <!-- Main Menu -->
+    <!-- Main Menu created following steps from https://youtu.be/riDzcEQbX6k?feature=shared -->
     
-    <h4>Instructions</h4>
-    <div>
-
+        <div class="container">
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid"
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+        ></div>
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start Quiz</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
     </div>
 
     <!-- Footer -->
     &copy; 2024 Estonia Quiz by Barby Kelly <br> Created as part of a project for Software Development course
     <!-- Script placed back here, credit in readme -->
-    <script src="assets/js/script.js"></script>
+    <script defer src="assets/js/script.js"></script>
 </body>
 </html>
