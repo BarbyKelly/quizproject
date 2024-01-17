@@ -88,12 +88,11 @@ color: black
 
 .footer {
     position: fixed;
-    background-color: #333333;
     font-size: 17px;
     right: 0px;
     left: 0px;
     bottom: 0px;
     width: 100%;
-    color: #E6F4F1;
+    color: black;
     text-align: center;
 }
