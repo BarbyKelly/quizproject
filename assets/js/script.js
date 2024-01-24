@@ -7,14 +7,14 @@ const shuffledQuestions, currentQuestionIndex
 startButton.addEventListener('click', startQuiz)
 
 function startQuiz() {
-   console.log('Started')
-   startButton.classList.add('hide')
-   questionContainerElement.classList.remove('hide')
-   setNextQuestion
+    console.log('Started')
+    startButton.classList.add('hide')
+    questionContainerElement.classList.remove('hide')
+    setNextQuestion
 }
 
 function setNextQuestion() {
-   showQuestion
+    showQuestion
 }
 
 function selectAnswer() {
@@ -24,12 +24,13 @@ function selectAnswer() {
 /* Copied questions from my previously created questions.js file, might link to file instead later */
 const questions = [
     {
-            numb1,
+        numb1,
             question: "Where is Estonia located?",
             answer: "Northern Europe",
-            options: ["Northern Europe",
-                      "Asia",
-                      "Australia"
+            options: [
+                "Northern Europe",
+                "Asia",
+                "America"
             ]
         } 
     }

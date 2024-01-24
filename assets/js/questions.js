@@ -1,11 +1,12 @@
 /* Questions for Estonia Quiz. Layout structure used from https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js */
 const quiz = {
     numb: 1,
-    question: "Where is Estonia located?",
+    question: "Where is Estonia, one of the Baltic States, located?",
     answer: "Northern Europe",
-    options: ["Northern Europe",
-              "Asia",
-              "Australia"
+    options: [
+        "Northern Europe",
+        "Asia",
+        "America"
     ]
 }
 
@@ -18,11 +19,12 @@ https://gisgeography.com/europe-map/ */
 
 {
     numb: 2,
-    question: "What colours are on Estonian flag?",
-    answer: "blue, black and white",
-    options: ["white, green and blue",
-              "yellow, black and white"'
-              "blue, black and white"
+    question: "What colour is Estonian flag?",
+    answer: "Blue, black and white",
+    options: [
+        "White, green and blue",
+        "Yellow, black and white"'
+        "Blue, black and white"
     ]
 }
 
@@ -35,9 +37,10 @@ https://www.visitestonia.com/en//estonian-flag */
     numb: 3,
     question: "What is the capital of Estonia?",
     answer: "Tallinn",
-    options: ["Tallinn"
-              "Helsinki"
-              "Riga"
+    options: [
+        "Tallinn"
+        "Helsinki"
+        "Riga"
 
 /* Add image of Tallinn, and link to visit Estonia, inside the question/answer brackets or separate?*/
 
@@ -48,19 +51,26 @@ https://www.visitestonia.com/en//estonian-flag */
     numb: 4,
     question: "What is the official language of Estonia?",
     answer: "Estonian",
-    options: ["English"
-              "German"
-              "Estonian"
+    options: [
+        "English"
+        "Finnish"
+        "Estonian"
 
 /* add image of English Estonian keyboard incidents */
     ]
 }
 
+/* https://www.eesti.ee/en/republic-of-estonia/republic-of-estonia/state-insignia. 
+assets/images/nationalbird.png
+*/
 {
     numb: 5,
-    question: "What is the population of Estonia?",
-    answer: "",
+    question: "What is the national bird of Estonia?",
+    answer: "Barn swallow",
     options: [
+        "Barn swallow"
+        "Owl"
+        "Robin"
 
 /* add link to answer, make up 3 options */
 
@@ -71,9 +81,10 @@ https://www.visitestonia.com/en//estonian-flag */
     numb: 6,
     question: "Which of these animals lives in Estonia, in the wild?",
     answer: "Lynx",
-    options: ["Lion",
-              "Lynx",
-              "Leopard"
+    options: [
+        "Lion",
+        "Lynx",
+        "Leopard"
 
 /* Add image of a lynx. Credit where got the image.
 https://www.visitestonia.com/en/lynx-and-bear-watching-tour-in-alutaguse-and-lahemaa-national-park?gad_source=5&gclid=EAIaIQobChMI5f2Whpa_gwMVhJhQBh28dgSrEAAYASAAEgIPl_D_BwE */
@@ -85,25 +96,23 @@ https://www.visitestonia.com/en/lynx-and-bear-watching-tour-in-alutaguse-and-lah
     numb: 7,
     question: "Which of these letters are part of the Estonian alphabet?",
     answer: "õ,ä,ö,ü",
-    options: ["õ,ä,ö,ü"
-              ""
-              ""
-
-/* might change this question, as there are few options which is official alphabet, without foreign letters */
-
+    options: [
+        "æ, ø, å" /* Danish. From: https://www.danishnet.com/culture/danish-alphabet/ */
+        "õ,ä,ö,ü"
+        "δ, ζ, θ, λ" /* Greek: Delta, Zeta, Theta, Lambda from: https://www.greekalphabetletters.com/ */
     ]
 }
 
+/* https://www.stat.ee/en/find-statistics/statistics-theme/population */
+
 {
     numb: 8,
-    question: "Estonia is part of which States?",
-    answer: "Baltic States",
-    options: ["United States"
-              "Baltic States"
-              "....."
-
-/* Add map of Baltic States, with flags maybe */
-
+    question: "Estonian Population in 2024?"?",
+    answer: "1,366,491",
+    options: [
+        "1,366,491"
+        "1,333,290"
+        "1,315,819"
     ]
 }
 
@@ -111,9 +120,10 @@ https://www.visitestonia.com/en/lynx-and-bear-watching-tour-in-alutaguse-and-lah
     numb: 9,
     question: "How often does 'Estonian Singing and Dancing Festival' take place?",
     answer: "every 5 years",
-    options: ["every 3 years",
-              "every 5 years",
-              "every 7 years"
+    options: [
+        "every 3 years",
+        "every 5 years",
+        "every 7 years"
 
 /* add explanation, as due to cov it changed for few years, info from this website:
 https://www.visitestonia.com/en/why-estonia/welcome-to-the-estonian-song-and-dance-celebration
@@ -127,9 +137,10 @@ Estonia-Quiz/questions/differentyears.png */
     numb: 10,
     question: "How do you say 'One, two, three' in Estonian?",
     answer: "Kolm",
-    options: ["Üks, kaks, kolm",
-              "Yksi, kaksi, kolme"
-              "Eins, zwei, drei"
+    options: [
+        "Üks, kaks, kolm",
+        "Yksi, kaksi, kolme"
+        "Eins, zwei, drei"
 
 /* You can watch this to hear numbers in Estonian: https://youtube.com/shorts/y2RQWWda-Nc?feature=shared
 or maybe question with national symbols, like dark rye bread, cornflower, etc */
