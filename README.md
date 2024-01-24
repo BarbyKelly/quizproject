@@ -195,9 +195,33 @@ https://mycolor.space/?hex=%236495ED&sub=1
 [Back to top](#contents)
 
 ## Testing
-... html
-...css
-...javascript
+
+* Throughout the project testing HTML for errors and fixing errors.
+
+
+### HTML
+
+Tested HTML on this website:
+https://validator.w3.org/nu/#textarea
+
+![HTML validation](testinghtml.png)
+
+Result after fixing the error and retesting:
+
+![HTML retest](htmlretest.png)
+
+
+### css
+
+Tested on this website:
+https://jigsaw.w3.org/css-validator/validator
+
+![CSS validation](csstest.png)
+
+
+### Javascript
+
+
 ...on different browsers
 ...lighthouse
 ...inspect
