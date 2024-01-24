@@ -1,7 +1,7 @@
 /* This 'before, after' code (except font), parts of body code, and .container, copied from https://youtu.be/riDzcEQbX6k?feature=shared */
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: Comfortaa;
+    font-family: Comfortaa, sans-serif;
 }
 
 /* This html styling, from https://youtu.be/yc2olxLgKLk?feature=shared */
@@ -41,6 +41,7 @@ body {
     box-shadow: 0 0 10px 2px;
 }
 
+/* Buttons */
 .btn-grid {
     display: grid;
     gap: 10px;
