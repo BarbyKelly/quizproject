@@ -1,9 +1,9 @@
 /*  base for js code from this video: https://youtu.be/zZdQGs62cR8?feature=shared */
-const question = document.getElementById("question");
-const choices = Array.from(document.getElementsByClassName("choice-text"));
+const question = document.getElementById('question');
+const choices = Array.from(document.getElementsByClassName('choice-text'));
 
 let currentQuestion = {};
-let acceptingAnswers = true;
+let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
@@ -81,7 +81,25 @@ let questions = [
         choice2: "Yksi, kaksi, kolme",
         choice3: "Eins, zwei, drei",
         answer: 1
-    }
+    },
+    {
+        question: "Is Estonia one of the Baltic States?",
+        choice1: "Maybe",
+        choice2: "No",
+        choice3: "Yes",
+        answer: 1
+    },
 ];
 
+// Constants added following this video: https://youtu.be/zZdQGs62cR8?feature=shared
+const CORRECT_BONUS = 10;
+const MAX-QUESTIONS = 5;
 
+startQuiz = () => {
+    questionCounter = 0;
+    score = 0;
+    availableQuestions = [...questions];
+    console.log(availableQuestions);
+};
+
+startQuiz();

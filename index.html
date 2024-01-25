@@ -6,31 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A website for anyone to test what they know about Estonia, by doing a quiz.">
     <meta name="keywords" content="Estonia quiz, Estonia, quiz, test, game, learn">
-    <!-- CSS link -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Favicon links - credit in readme -->
+    <!-- Favicon links - copied from Love Running example project -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <!-- Title -->
     <title>Estonia Quiz</title>
-    <style></style>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Main Menu created following steps from https://youtu.be/riDzcEQbX6k?feature=shared -->
-            <div class="container">
-            <h1 id="heading">Welcome to Estonia Quiz</h1>
+    <!-- Main Menu originally created following steps from https://youtu.be/riDzcEQbX6k?feature=shared .
+        Updated following steps from this video: https://youtu.be/rFWbAj40JrQ?feature=shared -->
+        <div class="container">
+            <div id="home" class="flex-center flex-column">
+                <h1>Estonia Quiz</h1>
             <!--  Instructions: Add the following part/link as a pop up once person is finished with the quiz:
             After finishing the quiz, feel free to check out "Extra", to access various links to learn more about Estonia -->
             <h2 class="instructions">Instructions</h2>
-            <p> * There are 10 questions <br> * Each correct answer is worth 1 point <br> * Best of luck! </p>
-            <!-- a href, button option, Copied from https://github.com/jamesqquick/Build-A-Quiz-App-With-HTML-CSS-and
+            <p> * Answer 5 questions <br> * Each correct answer is worth 1 point <br> * Best of luck! </p>
+            <!-- a href, button option, code copied from https://github.com/jamesqquick/Build-A-Quiz-App-With-HTML-CSS-and
                 -JavaScript/blob/master/2.%20Create%20and%20Style%20the%20Game%20Page/index.html -->
             <a class="btn" href="quiz.html">Start Quiz</a>
+            <a class="btn" href="highscores.html">High Scores</a>
+            <a class="btn" href="extra">Extra</a>
+            </div>
         </div>
-        
-    </div>
     <!-- Footer copyright script code from this video: https://youtu.be/US_3XvufMLU?feature=shared -->
     <footer>
         <p> Copyright &copy;
@@ -38,7 +40,7 @@
             Estonia Quiz by Barby Kelly <br> Created as
         part of a project for Software Development course. No commercial intention. </p>
     </footer>
-    <!-- Script placed back here, credit in readme -->
+    <!-- Script placed back here, credit in readme. Add here too -->
     <script defer src="assets/js/script.js"></script>
 </body>
 </html>

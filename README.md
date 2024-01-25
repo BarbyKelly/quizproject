@@ -109,17 +109,7 @@ This website includes three pages: home page, quiz results page and info page. C
   * English
   * Eesti (Estonian)
 
-  Translation and explanation for "Image of Estonian books, dvds" (from top left down):
-    * DVD: "Kevade" directed by Arvo Kruusement, story by Oskar Luts ("Spring")
-    * DVD: "Suvi" directed by Arvo Kruusement, story by Oskar Luts ("Summer")
-    * Book: "Eesti Köök" by editor Lia Virkus ("Estonian Cooking")
-    * Book: "Muti Juhan ja tema lapsed" by Raely Viirsalu ("Muti Juhan and his kids", book about the developer's great-great-great-grandfather)
-    * Book: "Avastades Eestimaad" by Marko Kaldur ("Discovering Estonia")
-    * Book "Sõprusest ja armastusest" by Mai Eha ("Friendship and Love" collection of quotes from various people)
-    
-    
-    
-    
+
 
 
   Screenshot of Estonia Quiz Score Page, Wireframes
