@@ -1,4 +1,4 @@
-/* Questions for Estonia Quiz. Layout structure used from https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js */
+/* Questions for Estonia Quiz, and links and extra research. Layout structure used from https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js */
 const quiz = {
     numb: 1,
     question: "Where is Estonia, one of the Baltic States, located?",
