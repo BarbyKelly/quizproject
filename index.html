@@ -18,19 +18,46 @@
 </head>
 <body>
     <!-- Main Menu originally created following steps from https://youtu.be/riDzcEQbX6k?feature=shared .
-    Updated following steps from this video: https://youtu.be/rFWbAj40JrQ?feature=shared -->
+    Updated following steps from this video: https://youtu.be/rFWbAj40JrQ?feature=shared 
+    container and divs code from: https://github.com/jamesqquick/Build-A-Quiz-App-With-HTML-CSS-
+    and-JavaScript/blob/master/2.%20Create%20and%20Style%20the%20Game%20Page/index.html -->
     <div class="container">
         <div id="home" class="flex-center flex-column">
+            <header>
             <h1>Estonia Quiz</h1>
+            <p>Welcome!</p>
+            </header>
             <!--  Instructions: Add the following part/link as a pop up once person is finished with the quiz:
             After finishing the quiz, feel free to check out "Extra", to access various links to learn more about Estonia -->
-            <h2 class="instructions"></h2>
-            <p> * Answer 5 questions about Estonia<br> * Each correct answer is worth 1 point <br> * Best of luck! </p>
+            <div class="instructions">
+                <h2 class="instructions"></h2>
+                <p> * Answer 5 questions about Estonia<br> * Each correct answer is worth 1 point <br> * Best of luck! </p>
+            </div>
+            <!-- Add questions div here, to join all html on one page, as suggested by a mentor -->
+            <div class="questions">
+                <div id="quiz" class="justify-center flex-column">
+                    <h2 id="question">Question</h2>
+                    <div class="choice-container">
+                        <p class="choice-prefix">A</p>
+                        <p class="choice-text" data-number="1">Choice 1</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">B</p>
+                        <p class="choice-text" data-number="2">Choice 2</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">C</p>
+                        <p class="choice-text" data-number="3">Choice 3</p>
+                    </div>
+                </div>
+            </div>
             <!-- a href, button option, code copied from https://github.com/jamesqquick/Build-A-Quiz-App-With-HTML-CSS-and
                 -JavaScript/blob/master/2.%20Create%20and%20Style%20the%20Game%20Page/index.html -->
+        <nav>
             <a class="btn" href="quiz.html">Start Quiz</a>
             <a class="btn" href="highscores.html">High Scores</a>
             <a class="btn" href="extra">Extra</a>
+        </nav>
         </div>
     </div>
     <!-- Footer copyright script code from this video: https://youtu.be/US_3XvufMLU?feature=shared -->
