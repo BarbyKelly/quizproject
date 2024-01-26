@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,6 +17,7 @@
     <!-- CSS link -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <!-- Main Menu originally created following steps from https://youtu.be/riDzcEQbX6k?feature=shared .
     Updated following steps from this video: https://youtu.be/rFWbAj40JrQ?feature=shared 
@@ -27,11 +29,15 @@
             <h1>Estonia Quiz</h1>
             <p>Welcome!</p>
             </header>
+    <main>
             <!--  Instructions: Add the following part/link as a pop up once person is finished with the quiz:
             After finishing the quiz, feel free to check out "Extra", to access various links to learn more about Estonia -->
             <div class="instructions">
                 <h2 class="instructions"></h2>
-                <p> * Answer 5 questions about Estonia<br> * Each correct answer is worth 1 point <br> * Best of luck! </p>
+                <!-- change p into list for instructions, code copied from: https://github.com/andreas-ka/leeds-quiz/blob/main/index.html -->
+                <li> Answer 5 questions about Estonia </li>
+                <li> Each correct answer is worth 1 point </li>
+                <li> Best of luck! </li>
             </div>
             <!-- Add questions div here, to join all html on one page, as suggested by a mentor -->
             <div class="questions">
@@ -54,12 +60,15 @@
             <!-- a href, button option, code copied from https://github.com/jamesqquick/Build-A-Quiz-App-With-HTML-CSS-and
                 -JavaScript/blob/master/2.%20Create%20and%20Style%20the%20Game%20Page/index.html -->
         <nav>
+
             <a class="btn" href="quiz.html">Start Quiz</a>
             <a class="btn" href="highscores.html">High Scores</a>
             <a class="btn" href="extra">Extra</a>
         </nav>
         </div>
     </div>
+    </main>
+    
     <!-- Footer copyright script code from this video: https://youtu.be/US_3XvufMLU?feature=shared -->
     <footer class="footer">
         <p> Copyright &copy;
