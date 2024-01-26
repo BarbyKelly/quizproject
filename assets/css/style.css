@@ -17,10 +17,7 @@ body {
     background-position: center;
     background-color: #6495ED;
     color: #333333;
-    padding-right: 4rem;
-    padding-bottom: 5rem;
-    padding-left: 5rem;
-    padding-top: 15rem;
+    padding: 16px;
     display: flex;
     width: 100%;
     height: 100%;
@@ -32,17 +29,15 @@ body {
     flex-direction: column;
 }
 
-/* Container edited following this video: https://youtu.be/rFWbAj40JrQ?feature=shared  */
+/* Container edited following this video: https://youtu.be/rFWbAj40JrQ?feature=shared  . Edit
+padding to px as per mentor's suggestion */
 
 .container {
     width: max-content;
     height: max-content;
     background-color: #E6F4F1;
     border-radius: 5px;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 10rem;
+    padding: 16px;
     box-shadow: 0 0 10px 2px;
     display: flex;
     justify-content: flex-end;
