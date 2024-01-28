@@ -255,11 +255,15 @@ After comparing Favicon codes to the codes from Love Running, developer noticed 
 
 ![github template](<github template.png>)
 
-3. Developer clicked on the green "<> Code" button next and chose to copy the https
+3. Developer clicked on "Use this template", and then clicked on "Create a new repository":
 
-![code link](codelink.png)
+![use this template](repolink.png)
 
-4. 
+4. Filled in Repository name, and clicked on "Create repository"
+
+![create repo](createRepo.png)
+
+
 
 [Back to top](#contents)
 
@@ -284,7 +288,7 @@ https://favicon.io/favicon-converter/
 * Readme
 
   * Parts of the Readme template used from:
-https://github.com/Code-Institute-Solutions/SampleREADME?tab=readme-ov-file 
+   https://github.com/Code-Institute-Solutions/SampleREADME?tab=readme-ov-file 
 
    and https://github.com/Tony118g/the-everything-quiz/blob/main/README.md 
 
@@ -292,8 +296,8 @@ https://github.com/Code-Institute-Solutions/SampleREADME?tab=readme-ov-file
 
 
 * User Stories:
-Template used from:
-https://www.atlassian.com/agile/project-management/user-stories
+  Template used from:
+  https://www.atlassian.com/agile/project-management/user-stories
 
 
 * Wirefames
@@ -323,7 +327,7 @@ https://www.atlassian.com/agile/project-management/user-stories
   [w3 schools website](https://www.w3schools.com/js/js_whereto.asp)
   ![screenshot of text](script.png)
 
-* How to make quiz learned from this video:.... check in case chose to go with a different one in the end
+* How to make quiz learned from this video:.... check in case  chose to go with a different one in the end
 [text](https://youtu.be/riDzcEQbX6k?feature=shared)
 
 
