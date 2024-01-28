@@ -1,6 +1,7 @@
-/* Questions for Estonia Quiz, links and extra research gathered by developer. 
+/* comment this page for now, using parts for readme, and quiz questions. Delete before submitting.
+Questions for Estonia Quiz, links and extra research gathered by developer. 
 Questions created by developer.
-Layout structure used from https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js */
+Layout structure used from https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js 
 
 const quiz = [
     {
@@ -14,12 +15,12 @@ const quiz = [
     ]
 },
 
-/* Correct answer to be made hidden, and then pop up for all of the questions,
+ Correct answer to be made hidden, and then pop up for all of the questions,
 with image and link on the side, or on the extra page? Add links to readme, and images, or only here? make answer images
 as part of a comment for now, until correct code, where to place them
 Estonia-Quiz/questions/northerneurope.png
 Screenshot from this website:
-https://gisgeography.com/europe-map/ */
+https://gisgeography.com/europe-map/ 
 
 {
     numb: 2,
@@ -32,10 +33,10 @@ https://gisgeography.com/europe-map/ */
     ]
 },
 
-/* Estonia-Quiz/questions/estonianflag.png  
+ Estonia-Quiz/questions/estonianflag.png  
 Estonia-Quiz/questions/flagstory.png
 Link to image of Estonia, with the story about Estonian flag colours, used from this website:
-https://www.visitestonia.com/en//estonian-flag */
+https://www.visitestonia.com/en//estonian-flag 
 
 {
     numb: 3,
@@ -48,7 +49,7 @@ https://www.visitestonia.com/en//estonian-flag */
     ]
 },
 
-/* Add image of Tallinn, and link to visit Estonia, inside the question/answer brackets or separate?*/
+ Add image of Tallinn, and link to visit Estonia, inside the question/answer brackets or separate?
 
     numb: 4,
     question: "What is the official language of Estonia?",
@@ -60,14 +61,14 @@ https://www.visitestonia.com/en//estonian-flag */
     ]
 },
 
-/* add image of English Estonian keyboard incidents */
+ add image of English Estonian keyboard incidents 
 
-/* https://www.eesti.ee/en/republic-of-estonia/republic-of-estonia/state-insignia. 
+ https://www.eesti.ee/en/republic-of-estonia/republic-of-estonia/state-insignia. 
 assets/images/nationalbird.png
-*/
+
 {
     numb: 5,
-    question: "What is the national bird of Estonia?",
+    question: ",
     answer: "Barn swallow",
     options: [
         "Barn swallow",
@@ -76,8 +77,8 @@ assets/images/nationalbird.png
     ]
 },
 
-/* Add image of a lynx. Credit where got the image.
-https://www.visitestonia.com/en/lynx-and-bear-watching-tour-in-alutaguse-and-lahemaa-national-park?gad_source=5&gclid=EAIaIQobChMI5f2Whpa_gwMVhJhQBh28dgSrEAAYASAAEgIPl_D_BwE */
+ Add image of a lynx. Credit where got the image.
+https://www.visitestonia.com/en/lynx-and-bear-watching-tour-in-alutaguse-and-lahemaa-national-park?gad_source=5&gclid=EAIaIQobChMI5f2Whpa_gwMVhJhQBh28dgSrEAAYASAAEgIPl_D_BwE 
 
 {
     numb: 6,
@@ -95,13 +96,13 @@ https://www.visitestonia.com/en/lynx-and-bear-watching-tour-in-alutaguse-and-lah
     question: "Which of these letters are part of the Estonian alphabet?",
     answer: "õ,ä,ö,ü",
     options: [
-        "æ, ø, å", /* Danish. From: https://www.danishnet.com/culture/danish-alphabet/ */
+        "æ, ø, å", Danish. From: https://www.danishnet.com/culture/danish-alphabet/ 
         "õ,ä,ö,ü",
-        "δ, ζ, θ, λ" /* Greek: Delta, Zeta, Theta, Lambda from: https://www.greekalphabetletters.com/ */
+        "δ, ζ, θ, λ" /* Greek: Delta, Zeta, Theta, Lambda from: https://www.greekalphabetletters.com/ 
     ]
 },
 
-/* https://www.stat.ee/en/find-statistics/statistics-theme/population */
+ https://www.stat.ee/en/find-statistics/statistics-theme/population 
 
 {
     numb: 8,
@@ -114,10 +115,10 @@ https://www.visitestonia.com/en/lynx-and-bear-watching-tour-in-alutaguse-and-lah
     ]
 },
 
-/* add explanation, as due to cov it changed for few years, info from this website:
+ add explanation, as due to cov it changed for few years, info from this website:
 https://www.visitestonia.com/en/why-estonia/welcome-to-the-estonian-song-and-dance-celebration
 due to covid, after 4 years this time:
-Estonia-Quiz/questions/differentyears.png */
+Estonia-Quiz/questions/differentyears.png 
 {
     numb: 9,
     question: "How often does 'Estonian Singing and Dancing Festival' take place?",
@@ -129,7 +130,7 @@ Estonia-Quiz/questions/differentyears.png */
     ]
 },
 
-/* You can watch this to hear numbers in Estonian: https://youtube.com/shorts/y2RQWWda-Nc?feature=shared */
+ You can watch this to hear numbers in Estonian: https://youtube.com/shorts/y2RQWWda-Nc?feature=shared 
 {
     numb: 10,
     question: "How do you say 'One, two, three' in Estonian?",
@@ -151,3 +152,60 @@ Estonia-Quiz/questions/differentyears.png */
         "Maybe"
     ]
 }];
+
+{
+    question: ,
+    answers: [
+        { text:   , correct: true },
+        { text:   , correct: false },
+        { text:   , correct: false }
+    ]
+},
+{
+    question: ,
+    answers: [
+        { text:   , correct: true },
+        { text:   , correct: false },
+        { text:   , correct: false }
+    ]
+},
+{
+    question: ,
+    answers: [
+        { text:   , correct: true },
+        { text:   , correct: false },
+        { text:   , correct: false }
+    ]
+},
+{
+    question: ,
+    answers: [
+        { text:   , correct: true },
+        { text:   , correct: false },
+        { text:   , correct: false }
+    ]
+},
+{
+    question: ,
+    answers: [
+        { text:   , correct: true },
+        { text:   , correct: false },
+        { text:   , correct: false }
+    ]
+},
+{
+    question: ,
+    answers: [
+        { text:   , correct: true },
+        { text:   , correct: false },
+        { text:   , correct: false }
+    ]
+},
+{
+    question: ,
+    answers: [
+        { text:   , correct: true },
+        { text:   , correct: false },
+        { text:   , correct: false }
+    ]
+} */

@@ -121,6 +121,14 @@ h2 {
     color: #6495ED;
 }
 
+/* button grid code and other button styles base from: https://youtu.be/riDzcEQbX6k?feature=shared not ok at the moment*/
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(1, auto)
+    gap: 10px;
+    margin: 20px 0;
+}
+
 .btn:hover {
     border-color: #8090BC;
     cursor: pointer;
@@ -134,12 +142,12 @@ h2 {
     transform: none;
 }
 /* Colors for correct and incorrect answers, copied from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/css/style.css*/
-.correct {
+.btn.btn {
 background-color: green;
 color: black
 }
 
-.incorrect {
+.btn.incorrect {
     background-color: red;
     color: black;
 }
