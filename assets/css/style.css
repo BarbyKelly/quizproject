@@ -45,11 +45,6 @@ padding to px as per mentor's suggestion */
     max-width: fit-content;
 }
 
-styling base code for now from: https://youtu.be/rFWbAj40JrQ?feature=shared *
-.container > * {
-    width: 100%;
-}
-
 .flex-column {
     display: flex;
     flex-direction: column;
@@ -98,13 +93,6 @@ h2 {
     font-weight: 500;
 }
 
-.container p {
-    font-size: 1.5rem;
-    font-weight: bold;
-    line-height: normal;
-}
-
-
 /* Buttons styling edited for now following code from this video: https://youtu.be/rFWbAj40JrQ?feature=shared */
 
 .btn {
@@ -124,7 +112,7 @@ h2 {
 /* button grid code and other button styles base from: https://youtu.be/riDzcEQbX6k?feature=shared not ok at the moment*/
 .btn-grid {
     display: grid;
-    grid-template-columns: repeat(1, auto)
+    grid-template-columns: repeat(1, auto);
     gap: 10px;
     margin: 20px 0;
 }
@@ -136,13 +124,9 @@ h2 {
     box-shadow: 0 0.4rem 1.4rem 0 #6495ED;
 }
 
-.btn.[disabled]:hover {
-    cursor: not-allowed;
-    box-shadow: none;
-    transform: none;
-}
+
 /* Colors for correct and incorrect answers, copied from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/css/style.css*/
-.btn.btn {
+.btn.correct {
 background-color: green;
 color: black
 }
@@ -170,12 +154,12 @@ color: black
 
 .footer {
     position: fixed;
-    font-size: 7px;
+    font-size: 15px;
     right: 0px;
     left: 0px;
     bottom: 0px;
     width: 100%;
-    color: #333333;
+    color: black;
     text-align: center;
     line-height: 20px;
 }

@@ -1,5 +1,5 @@
-/* Base for js code following lesson from: https://youtu.be/riDzcEQbX6k?feature=shared 
-All of the quiz questions created and researched by the developer */
+// Base for js code following lesson from: https://youtu.be/riDzcEQbX6k?feature=shared 
+// All of the quiz questions created and researched by the developer
 let startButton = document.getElementById('start-btn')
 let nextButton = document.getElementById('next-btn')
 let questionContainerElement = document.getElementById('question-container')
@@ -8,8 +8,8 @@ let answerButtonsElement = document.getElementById('answer-buttons')
 
 let shuffledQuestions, currentQuestionIndex
 
-startButton.addEventListener('click', startQuiz)
-nextButton.addEventListener('click', () => {
+    startButton.addEventListener('click', startQuiz)
+    nextButton.addEventListener('click', () => {
     currentQuestionIndex++
     setNextQuestion()
 })
@@ -42,7 +42,7 @@ function showQuestion(question) {
 }
 
 function resetState() {
-    setStatusClassStatusClass(document.body)
+    setStatusClass(document.body)
     nextButton.classList.add('hide')
     while (answerButtonsElement.firstChild) {
     answerButtonsElement.removeChild(answerButtonsElement.firstChild)
@@ -59,8 +59,8 @@ function selectAnswer(e) {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide')
     } else {
-        startQuizButton.innerText = 'Restart'
-        startQuizButton.classList.remove('hide')
+        startButton.innerText = 'Restart'
+        startButton.classList.remove('hide')
     }
     nextButton.classList.remove('hide')
 }
