@@ -77,7 +77,10 @@ As a returning user I want to:
 [Back to top](#contents)
 
 ## Website Structure
-This website includes three pages: home page, quiz results page and info page. Call it something else?
+This website includes one page where different areas can be accessed via buttons.
+- Welcome and Instructions area with buttons,
+- Quiz area with buttons,
+- Extra area with buttons.
 
 ### Wireframes
 
@@ -97,17 +100,15 @@ This website includes three pages: home page, quiz results page and info page. C
   * answer the questions
   * want to see their score
   * try again
-  * click on links/images
-  * click on "Extra page"
+  * click on buttons, links and images
+  * click on "Extra"
   
 
   Screenshot of Estonia Quiz Home Page, Wireframes:
 
 ![Image of Estonian books, dvds](wireframehomepageestquiz.png)
 
-  Buttons top left, languages:
-  * English
-  * Eesti (Estonian)
+  
 
 
 
@@ -171,6 +172,10 @@ https://mycolor.space/?hex=%236495ED&sub=1
 * Add variations of the quiz eg wildlife, culture, music, authors, movies, national symbols and so on.
 
 * Add difficulty levels: easy, medium, difficult (credit: difficulty levels were suggested by developer's older child)
+
+* Add language Buttons on top, to be able to do the quiz in different languages:
+  * English
+  * Eesti (Estonian)
 
 [Back to top](#contents)
 
@@ -241,7 +246,20 @@ After comparing Favicon codes to the codes from Love Running, developer noticed 
 [Back to top](#contents)
 
 ## Deployment
-...add clone, fork....
+
+1. Developer clicked on this link https://github.com/Code-Institute-Org/ci-full-template under Love Maths "Getting Set Up" video.
+
+![link for code template](<CI.template link.png>)
+
+2. As the original template was for CodeAnywhere, and developer works with github, developer clicked on https://github.com/Code-Institute-Org/gitpod-full-template
+
+![github template](<github template.png>)
+
+3. Developer clicked on the green "<> Code" button next and chose to copy the https
+
+![code link](codelink.png)
+
+4. 
 
 [Back to top](#contents)
 
