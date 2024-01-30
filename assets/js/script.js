@@ -46,9 +46,9 @@ function showQuestions(index) {
     resetState();
     let que_tag = '<span>' + quiz[index].numb+"."+question+'</span>';
     let option_tag =
-    '<button class = "answer-btn"><span>'+quiz[index].options[0]+'</span'></button>';
-    +'<button class = "answer-btn"><span>'+quiz[index].options[1]+'</span'></button>';
-    +'<button class = "answer-btn"><span>'+quiz[index].options[2]+'</span'></button>';
+    <button class = "answer-btn"><span>+quiz[index].options[0]+</span></button>
+    +<button class = "answer-btn"><span>+quiz[index].options[1]+</span></button>
+    +<button class = "answer-btn"><span>+quiz[index].options[2]+</span></button>;
     questionText.innerHTML = que_tag;
     answerBtn.innerHTML = option_tag;
     getAnswer();
@@ -116,7 +116,7 @@ function showResult() {
     questionsContainer.style.display = 'none';
     let scoreTotal = document.getElementById("score-div");
     let scoreTotalTag = '<span>' + userScore + 'out of 10' + '</span>';
-    scoreTotal.innerHTML = scoreTotalTag:
+    scoreTotal.innerHTML = scoreTotalTag;
 }
 
 // Restart quiz followed from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js
