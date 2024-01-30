@@ -27,30 +27,47 @@
         <div id="home" class="flex-center flex-column">
         <header>
             <h1>Estonia Quiz</h1>
-            <p>Welcome!</p>
         </header>
         <!--  Instructions: Add the following part/link as a pop up once person is finished with the quiz:
             After finishing the quiz, feel free to check out "Extra", to access various links to learn more about Estonia -->
         <h2 class="instructions" id="instructions">Instructions</h2>
         <!-- change p into list for instructions, idea copied from: https://github.com/andreas-ka/leeds-quiz/blob/main/index.html -->
             <ul>
-                <li> Answer 5 questions about Estonia </li>
-                <li> Each correct answer is worth 10 points </li>
-                <li> Best of luck! </li>
+                <li> Answer 10 questions about Estonia </li>
+                <li> Each correct answer is worth 1 point </li>
+                <li> Good luck! </li>
             </ul>
             <!-- question container and buttons edited following this video: https://www.youtube.com/watch?v=riDzcEQbX6k -->
-            <div id="questions-container" class="hide"> Questions Container
-                <div id="question">Question</div>
-                <div id="answer-btn" class="btn-grid">
-                    <button class="btn">Answer 1</button>
-                    <button class="btn">Answer 2</button>
-                    <button class="btn">Answer 3</button>
+            <div id="questions-container" class="questions-container">
+                <div id="answer-btn-area" class="btn-grid">
+                    <button type="button" class="answerBtn"></button>
+                    <button type="button" class="answerBtn"></button>
+                    <button type="button" class="answerBtn"></button>
                 </div>
             </div>
             <div class="controls">
-                <button id="start-quiz-btn" class="start-quiz-btn btn">Start Quiz</button> 
-                <button id="next-question-btn" class="next-question-btn btn hide">Next</button> 
-                <button id="restart-quiz-btn" class="restart-quiz-btn hide">Restart Quiz</button>
+                <!-- buttons for: start quiz, next question and restart, edited based on code from: https://github.com/andreas-ka/leeds-quiz/blob/main/index.html -->
+                <button id="start-quiz-btn" onclick="startQuizbtn()" class="start-quiz-btn btn">Start Quiz</button> 
+                <button id="next-question-btn" onclick="nextQuestionBtn()" class="next-question-btn btn">Next</button> 
+            </div>
+            <!-- Code for displaying the number of the current question and the score, and score area, from: https://github.com/andreas-ka/leeds-quiz/blob/main/index.html -->
+            <div id="questions-left-answer-correct">
+                <div id="questions-left">Questions:</div>
+                <div id="questions-left-counter"></div>
+                <div id="questions-left-p"> / 10</div>
+                <div id="correct-answers-counter"></div>
+            </div>
+            <div id="score-area">
+                <div id="score">
+                    <h4> Thanks for playing! </h4>
+                    <br>
+                    <h4> Your score was: </h4>
+                </div>
+                <div id="score-div">0</div>
+                    <h4>Play again? Click here </h4>
+                <div id="restart-quiz">
+                    <button id="restart-quiz-btn" onclick="restartQuizBtn()" class="restart-quiz-btn">Restart Quiz</button>
+                </div>
             </div>
         </div>
     </div>
