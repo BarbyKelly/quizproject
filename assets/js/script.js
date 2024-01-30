@@ -1,75 +1,131 @@
-// Base for js code following lesson from: https://youtu.be/riDzcEQbX6k?feature=shared 
-// All of the quiz questions created and researched by the developer
-let startButton = document.getElementById('start-btn')
-let nextButton = document.getElementById('next-btn')
-let questionContainerElement = document.getElementById('question-container')
-let questionElement = document.getElementById('question')
-let answerButtonsElement = document.getElementById('answer-buttons')
+// Base for js code mainly based on: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js
+// Base for how to shuffle questions, code following lesson from: https://youtu.be/riDzcEQbX6k?feature=shared 
 
-let shuffledQuestions, currentQuestionIndex
+/* Get Elements by Id, Class, Name */
+const instructionsArea = document.getElementById('instructions');
+const startQuizBtn = document.getElementById('start-quiz-btn');
+const nextQuestionBtn = document.getElementById('next-question-btn');
+const questionsContainer = document.getElementById('questions-container');
+const questionText = document.querySelector('.questions-class');
+const answerBtn = document.getElementById('answer-btn');
+const restartQuizBtn = document.getElementById('restart-btn');
+const resultScoreArea = document.getElementById("score-area");
+const optionBtn = document.getElementById("answer-btn");
 
-    startButton.addEventListener('click', startQuiz)
-    nextButton.addEventListener('click', () => {
-    currentQuestionIndex++
-    setNextQuestion()
-})
+let questionNumber = 0;
+let userScore = 0;
 
-function startQuiz() {
-    startButton.classList.add('hide')
-    shuffledQuestions = question.sort(() => Math.random() - .5)
-    currentQuestionIndex = 0
-    questionContainerElement.classList.remove('hide')
-    setNextQuestion()
-}
+/* let shuffledQuestions, currentQuestionIndex */
 
-function setNextQuestion() {
-    resetState()
-    showQuestion(shuffledQuestions[currentQuestionIndex])
-}
+// Start Quiz
+function startQuizBtn() {
+    instructionsArea.style.display = 'none';
+    resultScoreArea.style.display = 'none';
+    questionsContainer.style.display = 'block';
+    showQuestions(0);
+    questionCounter(questionNumber);
+    showScore();
+};
 
-function showQuestion(question) {
-    questionElement.innerText = question.question
-    question.answers.forEach(answer => {
-    let button = document.createElement('button')
-    button.innerText = answer.text
-    button.classList.add('btn')
-    if (answer.correct) {
-        button.dataset.correct = answer.correct
+// Next quiz question
+function setNextQuestionBtn() {
+    questionNumber++;
+    if (questionNumber < quiz.length) { 
+    showQuestions(shuffledQuestions[currentQuestionIndex]);
+    questionCounter(questionNumber);
+    showScore();
+    clearInterval(counter);
+} else {
+    questionNumber = 0;
+    showResult();
     }
-    button.addEventListener('click', selectAnswer)
-    answerButtonsElement.appendChild(button)
-    })
-}
+};
 
+/* Function for showQuestions like in : https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js */
+function showQuestions(index) {
+    resetState();
+    let que_tag = '<span>' + quiz[index].numb+"."+question+'</span>';
+    let option_tag =
+    '<button class = "answer-btn"><span>'+quiz[index].options[0]+'</span'></button>';
+    +'<button class = "answer-btn"><span>'+quiz[index].options[1]+'</span'></button>';
+    +'<button class = "answer-btn"><span>'+quiz[index].options[2]+'</span'></button>';
+    questionText.innerHTML = que_tag;
+    answerBtn.innerHTML = option_tag;
+    getAnswer();
+    }
+
+    /* Code originally learned from: link youtube add, modified following code from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js */
 function resetState() {
-    setStatusClass(document.body)
-    nextButton.classList.add('hide')
-    while (answerButtonsElement.firstChild) {
-    answerButtonsElement.removeChild(answerButtonsElement.firstChild)
+    questionCounter(1);
+    showScore(0);
+    while (answerBtn.firstChild) {
+    answerBtn.removeChild(answerBtn.firstChild);
+    nextQuestionBtn.style.display('hide');
     }
 }
 
-function selectAnswer(e) {
-    let selectedButton = e.target
-    let correct = selectedButton.dataset.correct
-    setStatusClass(document.body, correct)
-    Array.from(answerButtonsElement.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct)
-    })
-    if (shuffledQuestions.length > currentQuestionIndex + 1) {
-        nextButton.classList.remove('hide')
-    } else {
-        startButton.innerText = 'Restart'
-        startButton.classList.remove('hide')
-    }
-    nextButton.classList.remove('hide')
+/* Code followed from https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js */ 
+function questionCounter() {
+    let queLeft = document.getElementById("questions-left-counter");
+    let queLeftTag = '<span>'+quiz[questionNumber].numb+'</span>';
+    queLeft.innerHTML = queLeftTag;
 }
 
-function setStatusClass(element, correct) {
-    setStatusClassStatusClass(element)
-    if (correct) {
-        element.classList.add('correct')
-    } else {
-        element.classList.add('wrong')
-    }
+/* original code following youtube video... adjusted https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js */
+function selectAnswer() {
+    [...optionBtn].forEach(option=>{
+        option.addEventListener("click",event=>{
+            const span = event.currentTarget.querySelector('span');
+            const text = span.innerText;
+            const allOptions = answerBtn.children.length;
+            console.log(text);
+            let correctAnswer = [quiz[questionNumber].answer];
+            if(text===correctAnswer) {
+                userScore++;
+                event.target.classList.add("correct");
+                clearInterval(counter);
+            }else{
+                event.target.classList.add("incorrect");
+                for(i=0; i<allOptions;i++) {
+                    if(answerBtn.children[i].textContent===correctAnswer) {
+                        answerBtn.children[i].classList.add("correct");
+                        answerBtn.children[i].classList.add("disabled");
+                    }
+                }
+                clearInterval(counter);
+            }
+            for(i=0; i<allOptions;i++) {
+                answerBtn.children[i].classList.add("disabled");
+            }
+        nextQuestionBtn.style.display = "block";
+        });
+    });
 }
+
+// Score display followed from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js
+function showScore() {
+    let scoreNum = document.getElementById("correct-answers-counter");
+    scoreTag = '<span>' + userScore + '</span>';
+    scoreNum.innerHTML = scoreTag;
+}
+
+// Show result followed from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js
+function showResult() {
+    instructionsArea.style.display = 'none';
+    resultScoreArea.style.display = 'block';
+    questionsContainer.style.display = 'none';
+    let scoreTotal = document.getElementById("score-div");
+    let scoreTotalTag = '<span>' + userScore + 'out of 10' + '</span>';
+    scoreTotal.innerHTML = scoreTotalTag:
+}
+
+// Restart quiz followed from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js
+function restartQuizBtn() {
+    instructionsArea.style.display = 'none';
+    resultScoreArea.style.display = 'none';
+    questionsContainer.style.display = 'block';
+    userScore = 0;
+    questionCounter(questionNumber);
+    questionCounter(0);
+    showQuestions(0);
+};
