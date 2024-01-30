@@ -45,7 +45,7 @@ const quiz = [
     },
     {
         numb: 5,
-        question: "Estonian national bird is..."
+        question: "Estonian national bird is...",
         answer: "Barn swallow",
         options: [
             "Barn swallow",

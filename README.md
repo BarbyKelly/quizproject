@@ -352,7 +352,7 @@ All images used for Estonia Quiz background, and favicon image, are created by t
 
 /* Links/research for future development: 
 
-All of the Questions created by the Developer. All of the links and research to support the validity of the questions/answers, gathered by the developer. */
+All of the Questions created by the Developer. All of the links and research to support the validity of the questions/answers, readmegathered by the developer. */
 
 /* Future dev: Correct answer to be made hidden, and then pop up for all of the questions,
 with image and link on the side, or on the extra page? Add links to readme, and images, or only here? make answer images

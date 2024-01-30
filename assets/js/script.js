@@ -8,17 +8,17 @@ const nextQuestionBtn = document.getElementById('next-question-btn');
 const questionsContainer = document.getElementById('questions-container');
 const questionText = document.querySelector('.questions-class');
 const answerBtn = document.getElementById('answer-btn');
-const restartQuizBtn = document.getElementById('restart-btn');
+const restartQuizBtn = document.getElementById('restart-quiz-btn');
 const resultScoreArea = document.getElementById("score-area");
 const optionBtn = document.getElementById("answer-btn");
 
 let questionNumber = 0;
 let userScore = 0;
 
-/* let shuffledQuestions, currentQuestionIndex */
-
 // Start Quiz
-function startQuizBtn() {
+startQuizBtn.addEventListener('click', startQuizBtnFunc);
+
+function startQuizBtnFunc() {
     instructionsArea.style.display = 'none';
     resultScoreArea.style.display = 'none';
     questionsContainer.style.display = 'block';
@@ -46,9 +46,9 @@ function showQuestions(index) {
     resetState();
     let que_tag = '<span>' + quiz[index].numb+"."+question+'</span>';
     let option_tag =
-    <button class = "answer-btn"><span>+quiz[index].options[0]+</span></button>
-    +<button class = "answer-btn"><span>+quiz[index].options[1]+</span></button>
-    +<button class = "answer-btn"><span>+quiz[index].options[2]+</span></button>;
+    '<button class = "answer-btn"><span>'+quiz[index].options[0]+'</span></button>'
+    +'<button class = "answer-btn"><span>'+quiz[index].options[1]+'</span></button>'
+    +'<button class = "answer-btn"><span>'+quiz[index].options[2]+'</span></button>';
     questionText.innerHTML = que_tag;
     answerBtn.innerHTML = option_tag;
     getAnswer();
@@ -120,7 +120,9 @@ function showResult() {
 }
 
 // Restart quiz followed from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js
-function restartQuizBtn() {
+restartQuizBtn.addEventListener('click', restartQuizBtnFunc);
+
+function restartQuizBtnFunc() {
     instructionsArea.style.display = 'none';
     resultScoreArea.style.display = 'none';
     questionsContainer.style.display = 'block';
