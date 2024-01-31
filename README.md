@@ -1,6 +1,6 @@
 # Estonia Quiz
 
-This quiz has been created for anyone who would like to test their knowledge of Estonia. Website was also meant to include extra links if visitor was curious to find out more about Estonia. For now these links are part of the README file only.
+Estonia quiz has been created by Software Development student, as part of Code Institute's Javascript project. This quiz is for anyone who would like to test their knowledge about Estonia. Developer had planned to include an Extra part for this website, where visitors could find out more about Estonia, and see the research done by the developer for creating questions and answers for the quiz. Due to developer being a beginner in coding, this extra link is part of the website for now is included in the README file instead of a button on the website. 
 
 Link to the live site: https://barbykelly.github.io/Estonia-Quiz/
 
@@ -82,7 +82,6 @@ As a returning user I want to:
 This website includes one page where different areas can be accessed via buttons.
 - Welcome and Instructions area with buttons,
 - Quiz area with buttons,
-- Extra area with buttons.
 
 
 ### Wireframes
@@ -95,7 +94,7 @@ This website includes one page where different areas can be accessed via buttons
   * get a score
   * see score on the page
   * try quiz again
-  * see the correct answers/images pop-up (Part of future development to have images/links for the correct answer to pop up)
+  * see the correct answers
 
 * Website visitors are likely to:
   * click on "Start quiz"
@@ -178,17 +177,33 @@ https://mycolor.space/?hex=%236495ED&sub=1
   * English
   * Eesti (Estonian)
 
+* Add Extra section/button to the website. On this area of the page Visitors can click on links to learn more about Estonia, and see research done by the Developer while searching for questions and answers for the quiz.
+
+* Add code to make images showing the correct answer (eg picture of lynx) to pop up, when visitor has made their answer choice.
+
+
 [Back to top](#contents)
 
 ## Languages Used
-...list of html, css, javascript, other
+
+...add image from github before submitting, list of html, css, javascript, other
 
 [Back to top](#contents)
+
 
 ## Sites, Apps Used
-...list here balsamiq, github, vs code etc
+
+Developer used these sites to create Estonia Quiz project: 
+
+* Balsamiq Wireframes
+* Github
+* VS Code
+* Code Institute
+
+.... add links to all?
 
 [Back to top](#contents)
+
 
 ## Testing
 
@@ -227,6 +242,7 @@ https://jigsaw.w3.org/css-validator/validator
 
 [Back to top](#contents)
 
+
 ## Bug fixing
 
 * Favicon
@@ -249,10 +265,12 @@ After comparing Favicon codes to the codes from Love Running, developer noticed 
 
 [Back to top](#contents)
 
+
 ## Known Bugs
 ...if not showing properly on some sites/phones
 
 [Back to top](#contents)
+
 
 ## Deployment
 
@@ -276,6 +294,7 @@ After comparing Favicon codes to the codes from Love Running, developer noticed 
 
 [Back to top](#contents)
 
+
 ## Credits
 
 * Favicon 
@@ -293,7 +312,7 @@ https://favicon.io/favicon-converter/
   for Favicon, was copied from
   https://favicon.io/favicon-converter/
 
-* Coding Group member Patrick for his time and guidance with getting console working, and him guiding how to track errors one by one, and pointed out where names of the functions were clashing.
+* Coding Group member Patrick Hladun for guiding developer via Slack, to get console errors to show up, and how to track errors one by one. He also pointed out where names of the functions were clashing, and some ; vs : errors in developer's code.
 
 * Readme
 
@@ -312,9 +331,9 @@ https://favicon.io/favicon-converter/
 
 * Wirefames
 
-  Ideas, how to articulate user's goals, written down after reading this article: https://balsamiq.com/learn/articles/five-steps-to-great-wireframes/
+  * Ideas, how to articulate user's goals, written down after reading this article: https://balsamiq.com/learn/articles/five-steps-to-great-wireframes/
 
-  ![Articulate article screenshot](docs/readmeimg/articulate.png)
+ * ![Articulate article screenshot](docs/readmeimg/articulate.png)
 
 
   Learned how to use Wirefame from this video:
@@ -323,11 +342,11 @@ https://favicon.io/favicon-converter/
 
   * Screenshot of Estonia Quiz home page, created with Balsamiq Wireframes:
 
-  ![Image of books, videos, and quiz box](assets/images/readmeimg/wireframehomepageestquiz.png)
+  * ![Image of books, videos, and quiz box](assets/images/readmeimg/wireframehomepageestquiz.png)
   
   * Screenshot of Estonia Quiz test score page, created with Balsamiq Wireframes:
 
-![Quiz Score](assets/images/readmeimg/wireframequizscore.png)
+  * ![Quiz Score](assets/images/readmeimg/wireframequizscore.png)
 
   * Screenshot of Estonia Quiz Extra page, created with Balsamiq Wireframes:
 
@@ -337,20 +356,33 @@ https://favicon.io/favicon-converter/
   [w3 schools website](https://www.w3schools.com/js/js_whereto.asp)
   ![screenshot of text](script.png)
 
-* How to make quiz learned from this video:.... check in case  chose to go with a different one in the end
-[text](https://youtu.be/riDzcEQbX6k?feature=shared)
+* How to make quiz learned from various YouTube videos, mentioned in code. Main credit for creating a quiz template goes to Leeds Quiz: https://github.com/andreas-ka/leeds-quiz .
 
+* Grateful to my Mentor Lauren-Nicole for supporting me with my projects, and for sharing example quizzes like the Leeds Quiz.
 
+* Thank you to Laura Mayock, group's Cohort Facilitator, for our weekly group meetings and guidance, encouraging students to show and talk about their    projects. And to everyone who took part of the group meetings, shared their projects, or who supported fellow students via Slack. 
 
 * Footer
   Developer learned how to make Copyright sign &copy; from this project:
   [Mental-Arithmetic-Quiz project](https://github.com/Shida18719/Mental-Arithmetic-Quiz/blob/main/index.html)
 
 ### Code
+
+* Base for Estonia Quiz html, css and javaScript code from: 
+https://github.com/andreas-ka/leeds-quiz
+
 ### Questions
+
+* All of the questions created by the developer, from her own experience, knowledge or researching updated information.
+
+place here the pop up answer images , links!!!!
+
+
 ### Images 
-All images used for Estonia Quiz background, and favicon image, are created by the developer
-...use developer instead of creator!...
+
+* Website's background image taken by the developer.
+
+* Same background image used to create a favicon image. .... place link for favicon how did it...
 
 [Back to top](#contents)
 
