@@ -1,6 +1,6 @@
 # Estonia Quiz
 
-Estonia quiz has been created by Software Development student, as part of Code Institute's Javascript project. This quiz is for anyone who would like to test their knowledge about Estonia. Developer had planned to include an Extra part for this website, where visitors could find out more about Estonia, and see the research done by the developer for creating questions and answers for the quiz. Due to developer being a beginner in coding, this extra link is part of the website for now is included in the README file instead of a button on the website. 
+Estonia quiz has been created by Software Development student, as part of Code Institute's Javascript project. This quiz is for anyone who would like to test their knowledge about Estonia. 
 
 Link to [Estonia Quiz](https://barbykelly.github.io/Estonia-Quiz/)
 
@@ -177,9 +177,11 @@ Screenshot of favicon on the website:
   * English
   * Eesti (Estonian)
 
-* Add Extra section/button to the website. On this area of the page Visitors can click on links to learn more about Estonia, and see research done by the Developer while searching for questions and answers for the quiz.
+* Add "Extra" button to the website, which would bring visitors to an area with links and images to find out more about Estonia 
 
-* Add code to make images showing the correct answer (eg picture of lynx) to pop up, when visitor has made their answer choice.
+* Add code to make images pop up when visitor has made their choice. Image of the correct answer (eg picture of lynx)
+
+* Add funny incidents with English-Estonian keyboard
 
 
 [Back to top](#contents)
@@ -364,16 +366,43 @@ Developer learned how to make Copyright sign &copy; from [Mental-Arithmetic-Quiz
 
 ### Questions
 
-* All of the questions created by the developer, from her own experience, knowledge or researching updated information.
+* All of the questions created by the developer, from her own experience, her own knowledge or researching updated information eg population details. 
 
-place here the pop up answer images , links!!!!
+* Here are the websites/images that developer used to validate the answers for Estonia quiz:
+
+- Estonia-Quiz/questions/northerneurope.png
+
+Screenshot from [gisgeography.com](https://gisgeography.com/europe-map/)
+
+- ![Estonian flag](Estonia-Quiz/questions/estonianflag.png)  
+
+- Estonia-Quiz/questions/flagstory.png
+[Flag story](https://www.visitestonia.com/en//estonian-flag)
+
+- [eesti.ee](https://www.eesti.ee/en/republic-of-estonia/republic-of-estonia/state-insignia)
+
+- [Barn swallow](assets/images/nationalbird.png)
+
+
+- [lynx watching tour](https://www.visitestonia.com/en/lynx-and-bear-watching-tour-in-alutaguse-and-lahemaa-national-park?gad_source=5&gclid=EAIaIQobChMI5f2Whpa_gwMVhJhQBh28dgSrEAAYASAAEgIPl_D_BwE)
+
+- Population statistics from
+[stat.ee](https://www.stat.ee/en/find-statistics/statistics-theme/population)
+
+- Due to covid, festival is after 4 years this time
+
+![Different years notice](assets/images/readmeimg/differentyears.png) 
+
+Usually every 5 years [the Estonian Song and Dance Festival](https://www.visitestonia.com/en/why-estonia/welcome-to-the-estonian-song-and-dance-celebration)
+
+- To hear numbers in Estonian, visitor can watch this [Youtube video](https://youtube.com/shorts/y2RQWWda-Nc?feature=shared)
 
 
 ### Images 
 
-* Website's background image taken by the developer.
+* Website's background image, cornflower, taken by the developer.
 
-* Same background image used to create a favicon image. .... place link for favicon how did it...
+* Same background image used to create a favicon image, using [favicon converter](https://favicon.io/favicon-converter/)
 
 [Back to top](#contents)
 
@@ -386,50 +415,3 @@ place here the pop up answer images , links!!!!
 * Thank you to Laura Mayock, group's Cohort Facilitator, for our weekly group meetings and guidance, encouraging students to show and talk about their projects. And to everyone who took part of the group meetings, shared their projects, and everyone who supported fellow students via Slack.
 
 [Back to top](#contents)
-
-
-/* Links/research for future development: 
-
-All of the Questions created by the Developer. All of the links and research to support the validity of the questions/answers, readme gathered by the developer. */
-
-/* Future dev: Correct answer to be made hidden, and then pop up for all of the questions,
-with image and link on the side, or on the extra page? Add links to readme, and images, or only here? make answer images
-as part of a comment for now, until correct code, where to place them
-Estonia-Quiz/questions/northerneurope.png
-Screenshot from [gisgeography.com](https://gisgeography.com/europe-map/)
-
-/* Future dev: Estonia-Quiz/questions/estonianflag.png  
-Estonia-Quiz/questions/flagstory.png
-Link to image of Estonia, with the story about Estonian flag colours, from [visitEstonia.com](https://www.visitestonia.com/en//estonian-flag)
-
-/* Future dev: Add link to visit Estonia, inside the question/answer brackets or separate? */
-
-/* Future dev: add image of English Estonian keyboard incidents */
-
-/* Future dev: add [eesti.ee](https://www.eesti.ee/en/republic-of-estonia/republic-of-estonia/state-insignia)
-
-assets/images/nationalbird.png */
-
-
-/* Future dev: Add image of a lynx. Credit where got the image.
-[lynx watching tour](https://www.visitestonia.com/en/lynx-and-bear-watching-tour-in-alutaguse-and-lahemaa-national-park?gad_source=5&gclid=EAIaIQobChMI5f2Whpa_gwMVhJhQBh28dgSrEAAYASAAEgIPl_D_BwE)
-
-/* Future dev, add to answer/extra: [stat.ee](https://www.stat.ee/en/find-statistics/statistics-theme/population)
-
-/* Future dev or now: add explanation, as due to cov it changed for few years, info about [the Estonian Song and Dance Festival](https://www.visitestonia.com/en/why-estonia/welcome-to-the-estonian-song-and-dance-celebration)
-due to covid, after 4 years this time:
-Estonia-Quiz/questions/differentyears.png 
-
-add note to question?
-
-![Different years notice](assets/images/readmeimg/differentyears.png) */
-
-
-
-/* Future dev add: You can watch this [Youtube video](https://youtube.com/shorts/y2RQWWda-Nc?feature=shared) to hear numbers in Estonian.
-
-
-
-
-
-
