@@ -134,7 +134,7 @@ Developer used an image of a cornflower (Estonian national flower), from her own
 
 The original image: 
 
-![cornflower](assets/images/websiteimg/cornflower.jpg)
+![cornflower](assets/images/cornflower.jpg)
 
 
 This website helped to convert the image into Favicon:

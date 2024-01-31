@@ -9,7 +9,7 @@ html {
     height: 100%;
 }
 
-/* Background image, see which image suits better when the quiz is in place, contrast */
+/* Background image */
 body {
     background-image: url("../images/cornflower.jpg");
     background-repeat: no-repeat;
