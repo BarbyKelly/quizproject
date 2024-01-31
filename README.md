@@ -237,6 +237,12 @@ https://favicon.io/favicon-converter/
 After comparing Favicon codes to the codes from Love Running, developer noticed that path needed to be adjusted. After adjusting the path, favicon appeared on the website. 
 
 
+* HTML error
+
+- Developer saw this error when inspecting the website: "Uncaught TypeError: startQuizBtn is not a function     at HTMLButtonElement.onclick".
+
+- From this site: https://stackoverflow.com/questions/51282433/typeerror-functionname-is-not-a-function-at-htmlbuttonelement-onclick developer got the answer: 
+startQuizBtn had to be startQuizBtnFunction as in script.js.
 
 [Back to top](#contents)
 
@@ -284,6 +290,7 @@ https://favicon.io/favicon-converter/
   for Favicon, was copied from
   https://favicon.io/favicon-converter/
 
+* Coding Group member Patrick for his time and guidance with getting console working, and him guiding how to track errors one by one, and pointed out where names of the functions were clashing.
 
 * Readme
 
