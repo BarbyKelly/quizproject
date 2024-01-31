@@ -1,7 +1,6 @@
-// Base for js code mainly based on: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js
-// Base for how to shuffle questions, code following lesson from: https://youtu.be/riDzcEQbX6k?feature=shared 
+// Base for js code based on: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js
 
-/* Get Elements by Id, Class, Name */
+// Get Elements by Id, Class, Name
 const instructionsArea = document.getElementById("instructionsArea");
 const startQuizBtn = document.getElementById("start-quiz-btn");
 const nextQuestionBtn = document.getElementById("next-question-btn");
@@ -11,13 +10,19 @@ const answerBtnArea = document.getElementById("answer-btn-area");
 const restartQuizBtn = document.getElementById("restart-quiz-btn");
 const resultScoreArea = document.getElementById("score-area");
 const optionBtn = document.getElementById("answer-btn");
+const myButton = document.getElementById('my-button'); // From Patrick Hladun, via Slack
 
 let questionNumber = 0;
 let userScore = 0;
 
-// Start Quiz
-
+// Event listeners - From Patrick Hladun, via Slack
 startQuizBtn.addEventListener('click', startQuizBtnFunction());
+myButton.addEventListener('click', myStartFunction);
+nextQuestionBtn.addEventListener('click', nextQuestionBtnFunction());
+
+function myStartFunction() {
+
+};
 
 function startQuizBtnFunction() {
     instructionsArea.style.display = 'none';
@@ -28,9 +33,6 @@ function startQuizBtnFunction() {
     showScore();
 };
 
-// Next quiz question
-
-nextQuestionBtn.addEventListener('click', nextQuestionBtnFunction());
 function nextQuestionBtnFunction() {
     questionNumber++;
     if (questionNumber < quiz.length) { 
