@@ -291,6 +291,8 @@ After comparing Favicon codes to the codes from Love Running, developer noticed 
 
 ![create repo](assets/images/readmeimg/createRepo.png)
 
+5. 
+
 
 [Back to top](#contents)
 
@@ -311,8 +313,6 @@ https://favicon.io/favicon-converter/
   <link rel="manifest" href="/site.webmanifest"> 
   for Favicon, was copied from
   https://favicon.io/favicon-converter/
-
-* Coding Group member Patrick Hladun for guiding developer via Slack, to get console errors to show up, and how to track errors one by one. He also pointed out where names of the functions were clashing, and some ; vs : errors in developer's code.
 
 * Readme
 
@@ -353,18 +353,17 @@ https://favicon.io/favicon-converter/
 
 * Script
   Developer learned how page is loading faster, if scripts are placed at the bottom of the body in html, from this site:
-  [w3 schools website](https://www.w3schools.com/js/js_whereto.asp)
+[w3 schools website](https://www.w3schools.com/js/js_whereto.asp)
   ![screenshot of text](script.png)
 
 * How to make quiz learned from various YouTube videos, mentioned in code. Main credit for creating a quiz template goes to Leeds Quiz: https://github.com/andreas-ka/leeds-quiz .
 
-* Grateful to my Mentor Lauren-Nicole for supporting me with my projects, and for sharing example quizzes like the Leeds Quiz.
 
-* Thank you to Laura Mayock, group's Cohort Facilitator, for our weekly group meetings and guidance, encouraging students to show and talk about their    projects. And to everyone who took part of the group meetings, shared their projects, or who supported fellow students via Slack. 
 
 * Footer
-  Developer learned how to make Copyright sign &copy; from this project:
-  [Mental-Arithmetic-Quiz project](https://github.com/Shida18719/Mental-Arithmetic-Quiz/blob/main/index.html)
+
+Developer learned how to make Copyright sign &copy; from this project:
+[Mental-Arithmetic-Quiz project](https://github.com/Shida18719/Mental-Arithmetic-Quiz/blob/main/index.html)
 
 ### Code
 
@@ -387,7 +386,12 @@ place here the pop up answer images , links!!!!
 [Back to top](#contents)
 
 ### Acknowledgements
-...Slack, mentor, YouTube video?, if they are already under credit? friends and family for testing the quiz
+
+* Grateful to my Mentor Lauren-Nicole Popich for supporting me with my projects, for listening, for sharing examples like the Leeds Quiz, for guiding me to improve my project, and sharing how to set up 404 page.
+
+* Grateful to Coding Group member Patrick Hladun for guiding developer via Slack, to get console errors to show up, and how to track errors one by one. He also pointed out where names of the functions were clashing, and some ; vs : errors in developer's code.
+
+* Thank you to Laura Mayock, group's Cohort Facilitator, for our weekly group meetings and guidance, encouraging students to show and talk about their projects. And to everyone who took part of the group meetings, shared their projects, and everyone who supported fellow students via Slack.
 
 [Back to top](#contents)
 
