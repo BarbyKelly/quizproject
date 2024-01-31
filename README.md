@@ -2,7 +2,7 @@
 
 Estonia quiz has been created by Software Development student, as part of Code Institute's Javascript project. This quiz is for anyone who would like to test their knowledge about Estonia. Developer had planned to include an Extra part for this website, where visitors could find out more about Estonia, and see the research done by the developer for creating questions and answers for the quiz. Due to developer being a beginner in coding, this extra link is part of the website for now is included in the README file instead of a button on the website. 
 
-Link to the live site: https://barbykelly.github.io/Estonia-Quiz/
+Link to [Estonia Quiz](https://barbykelly.github.io/Estonia-Quiz/)
 
 ...image of my website on different gadgets ... place here...from am I responsive.
 
@@ -137,8 +137,8 @@ The original image:
 ![cornflower](assets/images/cornflower.jpg)
 
 
-This website helped to convert the image into Favicon:
-https://favicon.io/favicon-converter/
+[Favicon.io](https://favicon.io/favicon-converter/) helped to convert the image into Favicon:
+
 
 Screenshot of favicon on the website:
 ![cornflower favicon image](assets/images/readmeimg/faviconreadme.png)
@@ -146,13 +146,13 @@ Screenshot of favicon on the website:
 
 ### Color
 * As Estonian national flower is a Cornflower, developer chose 'cornflower blue' as a Background color for the website. Developer found Cornflower blue color code from this website: 
-https://htmlcolorcodes.com/colors/cornflower-blue/
+[Colorcodes.com](https://htmlcolorcodes.com/colors/cornflower-blue/)
 
 ![CORNFLOWER BLUE COLOR](docs/readmeimg/cornflowerblue.png)
 
 
 * Color palette from this website:
-https://mycolor.space/?hex=%236495ED&sub=1
+[Mycolor.space](https://mycolor.space/?hex=%236495ED&sub=1)
 
 ...Natural Palette or Neighbor Palette, which suits better. Add screenshot then of the palette used...
 
@@ -212,8 +212,8 @@ Developer used these sites to create Estonia Quiz project:
 
 ### HTML
 
-Tested HTML on this website:
-https://validator.w3.org/nu/#textarea
+Tested HTML with
+[Validator.W3](https://validator.w3.org/nu/#textarea)
 
 ![HTML validation](assets/images/readmeimg/testinghtml.png)
 
@@ -225,8 +225,8 @@ Result after fixing the error and retesting:
 
 ### css
 
-Tested on this website:
-https://jigsaw.w3.org/css-validator/validator
+Tested CSS with
+[Jigsaw.W3](https://jigsaw.w3.org/css-validator/validator)
 
 ![CSS validation](assets/images/readmeimg/csstest.png)
 
@@ -247,8 +247,8 @@ https://jigsaw.w3.org/css-validator/validator
 
 * Favicon
 
-At first favicon icon did not appear on the website. Developer had used the four line code from favicon.io
-https://favicon.io/favicon-converter/
+At first favicon icon did not appear on the website. Developer had used the four line code from
+[Favicon.io](https://favicon.io/favicon-converter/)
 
 ![favicon codes](assets/images/readmeimg/faviconcodes.png)
 
@@ -259,7 +259,7 @@ After comparing Favicon codes to the codes from Love Running, developer noticed 
 
 - Developer saw this error when inspecting the website: "Uncaught TypeError: startQuizBtn is not a function at HTMLButtonElement.onclick".
 
-- Developer found the solution after reading this article: https://stackoverflow.com/questions/51282433/typeerror-functionname-is-not-a-function-at-htmlbuttonelement-onclick
+- Developer found the solution after reading this [article](https://stackoverflow.com/questions/51282433/typeerror-functionname-is-not-a-function-at-htmlbuttonelement-onclick)
 
 - Error had been caused by startQuizBtn, were it was supposed to be startQuizBtnFunction instead.
 
@@ -274,16 +274,16 @@ After comparing Favicon codes to the codes from Love Running, developer noticed 
 
 ## Deployment
 
-1. Developer clicked on this link https://github.com/Code-Institute-Org/ci-full-template under Love Maths "Getting Set Up" video.
+1. Developer clicked on this [GitHub link](https://github.com/Code-Institute-Org/ci-full-template) under Love Maths "Getting Set Up" video.
 
 ![link for code template](assets/images/readmeimg/CI.templateLink.png)
 
 
-2. As the original template was for CodeAnywhere, and developer works with github, developer clicked on https://github.com/Code-Institute-Org/gitpod-full-template
+2. As the original template was for CodeAnywhere, and developer works with GitHub, developer clicked on [GitPod template](https://github.com/Code-Institute-Org/gitpod-full-template)
 
 ![github template](assets/images/readmeimg/githubTemplate.png)
 
-3. Developer clicked on "Use this template", and then clicked on "Create a new repository":
+3. Next the developer clicked on "Use this template", and then clicked on "Create a new repository":
 
 ![use this template](assets/images/readmeimg/repolink.png)
 
@@ -291,7 +291,7 @@ After comparing Favicon codes to the codes from Love Running, developer noticed 
 
 ![create repo](assets/images/readmeimg/createRepo.png)
 
-5. 
+5. next step add...
 
 
 [Back to top](#contents)
@@ -301,8 +301,7 @@ After comparing Favicon codes to the codes from Love Running, developer noticed 
 
 * Favicon 
 
-  * Favicon created using
-https://favicon.io/favicon-converter/
+  * Favicon created using [favicon converter](https://favicon.io/favicon-converter/)
 
   * These 3 lines of code, for favicon, were copied from Love Running:
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -316,28 +315,26 @@ https://favicon.io/favicon-converter/
 
 * Readme
 
-  * Parts of the Readme template used from:
-   https://github.com/Code-Institute-Solutions/SampleREADME?tab=readme-ov-file 
+  * Parts of the Readme template used from [Code Institute's Sample README](https://github.com/Code-Institute-Solutions/SampleREADME?tab=readme-ov-file) 
 
-   and https://github.com/Tony118g/the-everything-quiz/blob/main/README.md 
+   and [Everything Quiz](https://github.com/Tony118g/the-everything-quiz/blob/main/README.md) 
 
    Reading The Everything Quiz README, highlighted for me the level of details that Quiz website README needs.
 
 
 * User Stories:
-  Template used from:
-  https://www.atlassian.com/agile/project-management/user-stories
+  Template used from
+  [Atlassian.com](https://www.atlassian.com/agile/project-management/user-stories)
 
 
 * Wirefames
 
-  * Ideas, how to articulate user's goals, written down after reading this article: https://balsamiq.com/learn/articles/five-steps-to-great-wireframes/
+  * Ideas, how to articulate user's goals, written down after reading this [article](https://balsamiq.com/learn/articles/five-steps-to-great-wireframes/)
 
  * ![Articulate article screenshot](docs/readmeimg/articulate.png)
 
 
-  Learned how to use Wirefame from this video:
-  https://www.youtube.com/watch?v=9Pv002d0Kls&list=PLVlyYfbClWxQDCGC-A1FkbGyIxtuIN5IM&index=1
+  Learned how to use Wirefame from [this Youtube video](https://www.youtube.com/watch?v=9Pv002d0Kls&list=PLVlyYfbClWxQDCGC-A1FkbGyIxtuIN5IM&index=1)
 
 
   * Screenshot of Estonia Quiz home page, created with Balsamiq Wireframes:
@@ -350,25 +347,20 @@ https://favicon.io/favicon-converter/
 
   * Screenshot of Estonia Quiz Extra page, created with Balsamiq Wireframes:
 
+### Code
+
+* Base for Estonia quiz from [Leeds Quiz](https://github.com/andreas-ka/leeds-quiz). Developer watched various YouTube quiz tutorials, and kept returning to Leeds Quiz, as developer liked the style of that quiz.
 
 * Script
-  Developer learned how page is loading faster, if scripts are placed at the bottom of the body in html, from this site:
-[w3 schools website](https://www.w3schools.com/js/js_whereto.asp)
+
+  Developer learned how page is loading faster, if scripts are placed at the bottom of the body in html from [W3 schools website](https://www.w3schools.com/js/js_whereto.asp)
   ![screenshot of text](script.png)
-
-* How to make quiz learned from various YouTube videos, mentioned in code. Main credit for creating a quiz template goes to Leeds Quiz: https://github.com/andreas-ka/leeds-quiz .
-
 
 
 * Footer
 
-Developer learned how to make Copyright sign &copy; from this project:
-[Mental-Arithmetic-Quiz project](https://github.com/Shida18719/Mental-Arithmetic-Quiz/blob/main/index.html)
+Developer learned how to make Copyright sign &copy; from [Mental-Arithmetic-Quiz project](https://github.com/Shida18719/Mental-Arithmetic-Quiz/blob/main/index.html)
 
-### Code
-
-* Base for Estonia Quiz html, css and javaScript code from: 
-https://github.com/andreas-ka/leeds-quiz
 
 ### Questions
 
@@ -387,7 +379,7 @@ place here the pop up answer images , links!!!!
 
 ### Acknowledgements
 
-* Grateful to my Mentor Lauren-Nicole Popich for supporting me with my projects, for listening, for sharing examples like the Leeds Quiz, for guiding me to improve my project, and sharing how to set up 404 page.
+* Grateful to my Mentor Lauren-Nicole Popich for supporting me with my projects, for listening, for sharing examples like the Leeds Quiz, for guiding me to improve my project, and sharing how to set up 404 page, and for suggesting to convert the links into clickable text, among other suggestions.
 
 * Grateful to Coding Group member Patrick Hladun for guiding developer via Slack, to get console errors to show up, and how to track errors one by one. He also pointed out where names of the functions were clashing, and some ; vs : errors in developer's code.
 
@@ -404,38 +396,37 @@ All of the Questions created by the Developer. All of the links and research to 
 with image and link on the side, or on the extra page? Add links to readme, and images, or only here? make answer images
 as part of a comment for now, until correct code, where to place them
 Estonia-Quiz/questions/northerneurope.png
-Screenshot from this website:
-https://gisgeography.com/europe-map/ */
+Screenshot from [gisgeography.com](https://gisgeography.com/europe-map/)
 
 /* Future dev: Estonia-Quiz/questions/estonianflag.png  
 Estonia-Quiz/questions/flagstory.png
-Link to image of Estonia, with the story about Estonian flag colours, used from this website:
-https://www.visitestonia.com/en//estonian-flag */
+Link to image of Estonia, with the story about Estonian flag colours, from [visitEstonia.com](https://www.visitestonia.com/en//estonian-flag)
 
 /* Future dev: Add link to visit Estonia, inside the question/answer brackets or separate? */
 
 /* Future dev: add image of English Estonian keyboard incidents */
 
-/* Future dev: add https://www.eesti.ee/en/republic-of-estonia/republic-of-estonia/state-insignia. 
+/* Future dev: add [eesti.ee](https://www.eesti.ee/en/republic-of-estonia/republic-of-estonia/state-insignia)
 
 assets/images/nationalbird.png */
 
 
 /* Future dev: Add image of a lynx. Credit where got the image.
-https://www.visitestonia.com/en/lynx-and-bear-watching-tour-in-alutaguse-and-lahemaa-national-park?gad_source=5&gclid=EAIaIQobChMI5f2Whpa_gwMVhJhQBh28dgSrEAAYASAAEgIPl_D_BwE */
+[lynx watching tour](https://www.visitestonia.com/en/lynx-and-bear-watching-tour-in-alutaguse-and-lahemaa-national-park?gad_source=5&gclid=EAIaIQobChMI5f2Whpa_gwMVhJhQBh28dgSrEAAYASAAEgIPl_D_BwE)
 
-/* Future dev, add to answer/extra: https://www.stat.ee/en/find-statistics/statistics-theme/population */
+/* Future dev, add to answer/extra: [stat.ee](https://www.stat.ee/en/find-statistics/statistics-theme/population)
 
-/* Future dev or now: add explanation, as due to cov it changed for few years, info from this website:
-https://www.visitestonia.com/en/why-estonia/welcome-to-the-estonian-song-and-dance-celebration
+/* Future dev or now: add explanation, as due to cov it changed for few years, info about [the Estonian Song and Dance Festival](https://www.visitestonia.com/en/why-estonia/welcome-to-the-estonian-song-and-dance-celebration)
 due to covid, after 4 years this time:
 Estonia-Quiz/questions/differentyears.png 
+
+add note to question?
 
 ![Different years notice](assets/images/readmeimg/differentyears.png) */
 
 
 
-/* Future dev add: You can watch this to hear numbers in Estonian: https://youtube.com/shorts/y2RQWWda-Nc?feature=shared */
+/* Future dev add: You can watch this [Youtube video](https://youtube.com/shorts/y2RQWWda-Nc?feature=shared) to hear numbers in Estonian.
 
 
 
