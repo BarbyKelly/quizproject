@@ -1,6 +1,6 @@
 # Estonia Quiz
 
-This quiz has been created for anyone who would like to test their knowledge of Estonia. Website also includes extra links if visitor is curious to find out more about Estonia.
+This quiz has been created for anyone who would like to test their knowledge of Estonia. Website was also meant to include extra links if visitor was curious to find out more about Estonia. For now these links are part of the README file only.
 
 Link to the live site: https://barbykelly.github.io/Estonia-Quiz/
 
@@ -56,9 +56,10 @@ As a first time user, I want to:
 
 * Learn something new about Estonia.
 
-* Click on Extra tab to access links.
+* Click on tabs.
 
-* See that all of the links work.
+* See that everything works on the website.
+
 
 #### Returning User:
 
@@ -70,17 +71,19 @@ As a returning user I want to:
 
 * See updated info on the website.
 
-* Improve my score.
+* Improve my score. (Part of Future development, to keep scores?)
 
 * See that all of the links work.
 
 [Back to top](#contents)
+
 
 ## Website Structure
 This website includes one page where different areas can be accessed via buttons.
 - Welcome and Instructions area with buttons,
 - Quiz area with buttons,
 - Extra area with buttons.
+
 
 ### Wireframes
 
@@ -92,37 +95,35 @@ This website includes one page where different areas can be accessed via buttons
   * get a score
   * see score on the page
   * try quiz again
-  * see the correct answers/images pop-up
+  * see the correct answers/images pop-up (Part of future development to have images/links for the correct answer to pop up)
 
 * Website visitors are likely to:
   * click on "Start quiz"
   * read the questions
   * answer the questions
   * want to see their score
-  * try again
+  * try again by clicking on "Restart Quiz"
   * click on buttons, links and images
-  * click on "Extra"
+  * click on "Extra" (Part of the Future development)
   
 
-  Screenshot of Estonia Quiz Home Page, Wireframes:
+  Screenshot of Estonia Quiz Home Page with the original image idea, with Estonian books and DVD's, Wireframes:
 
-![Image of Estonian books, dvds](wireframehomepageestquiz.png)
-
-  
+![Image of Estonian books, dvds](docs/readmeimg/wireframehomepageestquiz.png)
 
 
+  Screenshot of Estonia Quiz "Quiz Score" view, Wireframes
 
+![Quiz Score view](docs/readmeimg/wireframequizscore.png)
 
-  Screenshot of Estonia Quiz Score Page, Wireframes
-![Wireframe screenshot ](wireframequizscore.png)
 
 Buttons top left, languages:
   * English
   * Eesti (Estonian)
-
-...add extra wireframe screenshots...
+(Part of Future Development plan due to time constraint, and developer being a beginner in coding)
 
 [Back to top](#contents)
+
 
 ## Design
 
@@ -130,26 +131,26 @@ Buttons top left, languages:
 
 * FAVICON
 
-Developer used an image of a cornflower (Estonian national flower), from her own collection, to create Favicon.
+Developer used an image of a cornflower (Estonian national flower), from her own collection, to create a Favicon.
 
 The original image: 
 
-![cornflower](cornflower.jpg)
+![cornflower](assets/images/websiteimg/cornflower.jpg)
 
 
 This website helped to convert the image into Favicon:
 https://favicon.io/favicon-converter/
 
 Screenshot of favicon on the website:
-
-![cornflower favicon image](faviconreadme.png)
+![cornflower favicon image](assets/images/readmeimg/faviconreadme.png)
 
 
 ### Color
-* As Estonian national flower is Cornflower, I chose Background color 'cornflower blue', found from this website: 
+* As Estonian national flower is a Cornflower, developer chose 'cornflower blue' as a Background color for the website. Developer found Cornflower blue color code from this website: 
 https://htmlcolorcodes.com/colors/cornflower-blue/
 
 ![CORNFLOWER BLUE COLOR](docs/readmeimg/cornflowerblue.png)
+
 
 * Color palette from this website:
 https://mycolor.space/?hex=%236495ED&sub=1
@@ -199,11 +200,12 @@ https://mycolor.space/?hex=%236495ED&sub=1
 Tested HTML on this website:
 https://validator.w3.org/nu/#textarea
 
-![HTML validation](testinghtml.png)
+![HTML validation](assets/images/readmeimg/testinghtml.png)
+
 
 Result after fixing the error and retesting:
 
-![HTML retest](htmlretest.png)
+![HTML retest](assets/images/readmeimg/htmlRetest.png)
 
 
 ### css
@@ -211,7 +213,7 @@ Result after fixing the error and retesting:
 Tested on this website:
 https://jigsaw.w3.org/css-validator/validator
 
-![CSS validation](csstest.png)
+![CSS validation](assets/images/readmeimg/csstest.png)
 
 
 ### Javascript
@@ -232,17 +234,18 @@ https://jigsaw.w3.org/css-validator/validator
 At first favicon icon did not appear on the website. Developer had used the four line code from favicon.io
 https://favicon.io/favicon-converter/
 
-![screenshot of favicon codes](faviconcodes.png)
+![favicon codes](assets/images/readmeimg/faviconcodes.png)
 
 After comparing Favicon codes to the codes from Love Running, developer noticed that path needed to be adjusted. After adjusting the path, favicon appeared on the website. 
 
 
 * HTML error
 
-- Developer saw this error when inspecting the website: "Uncaught TypeError: startQuizBtn is not a function     at HTMLButtonElement.onclick".
+- Developer saw this error when inspecting the website: "Uncaught TypeError: startQuizBtn is not a function at HTMLButtonElement.onclick".
 
-- From this site: https://stackoverflow.com/questions/51282433/typeerror-functionname-is-not-a-function-at-htmlbuttonelement-onclick developer got the answer: 
-startQuizBtn had to be startQuizBtnFunction as in script.js.
+- Developer found the solution after reading this article: https://stackoverflow.com/questions/51282433/typeerror-functionname-is-not-a-function-at-htmlbuttonelement-onclick
+
+- Error had been caused by startQuizBtn, were it was supposed to be startQuizBtnFunction instead.
 
 [Back to top](#contents)
 
@@ -255,20 +258,20 @@ startQuizBtn had to be startQuizBtnFunction as in script.js.
 
 1. Developer clicked on this link https://github.com/Code-Institute-Org/ci-full-template under Love Maths "Getting Set Up" video.
 
-![link for code template](<CI.template link.png>)
+![link for code template](assets/images/readmeimg/CI.templateLink.png)
+
 
 2. As the original template was for CodeAnywhere, and developer works with github, developer clicked on https://github.com/Code-Institute-Org/gitpod-full-template
 
-![github template](<github template.png>)
+![github template](assets/images/readmeimg/githubTemplate.png)
 
 3. Developer clicked on "Use this template", and then clicked on "Create a new repository":
 
-![use this template](repolink.png)
+![use this template](assets/images/readmeimg/repolink.png)
 
 4. Filled in Repository name, and clicked on "Create repository"
 
-![create repo](createRepo.png)
-
+![create repo](assets/images/readmeimg/createRepo.png)
 
 
 [Back to top](#contents)
@@ -320,11 +323,11 @@ https://favicon.io/favicon-converter/
 
   * Screenshot of Estonia Quiz home page, created with Balsamiq Wireframes:
 
-  ![Image of books, videos, and quiz box](wireframehomepage.png)
-
+  ![Image of books, videos, and quiz box](assets/images/readmeimg/wireframehomepageestquiz.png)
+  
   * Screenshot of Estonia Quiz test score page, created with Balsamiq Wireframes:
 
-
+![Quiz Score](assets/images/readmeimg/wireframequizscore.png)
 
   * Screenshot of Estonia Quiz Extra page, created with Balsamiq Wireframes:
 
@@ -359,7 +362,7 @@ All images used for Estonia Quiz background, and favicon image, are created by t
 
 /* Links/research for future development: 
 
-All of the Questions created by the Developer. All of the links and research to support the validity of the questions/answers, readmegathered by the developer. */
+All of the Questions created by the Developer. All of the links and research to support the validity of the questions/answers, readme gathered by the developer. */
 
 /* Future dev: Correct answer to be made hidden, and then pop up for all of the questions,
 with image and link on the side, or on the extra page? Add links to readme, and images, or only here? make answer images
@@ -378,6 +381,7 @@ https://www.visitestonia.com/en//estonian-flag */
 /* Future dev: add image of English Estonian keyboard incidents */
 
 /* Future dev: add https://www.eesti.ee/en/republic-of-estonia/republic-of-estonia/state-insignia. 
+
 assets/images/nationalbird.png */
 
 
@@ -389,7 +393,11 @@ https://www.visitestonia.com/en/lynx-and-bear-watching-tour-in-alutaguse-and-lah
 /* Future dev or now: add explanation, as due to cov it changed for few years, info from this website:
 https://www.visitestonia.com/en/why-estonia/welcome-to-the-estonian-song-and-dance-celebration
 due to covid, after 4 years this time:
-Estonia-Quiz/questions/differentyears.png */
+Estonia-Quiz/questions/differentyears.png 
+
+![Different years notice](assets/images/readmeimg/differentyears.png) */
+
+
 
 /* Future dev add: You can watch this to hear numbers in Estonian: https://youtube.com/shorts/y2RQWWda-Nc?feature=shared */
 
