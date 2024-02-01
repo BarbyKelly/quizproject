@@ -196,22 +196,17 @@ Screenshot of favicon on the website:
 
 ## Sites, Apps Used
 
-Developer used these sites to create Estonia Quiz project: 
+Developer used these sites/apps to create Estonia Quiz project: 
 
-* Balsamiq Wireframes
-* Github
-* VS Code
-* Code Institute
+* [Balsamiq Wireframes](https://balsamiq.com/)
+* [GitHub](https://github.com/)
+* [VS Code](https://code.visualstudio.com/)
 
-.... add links to all?
 
 [Back to top](#contents)
 
 
 ## Testing
-
-* Throughout the project testing HTML for errors and fixing errors.
-
 
 ### HTML
 
@@ -247,7 +242,11 @@ The developer found from [here](https://stackoverflow.com/questions/27441803/why
 After adding the suggested code, alert for 'const' was solved:
 ![Alert changed](readmefixerroralert.png)
 
+### Lighthouse
 
+Tested with Lighthouse:
+
+![Lighthouse test](assets/images/readmeimg/readmelighthousetest.png)
 
 [Back to top](#contents)
 
