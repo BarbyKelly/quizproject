@@ -1,4 +1,4 @@
-/* This 'before, after' code (except font), parts of body code, and .container, copied from https://youtu.be/riDzcEQbX6k?feature=shared */
+/* This 'before, after' code (except font), parts of body code, and .container, code followed from https://youtu.be/riDzcEQbX6k?feature=shared */
 *, *::before, *::after {
     box-sizing: border-box;
     font-family: Comfortaa, sans-serif;
@@ -9,7 +9,7 @@ html {
     height: 100%;
 }
 
-/* Background image */
+/* Background image. Credit in README. Photo taken by the developer */
 body {
     background-image: url("../images/cornflower.jpg");
     background-repeat: no-repeat;
@@ -93,7 +93,7 @@ h2 {
     font-weight: 500;
 }
 
-/* Buttons styling edited for now following code from this video: https://youtu.be/rFWbAj40JrQ?feature=shared */
+/* Buttons styling edited following code from this video https://youtu.be/rFWbAj40JrQ?feature=shared */
 
 .btn {
     border: 0.1rem solid #8090BC;
@@ -109,7 +109,7 @@ h2 {
     color: #6495ED;
 }
 
-/* button grid code and other button styles base from: https://youtu.be/riDzcEQbX6k?feature=shared not ok at the moment*/
+/* Button grid code and other button styles base from: https://youtu.be/riDzcEQbX6k?feature=shared */
 .btn-grid {
     display: grid;
     grid-template-columns: repeat(1, auto);
@@ -125,7 +125,7 @@ h2 {
 }
 
 
-/* Colors for correct and incorrect answers, copied from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/css/style.css*/
+/* Colors for correct and incorrect answers, copied from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/css/style.css */
 .btn.correct {
 background-color: green;
 color: black
@@ -162,5 +162,3 @@ color: black
     text-align: center;
     line-height: 20px;
 }
-
-/* Media queries */

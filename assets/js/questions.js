@@ -1,7 +1,7 @@
-/* All of the Questions created by the developer.
-Layout structure for questions.js file copied from https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js */
+// All of the Questions created by the developer. Credit in README
+// Layout structure for questions.js file copied from https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js
 
-/* Create an Array with all of the questions, and answers */
+// Create an Array with all of the questions, and answers
 /*jshint esversion: 6 */
 const quiz = [
     {
@@ -69,9 +69,9 @@ const quiz = [
         question: "Which of these letters are part of the Estonian alphabet?",
         answer: "õ,ä,ö,ü",
         options: [
-            "æ, ø, å", /* Danish. From: https://www.danishnet.com/culture/danish-alphabet/ */
+            "æ, ø, å", // Danish. From: https://www.danishnet.com/culture/danish-alphabet/
             "õ,ä,ö,ü",
-            "δ, ζ, θ, λ" /* Greek: Delta, Zeta, Theta, Lambda from: https://www.greekalphabetletters.com/ */
+            "δ, ζ, θ, λ" // Greek: Delta, Zeta, Theta, Lambda from: https://www.greekalphabetletters.com/
         ]
     },
     {
@@ -99,8 +99,8 @@ const quiz = [
         question: "How do you say 'One, two, three' in Estonian?",
         answer: "Üks, kaks, kolm",
         options: [
-            "Üks, kaks, kolm",
-            "Yksi, kaksi, kolme", //Finnish
-            "Eins, zwei, drei" //German
+            "Üks, kaks, kolm", // Estonian
+            "Yksi, kaksi, kolme", // Finnish
+            "Eins, zwei, drei" // German
         ]
     }];
