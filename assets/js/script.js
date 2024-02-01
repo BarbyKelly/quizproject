@@ -1,4 +1,4 @@
-// Base for js code based on: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js
+// Base for js from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js
 
 // Get Elements by Id, Class, Name
 const instructionsArea = document.getElementById("instructionsArea");
@@ -10,19 +10,14 @@ const answerBtnArea = document.getElementById("answer-btn-area");
 const restartQuizBtn = document.getElementById("restart-quiz-btn");
 const resultScoreArea = document.getElementById("score-area");
 const optionBtn = document.getElementById("answer-btn");
-const myButton = document.getElementById('my-button'); // From Patrick Hladun, via Slack
 
 let questionNumber = 0;
 let userScore = 0;
 
-// Event listeners - From Patrick Hladun, via Slack
+// Event listeners - From Patrick Hladun, via Slack, placed all together (Mentor's suggestion)
 startQuizBtn.addEventListener('click', startQuizBtnFunction());
-myButton.addEventListener('click', myStartFunction);
 nextQuestionBtn.addEventListener('click', nextQuestionBtnFunction());
-
-function myStartFunction() {
-
-};
+restartQuizBtn.addEventListener('click', restartQuizBtnFunction);
 
 function startQuizBtnFunction() {
     instructionsArea.style.display = 'none';
@@ -44,37 +39,37 @@ function nextQuestionBtnFunction() {
     }
 };
 
-/* Function for showQuestions like in : https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js */
+// Function for showQuestions like in : https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js
 function showQuestions(index) {
-   // resetState();
-   // let question_tag = '<span>' + quiz[index].numb + "." +question+'</span>';
+    resetState();
+    let question_tag = '<span>' + quiz[index].numb + "." +question+'</span>';
     let option_tag =
     '<button class = "answer-btn"><span>'+quiz[index].options[0]+'</span></button>'
     +'<button class = "answer-btn"><span>'+quiz[index].options[1]+'</span></button>'
     +'<button class = "answer-btn"><span>'+quiz[index].options[2]+'</span></button>';
-   // questionText.innerHTML = question_tag;
-    // answerBtn.innerHTML = option_tag;
-    // getAnswer();
+    questionText.innerHTML = question_tag;
+    answerBtn.innerHTML = option_tag;
+    getAnswer();
     }
 
-    /* Code originally learned from: link youtube add, modified following code from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js */
-/* function resetState() {
+// Code originally learned from: youtube, modified following code from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js */
+function resetState() {
     questionCounter(1);
     showScore(0);
     while (answerBtn.firstChild) {
     answerBtn.removeChild(answerBtn.firstChild);
     nextQuestionBtn.style.display('hide');
     }
-} */
+}
 
-/* Code followed from https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js */ 
+// Code followed from https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js
 function questionCounter() {
     let questionLeft = document.getElementById("questions-left-counter");
     let questionLeftTag = '<span>'+quiz[questionNumber].numb+'</span>';
     questionLeft.innerHTML = questionLeftTag;
 }
 
-/* original code following youtube video... adjusted https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js */
+// Original code following youtube video, adjusted following Leeds quiz: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js */
 function selectAnswer() {
     [...optionBtn].forEach(option=>{
         option.addEventListener("click",event=>{
@@ -121,7 +116,6 @@ function showResult() {
 }
 
 // Restart quiz followed from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js
-restartQuizBtn.addEventListener('click', restartQuizBtnFunction);
 
 function restartQuizBtnFunction() {
     instructionsArea.style.display = 'none';
