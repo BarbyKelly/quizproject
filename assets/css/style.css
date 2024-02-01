@@ -19,8 +19,8 @@ body {
     color: #333333;
     padding: 16px;
     display: flex;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     justify-content: flex-end;
     align-items: flex-end;
     text-align: center;
@@ -157,7 +157,7 @@ color: black
     right: 0px;
     left: 0px;
     bottom: 0px;
-    width: 100%;
+    width: 80%;
     color: black;
     text-align: center;
     line-height: 20px;

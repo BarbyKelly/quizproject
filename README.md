@@ -4,7 +4,8 @@ Estonia quiz has been created by Software Development student, as part of Code I
 
 Link to [Estonia Quiz](https://barbykelly.github.io/Estonia-Quiz/)
 
-...image of my website on different gadgets ... place here...from am I responsive.
+
+[Am I Responsive?](https://ui.dev/amiresponsive?url=https://barbykelly.github.io/Estonia-Quiz/)
 
 ## __Contents__
 
