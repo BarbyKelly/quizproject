@@ -2,10 +2,12 @@
 
 Estonia quiz has been created by Software Development student, as part of Code Institute's Javascript project. This quiz is for anyone who would like to test their knowledge about Estonia. 
 
-Link to [Estonia Quiz](https://barbykelly.github.io/Estonia-Quiz/)
+Link to the live site: [Estonia Quiz](https://barbykelly.github.io/Estonia-Quiz/)
 
+Image from [Am I Responsive?](https://ui.dev/amiresponsive?url=https://barbykelly.github.io/Estonia-Quiz/) to show how website looks on different screen sizes.
 
-[Am I Responsive?](https://ui.dev/amiresponsive?url=https://barbykelly.github.io/Estonia-Quiz/)
+![Am I Responsive](assets/images/readmeimg/readmeamiresponsive.png)
+
 
 ## __Contents__
 
