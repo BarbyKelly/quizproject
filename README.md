@@ -108,14 +108,14 @@ Website visitors are likely to:
   - try again by clicking on "Restart Quiz"
   - click on buttons, links and images
 
-  Screenshot of Estonia Quiz Home Page with the original image idea, with Estonian books and DVD's, Wireframes:
+Screenshot of Estonia Quiz Home Page with the original image idea, with Estonian books and DVD's, Wireframe:
 
-![Image of Estonian books, dvds](docs/readmeimg/wireframehomepageestquiz.png)
+![Image of Estonian books, dvds](assets/images/readmeimg/wireframehomepageestquiz.png)
 
 
-  Screenshot of Estonia Quiz "Quiz Score" view, Wireframes
+Screenshot of Estonia Quiz "Quiz Score" view, Wireframe
 
-![Quiz Score view](docs/readmeimg/wireframequizscore.png)
+![Quiz Score view](assets/images/readmeimg/wireframequizscore.png)
 
 
 Buttons top left, languages:
@@ -147,10 +147,9 @@ Screenshot of favicon on the website:
 
 
 ### Color
-As the Estonian national flower is a Cornflower, developer chose 'cornflower blue' as a Background color for the website. Developer found Cornflower blue color code from this website: 
-[Colorcodes.com](https://htmlcolorcodes.com/colors/cornflower-blue/)
 
-![CORNFLOWER BLUE COLOR](docs/readmeimg/cornflowerblue.png)
+As the Estonian national flower is a Cornflower, developer chose 'cornflower blue' as a Background color for the website. Developer found Cornflower blue color code from this website: 
+![Colorcodes.com](assets/images/readmeimg/cornflowerblue.png)
 
 
 Color palette from this website:
@@ -159,13 +158,25 @@ Color palette from this website:
 
 ### Font/style
 
+![Comfortaa](assets/images/readmeimg/comfortaareadme.png)
+
+
 [Back to top](#contents)
 
 ## Features
 
 ### Existing Features 
 
-.....
+- Background image of Estonian national flower, cornflower
+- Estonia Quiz instructions
+- Start Quiz button
+- Next button
+- Restart Quiz button
+- Ten questions
+- How many questions answered indicator
+- Footer with copyright sign
+- Favicon
+
 
 ### Future Features
 
@@ -181,11 +192,16 @@ Color palette from this website:
 
 - Add code to make images pop up when visitor has made their choice. Image of the correct answer (eg picture of lynx)
 
+- Get all buttons to work in different browsers/ports
+
+- STyle Instructions area
 
 [Back to top](#contents)
 
+
 ## Languages Used
 
+![Languages used](assets/images/readmeimg/languagesreadme.png)
 
 
 [Back to top](#contents)
@@ -239,6 +255,7 @@ The developer found from [here](https://stackoverflow.com/questions/27441803/why
 After adding the suggested code, alert for 'const' was solved:
 ![Alert changed](readmefixerroralert.png)
 
+
 ### Lighthouse
 
 Tested with Lighthouse:
@@ -273,17 +290,21 @@ Error had been caused by startQuizBtn, were it was supposed to be startQuizBtnFu
 
 ## Known Bugs
 
+- Start Quiz button not working on developer's port. Port error showing  up. 
 
+- The developer was unable to check how questions and answers show up on the website, since the Start Quiz button stopped working. The developer searched for help via Slack, on Google, from mentor and tutor, other coders, and so far did not manage to fix it.
+
+- Instructions styling seemed to be not responsive.
 
 [Back to top](#contents)
 
 
 ## Deployment
 
+Developer is sharing steps to creating a repo:
 1. Developer clicked on this [GitHub link](https://github.com/Code-Institute-Org/ci-full-template) under Love Maths "Getting Set Up" video.
 
 ![link for code template](assets/images/readmeimg/CI.templateLink.png)
-
 
 2. As the original template was for CodeAnywhere, and developer works with GitHub, developer clicked on [GitPod template](https://github.com/Code-Institute-Org/gitpod-full-template)
 
@@ -297,7 +318,7 @@ Error had been caused by startQuizBtn, were it was supposed to be startQuizBtnFu
 
 ![create repo](assets/images/readmeimg/createRepo.png)
 
-5. next step add... deployment
+5. Deployed using GitHub
 
 
 [Back to top](#contents)
@@ -338,10 +359,9 @@ Template used from
 
 - Ideas, how to articulate user's goals, written down after reading this [article](https://balsamiq.com/learn/articles/five-steps-to-great-wireframes/)
 
-![Articulate article screenshot](docs/readmeimg/articulate.png)
+![Articulate article screenshot](assets/images/readmeimg/articulate.png)
 
-
-- Learned how to use Wirefame from [this Youtube video](https://www.youtube.com/watch?v=9Pv002d0Kls&list=PLVlyYfbClWxQDCGC-A1FkbGyIxtuIN5IM&index=1)
+- The developer learned how to use Wirefames from [this Youtube video](https://www.youtube.com/watch?v=9Pv002d0Kls&list=PLVlyYfbClWxQDCGC-A1FkbGyIxtuIN5IM&index=1)
 
 
 - Screenshot of Estonia Quiz home page, created with Balsamiq Wireframes:
@@ -376,19 +396,18 @@ All of the questions created by the developer, from her own experience, her own 
 
 Below are the websites/images that developer used to validate the answers for the Estonia quiz:
 
-- Estonia-Quiz/questions/northerneurope.png
+- Northern Europe, screenshot from [gisgeography.com](https://gisgeography.com/europe-map/)
 
-Screenshot from [gisgeography.com](https://gisgeography.com/europe-map/)
+![Northern Europe](assets/images/popupextraimages/northerneurope.png)
 
-- ![Estonian flag](Estonia-Quiz/questions/estonianflag.png)  
 
 - Estonia-Quiz/questions/flagstory.png
-[Flag story](https://www.visitestonia.com/en//estonian-flag)
+[Flag story]![alt text](assets/images/popupextraimages/flagstory.png)
 
 - [eesti.ee](https://www.eesti.ee/en/republic-of-estonia/republic-of-estonia/state-insignia)
 
-- [Barn swallow](assets/images/nationalbird.png)
-
+- Estonian national bird: 
+![Barn swallow](assets/images/popupextraimages/nationalbird.png)
 
 - [lynx watching tour](https://www.visitestonia.com/en/lynx-and-bear-watching-tour-in-alutaguse-and-lahemaa-national-park?gad_source=5&gclid=EAIaIQobChMI5f2Whpa_gwMVhJhQBh28dgSrEAAYASAAEgIPl_D_BwE)
 
