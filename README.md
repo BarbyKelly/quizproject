@@ -234,14 +234,20 @@ Tested CSS with
 ![CSS validation](assets/images/readmeimg/csstest.png)
 
 
-### Javascript
+### JavaScript
+
+Tested JavaScript with [JSHint](https://jshint.com/)
+
+Warning showed up for 'const':
+![JavaScript test](readmejstest.png)
+
+The developer found from [here](https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const) how to modify jshint alert:
+![Code to modify alert](readmejshintcode.png)
+
+After adding the suggested code, alert for 'const' was solved:
+![Alert changed](readmefixerroralert.png)
 
 
-...on different browsers
-...lighthouse
-...inspect
-... readme links 
-...readme content list links
 
 [Back to top](#contents)
 
