@@ -1,6 +1,6 @@
-# Estonia Quiz
+# Estonia Quiz 
 
-Estonia quiz has been created by Software Development student, as part of Code Institute's Javascript project. This quiz is for anyone who would like to test their knowledge about Estonia. 
+Estonia quiz has been created by a Software Development student, as part of Code Institute's Javascript project. This quiz is for anyone who would like to test their knowledge about Estonia. 
 
 Link to the live site: [Estonia Quiz](https://barbykelly.github.io/Estonia-Quiz/)
 
@@ -9,42 +9,42 @@ Image from [Am I Responsive?](https://ui.dev/amiresponsive?url=https://barbykell
 ![Am I Responsive](assets/images/readmeimg/readmeamiresponsive.png)
 
 
-## __Contents__
+## Contents
 
-* [User Experience](#user-experience)
-  * [User Stories](#user-stories)
+[User Experience](#user-experience)
+  - [User Stories](#user-stories)
 
-* [Wireframes](#wireframes)
+[Wireframes](#wireframes)
 
-* [Design](#design)
-  * [Images](#images)
-  * [Color](#color)
-  * [Font/Style](#fontstyle)
+[Design](#design)
+  - [Images](#images)
+  - [Color](#color)
+  - [Font/Style](#fontstyle)
 
-* [Features](#features)
+[Features](#features)
 
-  * [Existing Features](#existing-features)
+  - [Existing Features](#existing-features)
 
-  * [Future Features](#future-features)
+  - [Future Features](#future-features)
   
-* [Languages Used](#languages-used)
+[Languages Used](#languages-used)
 
-* [Sites, Apps Used](#sites-apps-used)
+[Sites, Apps Used](#sites-apps-used)
 
-* [Testing](#testing)
+[Testing](#testing)
 
-* [Bug fixing](#bug-fixing)
+[Bug fixing](#bug-fixing)
 
-* [Known Bugs](#known-bugs)
+[Known Bugs](#known-bugs)
 
-* [Deployment](#deployment)
+[Deployment](#deployment)
 
-* [Credits](#credits)
-  * [Code](#code)
-  * [Questions](#questions)
-  * [Images](#images)
+[Credits](#credits)
+  - [Code](#code)
+  - [Questions](#questions)
+  - [Images](#images)
 
-* [Acknowledgements](#acknowledgements)
+[Acknowledgements](#acknowledgements)
 
 
 ## User Experience
@@ -53,61 +53,60 @@ Image from [Am I Responsive?](https://ui.dev/amiresponsive?url=https://barbykell
 
 #### First Time User:
 
-As a first time user, I want to:
+First time user, may want to:
 
-* Check my knowledge about Estonia.
+- Check their knowledge about Estonia.
 
-* Learn something new about Estonia.
+- Learn something new about Estonia.
 
-* Click on tabs.
+- Click on tabs.
 
-* See that everything works on the website.
+- See that everything works on the website.
 
 
 #### Returning User:
 
-As a returning user I want to:
+Returning user may want to:
 
-* See different quiz options.
+- See different quiz options.
 
-* Test my knowledge again.
+- Test their knowledge again.
 
-* See updated info on the website.
+- See updated info on the website.
 
-* Improve my score. (Part of Future development, to keep scores?)
+- Improve their score.
 
-* See that all of the links work.
+- See that all of the links work.
 
 [Back to top](#contents)
 
 
 ## Website Structure
+
 This website includes one page where different areas can be accessed via buttons.
 - Welcome and Instructions area with buttons,
-- Quiz area with buttons,
+- Quiz area with buttons.
 
 
 ### Wireframes
 
-* This website is for anyone interested in doing a quiz, or who wants to learn more about Estonia.
+This website is for anyone interested in doing a quiz, or who wants to learn more about Estonia.
 
-* Goal of the quiz is to:
-  * test knowledge
-  * play a game
-  * get a score
-  * see score on the page
-  * try quiz again
-  * see the correct answers
+Goal of the quiz is to:
+  - test knowledge
+  - play a game
+  - get a score
+  - see score on the page
+  - try quiz again
+  - see the correct answers
 
-* Website visitors are likely to:
-  * click on "Start quiz"
-  * read the questions
-  * answer the questions
-  * want to see their score
-  * try again by clicking on "Restart Quiz"
-  * click on buttons, links and images
-  * click on "Extra" (Part of the Future development)
-  
+Website visitors are likely to:
+  - click on "Start quiz"
+  - read the questions
+  - answer the questions
+  - want to see their score
+  - try again by clicking on "Restart Quiz"
+  - click on buttons, links and images
 
   Screenshot of Estonia Quiz Home Page with the original image idea, with Estonian books and DVD's, Wireframes:
 
@@ -120,8 +119,8 @@ This website includes one page where different areas can be accessed via buttons
 
 
 Buttons top left, languages:
-  * English
-  * Eesti (Estonian)
+  - English
+  - Eesti (Estonian)
 (Part of Future Development plan due to time constraint, and developer being a beginner in coding)
 
 [Back to top](#contents)
@@ -131,7 +130,7 @@ Buttons top left, languages:
 
 ### Images
 
-* FAVICON
+FAVICON
 
 Developer used an image of a cornflower (Estonian national flower), from her own collection, to create a Favicon.
 
@@ -148,16 +147,14 @@ Screenshot of favicon on the website:
 
 
 ### Color
-* As Estonian national flower is a Cornflower, developer chose 'cornflower blue' as a Background color for the website. Developer found Cornflower blue color code from this website: 
+As the Estonian national flower is a Cornflower, developer chose 'cornflower blue' as a Background color for the website. Developer found Cornflower blue color code from this website: 
 [Colorcodes.com](https://htmlcolorcodes.com/colors/cornflower-blue/)
 
 ![CORNFLOWER BLUE COLOR](docs/readmeimg/cornflowerblue.png)
 
 
-* Color palette from this website:
+Color palette from this website:
 [Mycolor.space](https://mycolor.space/?hex=%236495ED&sub=1)
-
-...Natural Palette or Neighbor Palette, which suits better. Add screenshot then of the palette used...
 
 
 ### Font/style
@@ -172,26 +169,24 @@ Screenshot of favicon on the website:
 
 ### Future Features
 
-* Add variations of the quiz eg wildlife, culture, music, authors, movies, national symbols and so on.
+- Add variations of the quiz eg wildlife, culture, music, authors, movies, national symbols and so on.
 
-* Add difficulty levels: easy, medium, difficult (credit: difficulty levels were suggested by developer's older child)
+- Add difficulty levels: easy, medium, difficult (credit: difficulty levels were suggested by developer's older child)
 
-* Add language Buttons on top, to be able to do the quiz in different languages:
-  * English
-  * Eesti (Estonian)
+- Add language Buttons on top, to be able to do the quiz in different languages:
+  - English
+  - Eesti (Estonian)
 
-* Add "Extra" button to the website, which would bring visitors to an area with links and images to find out more about Estonia 
+- Add "Extra" button to the website, which would bring visitors to an area with links and images to find out more about Estonia 
 
-* Add code to make images pop up when visitor has made their choice. Image of the correct answer (eg picture of lynx)
-
-* Add funny incidents with English-Estonian keyboard
+- Add code to make images pop up when visitor has made their choice. Image of the correct answer (eg picture of lynx)
 
 
 [Back to top](#contents)
 
 ## Languages Used
 
-...add image from github before submitting, list of html, css, javascript, other
+
 
 [Back to top](#contents)
 
@@ -200,9 +195,9 @@ Screenshot of favicon on the website:
 
 Developer used these sites/apps to create Estonia Quiz project: 
 
-* [Balsamiq Wireframes](https://balsamiq.com/)
-* [GitHub](https://github.com/)
-* [VS Code](https://code.visualstudio.com/)
+- [Balsamiq Wireframes](https://balsamiq.com/)
+- [GitHub](https://github.com/)
+- [VS Code](https://code.visualstudio.com/)
 
 
 [Back to top](#contents)
@@ -255,7 +250,7 @@ Tested with Lighthouse:
 
 ## Bug fixing
 
-* Favicon
+### Favicon
 
 At first favicon icon did not appear on the website. Developer had used the four line code from
 [Favicon.io](https://favicon.io/favicon-converter/)
@@ -265,19 +260,20 @@ At first favicon icon did not appear on the website. Developer had used the four
 After comparing Favicon codes to the codes from Love Running, developer noticed that path needed to be adjusted. After adjusting the path, favicon appeared on the website. 
 
 
-* HTML error
+### HTML error
 
-- Developer saw this error when inspecting the website: "Uncaught TypeError: startQuizBtn is not a function at HTMLButtonElement.onclick".
+Developer saw the following error when inspecting the website: "Uncaught TypeError: startQuizBtn is not a function at HTMLButtonElement.onclick".
 
-- Developer found the solution after reading this [article](https://stackoverflow.com/questions/51282433/typeerror-functionname-is-not-a-function-at-htmlbuttonelement-onclick)
+Developer found the solution after reading this [article](https://stackoverflow.com/questions/51282433/typeerror-functionname-is-not-a-function-at-htmlbuttonelement-onclick)
 
-- Error had been caused by startQuizBtn, were it was supposed to be startQuizBtnFunction instead.
+Error had been caused by startQuizBtn, were it was supposed to be startQuizBtnFunction instead.
 
 [Back to top](#contents)
 
 
 ## Known Bugs
-...if not showing properly on some sites/phones
+
+
 
 [Back to top](#contents)
 
@@ -301,7 +297,7 @@ After comparing Favicon codes to the codes from Love Running, developer noticed 
 
 ![create repo](assets/images/readmeimg/createRepo.png)
 
-5. next step add...
+5. next step add... deployment
 
 
 [Back to top](#contents)
@@ -309,74 +305,76 @@ After comparing Favicon codes to the codes from Love Running, developer noticed 
 
 ## Credits
 
-* Favicon 
+### Favicon 
 
-  * Favicon created using [favicon converter](https://favicon.io/favicon-converter/)
+Favicon created using [favicon converter](https://favicon.io/favicon-converter/)
 
-  * These 3 lines of code, for favicon, were copied from Love Running:
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+These 3 lines of code, for favicon, were copied from Love Running:
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
 
-  * This line of code:
-  <link rel="manifest" href="/site.webmanifest"> 
-  for Favicon, was copied from
-  https://favicon.io/favicon-converter/
+This line of code:
+<link rel="manifest" href="/site.webmanifest"> 
+for Favicon, was copied from
+https://favicon.io/favicon-converter/
 
-* Readme
+Rest of the code credited in index.html, script.js, questions.js, style.css and in other parts of README.
 
-  * Parts of the Readme template used from [Code Institute's Sample README](https://github.com/Code-Institute-Solutions/SampleREADME?tab=readme-ov-file) 
+### Readme
 
-   and [Everything Quiz](https://github.com/Tony118g/the-everything-quiz/blob/main/README.md) 
+Parts of the Readme template used from [Code Institute's Sample README](https://github.com/Code-Institute-Solutions/SampleREADME?tab=readme-ov-file) 
 
-   Reading The Everything Quiz README, highlighted for me the level of details that Quiz website README needs.
+The Contents menu learned from: [Everything Quiz](https://github.com/Tony118g/the-everything-quiz/blob/main/README.md) 
 
+Reading The Everything Quiz README, highlighted for the developer the level of details that Quiz website README needs, and the importance of the README. 
 
-* User Stories:
-  Template used from
-  [Atlassian.com](https://www.atlassian.com/agile/project-management/user-stories)
-
-
-* Wirefames
-
-  * Ideas, how to articulate user's goals, written down after reading this [article](https://balsamiq.com/learn/articles/five-steps-to-great-wireframes/)
-
- * ![Articulate article screenshot](docs/readmeimg/articulate.png)
+### User Stories:
+Template used from
+[Atlassian.com](https://www.atlassian.com/agile/project-management/user-stories)
 
 
-  Learned how to use Wirefame from [this Youtube video](https://www.youtube.com/watch?v=9Pv002d0Kls&list=PLVlyYfbClWxQDCGC-A1FkbGyIxtuIN5IM&index=1)
+### Wirefames
+
+- Ideas, how to articulate user's goals, written down after reading this [article](https://balsamiq.com/learn/articles/five-steps-to-great-wireframes/)
+
+![Articulate article screenshot](docs/readmeimg/articulate.png)
 
 
-  * Screenshot of Estonia Quiz home page, created with Balsamiq Wireframes:
+- Learned how to use Wirefame from [this Youtube video](https://www.youtube.com/watch?v=9Pv002d0Kls&list=PLVlyYfbClWxQDCGC-A1FkbGyIxtuIN5IM&index=1)
 
-  * ![Image of books, videos, and quiz box](assets/images/readmeimg/wireframehomepageestquiz.png)
+
+- Screenshot of Estonia Quiz home page, created with Balsamiq Wireframes:
+
+![Image of books, videos, and quiz box](assets/images/readmeimg/wireframehomepageestquiz.png)
+
+Photo taken by the developer. Developer opted for Cornwlower image in the end, as it looked better and was more meaningful for the website to have the national flower of Estonia.
   
-  * Screenshot of Estonia Quiz test score page, created with Balsamiq Wireframes:
+- Screenshot of Estonia Quiz test score page, created with Balsamiq Wireframes:
 
-  * ![Quiz Score](assets/images/readmeimg/wireframequizscore.png)
+![Quiz Score](assets/images/readmeimg/wireframequizscore.png)
 
-  * Screenshot of Estonia Quiz Extra page, created with Balsamiq Wireframes:
 
 ### Code
 
-* Base for Estonia quiz from [Leeds Quiz](https://github.com/andreas-ka/leeds-quiz). Developer watched various YouTube quiz tutorials, and kept returning to Leeds Quiz, as developer liked the style of that quiz.
+Base for Estonia quiz from [Leeds Quiz](https://github.com/andreas-ka/leeds-quiz). Developer watched various YouTube quiz tutorials, and kept returning to Leeds Quiz, as developer liked the style of that quiz.
 
-* Script
+- Script
 
-  Developer learned how page is loading faster, if scripts are placed at the bottom of the body in html from [W3 schools website](https://www.w3schools.com/js/js_whereto.asp)
+Developer learned how page is loading faster, if scripts are placed at the bottom of the body in html from [W3 schools website](https://www.w3schools.com/js/js_whereto.asp)
   ![screenshot of text](script.png)
 
 
-* Footer
+- Footer
 
 Developer learned how to make Copyright sign &copy; from [Mental-Arithmetic-Quiz project](https://github.com/Shida18719/Mental-Arithmetic-Quiz/blob/main/index.html)
 
 
 ### Questions
 
-* All of the questions created by the developer, from her own experience, her own knowledge or researching updated information eg population details. 
+All of the questions created by the developer, from her own experience, her own knowledge or researching updated information eg population details. 
 
-* Here are the websites/images that developer used to validate the answers for Estonia quiz:
+Below are the websites/images that developer used to validate the answers for the Estonia quiz:
 
 - Estonia-Quiz/questions/northerneurope.png
 
@@ -408,18 +406,21 @@ Usually every 5 years [the Estonian Song and Dance Festival](https://www.visites
 
 ### Images 
 
-* Website's background image, cornflower, taken by the developer.
+Website's background image, cornflower, and the image with Estonian books and DVD's (wireframe), both taken by the developer.
 
-* Same background image used to create a favicon image, using [favicon converter](https://favicon.io/favicon-converter/)
+Same background image used to create a favicon image, using [favicon converter](https://favicon.io/favicon-converter/)
 
 [Back to top](#contents)
 
+
 ### Acknowledgements
 
-* Grateful to my Mentor Lauren-Nicole Popich for supporting me with my projects, for listening, for sharing examples like the Leeds Quiz, for guiding me to improve my project, and sharing how to set up 404 page, and for suggesting to convert the links into clickable text, among other suggestions.
+- Grateful to my Mentor Lauren-Nicole Popich for supporting me with my projects, for listening, for sharing examples like the Leeds Quiz, for guiding me to improve my project, and sharing how to set up 404 page, and for suggesting to convert the links into clickable text, among other suggestions.
 
-* Grateful to Coding Group member Patrick Hladun for guiding developer via Slack, to get console errors to show up, and how to track errors one by one. He also pointed out where names of the functions were clashing, and some ; vs : errors in developer's code.
+- Grateful to Coding Group member Patrick Hladun for guiding developer via Slack, to get console errors to show up, and how to track errors one by one. He also pointed out where names of the functions were clashing, and some ; vs : errors in developer's code.
 
-* Thank you to Laura Mayock, group's Cohort Facilitator, for our weekly group meetings and guidance, encouraging students to show and talk about their projects. And to everyone who took part of the group meetings, shared their projects, and everyone who supported fellow students via Slack.
+- Thank you to Laura Mayock, group's Cohort Facilitator, for our weekly group meetings and guidance, encouraging students to show and talk about their projects. And to everyone who took part of the group meetings, shared their projects, and everyone who supported fellow students via Slack.
+
+- On the 31st of January 2024, while testing Estonia Quiz in a different browser (Microsoft Edge), and placing developer's own GitHub Estonia Quiz link into search bar, the developer came across [Estonian quizzes](https://www.visitestonia.com/en/why-estonia/play-quizzes-and-test-your-knowledge-about-estonia#). The developer was previously not aware of this Estonian quizzes page, even though she had seen other parts of www.visitestonia.com website, and credited the main page in README. The developer understands that it is important to Google first, to see if there are similar named projects.
 
 [Back to top](#contents)
