@@ -2,7 +2,7 @@
 // Layout structure for questions.js file copied from https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js
 
 // Create an Array with all of the questions, and answers
-/*jshint esversion: 6 */
+/* jshint esversion: 6 */
 const quiz = [
     {
         numb: 1,
@@ -34,7 +34,7 @@ const quiz = [
             "Riga"
         ]
     },
-    {   
+    {  
         numb: 4,
         question: "What is the official language in Estonia?",
         answer: "Estonian",

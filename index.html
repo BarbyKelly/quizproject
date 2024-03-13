@@ -15,7 +15,7 @@
     <!-- CSS link -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Title -->
-    <title>Estonia Quiz</title> 
+    <title>Estonia Quiz</title>
 </head>
 
 <body>
@@ -38,22 +38,22 @@
             </ul>
             <!-- question container and buttons edited following this video: https://www.youtube.com/watch?v=riDzcEQbX6k -->
             <div id="questions-container" class="questions-class">
-                <div id="answer-btn-area" class="btn-grid">
-                    <button type="button" class="answer-btn"></button>
-                    <button type="button" class="answer-btn"></button>
-                    <button type="button" class="answer-btn"></button>
-                </div>
+            <div id="answer-btn-area" class="btn-grid">
+                <button type="button" class="answer-btn"></button>
+                <button type="button" class="answer-btn"></button>
+                <button type="button" class="answer-btn"></button>
+            </div>
             </div>
             <div class="controls">
                 <!-- buttons for: start quiz, next question and restart, edited based on code from: https://github.com/andreas-ka/leeds-quiz/blob/main/index.html -->
-                <button id="start-quiz-btn" onclick="startQuizBtnFunction()" class="start-quiz-btn btn">Start Quiz</button> 
-                <button id="next-question-btn" onclick="nextQuestionBtnFunction()" class="next-question-btn btn">Next</button> 
+                <button type="button" onclick="startQuizBtnFunction()" id="start-quiz-btn" class="start-quiz-btn">Start Quiz</button> 
+                <button type="button" onclick="nextQuestionBtnFunction()" id="next-question-btn" class="next-question-btn">Next</button> 
             </div>
             <!-- Code for displaying the number of the current question and the score, and score area, from: https://github.com/andreas-ka/leeds-quiz/blob/main/index.html -->
             <div id="questions-left-answer-correct">
                 <div id="questions-left">Questions:</div>
                 <div id="questions-left-counter"></div>
-                <div id="questions-left-p">/10</div>
+                <div id="questions-left-p"> / 10</div>
                 <div id="correct-answers-counter"></div>
             </div>
             <div id="score-area">
@@ -62,9 +62,9 @@
                     <h4> Your score: </h4>
                 </div>
                 <div id="score-div">0</div>
-                    <h4> Play again? Click below </h4>
+                    <h4> Play again? Click on Restart Quiz </h4>
                 <div id="restart-quiz">
-                    <button id="restart-quiz-btn" onclick="restartQuizBtnFunction()" class="restart-quiz-btn">Restart Quiz</button>
+                    <button type="button" id="restart-quiz-btn" onclick="restartQuizBtnFunction()" class="restart-quiz-btn">Restart Quiz</button>
                 </div>
             </div>
         </div>
