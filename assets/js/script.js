@@ -1,8 +1,8 @@
-// Base for js from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js
+// All of the base code for js and for this quiz learned from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js
 
 // Get Elements by Id, Class, Name
-const instructionsArea = document.getElementById("instructions-area");
-const questionsContainer = document.getElementById("#questions-container");
+const nameGuidelinesArea = document.getElementById("name-guidelines-area");
+const questionArea = document.getElementById("quiz-area");
 const resultScoreArea = document.getElementById("score-area");
 const startQuizBtn = document.getElementById("start-quiz-btn");
 const nextQuestionBtn = document.getElementById("next-question-btn");
@@ -15,17 +15,17 @@ const restartQuizBtn = document.getElementById("restart-quiz-btn");
 let questionNumber = 0;
 let userScore = 0;
 
-// Start quiz function learned from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js
+// Start quiz function
 function startQuizBtnFunction() {
-    instructionsArea.style.display = 'none';
+    nameGuidelinesArea.style.display = 'none';
     resultScoreArea.style.display = 'none';
-    questionsContainer.style.display = 'block';
+    questionArea.style.display = 'block';
     showQuestions(0);
     questionCounter(questionNumber);
     showScore();
 };
 
-// Next question function learned from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js
+// Next question function
 function nextQuestionBtnFunction() {
     questionNumber++;
     if(questionNumber < quiz.length){ 
@@ -38,43 +38,43 @@ function nextQuestionBtnFunction() {
     }
 };
 
-// Restart quiz followed from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js
+// Restart quiz function
 
 function restartQuizBtnFunction() {
-    instructionsArea.style.display = 'none';
+    nameGuidelinesArea.style.display = 'none';
     resultScoreArea.style.display = 'none';
-    questionsContainer.style.display = 'block';
+    questionArea.style.display = 'block';
     userScore = 0;
     questionCounter(questionNumber);
     questionCounter(0);
     showQuestions(0);
 };
 
-// Show result followed from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js
+// Show result function
 function showResult() {
-    instructionsArea.style.display = 'none';
+    nameGuidelinesArea.style.display = 'none';
     resultScoreArea.style.display = 'block';
-    questionsContainer.style.display = 'none';
+    questionArea.style.display = 'none';
     let scoreTotal = document.getElementById("score-div");
     let scoreTotalTag = '<span>' + userScore + ' out of 10' + '</span>';
     scoreTotal.innerHTML = scoreTotalTag;
 }
 
-// Score display followed from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js
+// Score display function
 function showScore() {
     let scoreNum = document.getElementById("correct-answers-counter");
     scoreTag = '<span>' + userScore + '</span>';
     scoreNum.innerHTML = scoreTag;
 }
 
-// Code followed from https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js
+// Question counter function
 function questionCounter() {
     let questionLeft = document.getElementById("questions-left-counter");
     let questionLeftTag = '<span>' + quiz[questionNumber].numb +'</span>';
     questionLeft.innerHTML = questionLeftTag;
 }
 
-// Code originally learned from: youtube, modified following code from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js */
+// Reset State function
 function resetState() {
     questionCounter(1);
     showScore(0);
@@ -84,7 +84,7 @@ function resetState() {
     }
 }
 
-// Function for showQuestions learned from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js
+// Function for showQuestions
 function showQuestions(index) {
     resetState();
     let question_tag = '<span>'+ quiz[index].numb + ". " + quiz[index].question +'</span>';
@@ -92,14 +92,12 @@ function showQuestions(index) {
     '<button class="answer-btn"><span>'+ quiz[index].options[0] +'</span></button>'
     + '<button class="answer-btn"><span>'+ quiz[index].options[1] +'</span></button>'
     + '<button class="answer-btn"><span>'+ quiz[index].options[2] +'</span></button>';
-    console.log(questionText)
     questionText.innerHTML = question_tag;
-    console.log(answerBtnArea)
     answerBtnArea.innerHTML = option_tag;
-    getAnswer();
+    selectAnswer();
 }
 
-// Original code following youtube video, adjusted following Leeds quiz: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js */
+// Function select answer
 function selectAnswer() {
     [...optionBtn].forEach(option => {
         option.addEventListener("click", event => {

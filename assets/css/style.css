@@ -32,7 +32,7 @@ body {
 /* Container edited following this video: https://youtu.be/rFWbAj40JrQ?feature=shared  . Edit
 padding to px as per mentor's suggestion */
 
-.container {
+/* .container {
     width: max-content;
     height: max-content;
     background-color: #E6F4F1;
@@ -65,7 +65,7 @@ padding to px as per mentor's suggestion */
 
 .hidden {
     display: none;
-}
+} */
 
 /* headings styling base code for now from: https://youtu.be/rFWbAj40JrQ?feature=shared */
 
