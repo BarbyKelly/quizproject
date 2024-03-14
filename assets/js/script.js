@@ -1,3 +1,5 @@
+// jshint esversion: 6
+
 // All of the base code for js and for this quiz learned from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/js/questions.js
 
 // Get Elements by Id, Class, Name
@@ -23,7 +25,7 @@ function startQuizBtnFunction() {
     showQuestions(0);
     questionCounter(questionNumber);
     showScore();
-};
+}
 
 // Next question function
 function nextQuestionBtnFunction() {
@@ -36,7 +38,7 @@ function nextQuestionBtnFunction() {
         questionNumber = 0;
         showResult();
     }
-};
+}
 
 // Restart quiz function
 
@@ -48,7 +50,7 @@ function restartQuizBtnFunction() {
     questionCounter(questionNumber);
     questionCounter(0);
     showQuestions(0);
-};
+}
 
 // Show result function
 function showResult() {
@@ -89,9 +91,7 @@ function showQuestions(index) {
     resetState();
     let question_tag = '<span>'+ quiz[index].numb + ". " + quiz[index].question +'</span>';
     let option_tag =
-    '<button class="answer-btn"><span>'+ quiz[index].options[0] +'</span></button>'
-    + '<button class="answer-btn"><span>'+ quiz[index].options[1] +'</span></button>'
-    + '<button class="answer-btn"><span>'+ quiz[index].options[2] +'</span></button>';
+    '<button class="answer-btn"><span>'+ quiz[index].options[0] +'</span></button>' + '<button class="answer-btn"><span>'+ quiz[index].options[1] +'</span></button>' + '<button class="answer-btn"><span>'+ quiz[index].options[2] +'</span></button>';
     questionText.innerHTML = question_tag;
     answerBtnArea.innerHTML = option_tag;
     selectAnswer();
