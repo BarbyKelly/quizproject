@@ -25,30 +25,6 @@
     and-JavaScript/blob/master/2.%20Create%20and%20Style%20the%20Game%20Page/index.html -->
     <main>
         <div class="container">
-            <!-- Buttons for answers, next question -->
-            <div id="quiz-area">
-                <div id="questions-div" class="questions-class"></div>
-                <!-- question container and buttons edited following this video: https://www.youtube.com/watch?v=riDzcEQbX6k -->
-                <div id="answer-btn-area">
-                    <button type="button" class="answer-button"></button>
-                    <button type="button" class="answer-button"></button>
-                    <button type="button" class="answer-button"></button>
-                </div>
-                <!-- Next question -->
-                <div id="next-question">
-                    <button type="button" onclick="nextQuestionBtnFunction()" id="next-question-btn" class="start-next-btn">
-                        Next
-                    </button> 
-                </div>
-                <!-- Code for displaying the number of the current question and the score from: https://github.com/andreas-ka/leeds-quiz/blob/main/index.html -->
-                <div id="questions-left-answer-correct">
-                    <div id="questions-left">Questions: </div>
-                    <div id="questions-left-counter"></div>
-                    <div id="questions-left-p"> / 10</div>
-                    <div id="correct-answers">Correct: </div>
-                    <div id="correct-answers-counter"></div>
-                </div>
-            </div>
             <!-- Game name and guidelines -->
             <div id="name-guidelines-area">
                 <div id="name-area">
@@ -65,14 +41,30 @@
                         <li> Good luck! </li>
                     </ul>
                 </div>
-                <div id="start-quiz">
-                    <button type="button" onclick="startQuizBtnFunction()" id="start-quiz-btn" class="start-next-btn">
-                        Start Quiz
-                    </button> 
-                </div>
             </div>
+            <!-- Buttons, container, learned from: following this video: https://www.youtube.com/watch?v=riDzcEQbX6k -->
+            <div id="question-container" class="hide">
+                <div id="question">Question</div>
+                <div id="answer-butons" class="btn-grid">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                </div>
+                </div>
+            <div class="controls">
+                <button id="start-btn" class="start-btn btn">Start Quiz</button>
+                <button id="next-btn" class="next-btn btn" hidden>Next Question</button>
+                <button id="restart-btn" class="restart-btn btn" hidden>Restart Quiz</button>
+            </div>
+            <!-- Code for displaying the number of the current question and the score from: https://github.com/andreas-ka/leeds-quiz/blob/main/index.html -->
+            <div id="questions-left-answer-correct" hidden>
+                <div id="questions-left-counter"></div>
+                <div id="questions-left-p"> / 10</div>
+                <div id="correct-answers">Correct: </div>
+                <div id="correct-answers-counter"></div>
+            </div> 
             <!-- Score area -->    
-            <div id="score-area">
+            <div id="score-area" hidden>
                 <div id="score">
                     <h4> Thanks for playing! </h4>
                     <br>
@@ -81,11 +73,6 @@
                 </div>
                 <div id="score-div">0</div>
                 <h4>Play again? Click on "Restart Quiz"</h4>
-                <div id="restart-quiz">
-                    <button type="button" id="restart-quiz-btn" onclick="restartQuizBtnFunction()" class="restart-quiz-btn">
-                        Restart Quiz
-                    </button>
-                </div>
             </div>
         </div>
     </main>
