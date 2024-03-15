@@ -1,4 +1,3 @@
-/* 
 // jshint esversion: 6
 
 // All of the Questions created by the developer. Credit in README
@@ -6,7 +5,7 @@
 
 // Create an Array with all of the questions, and answers
 
-const quiz = [
+const questions = [
     {
         numb: 1,
         question: "Where is Estonia, one of the Baltic States, located?",
@@ -106,4 +105,4 @@ const quiz = [
             "Yksi, kaksi, kolme", // Finnish
             "Eins, zwei, drei" // German
         ]
-    }]; */
+    }];
