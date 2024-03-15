@@ -1,3 +1,4 @@
+/* 
 // jshint esversion: 6
 
 // All of the Questions created by the developer. Credit in README
@@ -105,4 +106,4 @@ const quiz = [
             "Yksi, kaksi, kolme", // Finnish
             "Eins, zwei, drei" // German
         ]
-    }];
+    }]; */
