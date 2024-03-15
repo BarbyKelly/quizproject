@@ -1,7 +1,13 @@
-/* This 'before, after' code (except font), parts of body code, and .container, code followed from https://youtu.be/riDzcEQbX6k?feature=shared */
+/* Base code for all of css code learned from https://youtu.be/riDzcEQbX6k?feature=shared */
 *, *::before, *::after {
-    box-sizing: border-box;
-    font-family: Comfortaa, sans-serif;
+  box-sizing: border-box;
+  font-family: Comfortaa, sans-serif;
+}
+
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
 }
 
 /* This html styling, from https://youtu.be/yc2olxLgKLk?feature=shared */
@@ -27,6 +33,14 @@ body {
     
     /* this part of body styling, to push down footer, from https://youtu.be/yc2olxLgKLk?feature=shared */
     flex-direction: column;
+}
+
+body.correct {
+  --hue: var(--hue-correct);
+}
+
+body.wrong {
+  --hue: var(--hue-wrong);
 }
 
 /* Container edited following this video: https://youtu.be/rFWbAj40JrQ?feature=shared  . Edit
@@ -93,6 +107,14 @@ h2 {
     font-weight: 500;
 }
 
+/* Button grid code and other button styles base from: https://youtu.be/riDzcEQbX6k?feature=shared */
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
 /* Buttons styling edited following code from this video https://youtu.be/rFWbAj40JrQ?feature=shared */
 
 .btn {
@@ -109,14 +131,6 @@ h2 {
     color: #6495ED;
 }
 
-/* Button grid code and other button styles base from: https://youtu.be/riDzcEQbX6k?feature=shared */
-.btn-grid {
-    display: grid;
-    grid-template-columns: repeat(1, auto);
-    gap: 10px;
-    margin: 20px 0;
-}
-
 .btn:hover {
     border-color: #8090BC;
     cursor: pointer;
@@ -127,8 +141,8 @@ h2 {
 
 /* Colors for correct and incorrect answers, copied from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/css/style.css */
 .btn.correct {
-background-color: green;
-color: black
+    background-color: green;
+    color: black
 }
 
 .btn.incorrect {
@@ -136,7 +150,7 @@ color: black
     color: black;
 }
 
-.start-quiz-btn, .next-question-btn, .restart-quiz-btn {
+.start-btn, .next-btn, .restart-btn {
     font-size: 1rem;
     font-weight: bold;
     padding: 10px 20px;
