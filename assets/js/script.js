@@ -4,35 +4,41 @@
 // Most of the js Code edited by following: https://www.youtube.com/watch?v=riDzcEQbX6k
 
 // Get Elements by Id, Class, Name
-// const nameGuidelinesArea = document.getElementById("name-guidelines-area");
+const nameGuidelinesArea = document.getElementById("name-guidelines-area");
 const startButton = document.getElementById("start-btn");
 const nextButton = document.getElementById("next-btn");
 const questionContainerElement = document.getElementById("question-container");
-const questionElement = document.querySelector("question");
+const questionElement = document.querySelector("#question");
 const answerButtonsElement = document.getElementById("answer-buttons");
 const resultScoreArea = document.getElementById("score-area");
 const restartQuizBtn = document.getElementById("restart-btn");
+const questionLeft = document.getElementById("questions-left-counter");
+const scoreNum = document.getElementById("correct-answers-counter");
+const answer1 = document.getElementById("answer1");
+const answer2 = document.getElementById("answer2");
+const answer3 = document.getElementById("answer3");
 
 // Changing variables
-let shuffledQuestions, currentQuestionIndex;
+let shuffledQuestions;
 let userScore = 0;
+let questionNumber = 0;
+let currentQuestionIndex = 0;
 
 // Eventlisteners
 startButton.addEventListener('click', startGame);
-nextButton.addEventListener('click', () => {
-    currentQuestionIndex++;
-    setNextQuestion();
-});
+// nextButton.addEventListener('click', () => {
+//     currentQuestionIndex++;
+//     setNextQuestion();
+// });
 
 // Start quiz function
 function startGame() {
     startButton.classList.add('hide');
     shuffledQuestions = questions.sort(() => Math.random() - '.5');
-    currentQuestionIndex = 0;
     questionContainerElement.classList.remove('hide');
     setNextQuestion();
-    nameGuidelinesArea.style.display = 'none';
-    resultScoreArea.style.display = 'none';
+    nameGuidelinesArea.classList.add('hide');
+    // resultScoreArea.style.display = 'none';
     questionCounter(questionNumber);
     showScore();
 }
@@ -48,16 +54,35 @@ function setNextQuestion() {
 // Function show a question
 function showQuestion(question) {
     questionElement.innerText = question.question;
-    question.answers.forEach(answer => {
-        const button = document.createElement('button');
-        button.innerText = answer.text;
-        button.classList.add('btn');
-        if (answer.correct) {
-            button.dataset.correct = answer.correct;
+    // let questionOption1, questionOption2, questionOption3;
+    // let questionOptionItem = 0
+    // answerButtonsElement.forEach(answerBtn => {
+    // })
+    for (let i = 0; i < answerButtonsElement.children.length; i++) {
+        // Runs 5 times, with values of step 0 through 4.
+        answerButtonsElement.children[i].innerHTML = question.options[i]
+        // if (answerButtonsElement.children[i] === answer1){
+        //     answer1.innerHTML = 
+        // }
+        // .innerHTML(question.options[i])
+        if (question.options[i] === question.answer) {
+            answerButtonsElement.children[i].dataset.correct = question.answer;
+            answerButtonsElement.children[i].style.backgroundColor="green"
         }
-        button.addEventListener('click', selectAnswer);    
-        answerButtonsElement.appendChild(button);
-    });
+        answerButtonsElement.children[i].addEventListener('click', selectAnswer); 
+    }
+    // question.options.forEach(answer => {
+    //     answer1.innerHTML =  question.options[0]
+    //     questionOptionItem++
+    //     // const button = document.createElement('button');
+    //     button.innerText = answer.text;
+    //     button.classList.add('btn');
+    //     if (answer.correct) {
+    //         button.dataset.correct = answer.correct;
+    //     }
+    //     button.addEventListener('click', selectAnswer);    
+    //     answerButtonsElement.appendChild(button);
+    // });
 }
 
 
@@ -83,16 +108,16 @@ function showResult() {
 
 // Score display function
 function showScore() {
-    let scoreNum = document.getElementById("correct-answers-counter");
-    scoreTag = '<span>' + userScore + '</span>';
+    let scoreTag = '<span>' + userScore + '</span>';
     scoreNum.innerHTML = scoreTag;
 }
 
 // Question counter function
-function questionCounter() {
-    let questionLeft = document.getElementById("questions-left-counter");
-    let questionLeftTag = '<span>' + quiz[questionNumber].numb +'</span>';
-    questionLeft.innerHTML = questionLeftTag;
+function questionCounter() { 
+    // let questionLeftTag = '<span>' + quiz[questionNumber].numb +'</span>';
+    // questionLeft.innerHTML = questionLeftTag;
+    questionLeft.innerHTML = questions[questionNumber].numb
+    // questionLeft.innerHTML = shuffledQuestions.length() - questionNumber;
 }
 
 // Reset State function
@@ -100,10 +125,10 @@ function resetState() {
     clearStatusClass(document.body);
     nextButton.classList.add('hide');
     questionCounter(1);
-    showScore(0);
-    while (answerButtonsElement.firstChild) {
-        answerButtonsElement.removeChild(answerButtonsElement.firstChild);
-    }
+    showScore();
+    // while (answerButtonsElement.firstChild) {
+    //     answerButtonsElement.removeChild(answerButtonsElement.firstChild);
+    // }
 }
 
 // Function select answer
