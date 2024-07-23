@@ -6,7 +6,7 @@
 
 :root {
     --hue-neutral: 200;
-    --hue-wrong: 0;
+    --hue-incorrect: 0;
     --hue-correct: 145;
 }
 
@@ -17,6 +17,7 @@ html {
 
 /* Background image. Credit in README. Photo taken by the developer */
 body {
+    --hue: var(--hue-neutral);
     background-image: url("../images/cornflower.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,8 +26,8 @@ body {
     color: #333333;
     padding: 16px;
     display: flex;
-    width: 90%;
-    height: 90%;
+    width: 100vw;
+    height: 100vh;
     justify-content: flex-end;
     align-items: flex-end;
     text-align: center;
@@ -35,11 +36,21 @@ body {
     flex-direction: column;
 }
 
+body.correct{
+    --hue: var(--hue-correct);
+}
+
+body.correct{
+    --hue: var(--hue-incorrect);
+}
+
+
 /* Container edited following this video: https://youtu.be/rFWbAj40JrQ?feature=shared  . Edit
 padding to px as per mentor's suggestion */
 
 .container {
     width: max-content;
+    max-width: fit-content;
     height: max-content;
     background-color: #E6F4F1;
     border-radius: 5px;
@@ -48,7 +59,7 @@ padding to px as per mentor's suggestion */
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    max-width: fit-content;
+    
 }
 
 .flex-column {
