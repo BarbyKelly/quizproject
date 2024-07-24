@@ -53,9 +53,9 @@ padding to px as per mentor's suggestion */
     max-width: fit-content;
     height: max-content;
     background-color: #E6F4F1;
-    border-radius: 5px;
+    border-radius: 4px;
     padding: 16px;
-    box-shadow: 0 0 10px 2px;
+    box-shadow: 0 0 9px 1px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -114,17 +114,18 @@ h2 {
 .btn-grid {
     display: grid;
     grid-template-columns: repeat(1, auto);
-    gap: 10px;
-    margin: 20px 0;
+    gap: 11px;
+    margin: 15px 0;
 }
 
 /* Buttons styling edited following code from this video https://youtu.be/rFWbAj40JrQ?feature=shared */
 
 .btn {
+    --hue: var(--hue-neutral);
     border: 0.1rem solid #8090BC;
     background-color: #F4F9FF;
-    border-radius: 5px;
-    padding: 5px 10px;
+    border-radius: 4px;
+    padding: 6px 8px;
     outline: none;
     font-size: 1.5rem;
     width: 10rem;
@@ -144,19 +145,19 @@ h2 {
 
 /* Colors for correct and incorrect answers, copied from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/css/style.css */
 .btn.correct {
-    background-color: green;
-    color: black
+    --hue: var(--hue-correct);
+    color: black;
 }
 
 .btn.incorrect {
-    background-color: red;
+    --hue: var(--hue-incorrect);
     color: black;
 }
 
 .start-btn, .next-btn, .restart-btn {
     font-size: 1rem;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 15px 15px;
 }
 
 .controls {
