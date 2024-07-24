@@ -1,3 +1,6 @@
+// jshint esversion: 6
+// script.js like most of this quiz, learned from this video by Web Dev Simplified: https://youtu.be/riDzcEQbX6k?feature=shared
+
 const startButton = document.getElementById('start-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
