@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A website for anyone to test what they know about Estonia, by doing a quiz.">
+    <meta name="description" content="A website for anyone to test what they know about Estonia.">
     <meta name="keywords" content="Estonia quiz, Estonia, quiz, test, game, learn">
     <!-- Favicon links - copied from Love Running example project -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
@@ -14,11 +13,9 @@
     <link rel="manifest" href="site.webmanifest">
     <!-- CSS link -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <script defer src="script.js"></script>
     <!-- Title -->
     <title>Estonia Quiz</title>
 </head>
-
 <body>
     <!-- Body originally created following steps from https://youtu.be/riDzcEQbX6k?feature=shared .
     Updated following steps from this video https://youtu.be/rFWbAj40JrQ?feature=shared 
@@ -47,33 +44,15 @@
             <div id="question-container" class="hide">
                 <div id="question">Question</div>
                 <div id="answer-buttons" class="btn-grid">
-                    <button id="answer1" class="btn">Answer 1</button>
-                    <button id="answer2" class="btn">Answer 2</button>
-                    <button id="answer3" class="btn">Answer 3</button>
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
                 </div>
             </div>
             <div class="controls">
                 <button id="start-btn" class="start-btn btn">Start Quiz</button>
                 <button id="next-btn" class="next-btn btn hide">Next Question</button>
                 <button id="restart-btn" class="restart-btn btn hide">Restart Quiz</button>
-            </div>
-            <!-- Code for displaying the number of the current question and the score from: https://github.com/andreas-ka/leeds-quiz/blob/main/index.html -->
-            <div id="questions-left-answer-correct" class="hide">
-                <div id="questions-left-counter"></div>
-                <div id="questions-left-p"> / 10</div>
-                <div id="correct-answers">Correct: </div>
-                <div id="correct-answers-counter"></div>
-            </div> 
-            <!-- Score area -->    
-            <div id="score-area"  class="hide">
-                <div id="score">
-                    <h4> Thanks for playing! </h4>
-                    <br>
-                    <!-- Final score -->
-                    <h4> Here is your Final score: </h4>
-                </div>
-                <div id="score-div">0</div>
-                <h4>Play again? Click on "Restart Quiz"</h4>
             </div>
         </div>
     </main>
@@ -83,7 +62,6 @@
         part of a project for Software Development course. No commercial intention. </p>
     </footer>
     <!-- Script placed back here, credit in readme. -->
-    <script src="assets/js/questions.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
