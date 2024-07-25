@@ -213,7 +213,7 @@ Developer used these sites/apps to create Estonia Quiz project:
 
 - [Balsamiq Wireframes](https://balsamiq.com/)
 - [GitHub](https://github.com/)
-- [VS Code](https://code.visualstudio.com/)
+- [Gitpod]()
 
 
 [Back to top](#contents)
@@ -237,12 +237,17 @@ Result after fixing the error and retesting:
 ### css
 
 Tested CSS with
-[Jigsaw.W3](https://jigsaw.w3.org/css-validator/validator)
+
+
+
+[Jigsaw.W3](https://jigsaw.w3.org/css-validator/validator) delete this?
 
 ![CSS validation](assets/images/readmeimg/csstest.png)
 
 
 ### JavaScript
+
+[Site 24X7](https://www.site24x7.com/tools/javascript-validator.html) - used 26.07
 
 Tested JavaScript with [JSHint](https://jshint.com/)
 
