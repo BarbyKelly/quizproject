@@ -436,8 +436,14 @@ Same background image used to create a favicon image, using [favicon converter](
 
 [Back to top](#contents)
 
+### Error pages
 
-### Acknowledgements
+- Developer created Error pages by following code from [this article](https://www.geeksforgeeks.org/create-a-404-page-using-html-and-css/)
+
+- Developer learned from [this site](https://www.presslabs.com/how-to/error-pages/) how site visitors may help themselves with error pages
+
+
+## Acknowledgements
 
 - Grateful to my Mentor Lauren-Nicole Popich for supporting me with my projects, for listening, for sharing examples like the Leeds Quiz, for guiding me to improve my project, and sharing how to set up 404 page, and for suggesting to convert the links into clickable text, among other suggestions.
 

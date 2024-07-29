@@ -5,9 +5,9 @@
 }
 
 :root {
-    --hue-neutral: 200;
+    --hue-neutral: 190;
     --hue-incorrect: 0;
-    --hue-correct: 145;
+    --hue-correct: 140;
 }
 
 /* This html styling, from https://youtu.be/yc2olxLgKLk?feature=shared */
@@ -36,11 +36,11 @@ body {
     flex-direction: column;
 }
 
-body.correct{
+body.correct {
     --hue: var(--hue-correct);
 }
 
-body.correct{
+body.correct {
     --hue: var(--hue-incorrect);
 }
 
@@ -154,7 +154,7 @@ h2 {
     color: black;
 }
 
-.start-btn, .next-btn, .restart-btn {
+.start-btn, .next-btn, {
     font-size: 1rem;
     font-weight: bold;
     padding: 15px 15px;
@@ -179,4 +179,12 @@ h2 {
     color: black;
     text-align: center;
     line-height: 20px;
+}
+
+.error-container {
+    text-align: justify;
+    background-color: #6495ED;
+    padding: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px rgba(22, 35, 209, 0.1);
 }
