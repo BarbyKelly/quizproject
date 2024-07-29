@@ -48,9 +48,9 @@ body.correct {
 /* Container edited following this video: https://youtu.be/rFWbAj40JrQ?feature=shared  . Edit
 padding to px as per mentor's suggestion */
 
-.container {
-    width: max-content;
-    max-width: fit-content;
+.quizcontainer {
+    width: 700px;
+    max-width: 75%;
     height: max-content;
     background-color: #E6F4F1;
     border-radius: 4px;
@@ -146,15 +146,16 @@ h2 {
 /* Colors for correct and incorrect answers, copied from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/css/style.css */
 .btn.correct {
     --hue: var(--hue-correct);
-    color: black;
+    color: green;
 }
 
 .btn.incorrect {
     --hue: var(--hue-incorrect);
-    color: black;
+    color: rgb(239, 29, 29);
 }
 
-.start-btn, .next-btn, {
+.startquiz-btn, 
+.nextques-btn {
     font-size: 1rem;
     font-weight: bold;
     padding: 15px 15px;

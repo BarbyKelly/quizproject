@@ -293,6 +293,15 @@ Error had been caused by startQuizBtn, were it was supposed to be startQuizBtnFu
 [Back to top](#contents)
 
 
+### Color of correct/incorrect answer
+
+Color of the answer options did not change. Developer noticed that script should be in a different place, when she was checking out [this page](https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/). Once script was moved into the container, green and red showed up for correct/incorrect answers. This testing led to the next bug:
+
+### All answers incorrect
+
+Once color showed up correctly for correct vs incorrect answers, developer noticed one of the questions had all answers showing up as incorrect. Developer realised that she must have typed in 'false' instead of 'true', and after fixing this, the error remained. Developer cleared the cache, started port again, the correct answer turned green.
+
+
 ## Known Bugs
 
 - Start Quiz button not working on developer's port. Port error showing  up. 
@@ -387,7 +396,8 @@ Base for Estonia quiz from [Leeds Quiz](https://github.com/andreas-ka/leeds-quiz
 - Script
 
 Developer learned how page is loading faster, if scripts are placed at the bottom of the body in html from [W3 schools website](https://www.w3schools.com/js/js_whereto.asp)
-  ![screenshot of text](script.png)
+
+![screenshot of text](script.png)
 
 
 - Footer

@@ -22,38 +22,24 @@
     container and divs code from: https://github.com/jamesqquick/Build-A-Quiz-App-With-HTML-CSS-
     and-JavaScript/blob/master/2.%20Create%20and%20Style%20the%20Game%20Page/index.html -->
     <main>
-        <div class="container">
-            <!-- Game name and guidelines -->
-            <div id="name-guidelines-area">
-                <div id="name-area">
-                    <h2>Estonia Quiz</h2>
-                </div>
-                <div>
-                    <h3>Guidelines for this quiz:</h3>
-                </div>
-                <div id="guidelines-area">
-                    <!-- change p into list for instructions, idea copied from: https://github.com/andreas-ka/leeds-quiz/blob/main/index.html -->
-                    <ul id="guidelines-list">
-                        <li> Please answer 10 questions about Estonia </li>
-                        <li> Each correct answer is worth 1 point </li>
-                        <li> Good luck! </li>
-                    </ul>
-                </div>
-            </div>
+        <div class="quizcontainer">
             <!-- Buttons, container, learned from: following this video: https://www.youtube.com/watch?v=riDzcEQbX6k -->
-            <div id="question-container" class="hide">
-                <div id="question">Question</div>
-                <div id="answer-buttons" class="btn-grid">
-                    <button class="btn">Answer 1</button>
-                    <button class="btn">Answer 2</button>
-                    <button class="btn">Answer 3</button>
+            <div id="quizqando-container" class="hide">
+                <div id="quizquestion"> </div>
+                <div id="option-buttons" class="btn-grid">
+                    <button class="option-btn btn">Option I</button>
+                    <button class="option-btn btn">Option II</button>
+                    <button class="option-btn btn">Option III</button>
                 </div>
             </div>
             <div class="controls">
-                <button id="start-btn" class="start-btn btn">Start Quiz</button>
-                <button id="next-btn" class="next-btn btn hide">Next Question</button>
-                <button id="restart-btn" class="restart-btn btn hide">Restart Quiz</button>
+                <button id="startquiz-btn" class="startquiz-btn btn">Start Estonia Quiz</button>
+                <button id="nextques-btn" class="nextques-btn btn hide">Next Question</button>
+                <button id="restartquiz-btn" class="restart-quiz-btn btn hide">Restart Quiz</button>
+                <button id="quitquiz-btn" class="quit-btn btn hide">Quit Quiz</button>
             </div>
+            <!-- Script -->
+            <script src="assets/js/script.js"></script>
         </div>
     </main>
     <!-- Footer copyright script code from this video: https://youtu.be/US_3XvufMLU?feature=shared -->
@@ -61,7 +47,6 @@
         <p> Copyright &copy; Estonia Quiz by Barby Kelly <br> Created 2024 as
         part of a project for Software Development course. No commercial intention. </p>
     </footer>
-    <!-- Script placed back here, credit in readme. -->
-    <script src="assets/js/script.js"></script>
+    
 </body>
 </html>

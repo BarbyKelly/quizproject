@@ -1,26 +1,26 @@
 // jshint esversion: 6
 // script.js code learned from Web Dev Simplified: https://youtu.be/riDzcEQbX6k?feature=shared
 
-const startButton = document.getElementById('start-btn');
-const nextButton = document.getElementById('next-btn');
-const questionContainerElement = document.getElementById('question-container');
-const questionElement = document.getElementById('question');
-const answerButtonsElement = document.getElementById('answer-buttons');
+const startQuizButton = document.getElementById('startquiz-btn');
+const nextQuesButton = document.getElementById('nextques-btn');
+const quizQandOContainerElement = document.getElementById('quizqando-container');
+const quizQuestionElement = document.getElementById('quizquestion');
+const optionButtonsElement = document.getElementById('option-buttons');
 
 let shuffledQuestions, currentQuestionIndex;
 
 
-startButton.addEventListener('click', startGame);
-nextButton.addEventListener('click', () => {
+startQuizButton.addEventListener('click', startQuiz);
+nextQuesButton.addEventListener('click', () => {
     currentQuestionIndex++;
     setNextQuestion();
 });
 
-function startGame() {
-    startButton.classList.add('hide');
+function startQuiz() {
+    startQuizButton.classList.add('hide');
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
-    questionContainerElement.classList.remove('hide');
+    quizQandOContainerElement.classList.remove('hide');
     setNextQuestion();
 }
 
@@ -31,39 +31,39 @@ function setNextQuestion() {
 }
 
 function showQuestion(question) {
-    questionElement.innerText = question.question;
-    question.answers.forEach(answer => {
+    quizQuestionElement.innerText = question.question;
+    question.options.forEach(option => {
         const button = document.createElement('button');
-        button.innerText = answer.text;
+        button.innerText = option.text;
         button.classList.add('btn');
-        if (answer.correct) {
-            button.dataset.correct = answer.correct;
+        if (option.correct) {
+            button.dataset.correct = option.correct;
         }
-        button.addEventListener('click', selectAnswer);
-        answerButtonsElement.appendChild(button);
+        button.addEventListener('click', selectOption);
+        optionButtonsElement.appendChild(button);
     });
 }
 
 function resetState() {
     clearStatusClass(document.body);
-    nextButton.classList.add('hide');
-    while (answerButtonsElement.firstChild) {
-        answerButtonsElement.removeChild(answerButtonsElement.firstChild);
+    nextQuesButton.classList.add('hide');
+    while (optionButtonsElement.firstChild) {
+        optionButtonsElement.removeChild(optionButtonsElement.firstChild);
     }
 }
 
-function selectAnswer(e) {
+function selectOption(e) {
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
     setStatusClass(document.body, correct);
-    Array.from(answerButtonsElement.children).forEach(button => {
+    Array.from(optionButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
     });
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
-      nextButton.classList.remove('hide');
+      nextQuesButton.classList.remove('hide');
     } else {
-        startButton.innerText = 'Restart';
-        startButton.classList.remove('hide');
+        startQuizButton.innerText = 'Restart';
+        startQuizButton.classList.remove('hide');
     }
 }
 
@@ -89,7 +89,7 @@ function clearStatusClass(element) {
 const questions = [
     {
         question: "Where is Estonia, one of the Baltic States, located?",
-        answers: [
+        options: [
             { text: "Northern Europe", correct: true },
             { text: "Asia", correct: false },
             { text: "Australia", correct: false },  
@@ -97,7 +97,7 @@ const questions = [
     },
     {
         question: "What colour is the Estonian flag?",
-        answers: [
+        options: [
             { text: "Blue, black and white", correct: true },
             { text: "White, green and blue", correct: false },
             { text: "Yellow, black and red", correct: false }, 
@@ -105,7 +105,7 @@ const questions = [
     },
     {
         question: "What is the capital of Estonia?",
-        answers: [
+        options: [
             { text: "Helsinki", correct: false },
             { text: "Tallinn", correct: true },
             { text: "Riga", correct: false },
@@ -113,7 +113,7 @@ const questions = [
     },
     {  
         question: "What is the official language in Estonia?",
-        answers: [
+        options: [
             { text: "English", correct: false },
             { text: "Finnish", correct: false },
             { text: "Estonian", correct: true },
@@ -121,15 +121,15 @@ const questions = [
     },
     {
         question: "Estonian national bird is...",
-        answers: [
+        options: [
             { text: "Owl", correct: false },
             { text: "Robin", correct: false },
             { text: "Barn swallow", correct: true },
         ]
     },
     {
-        question: "Which of these wild animals lives in Estonian forests?",
-        answers: [
+        question: "Which of these wild animals lives in Estonia?",
+        options: [
             { text: "Lion", correct: false },
             { text: "Lynx", correct: true },
             { text: "Leopard", correct: false },
@@ -137,7 +137,7 @@ const questions = [
     },
     {
         question: "Which of these letters are part of the Estonian alphabet?",
-        answers: [
+        options: [
             { text: "õ,ä,ö,ü", correct: true },
             { text: "æ, ø, å", correct: false }, // Danish. From: https://www.danishnet.com/culture/danish-alphabet/
             { text: "δ, ζ, θ, λ", correct: false },  // Greek: Delta, Zeta, Theta, Lambda from: https://www.greekalphabetletters.com/ 
@@ -145,7 +145,7 @@ const questions = [
     },
     {
         question: "Population of Estonia in 2024?",
-        answers: [
+        options: [
             { text: "1,333,290", correct: false },
             { text: "1,366,491", correct: true },
             { text: "1,315,819", correct: false },            
@@ -153,7 +153,7 @@ const questions = [
     },
     {
         question: "How often does the 'Estonian Singing and Dancing Festival' take place?",
-        answers: [
+        options: [
             { text: "every 5 years", correct: true },
             { text: "every 3 years", correct: false },
             { text: "every 7 years", correct: false },
@@ -161,10 +161,10 @@ const questions = [
     },
     {
         question: "How do you say 'One, two, three' in Estonian?",
-        answers: [
+        options: [
             { text: "Yksi, kaksi, kolme", correct: false }, // Finnish
             { text: "Eins, zwei, drei", correct: false }, // German
-            { text: "Üks, kaks, kolm", correct: false }, // Estonian      
+            { text: "Üks, kaks, kolm", correct: true }, // Estonian      
         ]
     }
 ];
