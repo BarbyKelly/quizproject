@@ -1,8 +1,11 @@
 # Estonia Quiz 
 
-Estonia quiz has been created by a Software Development student, as part of Code Institute's Javascript project. This quiz is for anyone who would like to test their knowledge about Estonia. 
+Estonia quiz has been created by a Software Development student, as part of Code Institute's Javascript project. This quiz may benefit anyone who:
+- would like to test their knowledge about Estonia
+- likes to do quizzes
+- wishes to learn something (new) about Estonia
 
-Link to the live site: [Estonia Quiz](https://barbykelly.github.io/Estonia-Quiz/)
+Link to the live GitHub site: [Estonia Quiz](https://barbykelly.github.io/quizproject/)
 
 Image from [Am I Responsive?](https://ui.dev/amiresponsive?url=https://barbykelly.github.io/Estonia-Quiz/) to show how website looks on different screen sizes.
 
@@ -201,6 +204,10 @@ Color palette from this website:
 
 ## Languages Used
 
+- HTML
+- CSS
+- JavaScript
+
 ![Languages used](assets/images/readmeimg/languagesreadme.png)
 
 
@@ -209,11 +216,11 @@ Color palette from this website:
 
 ## Sites, Apps Used
 
-Developer used these sites/apps to create Estonia Quiz project: 
+Developer used these sites/apps to create Estonia Quiz: 
 
 - [Balsamiq Wireframes](https://balsamiq.com/)
 - [GitHub](https://github.com/)
-- [Gitpod]()
+- [Gitpod](https://www.gitpod.io/)
 
 
 [Back to top](#contents)
@@ -313,27 +320,37 @@ Once color showed up correctly for correct vs incorrect answers, developer notic
 [Back to top](#contents)
 
 
-## Deployment
+## Creating a GitHub repo:
 
-Developer is sharing steps to creating a repo:
-1. Developer clicked on this [GitHub link](https://github.com/Code-Institute-Org/ci-full-template) under Love Maths "Getting Set Up" video.
+- Developer clicked on [GitHub link](https://github.com/Code-Institute-Org/ci-full-template) under Love Maths "Getting Set Up" video.
 
 ![link for code template](assets/images/readmeimg/CI.templateLink.png)
 
-2. As the original template was for CodeAnywhere, and developer works with GitHub, developer clicked on [GitPod template](https://github.com/Code-Institute-Org/gitpod-full-template)
+- As the original template was for CodeAnywhere, and developer works with GitPod, developer clicked on [GitPod template](https://github.com/Code-Institute-Org/gitpod-full-template)
 
-![github template](assets/images/readmeimg/githubTemplate.png)
+![gitpod template](assets/images/readmeimg/githubTemplate.png)
 
-3. Next the developer clicked on "Use this template", and then clicked on "Create a new repository":
+- Next the developer clicked on "Use this template", and then clicked on "Create a new repository":
 
 ![use this template](assets/images/readmeimg/repolink.png)
 
-4. Filled in Repository name, and clicked on "Create repository"
+- Filled in Repository name, and clicked on "Create repository"
 
 ![create repo](assets/images/readmeimg/createRepo.png)
 
-5. Deployed using GitHub
 
+
+## Deployment
+
+- Click on Github project that you wish to deploy
+- Go to Settings (menu at the top)
+- Click on Pages (left side menu, under Code and automation)
+- Under Build and deployment:
+  - Click on "Deploy from a branch"
+  - From the drop down menu under Branch, choose "main"
+  - After choosing "main", a "/root" folder becomes visible beside it. Leave the root folder as it is
+  - Click on "Save"
+- GitHub Pages link on top of the "GitHub Pages", will be replaced with your live link
 
 [Back to top](#contents)
 
@@ -356,6 +373,7 @@ https://favicon.io/favicon-converter/
 
 Rest of the code credited in index.html, script.js, questions.js, style.css and in other parts of README.
 
+
 ### Readme
 
 Parts of the Readme template used from [Code Institute's Sample README](https://github.com/Code-Institute-Solutions/SampleREADME?tab=readme-ov-file) 
@@ -364,7 +382,9 @@ The Contents menu learned from: [Everything Quiz](https://github.com/Tony118g/th
 
 Reading The Everything Quiz README, highlighted for the developer the level of details that Quiz website README needs, and the importance of the README. 
 
+
 ### User Stories:
+
 Template used from
 [Atlassian.com](https://www.atlassian.com/agile/project-management/user-stories)
 
@@ -389,20 +409,16 @@ Photo taken by the developer. Developer opted for Cornwlower image in the end, a
 ![Quiz Score](assets/images/readmeimg/wireframequizscore.png)
 
 
+
 ### Code
 
 Base for Estonia quiz from [Leeds Quiz](https://github.com/andreas-ka/leeds-quiz). Developer watched various YouTube quiz tutorials, and kept returning to Leeds Quiz, as developer liked the style of that quiz.
-
-- Script
-
-Developer learned how page is loading faster, if scripts are placed at the bottom of the body in html from [W3 schools website](https://www.w3schools.com/js/js_whereto.asp)
-
-![screenshot of text](script.png)
 
 
 - Footer
 
 Developer learned how to make Copyright sign &copy; from [Mental-Arithmetic-Quiz project](https://github.com/Shida18719/Mental-Arithmetic-Quiz/blob/main/index.html)
+
 
 
 ### Questions
@@ -416,26 +432,36 @@ Below are the websites/images that developer used to validate the answers for th
 ![Northern Europe](assets/images/popupextraimages/northerneurope.png)
 
 
+
 - Estonia-Quiz/questions/flagstory.png
-[Flag story]![alt text](assets/images/popupextraimages/flagstory.png)
+
+![Flag story](assets/images/popupextraimages/flagstory.png)
+
 
 - [eesti.ee](https://www.eesti.ee/en/republic-of-estonia/republic-of-estonia/state-insignia)
 
+
 - Estonian national bird: 
+
 ![Barn swallow](assets/images/popupextraimages/nationalbird.png)
 
-- [lynx watching tour](https://www.visitestonia.com/en/lynx-and-bear-watching-tour-in-alutaguse-and-lahemaa-national-park?gad_source=5&gclid=EAIaIQobChMI5f2Whpa_gwMVhJhQBh28dgSrEAAYASAAEgIPl_D_BwE)
 
-- Population statistics from
-[stat.ee](https://www.stat.ee/en/find-statistics/statistics-theme/population)
 
-- Due to covid, festival is after 4 years this time
+- [Lynx watching tour](https://www.visitestonia.com/en/lynx-and-bear-watching-tour-in-alutaguse-and-lahemaa-national-park?gad_source=5&gclid=EAIaIQobChMI5f2Whpa_gwMVhJhQBh28dgSrEAAYASAAEgIPl_D_BwE)
+
+
+- Population statistics from [stat.ee](https://www.stat.ee/en/find-statistics/statistics-theme/population)
+
+
+- Due to covid, the Estonian Song and Dance festival is after 4 years this time:
 
 ![Different years notice](assets/images/readmeimg/differentyears.png) 
+
 
 Usually every 5 years [the Estonian Song and Dance Festival](https://www.visitestonia.com/en/why-estonia/welcome-to-the-estonian-song-and-dance-celebration)
 
 - To hear numbers in Estonian, visitor can watch this [Youtube video](https://youtube.com/shorts/y2RQWWda-Nc?feature=shared)
+
 
 
 ### Images 
@@ -446,11 +472,14 @@ Same background image used to create a favicon image, using [favicon converter](
 
 [Back to top](#contents)
 
+
+
 ### Error pages
 
 - Developer created Error pages by following code from [this article](https://www.geeksforgeeks.org/create-a-404-page-using-html-and-css/)
 
 - Developer learned from [this site](https://www.presslabs.com/how-to/error-pages/) how site visitors may help themselves with error pages
+
 
 
 ## Acknowledgements
