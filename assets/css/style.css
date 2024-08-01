@@ -49,9 +49,9 @@ body.correct {
 padding to px as per mentor's suggestion */
 
 .quizcontainer {
-    width: max-content;
+    width: auto;
     max-width: max-content;
-    height: max-content;
+    height: auto;
     max-height: max-content;
     background-color: #E6F4F1;
     border-radius: 4px;
@@ -60,7 +60,8 @@ padding to px as per mentor's suggestion */
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    
+    margin-right: 150px;
+    margin-bottom: 80px;
 }
 
 .flex-column {
@@ -116,7 +117,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(1, auto);
     gap: 11px;
-    margin: 15px 0;
+    margin: 10px 0;
 }
 
 /* Buttons styling edited following code from this video https://youtu.be/rFWbAj40JrQ?feature=shared */
@@ -189,4 +190,14 @@ h2 {
     padding: auto;
     border-radius: 4px;
     box-shadow: 0 2px 3px rgba(22, 35, 209, 0.1);
+}
+
+/* Media Queries, learner from: https://www.freecodecamp.org/news/learn-css-media-queries-by-building-projects/ */
+@media (min-width : 480px) and (max-width : 768px) {
+    .quizcontainer {
+        background-color: #E6F4F1;
+        height: auto;
+        display: grid;
+        place-items: center;
+    }   
 }
