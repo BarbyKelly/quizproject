@@ -199,5 +199,12 @@ h2 {
         height: auto;
         display: grid;
         place-items: center;
-    }   
+        margin-left: 60px;
+    }
+    .btn-grid {
+        margin-left: 60px;
+    }
+    .nextques-btn {
+        margin-left: 60px;
+    }
 }
