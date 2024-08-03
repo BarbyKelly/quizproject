@@ -186,6 +186,10 @@ h2 {
 
 .error-container {
     text-align: justify;
+    background-image: url("../images/cornflower.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-color: #6495ED;
     padding: 15px;
     border-radius: 4px;

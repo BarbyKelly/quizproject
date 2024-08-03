@@ -251,7 +251,7 @@ Tested HTML with
 
 Tested CSS with
 
-[Jigsaw.W3](https://jigsaw.w3.org/css-validator/validator)
+[Jigsaw.W3](https://jigsaw.w3.org/css-validator/)
 
 ![CSS validation](assets/images/readmeimg/cssvalidation.png)
 
@@ -281,7 +281,7 @@ At first favicon icon did not appear on the website. Developer had used the four
 
 ![favicon codes](assets/images/readmeimg/faviconcodes.png)
 
-After comparing Favicon codes to the codes from Love Running, developer noticed that path needed to be adjusted. After adjusting the path, favicon appeared on the website. 
+After comparing Favicon codes vs codes from Love Running, developer noticed that path needed to be adjusted. After adjusting the path, favicon appeared on the website. 
 
 
 ### HTML error
@@ -297,16 +297,22 @@ Error had been caused by startQuizBtn, were it was supposed to be startQuizBtnFu
 
 ### Color of correct/incorrect answer
 
-Color of the answer options did not change. Developer noticed that script should be in a different place, when she was checking out [this page](https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/). Once script was moved into the container, green and red showed up for correct/incorrect answers. This testing led to the next bug:
+When developer tested answer options, and chose the correct or incorrect option, color of the answer options did not change. After checking out [this page](https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/), the developer noticed that script should be in a different place. Once script was moved into the container, green and red colors showed up for correct/incorrect options, when "Next Question" button was clicked. This testing led to the next bug:
 
-### All answers incorrect
+### One of the questions had no correct answer option
 
-Once color showed up correctly for correct vs incorrect answers, developer noticed one of the questions had all answers showing up as incorrect. Developer realised that she must have typed in 'false' instead of 'true', and after fixing this, the error remained. Developer cleared the cache, started port again, the correct answer turned green.
+Once color showed up correctly for correct vs incorrect answers, developer noticed one of the questions had all options showing up as incorrect. Developer realised that she must have typed 'false' instead of 'true' for all of the options. After setting the correct option as "true", the error remained. Developer cleared the cache, started port again, and then the correct answer turned green.
+
+### Commented out text showing up on deployed version
+
+404 error page displayed commented out parts. Developer realised, she had used CSS commenting style for HTML. Once the comments were corrected as appropriate for HTML,
+commented out text no longer appeared on 404 error page.
 
 
 ## Known Bugs
 
-- When player clicks on any option to answer the question, all options change color: one correct, and two incorrect answers
+- When player clicks on any option to answer the question, and then clicks "Next Question", all answer options change color: one correct, and two incorrect ones, 
+  instead of just changing the color of the chosen option, and the correct option (if correct option was not chosen)
 - There is no question counter as part of the game. Developer could not get it to work, and opted to leave it out
 - Developer would have liked to have "Quit" button set up, so player could quit quiz at any time
 - "Next Question" button is more responsive than "Option" buttons, when screen size changes:
@@ -323,15 +329,21 @@ Once color showed up correctly for correct vs incorrect answers, developer notic
 
 - Developer clicked on [GitHub link](https://github.com/Code-Institute-Org/ci-full-template) under Love Maths "Getting Set Up" video.
 
-![link for code template](assets/images/readmeimg/CI.templateLink.png)
+![link for code template](assets/images/readmeimg/citemplate.png)
 
-- As the original template was for CodeAnywhere, and developer works with GitPod, developer clicked on [GitPod template](https://github.com/Code-Institute-Org/gitpod-full-template)
+
+
+- As the original template was for CodeAnywhere, and developer works with GitPod, developer clicked on [GitPod template](https://github.com/Code-Institute-Org/ci-full-template)
 
 ![gitpod template](assets/images/readmeimg/githubTemplate.png)
+
+
 
 - Next the developer clicked on "Use this template", and then clicked on "Create a new repository":
 
 ![use this template](assets/images/readmeimg/repolink.png)
+
+
 
 - Filled in Repository name, and clicked on "Create repository"
 
@@ -360,12 +372,12 @@ Once color showed up correctly for correct vs incorrect answers, developer notic
 Favicon created using [favicon converter](https://favicon.io/favicon-converter/)
 
 These 3 lines of code, for favicon, were copied from Love Running:
-<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
 
 This line of code:
-<link rel="manifest" href="/site.webmanifest"> 
+  <link rel="manifest" href="/site.webmanifest"> 
 for Favicon, was copied from
 https://favicon.io/favicon-converter/
 
@@ -431,7 +443,7 @@ Below are the websites/images that developer used to validate the answers for th
 
 
 
-- Estonia-Quiz/questions/flagstory.png
+- The developer found this Story about colors of Estonian flag some time ago, unfortunately the link to this article's origin has gone missing. Developer did not take this photo, it's visible on the screenshot who took the photo. Developer did not write this story about the flag. Developer is continuing search to find the origin of this flag story. The previous link no longer seems to be available
 
 ![Flag story](assets/images/popupextraimages/flagstory.png)
 
