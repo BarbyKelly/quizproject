@@ -7,9 +7,9 @@ Estonia quiz has been created by a Software Development student, as part of Code
 
 Link to the live GitHub site: [Estonia Quiz](https://barbykelly.github.io/quizproject/)
 
-Image from [Am I Responsive?](https://ui.dev/amiresponsive?url=https://barbykelly.github.io/Estonia-Quiz/) to show how website looks on different screen sizes.
+Image from [Am I Responsive?](https://ui.dev/amiresponsive?url=https://barbykelly.github.io/quizproject/) to show how website looks on different screen sizes.
 
-![Am I Responsive](assets/images/readmeimg/readmeamiresponsive.png)
+![Am I Responsive](assets/images/readmeimg/amiresponsive.png)
 
 
 ## Contents
@@ -64,10 +64,10 @@ First time user, may want to:
 - Experience that all buttons work on the website
 - See one question at a time displayed on the screen
 - Click on any of the answer options
-- Find out which answer was correct
+- Find out which answer was correct when the correct answer option turns green
 - Click on the button: "Next Question"
 - Go through all of the questions
-- Restart the quiz at the end of 10 questions
+- Restart the quiz at the end of 10 questions by clicking on "Restart Quiz" button
 
 
 #### Returning User:
@@ -90,8 +90,8 @@ Returning user may want to:
 This website includes one page:
 - With "Start Estonia Quiz" button
 - Leading player to questions, answer options
-- And an option to click "Next Question" button
-- At the end of the quiz i.e. 10 questions, "Restart Quiz" buttons appears
+- And an option to click "Next Question" button, when player wants to see another question displayed
+- At the end of the quiz i.e. 10 questions, "Restart Quiz" button appears
 - Clicking on "Reset Quiz" starts the same 10 questions all over again, shuffled in a different order 
 
 
@@ -102,17 +102,18 @@ This website is for anyone interested in doing a quiz, or who wants to learn mor
 Goal of the quiz is to:
   - test knowledge
   - play a game
-  - see one question at a time displayed on the screen, without the correct answer option being highlighted
+  - see one question at a time displayed on the screen, without the correct answer option being highlighted,
+    until the player has chosen one option for their answer
   - be able to click on any option for an answer
   - see the correct answer displayed as green
   - see incorrect answers turn red
-  - have an option to restart (either by refreshing the page or at the end of 10 questions)
+  - have an option to restart the quiz (either by refreshing the page or at the end of 10 questions)
   
 
 Website visitors are likely to:
   - click on "Start Estonia Quiz"
   - read the questions
-  - answer the questions by clicking on any option
+  - answer the questions by clicking on any answer option
   - click on "Next Question"
   - try again by clicking on "Restart Quiz"
  
@@ -176,42 +177,49 @@ Color palette from this website:
 
 ### Existing Features 
 
-- Background image of Estonian national flower, cornflower
-- Start Estonia Quiz button
-- Correct answer option turns green, and incorrect options turn red, when any of the options is chosen as an answer
-- Next button appears when the first question has been answered, if correct or incorrect
-- Restart Quiz button shows up when all 10 questions have been answered
-- Ten questions
-- Footer with copyright sign
 - Favicon icon
-- Restart button will start the game again, with the same questions shuffled
-- All of the buttons are working
+- Background image of Estonian national flower, cornflower
+- Clickable "Start Estonia Quiz" button
+- Ten questions, shuffled in random order
+- After clicking on "Start Estonia Quiz", one random question is displayed
+- Player then has an option to click on any of the answer option buttons
+- Correct answer option turns green, and incorrect options turn red, when any of the options is chosen as an answer
+- "Next Question" button appears when the first question has been answered, if correct or incorrect
+- Player can click on the "Next Question" button
+- "Restart Quiz" button shows up when all 10 questions have been answered
+- Clicking on "Restart Quiz" button or refreshing browser, will start the game again, with the same questions shuffled in a different order
+- Footer text with copyright sign
+- Player can exit the game at any time by closing the webpage or browser
 
 
 ### Future Features
 
-- Estonia Quiz instructions
-- Clear indicator of which option was correct, and which option was chosen by the player
+- Estonia Quiz instructions displayed before the quiz starts
+- Clear indicator of which option was correct, and which option was chosen by the player, and if those options matched or not
+- Add buttons for different languages, for example English and Estonian
 - How many questions answered indicator
-- Player can choose if they want to play 3, 5 or 10 question game
-- Add variations of the quiz eg wildlife, culture, music, authors, movies, national symbols and so on.
+- Percentage of correct vs incorrect answer options chosen
+- Player can choose how many questions they want to answer per game
+- Increased number of questions
+- Add variations of the quiz eg wildlife, culture, music, authors, movies, national symbols and so on
 - Add difficulty levels: easy, medium, difficult (credit: difficulty levels were suggested by developer's older child)
-- Add language Buttons on top, to be able to do the quiz in different languages:
+- Add Buttons on top of the page with different languages, for the quiz and for the "Extra" area:
   - English
   - Eesti (Estonian)
 - Add "Extra" button to the website, which would bring visitors to an area with links and images to find out more about Estonia 
 - Add code to make images pop up when visitor has made their choice. Image of the correct answer (eg picture of lynx)
+- Ensure that links open in a new tab, to keep Estonia Quiz page open
 
 [Back to top](#contents)
 
 
 ## Languages Used
 
-- HTML
-- CSS
 - JavaScript
+- CSS
+- HTML
 
-![Languages used](assets/images/readmeimg/languagesreadme.png)
+![Languages used](assets/images/readmeimg/languagesused.png)
 
 
 [Back to top](#contents)
@@ -234,32 +242,32 @@ Developer used these sites/apps to create Estonia Quiz:
 ### HTML
 
 Tested HTML with
-[Validator.W3](https://validator.w3.org/nu/#textarea)
+[Validator.W3](https://validator.w3.org/)
 
-![HTML validation](assets/images/readmeimg/htmlvalidator.png)
+![HTML validation](assets/images/readmeimg/htmlvalidation.png)
 
 
-### css
+### CSS
 
 Tested CSS with
 
 [Jigsaw.W3](https://jigsaw.w3.org/css-validator/validator)
 
-![CSS validation](assets/images/readmeimg/cssvalidator.png)
+![CSS validation](assets/images/readmeimg/cssvalidation.png)
 
 
 ### JavaScript
 
 [Site 24X7](https://www.site24x7.com/tools/javascript-validator.html)
 
-![Javascript validation](assets/images/readmeimg/jsvalidator.png)
+![JavaScript validation](assets/images/readmeimg/jsvalidator.png)
 
 
 ### Lighthouse
 
 Tested with Lighthouse:
 
-![Lighthouse test](assets/images/readmeimg/readmelighthousetest.png)
+![Lighthouse test](assets/images/readmeimg/lighthousetest.png)
 
 [Back to top](#contents)
 
@@ -305,7 +313,8 @@ Once color showed up correctly for correct vs incorrect answers, developer notic
 
 ![Next Question Btn vs Option Buttons](assets/images/readmeimg/nextbtnvsoptions.png)
 
-- On a smaller screen, developer would have liked to have container in a lower right position, so cornflower would remain more visible
+- On a smaller screen, developer would have liked to have container in a lower right position, so cornflower would remain more visible. am I responsive test
+  showed the flower covered by the quiz container, while lighthouse testing shows the flower and container box how the developer wanted them to fit together
 
 [Back to top](#contents)
 
