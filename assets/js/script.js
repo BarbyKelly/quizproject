@@ -1,21 +1,24 @@
 // jshint esversion: 6
-// script.js code learned from Web Dev Simplified: https://youtu.be/riDzcEQbX6k?feature=shared
+// script.js all code learned from Web Dev Simplified: https://youtu.be/riDzcEQbX6k?feature=shared , except the actual quiz questions and options
 
+// Const
 const startQuizButton = document.getElementById('startquiz-btn');
 const nextQuesButton = document.getElementById('nextques-btn');
 const quizQandOContainerElement = document.getElementById('quizqando-container');
 const quizQuestionElement = document.getElementById('quizquestion');
 const optionButtonsElement = document.getElementById('option-buttons');
 
+// Let
 let shuffledQuestions, currentQuestionIndex;
 
-
+// Start quiz
 startQuizButton.addEventListener('click', startQuiz);
 nextQuesButton.addEventListener('click', () => {
     currentQuestionIndex++;
     setNextQuestion();
 });
 
+// Start quiz function
 function startQuiz() {
     startQuizButton.classList.add('hide');
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
@@ -24,12 +27,14 @@ function startQuiz() {
     setNextQuestion();
 }
 
+// Next question function
 function setNextQuestion() {
     resetState();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
 
 }
 
+// Show question function
 function showQuestion(question) {
     quizQuestionElement.innerText = question.question;
     question.options.forEach(option => {
@@ -44,6 +49,7 @@ function showQuestion(question) {
     });
 }
 
+// Reset state function
 function resetState() {
     clearStatusClass(document.body);
     nextQuesButton.classList.add('hide');
@@ -52,6 +58,7 @@ function resetState() {
     }
 }
 
+// Select option to answer quiz question
 function selectOption(e) {
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
@@ -67,6 +74,7 @@ function selectOption(e) {
     }
 }
 
+// Set answer correct or incorrect function
 function setStatusClass(element, correct) {
     clearStatusClass(element);
     if (correct) {
@@ -76,15 +84,16 @@ function setStatusClass(element, correct) {
     }
 }
 
+// Clear "correct or incorrect" function
 function clearStatusClass(element) {
     element.classList.remove('correct');
     element.classList.remove('incorrect');
 }
 
-// All of the Questions and Answers created by the developer. Credit in README
+// All of the Questions and Options created by the developer. Credit in README
 // Layout and code structure for questions learned from Web Dev Simplified: https://youtu.be/riDzcEQbX6k?feature=shared
 
-// Array with all of the questions, and answers
+// Array with all of the questions, and options
 
 const questions = [
     {

@@ -1,4 +1,4 @@
-/* Base code for all of css code learned from https://youtu.be/riDzcEQbX6k?feature=shared */
+/* Base code for this css code learned from https://youtu.be/riDzcEQbX6k?feature=shared , unless credited otherwise for some lines of codes */
 *, *::before, *::after {
   box-sizing: border-box;
   font-family: Comfortaa, sans-serif;
@@ -187,7 +187,7 @@ h2 {
 .error-container {
     text-align: justify;
     background-color: #6495ED;
-    padding: auto;
+    padding: 15px;
     border-radius: 4px;
     box-shadow: 0 2px 3px rgba(22, 35, 209, 0.1);
 }

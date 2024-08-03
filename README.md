@@ -58,37 +58,41 @@ Image from [Am I Responsive?](https://ui.dev/amiresponsive?url=https://barbykell
 
 First time user, may want to:
 
-- Check their knowledge about Estonia.
-
-- Learn something new about Estonia.
-
-- Click on tabs.
-
-- See that everything works on the website.
+- Check their knowledge about Estonia
+- Learn something new about Estonia
+- Click on "Start Estonia Quiz" button
+- Experience that all buttons work on the website
+- See one question at a time displayed on the screen
+- Click on any of the answer options
+- Find out which answer was correct
+- Click on the button: "Next Question"
+- Go through all of the questions
+- Restart the quiz at the end of 10 questions
 
 
 #### Returning User:
 
 Returning user may want to:
 
-- See different quiz options.
-
-- Test their knowledge again.
-
-- See updated info on the website.
-
-- Improve their score.
-
-- See that all of the links work.
+- Do all that First Time User may do, as well as:
+  - See different quiz options (future feature)
+  - Test their knowledge again
+  - See updated info on the website, if any details should change (eg population)
+  - Improve their score (score counting: future feature)
+  - See new buttons added (future feature: eg Quit Quiz button, check your best score, choose type of quiz)
+  - Be able to click on links (future feature, links to resources)
 
 [Back to top](#contents)
 
 
 ## Website Structure
 
-This website includes one page where different areas can be accessed via buttons.
-- Welcome and Instructions area with buttons,
-- Quiz area with buttons.
+This website includes one page:
+- With "Start Estonia Quiz" button
+- Leading player to questions, answer options
+- And an option to click "Next Question" button
+- At the end of the quiz i.e. 10 questions, "Restart Quiz" buttons appears
+- Clicking on "Reset Quiz" starts the same 10 questions all over again, shuffled in a different order 
 
 
 ### Wireframes
@@ -98,18 +102,20 @@ This website is for anyone interested in doing a quiz, or who wants to learn mor
 Goal of the quiz is to:
   - test knowledge
   - play a game
-  - get a score
-  - see score on the page
-  - try quiz again
-  - see the correct answers
+  - see one question at a time displayed on the screen, without the correct answer option being highlighted
+  - be able to click on any option for an answer
+  - see the correct answer displayed as green
+  - see incorrect answers turn red
+  - have an option to restart (either by refreshing the page or at the end of 10 questions)
+  
 
 Website visitors are likely to:
-  - click on "Start quiz"
+  - click on "Start Estonia Quiz"
   - read the questions
-  - answer the questions
-  - want to see their score
+  - answer the questions by clicking on any option
+  - click on "Next Question"
   - try again by clicking on "Restart Quiz"
-  - click on buttons, links and images
+ 
 
 Screenshot of Estonia Quiz Home Page with the original image idea, with Estonian books and DVD's, Wireframe:
 
@@ -171,33 +177,30 @@ Color palette from this website:
 ### Existing Features 
 
 - Background image of Estonian national flower, cornflower
-- Estonia Quiz instructions
-- Start Quiz button
-- Next button
-- Restart Quiz button
+- Start Estonia Quiz button
+- Correct answer option turns green, and incorrect options turn red, when any of the options is chosen as an answer
+- Next button appears when the first question has been answered, if correct or incorrect
+- Restart Quiz button shows up when all 10 questions have been answered
 - Ten questions
-- How many questions answered indicator
 - Footer with copyright sign
-- Favicon
+- Favicon icon
+- Restart button will start the game again, with the same questions shuffled
+- All of the buttons are working
 
 
 ### Future Features
 
+- Estonia Quiz instructions
+- Clear indicator of which option was correct, and which option was chosen by the player
+- How many questions answered indicator
+- Player can choose if they want to play 3, 5 or 10 question game
 - Add variations of the quiz eg wildlife, culture, music, authors, movies, national symbols and so on.
-
 - Add difficulty levels: easy, medium, difficult (credit: difficulty levels were suggested by developer's older child)
-
 - Add language Buttons on top, to be able to do the quiz in different languages:
   - English
   - Eesti (Estonian)
-
 - Add "Extra" button to the website, which would bring visitors to an area with links and images to find out more about Estonia 
-
 - Add code to make images pop up when visitor has made their choice. Image of the correct answer (eg picture of lynx)
-
-- Get all buttons to work in different browsers/ports
-
-- STyle Instructions area
 
 [Back to top](#contents)
 
@@ -233,39 +236,23 @@ Developer used these sites/apps to create Estonia Quiz:
 Tested HTML with
 [Validator.W3](https://validator.w3.org/nu/#textarea)
 
-![HTML validation](assets/images/readmeimg/testinghtml.png)
-
-
-Result after fixing the error and retesting:
-
-![HTML retest](assets/images/readmeimg/htmlRetest.png)
+![HTML validation](assets/images/readmeimg/htmlvalidator.png)
 
 
 ### css
 
 Tested CSS with
 
+[Jigsaw.W3](https://jigsaw.w3.org/css-validator/validator)
 
-
-[Jigsaw.W3](https://jigsaw.w3.org/css-validator/validator) delete this?
-
-![CSS validation](assets/images/readmeimg/csstest.png)
+![CSS validation](assets/images/readmeimg/cssvalidator.png)
 
 
 ### JavaScript
 
-[Site 24X7](https://www.site24x7.com/tools/javascript-validator.html) - used 26.07
+[Site 24X7](https://www.site24x7.com/tools/javascript-validator.html)
 
-Tested JavaScript with [JSHint](https://jshint.com/)
-
-Warning showed up for 'const':
-![JavaScript test](readmejstest.png)
-
-The developer found from [here](https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const) how to modify jshint alert:
-![Code to modify alert](readmejshintcode.png)
-
-After adding the suggested code, alert for 'const' was solved:
-![Alert changed](readmefixerroralert.png)
+![Javascript validation](assets/images/readmeimg/jsvalidator.png)
 
 
 ### Lighthouse
@@ -311,11 +298,14 @@ Once color showed up correctly for correct vs incorrect answers, developer notic
 
 ## Known Bugs
 
-- Start Quiz button not working on developer's port. Port error showing  up. 
+- When player clicks on any option to answer the question, all options change color: one correct, and two incorrect answers
+- There is no question counter as part of the game. Developer could not get it to work, and opted to leave it out
+- Developer would have liked to have "Quit" button set up, so player could quit quiz at any time
+- "Next Question" button is more responsive than "Option" buttons, when screen size changes:
 
-- The developer was unable to check how questions and answers show up on the website, since the Start Quiz button stopped working. The developer searched for help via Slack, on Google, from mentor and tutor, other coders, and so far did not manage to fix it.
+![Next Question Btn vs Option Buttons](assets/images/readmeimg/nextbtnvsoptions.png)
 
-- Instructions styling seemed to be not responsive.
+- On a smaller screen, developer would have liked to have container in a lower right position, so cornflower would remain more visible
 
 [Back to top](#contents)
 
@@ -337,7 +327,6 @@ Once color showed up correctly for correct vs incorrect answers, developer notic
 - Filled in Repository name, and clicked on "Create repository"
 
 ![create repo](assets/images/readmeimg/createRepo.png)
-
 
 
 ## Deployment
@@ -380,7 +369,7 @@ Parts of the Readme template used from [Code Institute's Sample README](https://
 
 The Contents menu learned from: [Everything Quiz](https://github.com/Tony118g/the-everything-quiz/blob/main/README.md) 
 
-Reading The Everything Quiz README, highlighted for the developer the level of details that Quiz website README needs, and the importance of the README. 
+Reading The Everything Quiz README, highlighted for the developer the level of details that Quiz website README needs, and demonstrated the value of README. 
 
 
 ### User Stories:
@@ -412,7 +401,7 @@ Photo taken by the developer. Developer opted for Cornwlower image in the end, a
 
 ### Code
 
-Base for Estonia quiz from [Leeds Quiz](https://github.com/andreas-ka/leeds-quiz). Developer watched various YouTube quiz tutorials, and kept returning to Leeds Quiz, as developer liked the style of that quiz.
+Developer followed code for Estonia quiz from [Build A Quiz App With JavaScript](https://youtu.be/riDzcEQbX6k?feature=shared). Most of the code for this project is credit to Web Dev Simplified's quiz.
 
 
 - Footer
@@ -478,18 +467,18 @@ Same background image used to create a favicon image, using [favicon converter](
 
 - Developer created Error pages by following code from [this article](https://www.geeksforgeeks.org/create-a-404-page-using-html-and-css/)
 
-- Developer learned from [this site](https://www.presslabs.com/how-to/error-pages/) how site visitors may help themselves with error pages
+- Developer learned from [this site](https://www.presslabs.com/how-to/error-pages/) how site visitors may help themselves with error pages, and added these tips to html
 
 
 
 ## Acknowledgements
 
-- Grateful to my Mentor Lauren-Nicole Popich for supporting me with my projects, for listening, for sharing examples like the Leeds Quiz, for guiding me to improve my project, and sharing how to set up 404 page, and for suggesting to convert the links into clickable text, among other suggestions.
+- Grateful to my Mentor Lauren-Nicole Popich for supporting me with my project, for listening, for sharing examples like the Leeds Quiz, for guiding me to improve my project, and for suggesting to convert the links into clickable text, among other suggestions.
 
 - Grateful to Coding Group member Patrick Hladun for guiding developer via Slack, to get console errors to show up, and how to track errors one by one. He also pointed out where names of the functions were clashing, and some ; vs : errors in developer's code.
 
-- Thank you to Laura Mayock, group's Cohort Facilitator, for our weekly group meetings and guidance, encouraging students to show and talk about their projects. And to everyone who took part of the group meetings, shared their projects, and everyone who supported fellow students via Slack.
+- Thank you to Laura Mayock, group's Cohort Facilitator, for our weekly group meetings and guidance, encouraging students to show and talk about their projects. And to everyone who took part of the group meetings, shared their projects, and everyone who supported via Slack.
 
-- On the 31st of January 2024, while testing Estonia Quiz in a different browser (Microsoft Edge), and placing developer's own GitHub Estonia Quiz link into search bar, the developer came across [Estonian quizzes](https://www.visitestonia.com/en/why-estonia/play-quizzes-and-test-your-knowledge-about-estonia#). The developer was previously not aware of this Estonian quizzes page, even though she had seen other parts of www.visitestonia.com website, and credited the main page in README. The developer understands that it is important to Google first, to see if there are similar named projects.
+- On the 31st of January 2024, while testing Estonia Quiz in a different browser (Microsoft Edge), and placing developer's own GitHub Estonia Quiz link into search bar, the developer came across [Estonian quizzes](https://www.visitestonia.com/en/why-estonia/play-quizzes-and-test-your-knowledge-about-estonia#). The developer was previously not aware of this Estonian quizzes page, even though she had seen other parts of www.visitestonia.com website, and credited the main page in README. The developer understands for the future that it is important to Google first, to see if there are similar named projects.
 
 [Back to top](#contents)
