@@ -308,6 +308,33 @@ Once color showed up correctly for correct vs incorrect answers, developer notic
 404 error page displayed commented out parts. Developer realised, she had used CSS commenting style for HTML. Once the comments were corrected as appropriate for HTML,
 commented out text no longer appeared on 404 error page.
 
+![CSS comments instead of HTML](assets/images/readmeimg/csscommentinsteadofhtml.png)
+
+
+### Error page styling
+
+- Developer needed to check error pages only on the deployed site, as GitPod would only show the default error page.
+  Thanks to mentor Lauren-Nicole Popich, developer knew that error page might not show up properly when testing on GitPod
+  
+![Error page in GitPod](assets/images/readmeimg/errorpageingitpod.png)
+
+- 404 error page styling was not showing up. Developer edited stylesheet link, which fixed the issue:
+
+![Background-image not displaying](assets/images/readmeimg/imagenotthere.png)
+
+- Background-image for 404 error page was not showing. Developer removed the background-image from error-container styling, which fixed the issue
+
+![404 error page](assets/images/readmeimg/errorpageongithub.png)
+
+### HTML code lines not showing in README
+
+- Developer noticed that HTML codelines for favicon credit did not show up in README. With tutor Sarah's help, backticks were added, developer
+  adjusted the indentation, and the HTML code lines showed up in README
+
+![Backticks for HTML code](assets/images/readmeimg/backticks.png)
+
+![Code showing up in README as expected](assets/images/readmeimg/codelinesshowinginreadme.png)
+
 
 ## Known Bugs
 
@@ -372,12 +399,16 @@ commented out text no longer appeared on 404 error page.
 Favicon created using [favicon converter](https://favicon.io/favicon-converter/)
 
 These 3 lines of code, for favicon, were copied from Love Running:
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-
+```
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+```
 This line of code:
-  <link rel="manifest" href="/site.webmanifest"> 
+```
+<link rel="manifest" href="/site.webmanifest"> 
+```
+
 for Favicon, was copied from
 https://favicon.io/favicon-converter/
 
