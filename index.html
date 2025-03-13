@@ -11,6 +11,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+
+    <!-- Font Awesome and Google fonts, from Love Maths Walk-through -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+
     <!-- CSS link -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Title -->
@@ -19,8 +25,11 @@
 <body>
     <!-- Container and buttons layout learned from: https://www.youtube.com/watch?v=riDzcEQbX6k -->
     <main>
+        <h1 class="heading">
+            Estonia Quiz
+        </h1>
         <div class="quizcontainer">
-            <div id="quizqando-container" class="hide">
+            <div id="quizqanda-container" class="hide">
                 <div id="quizquestion"> </div>
                 <div id="option-buttons" class="btn-grid">
                     <button class="option-btn btn">Option I</button>
@@ -33,14 +42,19 @@
                 <button id="nextques-btn" class="nextques-btn btn hide">Next Question</button>
                 <button id="restartquiz-btn" class="restart-quiz-btn btn hide">Restart Quiz</button>
             </div>
+            <!-- Score area, followed from Love Maths Walk-through -->
+            <div class="score-area">
+                <p class="scores">Correct Answers <span id="score">0</span></p>
+                <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+
+            </div>
             <!-- Script -->
             <script src="assets/js/script.js"></script>
         </div>
     </main>
     <!-- Footer copyright script code from this video: https://youtu.be/US_3XvufMLU?feature=shared -->
     <footer class="footer">
-        <p> Copyright &copy; Estonia Quiz by Barby Kelly <br> Created 2024 as
-        part of a project for Software Development course. No commercial intention. </p>
+        <p> Copyright &copy; 2025 Estonia Quiz by Barby Kelly 202<br> JS project. No commercial intention. </p>
     </footer>
     
 </body>
