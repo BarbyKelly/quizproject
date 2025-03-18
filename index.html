@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" crossorigin="anonymous">
 
     <!-- Font Awesome and Google fonts, from Love Maths Walk-through -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -23,39 +23,89 @@
     <title>Estonia Quiz</title>
 </head>
 <body>
-    <!-- Container and buttons layout learned from: https://www.youtube.com/watch?v=riDzcEQbX6k -->
-    <main>
-        <h1 class="heading">
-            Estonia Quiz
-        </h1>
-        <div class="quizcontainer">
-            <div id="quizqanda-container" class="hide">
-                <div id="quizquestion"> </div>
-                <div id="option-buttons" class="btn-grid">
-                    <button class="option-btn btn">Option I</button>
-                    <button class="option-btn btn">Option II</button>
-                    <button class="option-btn btn">Option III</button>
-                </div>
-            </div>
-            <div class="controls">
-                <button id="startquiz-btn" class="startquiz-btn btn">Start Estonia Quiz</button>
-                <button id="nextques-btn" class="nextques-btn btn hide">Next Question</button>
-                <button id="restartquiz-btn" class="restart-quiz-btn btn hide">Restart Quiz</button>
-            </div>
-            <!-- Score area, followed from Love Maths Walk-through -->
-            <div class="score-area">
-                <p class="scores">Correct Answers <span id="score">0</span></p>
-                <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+    <!-- Code learned from: https://github.com/Tony118g/the-everything-quiz/blob/main/index.html -->
+    <!-- Header -->
+    <header>
+        <h1 id="heading">Estonia Quiz</h1>
+    </header>
 
-            </div>
-            <!-- Script -->
-            <script src="assets/js/script.js"></script>
-        </div>
-    </main>
-    <!-- Footer copyright script code from this video: https://youtu.be/US_3XvufMLU?feature=shared -->
-    <footer class="footer">
-        <p> Copyright &copy; 2025 Estonia Quiz by Barby Kelly 202<br> JS project. No commercial intention. </p>
-    </footer>
+    <!-- Main Menu for quiz-->
+    <div id="menu" class="container">
+        <h2>Estonia Quiz to test your knowledge of Estonia</h2>
+        <button id="guidelines_button" class="btn menu_btn">Guidelines</button>
+        <button id="quiz_btn" class="btn menu_btn">Choose Quiz level</button>
+    </div>
+
+    <!-- Guidelines modal -->
     
+    <div id="guidelines" class="container hide">
+        <h2 id="guidelines_heading">Guidelines</h2>
+        <button id="close_guidelines" class="close_modal">x</button>
+        <ul>
+            <li>Choose Easy, Medium or Hard Quiz level</li>
+            <li>All Quiz levels are made up of 5 random questions</li>
+            <li>You have 15 seconds to answer each question</li>
+            <li>To select an answer, click or tap on that answer</li>
+            <li>Unanswered questions are counted as 'Incorrect'</li>
+            <li>Correct answers turn green when correct answer selected</li>
+            <li>Incorrect answers turn red when selected, and correct answer is shown in green</li>
+            <li>Click or tap on 'Next' to get to the next question</li>
+            <li>'Question count' shows which question are you at (eg 2/5)</li>
+            <li>Click or tap on 'Exit Quiz' button (top right corner) if you want to end the quiz before 5 questions are up</li>
+            <li>Good luck!</li>
+            <li>Feel free to Play again, or try another level</li>
+        </ul>
+    </div>
+
+    <!-- Prompt with Quiz Levels -->
+    
+    <div id="quiz_levels_prompt" class="container hide">
+        <button id="close_levels" class="close_modal">x</button>
+        <h2>Select a level to begin</h2>
+        <div>
+            <button id="easy" class="btn level_option">Easy</button>
+            <button id="medium" class="btn level_option">Medium</button>
+            <button id="hard" class="btn level_option">Hard</button>
+        </div>
+    </div>
+
+    <!-- Quiz area -->
+
+    <div id="quiz_area" class="container hide">
+        <button id="exit_quiz" class="close_modal">Exit Quiz</button>
+
+        <!-- Quiz Questions area with timer -->
+        
+        <div id="quizquestion_area">
+            <h2>Question <span id="quizquestion_number">0</span>5 <span id="timer">0</span></h2>
+            <p id="quizquestion">Question content goes here</p>
+        </div>
+
+        <!-- Answer options container, and score display -->
+        
+        <div id="answer_area">    
+        </div>
+        <button id="nex_question_button" class="btn hide">Next Question</button>
+        <p>Score: <span id="score">0</span></p>
+    </div>
+
+        <!-- Final score message for finished quiz, all levels -->
+        
+        <div id="quiz_finish" class="hide container">
+            <h2>Finished!</h2>
+            <p> Your Final Score is <span id="final_score">0</span>5</p>
+            <button id="retry_quiz_button" class="btn quiz_finish_btn">Play again</button>
+            <button id="main_menu_button" class="btn quiz_finish_btn">Main Menu</button>
+        </div>
+
+        <!-- Footer copyright script code from this video: https://youtu.be/US_3XvufMLU?feature=shared -->
+
+        <footer class="footer">
+            <p> Copyright &copy; 2025 Estonia Quiz by Barby Kelly 202<br> JS project. No commercial intention. </p>
+        </footer>
+        
+        <!-- Script -->
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/questions.js"></script>
 </body>
 </html>
