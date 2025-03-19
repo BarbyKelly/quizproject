@@ -246,6 +246,11 @@ Tested HTML with
 ![HTML validation](assets/images/readmeimg/htmlvalidation.png)
 
 
+
+
+
+
+
 ### CSS
 
 Tested CSS with
@@ -333,6 +338,31 @@ commented out text no longer appeared on 404 error page.
 ![Backticks for HTML code](assets/images/readmeimg/backticks.png)
 
 ![Code showing up in README as expected](assets/images/readmeimg/codelinesshowinginreadme.png)
+
+### Button tag error
+
+- When 'Guidelines' and 'Choose Quiz level' buttons were not responsive, developer first checked html validation.
+
+- HTML Validation test showed an error on line 67:
+
+  ![HTML error](<assets/images/readmeimg/html_error.png>)
+
+- Developer checked index.html, and couldn't see any error on line 67. She then checked Slack, and Google for solution.
+  Solution came from [this site](https://rocketvalidator.com/html-validation/start-tag-button-seen-but-an-element-of-the-same-type-was-already-open):
+
+  [Help from Rocket Validator](assets/images/readmeimg/rocket_validator_help.png)
+
+  Developer investigated line 67 again, and noticed that issue was on line 66, as she had deleted '<' jin button's closing tag, by accident, while changing names for quiz levels:
+
+  [HTML line 66 missing >](assets/images/readmeimg/html_tag_error.png)
+
+- Developer added '<' back in front of the closing button, and error was fixed:
+
+  [Fixed button tag](assets/images/readmeimg/button_tag_fixed.png)
+
+- Developer learned from this bug how it's important to look at lines before and after the error, not just the line marked with an error.
+
+
 
 
 ## Known Bugs
