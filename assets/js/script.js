@@ -2,11 +2,16 @@
 // script.js final code learned from: [The Everything Quiz](https://github.com/Tony118g/the-everything-quiz/blob/main/assets/js/script.js)
 
 // Const
-// const startQuizButton = document.getElementById('startquiz-btn');
-//const nextQuesButton = document.getElementById('nextques-btn');
-//const quizQandOContainerElement = document.getElementById('quizqando-container');
-//const quizQuestionElement = document.getElementById('quizquestion');
-//const optionButtonsElement = document.getElementById('option-buttons');
+
+const heading = document.getElementById("heading");
+const menu = document.getElementById("menu");
+const guidelinesModal = document.getElementById("guidelines");
+const levelsPrompt = document.getElementById("quiz_levels_prompt");
+const quizArea = document.getElementById("quiz_area");
+const answersArea = document.getElementById("answer_area");
+const timerDisplay = document.getElementById("timer");
+const nextQuestionButton = document.getElementById('next_question_button');
+
 
 // Let
 //let shuffledQuestions, currentQuestionIndex;
