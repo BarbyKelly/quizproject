@@ -525,6 +525,8 @@ Same background image used to create a favicon image, using [favicon converter](
 
 ## Acknowledgements
 
+- Code for the Final version of Estonia Quiz, learned from: [The Everything Quiz](https://tony118g.github.io/the-everything-quiz/) . Developer liked the layout and functionality of The Everything Quiz.
+
 - Grateful to my Mentor Lauren-Nicole Popich for supporting me with my project, for listening, for sharing examples like the Leeds Quiz, for guiding me to improve my project, and for suggesting to convert the links into clickable text, among other suggestions.
 
 - Grateful to Coding Group member Patrick Hladun for guiding developer via Slack, to get console errors to show up, and how to track errors one by one. He also pointed out where names of the functions were clashing, and some ; vs : errors in developer's code.
