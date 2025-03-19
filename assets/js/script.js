@@ -4,9 +4,9 @@
 // Const
 
 const heading = document.getElementById("heading");
-const menu = document.getElementById("menu");
+const mainMenu = document.getElementById("mainMenu");
 const guidelinesModal = document.getElementById("guidelines");
-const levelsPrompt = document.getElementById("quiz_levels_prompt");
+const quizLevelsPrompt = document.getElementById("quiz_levels_prompt");
 const quizArea = document.getElementById("quiz_area");
 const answersArea = document.getElementById("answer_area");
 const timerDisplay = document.getElementById("timer");
@@ -22,16 +22,47 @@ let score;
 let timeLeft;
 let timerInterval;
 
-// Start quiz
-//startQuizButton.addEventListener('click', startQuiz);
-//nextQuesButton.addEventListener('click', () => {
-//    currentQuestionIndex++;
-//    setNextQuestion();
-//});
-//
-// Start quiz function
-//function startQuiz() {
-   // startQuizButton.classList.add('hide');
+/* Waits for DOM to load before executing the first function,
+which gets Main Menu buttons, and adds event listeners
+to buttons */
+
+document.addEventListener("DOMContentLoaded", function() {
+   const mainMenuButtons = this.querySelectorAll(".main_menu_btn");
+   mainMenuButtons.forEach((mainMenuButton) => {
+      mainMenuButton.addEventListener("click", function() {
+         if (this.getAttribute("id") === "guidelines_button") {
+            displayGuidelines;
+         } else if (this.getAttribute("id") === "quiz_button") {
+            quizLevelsPrompt();
+         }
+      });
+   });
+});
+
+/* Hides Main Menu, while guidelines modal is displayed,
+ * adds an event listener to the 'close' button
+ */
+
+function displayGuidelines() {
+   guidelinesModal.classList.remove("hide");
+   heading.classList.add("hide");
+   mainMenu.classList.add("hide");
+   const closeGuidelinesButton = document.getElementById("close_guidelines");
+   closeGuidelinesButton.addEventListener("click", closeGuidelines);
+}
+
+/* Hides Guidelines Modal, displays Main Menu instead */
+
+function closeGuidelines() {
+   guidelinesModal.classList.add("hide");
+   heading.classList.remove("hide");
+   mainMenu.classList.remove("hide");
+}
+
+
+
+
+  // all previous js below, to test what works
    // shuffledQuestions = questions.sort(() => Math.random() - 0.5);
    // currentQuestionIndex = 0;
    // quizQandOContainerElement.classList.remove('hide');
