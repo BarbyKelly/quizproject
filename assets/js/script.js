@@ -1,7 +1,7 @@
 // jshint esversion: 6
 // script.js final code learned from: [The Everything Quiz](https://github.com/Tony118g/the-everything-quiz/blob/main/assets/js/script.js)
 
-// Global variables
+// Const Variables (Variables with consistent value)
 
 const heading = document.getElementById("heading");
 const mainMenu = document.getElementById("mainMenu");
@@ -13,7 +13,7 @@ const timerDisplay = document.getElementById("timer");
 const nextQuestionButton = document.getElementById('next_question_button');
 
 
-// Let
+// Let Variables (Variables with changing value)
 
 let shuffledQuestions;
 let currentQuestionIndex;
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
    mainMenuButtons.forEach((mainMenuButton) => {
       mainMenuButton.addEventListener("click", function() {
          if (this.getAttribute("id") === "guidelines_button") {
-            displayGuidelines;
+            displayGuidelines();
          } else if (this.getAttribute("id") === "quiz_button") {
             levelPrompt();
          }
@@ -40,8 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 /* Function to hide Main Menu, while guidelines modal is displayed,
- * add an event listener to the 'close' button
- */
+add an event listener to the 'close' button */
 
 function displayGuidelines() {
    guidelinesModal.classList.remove("hide");
@@ -51,7 +50,7 @@ function displayGuidelines() {
    closeGuidelinesButton.addEventListener("click", closeGuidelines);
 }
 
-/* Function to close and hide Guidelines Modal, and to display Main Menu */
+// Function to close and hide Guidelines Modal, and to display Main Menu
 
 function closeGuidelines() {
    guidelinesModal.classList.add("hide");
@@ -60,9 +59,8 @@ function closeGuidelines() {
 }
 
 /* Displays Levels Menu while hiding Main Menu,
-* and gets Levels selection buttons,
-* and adds event listeners to them
-*/
+and gets Levels selection buttons,
+and adds event listeners to them */
 
 function levelPrompt() {
    /* Gets the button to close the Levels menu,
@@ -78,15 +76,15 @@ function levelPrompt() {
 
    // Const to get buttons for Levels, add event listeners to them
    const levelOptions = document.querySelectorAll(".level_option");
-   levelOptions.forEach(levelOption) => {
+   levelOptions.forEach((levelOption) => {
       levelOption.addEventListener("click", function() {
          levelPrompt.classList.add("hide");
-         if (this.getAttribute("id") === "easy") {
-            startEasyQuiz();
-         } else if (this.getAttribute("id") === "medium") {
-            startMediumQuiz();
-         } else if (this.getAttribute("id") === "hard") {
-            startHardQuiz();
+         if (this.getAttribute("id") === "beginner") {
+            startBeginnerQuiz();
+         } else if (this.getAttribute("id") === "intermediate") {
+            startIntermediateQuiz();
+         } else if (this.getAttribute("id") === "expert") {
+            startExpertQuiz();
          }
 
          // Const to get button to Exit the quiz. Add an event listener to it
@@ -96,7 +94,7 @@ function levelPrompt() {
    });
 }
 
-/* Function to close and hide Levels menu and display Main Menu */
+// Function to close and hide Levels menu and display Main Menu
 
 function closeLevelMenu() {
    levelPrompt.classList.add("hide");
@@ -104,7 +102,7 @@ function closeLevelMenu() {
    mainMenu.classList.remove("hide");
 }
 
-/* Function to hide Quiz area, reset Quiz, and display Main Menu */
+// Function to hide Quiz area, reset Quiz, and display Main Menu
 
 function exitQuiz() {
    currentQuestionIndex = 0;
@@ -114,6 +112,42 @@ function exitQuiz() {
    heading.classList.remove("hide");
    mainMenu.classList.remove("hide");
 }
+
+/* Beginner Questions: Function to display Quiz area, get 5 random questions
+from beginnerQuestions object, whilst setting
+the currentQuestionIndex to 0, for the start of the quiz */
+
+function startBeginnerQuiz() {
+   quizArea.classList.remove("hide");
+   shuffledQuestions = beginnerQuestions.sort() => 0.5 - Math.random().slice(0, 5);
+   currentQuestionIndex = 0;
+   nextQuestionButton();
+}
+
+/* Intermediate Questions: Function to display Quiz area, get 5 random questions
+from intermediateQuestions object, whilst setting
+the currentQuestionIndex to 0, for the start of the quiz */
+
+function startIntermediateQuiz() {
+   quizArea.classList.remove("hide");
+   shuffledQuestions = intermediateQuestions.sort() => 0.5 - Math.random().slice(0, 5);
+   currentQuestionIndex = 0;
+   nextQuestionButton();
+}
+
+/* Expert Questions: Function to display Quiz area, get 5 random questions
+from expertQuestions object, whilst setting
+the currentQuestionIndex to 0, for the start of the quiz */
+
+function startExpertQuiz() {
+   quizArea.classList.remove("hide");
+   shuffledQuestions = expertQuestions.sort() => 0.5 - Math.random().slice(0, 5);
+   currentQuestionIndex = 0;
+   nextQuestionButton();
+}
+
+
+
 
 
 

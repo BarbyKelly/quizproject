@@ -202,7 +202,6 @@ Color palette from this website:
 - Player can choose how many questions they want to answer per game
 - Increased number of questions
 - Add variations of the quiz eg wildlife, culture, music, authors, movies, national symbols and so on
-- Add difficulty levels: easy, medium, difficult (credit: difficulty levels were suggested by developer's older child)
 - Add Buttons on top of the page with different languages, for the quiz and for the "Extra" area:
   - English
   - Eesti (Estonian)

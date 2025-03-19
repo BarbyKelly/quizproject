@@ -2,9 +2,9 @@
 // Layout and code structure for questions learned from Web Dev Simplified: https://youtu.be/riDzcEQbX6k?feature=shared
 // questions.js edited after learning different question levels from: [The Everything Quiz](https://github.com/Tony118g/the-everything-quiz/blob/main/assets/js/questions.js)
 
-// Object containing Easy level questions, and answer options
+// Object containing Beginner level questions, and answer options
 
-const easyLevelQuestions = [
+const beginnerLevelQuestions = [
     {
         question: "Where is Estonia, one of the Baltic States, located?",
         options: [
@@ -71,9 +71,9 @@ const easyLevelQuestions = [
     },
 ];
 
-// Object containing Medium level questions and answer options
+// Object containing Intermediate level questions and answer options
 
-const mediumLevelQuestions =[
+const intermediateLevelQuestions =[
     {
         question: "Estonian national bird is...",
         options: [
@@ -140,9 +140,9 @@ const mediumLevelQuestions =[
     },
 ];
 
-// Object containing Hard level Questions and answer options
+// Object containing Expert level Questions and answer options
 
-const hardLevelQuestions =[
+const expertLevelQuestions =[
     {
         question: "Population of Estonia in Feb 2025?",
         options: [
