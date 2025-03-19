@@ -1,23 +1,20 @@
-/* Base code for this css code learned from https://youtu.be/riDzcEQbX6k?feature=shared , unless credited otherwise for some lines of codes */
-*, *::before, *::after {
-  box-sizing: border-box;
-  font-family: Comfortaa, sans-serif;
+/* CSS learned from: "The Everything Quiz": https://github.com/Tony118g/the-everything-quiz/blob/main/assets/css/style.css */
+/* Google Fonts link */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway%7CRighteous');
+
+/* General styling for Estonia Quiz */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-:root {
-    --hue-neutral: 190;
-    --hue-incorrect: 0;
-    --hue-correct: 140;
-}
-
-/* This html styling, from https://youtu.be/yc2olxLgKLk?feature=shared */
-html {
-    height: 100%;
-}
-
-/* Background image. Credit in README. Photo taken by the developer */
 body {
-    --hue: var(--hue-neutral);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: comfortaa, sans-serif;
     background-image: url("../images/cornflower.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,156 +22,141 @@ body {
     background-color: #6495ED;
     color: #333333;
     padding: 16px;
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    justify-content: flex-end;
-    align-items: flex-end;
-    text-align: center;
-    
-    /* this part of body styling, to push down footer, from https://youtu.be/yc2olxLgKLk?feature=shared */
-    flex-direction: column;
+    text-align: center;    
 }
 
-body.correct {
-    --hue: var(--hue-correct);
-}
-
-body.correct {
-    --hue: var(--hue-incorrect);
-}
-
-
-/* Container edited following this video: https://youtu.be/rFWbAj40JrQ?feature=shared  . Edit
-padding to px as per mentor's suggestion */
-
-.quizcontainer {
-    width: auto;
-    max-width: max-content;
-    height: auto;
-    max-height: max-content;
-    background-color: #E6F4F1;
-    border-radius: 4px;
-    padding: 16px;
-    box-shadow: 0 0 9px 1px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 150px;
-    margin-bottom: 80px;
-}
-
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.flex-center {
-    justify-content: center;
-    align-items: center;
-}
-
-.justify-center {
-    justify-content: center;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.hidden {
-    display: none;
-}
-
-/* headings styling base code for now from: https://youtu.be/rFWbAj40JrQ?feature=shared */
-
-h1,
-h2,
-h3,
-h4 {
-    margin-bottom: 1rem;
-}
+/* Headings styling */
 
 h1 {
+    text-shadow: 0px 3px 15px #8090BC;
     font-size: 3.5rem;
     color: #333333;
-    margin-bottom: 2rem;
-}
-
-h1 > span {
-    font-size: 2rem;
-    font-weight: 400;
+    padding-top: 15px;
 }
 
 h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    padding: 15px;
+    font-weight: 400;
 }
 
-/* Button grid code and other button styles base from: https://youtu.be/riDzcEQbX6k?feature=shared */
-.btn-grid {
-    display: grid;
-    grid-template-columns: repeat(1, auto);
-    gap: 11px;
-    margin: 10px 0;
+/* Quiz Timer styling */
+
+#timer {
+    margin-left: 10px;
 }
 
-/* Buttons styling edited following code from this video https://youtu.be/rFWbAj40JrQ?feature=shared */
+/* Paragraphs styling */
+
+p {
+    font-size: 1.2rem;
+    padding: 12px;
+}
+
+/* Buttons styling */
 
 .btn {
-    --hue: var(--hue-neutral);
-    border: 0.1rem solid #8090BC;
-    background-color: #F4F9FF;
-    border-radius: 4px;
-    padding: 6px 8px;
-    outline: none;
-    font-size: 1.5rem;
-    width: 10rem;
-    text-align: center;
-    text-decoration: none;
-    margin-bottom: 1rem;
     color: #6495ED;
+    text-shadow: 0px 3px 15px #8090BC;
+    font-weight: 500;
+    background-color: #F4F9FF;
+    display: block;
+    padding: 15px;
+    width: 85%;
+    min-width: 180px;
+    margin: 15px auto;
+    font-family: comfortaa, sans-serif;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 10px #8090BC;   
 }
 
-.btn:hover {
-    border-color: #8090BC;
-    cursor: pointer;
-    transition: transform 150ms;
-    box-shadow: 0 0.4rem 1.4rem 0 #6495ED;
+/* Buttons to close Modals, styling */
+
+.close_modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 0 15px;
+    background-color: inherit;
+    font-size: 2rem;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    font-family: comfortaa, sans-serif;
 }
 
+/* Question area styling */
 
-/* Colors for correct and incorrect answers, copied from: https://github.com/andreas-ka/leeds-quiz/blob/main/assets/css/style.css */
-.btn.correct {
-    --hue: var(--hue-correct);
-    color: green;
+#quizquestion_area {
+    margin-top: 20px;
 }
 
-.btn.incorrect {
-    --hue: var(--hue-incorrect);
-    color: rgb(239, 29, 29);
+/* Answer area buttons styling */
+
+#answer_area > .btn {
+    color: #6495ED;
+    background-color: white;
 }
 
-.startquiz-btn, 
-.nextques-btn {
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 15px 15px;
+/* Container divs styling */
+
+.container {
+    position: relative;
+    background-color: #E6F4F1;
+    max-width: 600px;
+    margin: 30px 10px;
+    padding: 16px;
+    border: 2px solid #8090BC;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 10px;
 }
 
-.controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Guidelines modal styling */
+
+#guidelines_heading {
+    font-size: 2rem;
 }
+
+li {
+    text-align: left;
+    margin: 0 15px;
+    padding: 15px;
+}
+
+/* Styling to hide containers */
 
 .hide {
     display: none;
 }
 
-.footer {
-    font-size: 15px;
+/* Styling for correct and incorrect answer buttons */
+
+.correct_answer {
+    color: black;
+    background-color: green !important;
+    box-shadow: 0px 0px 10px 5px #8090BC;
+}
+
+.incorrect_answer {
+    color: black;
+    background-color: red !important;
+    box-shadow: 0px 0px 10px 5px #8090BC;
+}
+
+/* Styling to prevent clicks in the Answer Area when the no-pointer class is applied */
+
+.no-pointer {
+    pointer-events: none;
+}
+
+/* Footer styling */
+
+footer {
+    margin-top: auto;
+    font-size: 2rem;
     right: 0px;
     left: 0px;
     bottom: 0px;
@@ -184,30 +166,45 @@ h2 {
     line-height: 20px;
 }
 
-.error-container {
-    text-align: justify;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: #6495ED;
-    padding: 15px;
-    border-radius: 4px;
-    box-shadow: 0 2px 3px rgba(22, 35, 209, 0.1);
-}
+/* Media Queries for screens larger than 670px */
 
-/* Media Queries, learner from: https://www.freecodecamp.org/news/learn-css-media-queries-by-building-projects/ */
-@media (min-width : 480px) and (max-width : 768px) {
-    .quizcontainer {
-        background-color: #E6F4F1;
-        height: auto;
-        display: grid;
-        place-items: center;
-        margin-left: 60px;
+@media screen and (min-width: 670px) {
+    h1 {
+        margin-top: 85px;
+        font-size: 5rem;
     }
-    .btn-grid {
-        margin-left: 60px;
+
+    h2 {
+        font-size: 1.5rem;
     }
-    .nextques-btn {
-        margin-left: 60px;
+
+    .container {
+        min-width: 650px;
+        margin: 35px auto;
     }
+
+    #timer {
+        margin-left: 85px;
+    }
+
+    /* Provides feedback when user hovers over buttons, styling */
+
+    .btn:hover {
+        border-color: #8090BC;
+        color: #6495ED;
+        box-shadow: 0px 0px 10px 5px #8090BC;
+    }
+
+    .close_modal:hover {
+        background-color: #6495ED;
+        border-color: #8090BC;
+        color: #8090BC;
+        box-shadow: 0px 0px 10px 5px #8090BC;
+    }
+
+    #answer_area > .btn:hover {
+        background-color: #6495ED;
+        color: #8090BC;
+        box-shadow: 0px 0px 10px 5px #8090BC;
+    }  
 }
