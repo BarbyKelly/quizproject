@@ -1,5 +1,5 @@
 // jshint esversion: 6
-// script.js all code learned from Web Dev Simplified: https://youtu.be/riDzcEQbX6k?feature=shared , except the actual quiz questions and options
+// script.js final code learned from: [The Everything Quiz](https://github.com/Tony118g/the-everything-quiz/blob/main/assets/js/script.js)
 
 // Const
 // const startQuizButton = document.getElementById('startquiz-btn');
