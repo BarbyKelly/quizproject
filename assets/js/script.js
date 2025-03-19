@@ -14,7 +14,13 @@ const nextQuestionButton = document.getElementById('next_question_button');
 
 
 // Let
-//let shuffledQuestions, currentQuestionIndex;
+
+let shuffledQuestions;
+let currentQuestionIndex;
+let correctAnswer;
+let score;
+let timeLeft;
+let timerInterval;
 
 // Start quiz
 //startQuizButton.addEventListener('click', startQuiz);
