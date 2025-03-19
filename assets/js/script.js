@@ -1,12 +1,12 @@
 // jshint esversion: 6
 // script.js final code learned from: [The Everything Quiz](https://github.com/Tony118g/the-everything-quiz/blob/main/assets/js/script.js)
 
-// Const
+// Global variables
 
 const heading = document.getElementById("heading");
 const mainMenu = document.getElementById("mainMenu");
 const guidelinesModal = document.getElementById("guidelines");
-const quizLevelsPrompt = document.getElementById("quiz_levels_prompt");
+const levelPrompt = document.getElementById("level_prompt");
 const quizArea = document.getElementById("quiz_area");
 const answersArea = document.getElementById("answer_area");
 const timerDisplay = document.getElementById("timer");
@@ -33,14 +33,14 @@ document.addEventListener("DOMContentLoaded", function() {
          if (this.getAttribute("id") === "guidelines_button") {
             displayGuidelines;
          } else if (this.getAttribute("id") === "quiz_button") {
-            quizLevelsPrompt();
+            levelPrompt();
          }
       });
    });
 });
 
-/* Hides Main Menu, while guidelines modal is displayed,
- * adds an event listener to the 'close' button
+/* Function to hide Main Menu, while guidelines modal is displayed,
+ * add an event listener to the 'close' button
  */
 
 function displayGuidelines() {
@@ -51,7 +51,7 @@ function displayGuidelines() {
    closeGuidelinesButton.addEventListener("click", closeGuidelines);
 }
 
-/* Hides Guidelines Modal, displays Main Menu instead */
+/* Function to close and hide Guidelines Modal, and to display Main Menu */
 
 function closeGuidelines() {
    guidelinesModal.classList.add("hide");
@@ -59,16 +59,65 @@ function closeGuidelines() {
    mainMenu.classList.remove("hide");
 }
 
+/* Displays Levels Menu while hiding Main Menu,
+* and gets Levels selection buttons,
+* and adds event listeners to them
+*/
+
+function levelPrompt() {
+   /* Gets the button to close the Levels menu,
+   and adds an event listener to it */
+
+   const closeLevelButton = document.getElementById("close_level");
+   closeLevelButton.addEventListener("click", closeLevelMenu);
+
+   // Displays Quiz Levels Menu
+   levelPrompt.classList.remove("hide");
+   heading.classList.add("hide");
+   mainMenu.classList.add("hide");
+
+   // Const to get buttons for Levels, add event listeners to them
+   const levelOptions = document.querySelectorAll(".level_option");
+   levelOptions.forEach(levelOption) => {
+      levelOption.addEventListener("click", function() {
+         levelPrompt.classList.add("hide");
+         if (this.getAttribute("id") === "easy") {
+            startEasyQuiz();
+         } else if (this.getAttribute("id") === "medium") {
+            startMediumQuiz();
+         } else if (this.getAttribute("id") === "hard") {
+            startHardQuiz();
+         }
+
+         // Const to get button to Exit the quiz. Add an event listener to it
+         const exitButton = document.getElementById("exit_quiz");
+         exitButton.addEventListener("click", exitQuiz);
+      });
+   });
+}
+
+/* Function to close and hide Levels menu and display Main Menu */
+
+function closeLevelMenu() {
+   levelPrompt.classList.add("hide");
+   heading.classList.remove("hide");
+   mainMenu.classList.remove("hide");
+}
+
+/* Function to hide Quiz area, reset Quiz, and display Main Menu */
+
+function exitQuiz() {
+   currentQuestionIndex = 0;
+   clearInterval(timerInterval);
+   resetScore();
+   quizArea.classList.add("hide");
+   heading.classList.remove("hide");
+   mainMenu.classList.remove("hide");
+}
 
 
 
-  // all previous js below, to test what works
-   // shuffledQuestions = questions.sort(() => Math.random() - 0.5);
-   // currentQuestionIndex = 0;
-   // quizQandOContainerElement.classList.remove('hide');
-   // setNextQuestion();
-//}
-//
+
 // Next question function
 //function setNextQuestion() {
   //  resetState();
