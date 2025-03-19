@@ -452,7 +452,9 @@ Photo taken by the developer. Developer opted for Cornwlower image in the end, a
 
 ### Code
 
-Developer followed code for Estonia quiz from [Build A Quiz App With JavaScript](https://youtu.be/riDzcEQbX6k?feature=shared). Most of the code for this project is credit to Web Dev Simplified's quiz.
+- At the start Developer followed code for Estonia quiz from [Build A Quiz App With JavaScript](https://youtu.be/riDzcEQbX6k?feature=shared). Most of the code for this project is credit to Web Dev Simplified's quiz.
+
+- Code for the Final version of Estonia Quiz, learned from: [The Everything Quiz](https://tony118g.github.io/the-everything-quiz/) . Developer found the layout and functionality of The Everything Quiz, more suitable for Estonia Quiz.
 
 
 - Footer
