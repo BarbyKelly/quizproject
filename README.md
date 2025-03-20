@@ -424,7 +424,34 @@ commented out text no longer appeared on 404 error page.
 
   ![Unexpected token error](assets/images/readmeimg/unexpected_token.png)
 
+  - While investing where this error was coming from, developer noticed
+  that she hadn't swapped 'LevelPrompt' for 'QuizLevelPrompt' on line 35 in script.js,
+  while she had swapped it on line 62 in index.html, and on line 10 in script.js.
+  Developer corrected the error.
 
+  - Developer deleted ')' from line 289 script.js, to be able to see other errors, as she hadn't located
+  the opening '(', to fix that error.
+
+  #### Uncaught TypeError: Cannot read properties of null (reading 'classList')
+
+  - Next, when inspecting the page after clicking on 'Guidelines' button, Uncaught TypeError: Cannot read properties of null (reading 'classList')
+    Error showed up for line 46 script.js:
+
+  ![Uncaught type error](assets/images/readmeimg/uncaught_type_error.png)
+
+  - Guidelines were now visible, but Main Menu was not hidden as expected:
+
+  ![Guidelines visible, and main menu](assets/images/readmeimg/guidelines_visible.png)
+
+  - Developer checked if all Main menu wording was same in all files, and noticed that she had 
+    used camelCase instead of 'id' in const line 8 script.js. Developer fixed the error:
+
+  ![camelCase error](assets/images/readmeimg/camelcase_error.png)
+
+  - Developer tested website again after this fix, and Guidelines opened as expected, 
+  while Main Menu became hidden:
+
+  
 
 ## Known Bugs
 
@@ -438,6 +465,12 @@ commented out text no longer appeared on 404 error page.
 
 - On a smaller screen, developer would have liked to have container in a lower right position, so cornflower would remain more visible. am I responsive test
   showed the flower covered by the quiz container, while lighthouse testing shows the flower and container box how the developer wanted them to fit together
+
+- There's no option to choose Quiz Level straight from Guidelines Menu, instead user needs to click to exit that menu, and then click on 'Choose quiz level' menu.
+
+- When guiding user to click on 'x' to close Guidelines menu, user might use the 'x' to close the website. Important to make sign clear, and ideally user can just go straight to   Quiz levels, without having to close Guidelines menu. Or to add a rotate-left icon, to return to main menu. Or burger menu, to return to main menu.
+
+- 'Close modal' * is clickable on all screen sizes, yet on a smallest screen size, it doesn't change when hovering over it, and hovering isn't working for Main menu buttons on a smallest screen
 
 [Back to top](#contents)
 

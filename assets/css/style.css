@@ -38,7 +38,7 @@ h2 {
     font-size: 1.5rem;
     margin-top: 15px;
     padding: 15px;
-    font-weight: 400;
+    font-weight: bold;
 }
 
 /* Quiz Timer styling */
@@ -52,6 +52,7 @@ h2 {
 p {
     font-size: 1.2rem;
     padding: 12px;
+    font-weight: bold;
 }
 
 /* Buttons styling */
@@ -59,7 +60,7 @@ p {
 .btn {
     color: #6495ED;
     text-shadow: 0px 3px 15px #8090BC;
-    font-weight: 500;
+    font-weight: bold;
     background-color: #F4F9FF;
     display: block;
     padding: 15px;
@@ -78,10 +79,11 @@ p {
 .close_modal {
     position: absolute;
     top: 15px;
+    text-wrap: wrap;
     right: 15px;
     padding: 0 15px;
-    background-color: inherit;
-    font-size: 2rem;
+    background-color: #6495ED;
+    font-size: 0.9rem;
     color: black;
     border: none;
     border-radius: 15px;
@@ -106,9 +108,9 @@ p {
 .container {
     position: relative;
     background-color: #E6F4F1;
-    max-width: 600px;
-    margin: 30px 10px;
-    padding: 16px;
+    max-width: 400px;
+    margin: 20px;
+    padding: 20px;
     border: 2px solid #8090BC;
     border-radius: 15px;
     box-shadow: 0px 0px 15px 10px;
@@ -123,7 +125,9 @@ p {
 li {
     text-align: left;
     margin: 0 15px;
-    padding: 15px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 /* Styling to hide containers */
@@ -161,7 +165,7 @@ footer {
 }
 
 footer > p {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
 }
 
 /* Media Queries for screens larger than 670px */
@@ -189,19 +193,18 @@ footer > p {
 
     .btn:hover {
         border-color: #8090BC;
-        color: #6495ED;
+        color: #8090BC;
         box-shadow: 0px 0px 10px 5px #8090BC;
     }
 
     .close_modal:hover {
         background-color: #6495ED;
         border-color: #8090BC;
-        color: #8090BC;
         box-shadow: 0px 0px 10px 5px #8090BC;
     }
 
     #answer_area > .btn:hover {
-        background-color: #6495ED;
+        background-color: #8090BC;
         color: #8090BC;
         box-shadow: 0px 0px 10px 5px #8090BC;
     }  

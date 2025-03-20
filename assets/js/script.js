@@ -5,16 +5,16 @@
 // Const Variables (Variables with consistent value)
 
 const heading = document.getElementById("heading");
-const mainMenu = document.getElementById("mainMenu");
+const mainMenu = document.getElementById("main_menu");
 const guidelinesModal = document.getElementById("guidelines");
-const levelPrompt = document.getElementById("level_prompt");
+const levelPrompt = document.getElementById("quiz_level_prompt");
 const quizArea = document.getElementById("quiz_area");
 const answersArea = document.getElementById("answer_area");
 const timerDisplay = document.getElementById("timer");
 const nextQuestionButton = document.getElementById('next_question_button');
 
 
-// Let Variables (Variables with changing value)
+// Let Variables (Variables with changing value). Exactly like in The Everything Quiz
 
 let shuffledQuestions;
 let currentQuestionIndex;
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
          if (this.getAttribute("id") === "guidelines_button") {
             displayGuidelines();
          } else if (this.getAttribute("id") === "quiz_button") {
-            levelPrompt();
+            quizLevelPrompt();
          }
       });
    });
@@ -181,7 +181,7 @@ function displayQuizContent(question) {
       answersArea.appendChild(button);
    });
 
-   displayQuestionNumber();
+   displayQuizQuestionNumber();
 }
 
 // Function to get quizQuestionNumber Element
@@ -286,7 +286,7 @@ function timeUp() {
             mainMenu.classList.remove("hide");
          }
       });
-   });
+   };
 }
 
 // Function to reset score
