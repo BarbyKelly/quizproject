@@ -1,3 +1,7 @@
+{
+    "esversion: 6"
+}
+
 // All of the Questions and Options created by the developer. Credit in README
 // Layout and code structure for questions learned from Web Dev Simplified: https://youtu.be/riDzcEQbX6k?feature=shared
 // questions.js edited after learning different question levels from: [The Everything Quiz](https://github.com/Tony118g/the-everything-quiz/blob/main/assets/js/questions.js)

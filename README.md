@@ -362,7 +362,31 @@ commented out text no longer appeared on 404 error page.
 
 - Developer learned from this bug how it's important to look at lines before and after the error, not just the line marked with an error.
 
+### js version error
 
+- Developer used [jshint.com](https://jshint.com/) to validate js files. And lots of errors where shown as: "...available in ES6(use 'esversion:6'):
+
+  ![js validation before](assets/images/readmeimg/jshint_test_before.png)
+
+  Developer checked Google, and found a solution on [Stack overflow](https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const):
+
+  ![jshint advice](assets/images/readmeimg/jshint_advice.png)
+
+  She swapped previous:
+
+  // jshint esversion: 6 in script.js, 
+  
+  for
+
+  {
+   "esversion: 6"
+  }
+
+  ![js version fix](assets/images/readmeimg/js_version_fix.png)
+
+  And she added same to the top of questions.js file. After this, jshint found only couple of issues, no more issues with: "...available in ES6(use 'esversion:6'):
+
+  ![jshint after](assets/images/readmeimg/jshint_after.png)
 
 
 ## Known Bugs

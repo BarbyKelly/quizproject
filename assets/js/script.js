@@ -1,4 +1,7 @@
-// jshint esversion: 6
+{
+   "esversion: 6"
+}
+
 // script.js final version - all code learned from: [The Everything Quiz](https://github.com/Tony118g/the-everything-quiz/blob/main/assets/js/script.js)
 
 // Const Variables (Variables with consistent value)
