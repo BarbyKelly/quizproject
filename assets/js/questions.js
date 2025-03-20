@@ -1,6 +1,4 @@
-{
-    "esversion: 6"
-}
+//jshint esversion: 8
 
 // All of the Questions and Options created by the developer. Credit in README
 // Layout and code structure for questions learned from Web Dev Simplified: https://youtu.be/riDzcEQbX6k?feature=shared
@@ -8,7 +6,7 @@
 
 // Object containing Beginner level questions, and answer options
 
-const beginnerLevelQuestions = [
+const beginnerQuestions = [
     {
         question: "Where is Estonia, one of the Baltic States, located?",
         options: [
@@ -77,7 +75,7 @@ const beginnerLevelQuestions = [
 
 // Object containing Intermediate level questions and answer options
 
-const intermediateLevelQuestions =[
+const intermediateQuestions =[
     {
         question: "Estonian national bird is...",
         options: [
@@ -146,7 +144,7 @@ const intermediateLevelQuestions =[
 
 // Object containing Expert level Questions and answer options
 
-const expertLevelQuestions =[
+const expertQuestions =[
     {
         question: "Population of Estonia in Feb 2025?",
         options: [

@@ -362,9 +362,9 @@ commented out text no longer appeared on 404 error page.
 
 - Developer learned from this bug how it's important to look at lines before and after the error, not just the line marked with an error.
 
-### js version error
+#### js version error
 
-- Developer used [jshint.com](https://jshint.com/) to validate js files. And lots of errors where shown as: "...available in ES6(use 'esversion:6'):
+- After fixing html error, Developer used [jshint.com](https://jshint.com/) to validate js files. And lots of errors where shown as: "...available in ES6(use     'esversion:6'):
 
   ![js validation before](assets/images/readmeimg/jshint_test_before.png)
 
@@ -384,9 +384,46 @@ commented out text no longer appeared on 404 error page.
 
   ![js version fix](assets/images/readmeimg/js_version_fix.png)
 
-  And she added same to the top of questions.js file. After this, jshint found only couple of issues, no more issues with: "...available in ES6(use 'esversion:6'):
+  And she added same to the top of questions.js file. After this, jshint found only couple of issues, no more issues with: "...available in ES6(use 'esversion:6'), but issue with '{' :}
 
   ![jshint after](assets/images/readmeimg/jshint_after.png)
+
+  Developer contacted tutoring, and was given:
+
+  //jshint esversion: 8
+
+  to be used instead. This finally fixed esversion error.
+
+  #### Const and function wording not matching
+
+  - Developer checked id's and classes for Levels, index.html vs script.js, vs questions.js.
+  - She noticed that function had 'beginnerQuestions', while in questions.js she had used: 'beginnerLevelQuestions':
+
+  ![Words not matching](assets/images/readmeimg/const_not_matching.png)
+
+  - Developer removed 'level' from all three levels in questions.js,
+    to match with script.js's wording.
+
+  #### Uncaught Syntax Error: brackets missing
+
+  - Next developer used DevTools to see what was still blocking Guidelines button from working:
+
+  ![DevTools check](assets/images/readmeimg/devtools.png)
+
+  - She checked line 117 in script.js, and noticed brackets missing:
+
+  ![Missing brackets](assets/images/readmeimg/missing_brackets.png)
+
+  - Developer fixed line 117 brackets, and also fixed similar issues on lines 126 and 135:
+
+  ![Fixed brackets line 117](assets/images/readmeimg/fixed_brackets.png)
+
+  #### Uncaught SyntaxError: Unexpected token
+
+  - After brackets were fixed, script.js line 289 showed an error:
+
+  ![Unexpected token error](assets/images/readmeimg/unexpected_token.png)
+
 
 
 ## Known Bugs

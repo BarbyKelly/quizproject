@@ -1,6 +1,4 @@
-{
-   "esversion: 6"
-}
+//jshint esversion: 8
 
 // script.js final version - all code learned from: [The Everything Quiz](https://github.com/Tony118g/the-everything-quiz/blob/main/assets/js/script.js)
 
@@ -60,7 +58,7 @@ function closeGuidelines() {
 
 // Display Levels Menu while hiding Main Menu
 
-function levelPrompt() {
+function quizLevelPrompt() {
 
    const closeLevelButton = document.getElementById("close_level");
    closeLevelButton.addEventListener("click", closeLevelMenu);
@@ -116,7 +114,7 @@ function exitQuiz() {
 
 function startBeginnerQuiz() {
    quizArea.classList.remove("hide");
-   shuffledQuestions = beginnerQuestions.sort() => 0.5 - Math.random().slice(0, 5);
+   shuffledQuestions = beginnerQuestions.sort(() => 0.5 - Math.random()).slice(0, 5);
    currentQuestionIndex = 0;
    nextQuestionButton();
 }
@@ -125,7 +123,7 @@ function startBeginnerQuiz() {
 
 function startIntermediateQuiz() {
    quizArea.classList.remove("hide");
-   shuffledQuestions = intermediateQuestions.sort() => 0.5 - Math.random().slice(0, 5);
+   shuffledQuestions = intermediateQuestions.sort(() => 0.5 - Math.random()).slice(0, 5);
    currentQuestionIndex = 0;
    nextQuestionButton();
 }
@@ -134,7 +132,7 @@ function startIntermediateQuiz() {
 
 function startExpertQuiz() {
    quizArea.classList.remove("hide");
-   shuffledQuestions = expertQuestions.sort() => 0.5 - Math.random().slice(0, 5);
+   shuffledQuestions = expertQuestions.sort(() => 0.5 - Math.random()).slice(0, 5);
    currentQuestionIndex = 0;
    nextQuestionButton();
 }
