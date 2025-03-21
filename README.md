@@ -561,16 +561,21 @@ Template used from
 
 - The developer learned how to use Wirefames from [this Youtube video](https://www.youtube.com/watch?v=9Pv002d0Kls&list=PLVlyYfbClWxQDCGC-A1FkbGyIxtuIN5IM&index=1)
 
+- All Wireframes created with [Balsamic Wireframes](https://balsamiq.com/)
 
-- Screenshot of Estonia Quiz home page, created with Balsamiq Wireframes:
+- Estonia Quiz home page Wireframe:
 
-![Image of books, videos, and quiz box](assets/images/readmeimg/wireframehomepageestquiz.png)
+![Wireframe Home Page](assets/images/readmeimg/wireframe_quiz_opt_50.png)
 
-Photo taken by the developer. Developer opted for Cornwlower image in the end, as it looked better and was more meaningful for the website to have the national flower of Estonia.
+Photo taken by the developer. Developer opted for a photo with Cornwlower, as it's the national flower of Estonia.
+
+- Guidelines page Wireframe:
+
+![Wireframe Guidelines Page](assets/images/readmeimg/wireframe_guidelines_opt_50.png)
   
 - Screenshot of Estonia Quiz test score page, created with Balsamiq Wireframes:
 
-![Quiz Score](assets/images/readmeimg/wireframequizscore.png)
+
 
 
 
@@ -635,6 +640,10 @@ Usually every 5 years [the Estonian Song and Dance Festival](https://www.visites
 Website's background image, cornflower, and the image with Estonian books and DVD's (wireframe), both taken by the developer.
 
 Same background image used to create a favicon image, using [favicon converter](https://favicon.io/favicon-converter/)
+
+#### Resized Images
+
+- Developer used [Simple image resizer](https://www.simpleimageresizer.com/resize-image-to-50-kb) to reduce README images
 
 [Back to top](#contents)
 
