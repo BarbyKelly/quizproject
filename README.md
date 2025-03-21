@@ -231,6 +231,7 @@ Developer used these sites/apps to create Estonia Quiz:
 - [Balsamiq Wireframes](https://balsamiq.com/)
 - [GitHub](https://github.com/)
 - [Gitpod](https://www.gitpod.io/)
+- [VS Code](https://code.visualstudio.com/)
 
 
 [Back to top](#contents)
@@ -292,13 +293,15 @@ Developer used these sites/apps to create Estonia Quiz:
 
 
 
+
+
 ### CSS
 
 Tested CSS with
 
 [Jigsaw.W3](https://jigsaw.w3.org/css-validator/)
 
-![CSS validation](assets/images/readmeimg/cssvalidation.png)
+![CSS validation](assets/images/readmeimg/css_validation_opt_50.png)
 
 
 ### JavaScript
