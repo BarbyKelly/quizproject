@@ -240,10 +240,51 @@ Developer used these sites/apps to create Estonia Quiz:
 
 ### HTML
 
-Tested HTML with
-[Validator.W3](https://validator.w3.org/)
+- Tested HTML with [Validator.W3](https://validator.w3.org/)
 
-![HTML validation](assets/images/readmeimg/htmlvalidation.png)
+  ![HTML Validation](assets/images/readmeimg/htmlvalidation.png)
+
+### CSS
+
+- Tested CSS with [Jigsaw W3](https://jigsaw.w3.org/css-validator/validator)
+
+![Css Validation](assets/images/readmeimg/css_validation_opt_50.png)
+
+### JS Validation
+
+- Tested JS with 
+
+
+
+### Homepage Testing
+
+| Tested Item | Expected Outcome                                                      | Outcome         |
+| ----------- | --------------------------------------------------------------------- | --------------- |
+| Home        | Background image displayed                                            | as expected     |
+|             | Container is placed in the middle of the screen - large screen        | as expected     |
+|             | Container is placed in the middle of the screen - medium screen       | as expected     |
+|             | Container is placed in the middle of the screen - medium/small screen | not as expected |
+|             | (container on the right of the screen )                               |                 | 
+|             | Container is placed in the middle of the screen - small screen        | not as expected |
+|             | (Heading and buttons out of the container )                           |                 |
+|             | Background-color of the container is #E6F4F1                        | as expected     |
+|             | Header displayed on top of the container                              | as expected     |
+|             | 'Read about Guidelines' button displayed below Header                 | as expected     |
+|             | 'Choose Your Quiz Level' button displayed below 'Read Guidelines' btn | as expected     |         
+|             | Color of Header and buttons #8090BC                                 |                 |
+|             | Shadow effect visible when hovering over buttons                      |                 |
+|             | 'Read about Guidelines' button is clickable                           | as expected     |
+|             | 'Read about Guidelines' button opens up 'Guidelines'                  | as expected     |
+|             | 'Choose Your Quiz Level' button is clickable                          | not as expected |
+|             | (nothing happens when clicking on it)                                 |                 |
+|             |                                                                       |                 |
+| Footer      | Footer is displayed at the bottom of the page                         | as expected     |
+|             | Copyright year is up to date                                          | as expected     |
+|             | Footer color is #FFFFFF                                             | as expected     |
+|             | Project's name and developer's name are displayed with Copyright      | as expected     |
+|             | Statement 'This website has no commercial intention' is displayed     | as expected     |
+|             | Footer is responsive on all screen sizes                              | as expected     |  
+
 
 
 

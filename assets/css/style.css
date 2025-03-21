@@ -5,8 +5,8 @@
 
 /* General styling for Estonia Quiz */
 * {
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
     box-sizing: border-box;
 }
 
@@ -73,7 +73,7 @@ p {
     border: none;
     border-radius: 15px;
     /* box-shadow: 0px 0px 10px 10px #8090BC; */
-    color: white;  
+    color: #FFFFFF;  
 }
 
 /* Buttons to close Modals, styling */
@@ -102,7 +102,7 @@ p {
 
 #answer_area > .btn {
     color: #6495ED;
-    background-color: white;
+    background-color: #FFFFFF;
 }
 
 /* Container divs styling */
@@ -164,12 +164,32 @@ li {
 
 footer {
     margin-top: auto;
-    color: white;
+    color: #FFFFFF;
     text-align: center;
 }
 
 footer > p {
     font-size: 1.0rem;
+}
+
+/* Provides feedback when user hovers over buttons, styling */
+
+.btn:hover {
+    border-color: #8090BC;
+    color: #E6F4F1;
+    box-shadow: 0px 0px 10px 5px #8090BC;
+}
+
+.close_modal:hover {
+    background-color: #8090BC;
+    border-color: #8090BC;
+    box-shadow: 0px 0px 10px 5px #8090BC;
+}
+
+#answer_area > .btn:hover {
+    background-color: #8090BC;
+    color: #8090BC;
+    box-shadow: 0px 0px 10px 5px #8090BC;
 }
 
 /* Media Queries for screens larger than 670px */
@@ -191,25 +211,59 @@ footer > p {
 
     #timer {
         margin-left: 85px;
-    }
-
-    /* Provides feedback when user hovers over buttons, styling */
-
-    .btn:hover {
-        border-color: #8090BC;
-        color: #E6F4F1;
-        box-shadow: 0px 0px 10px 5px #8090BC;
-    }
-
-    .close_modal:hover {
-        background-color: #8090BC;
-        border-color: #8090BC;
-        box-shadow: 0px 0px 10px 5px #8090BC;
-    }
-
-    #answer_area > .btn:hover {
-        background-color: #8090BC;
-        color: #8090BC;
-        box-shadow: 0px 0px 10px 5px #8090BC;
     }  
 }
+
+/* Media Queries for screens larger than 670px */
+
+@media screen and (max-width: 670px) {
+    h1 {
+        margin-top: 20px;
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        position: center;
+        min-width: auto;
+        margin-left: 35px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    #timer {
+        margin-left: 85px;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    h1 {
+        margin-top: 15px;
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 0.5rem;
+    }
+
+    .container {
+        position: center;
+        margin: 15px;
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+
+    button {
+        width: 30%;
+        height: 30%;
+    }
+
+    #timer {
+        margin-left: 20px;
+    }
+}
+
+
