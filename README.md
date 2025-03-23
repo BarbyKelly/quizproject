@@ -498,7 +498,33 @@ commented out text no longer appeared on 404 error page.
   ![camelCase error](assets/images/readmeimg/camelcase_error.png)
 
   - Developer tested website again after this fix, and Guidelines opened as expected, 
-  while Main Menu became hidden:
+  while Main Menu became hidden, as expected
+
+### Nothing happened when clicked on 'Choose Your Quiz Level' Button
+
+- Developer inspected the button and script.js error was shown in the console:
+
+![Uncaught type error, Quiz Levels](assets/images/readmeimg/uncaught_type_error_levels.png)
+
+- Developer noticed 'levelPrompt' on line 68 in script.js
+- She checked line 10 in script.js:
+
+  const levelPrompt = document.getElementById("quiz_level_prompt");
+
+- And then checked index.html line 54:
+
+  <div id="quiz_level_prompt" class="container hide">
+
+- Developer realised she had updated 'level_prompt' for 'quiz_level_prompt' in script.js line 10,
+  but not updated 'id' in index.html.
+
+- Developer updated 'level_prompt' for 'quiz_level_prompt' for the 'id' in index.html line 54.
+
+- This fixed the error, and 'Quiz Levels Menu' opened after clicking on "Choose Your Quiz Level":
+
+![Quiz Levels Menu](assets/images/readmeimg/quiz_levels_menu.png)
+
+
 
   
 
@@ -634,7 +660,9 @@ Photo taken by the developer. Developer opted for a photo with Cornwlower, as it
 
 - Code for the Final version of Estonia Quiz, learned from: [The Everything Quiz](https://tony118g.github.io/the-everything-quiz/) . Developer found the layout and functionality of The Everything Quiz, more suitable for Estonia Quiz.
 
-- Footer
+- Developer learned more about Media Queries and followed the styling for Media Queries from [this YouTube video](https://www.youtube.com/watch?v=K24lUqcT0Ms*/)
+
+- Footer:
 
 Developer learned how to make Copyright sign &copy; from [Mental-Arithmetic-Quiz project](https://github.com/Shida18719/Mental-Arithmetic-Quiz/blob/main/index.html)
 
