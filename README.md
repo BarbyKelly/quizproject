@@ -9,7 +9,7 @@ Link to the live GitHub site: [Estonia Quiz](https://barbykelly.github.io/quizpr
 
 Image from [Am I Responsive?](https://ui.dev/amiresponsive?url=https://barbykelly.github.io/quizproject/) to show how website looks on different screen sizes.
 
-![Am I Responsive](assets/images/readmeimg/amiresponsive.png)
+![Am I Responsive]()
 
 
 ## Contents
@@ -158,18 +158,23 @@ Screenshot of favicon on the website:
 
 ### Color
 
-As the Estonian national flower is a Cornflower, developer chose 'cornflower blue' as a Background color for the website. Developer found Cornflower blue color code from this website: 
+- As the Estonian national flower is a Cornflower, developer chose 'cornflower blue' as a Background color for the website. Developer found Cornflower blue color code from 
 ![Colorcodes.com](assets/images/readmeimg/cornflowerblue.png)
 
+- Color palette from [Mycolor.space](https://mycolor.space/?hex=%236495ED&sub=1)
 
-Color palette from this website:
-[Mycolor.space](https://mycolor.space/?hex=%236495ED&sub=1)
+- Developer checked [Colorhexa.com website]( https://www.colorhexa.com/8090bc) to find a suitable tone color variation for container border
+
 
 
 ### Font/style
 
-![Comfortaa](assets/images/readmeimg/comfortaareadme.png)
+- Developer chose Comfortaa as the main Font style
+![Comfortaa](assets/images/readmeimg/comfortaareadme.png) 
 
+- Change over to this style? https://fonts.google.com/?preview.text=Estonia%20Quiz&query=cr
+
+from https://fonts.google.com/specimen/Crimson+Text?preview.text=Estonia%20Quiz&query=cr
 
 [Back to top](#contents)
 
@@ -628,7 +633,6 @@ Photo taken by the developer. Developer opted for a photo with Cornwlower, as it
 - At the start Developer followed code for Estonia quiz from [Build A Quiz App With JavaScript](https://youtu.be/riDzcEQbX6k?feature=shared). Most of the code for this project is credit to Web Dev Simplified's quiz.
 
 - Code for the Final version of Estonia Quiz, learned from: [The Everything Quiz](https://tony118g.github.io/the-everything-quiz/) . Developer found the layout and functionality of The Everything Quiz, more suitable for Estonia Quiz.
-
 
 - Footer
 

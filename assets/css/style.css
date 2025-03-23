@@ -29,7 +29,6 @@ body {
 /* Headings styling */
 
 h1 {
-    /* text-shadow: 0px 3px 15px #8090BC; */
     font-size: 2.5rem;
     color: #8090BC;
     padding-top: 10px;
@@ -60,19 +59,18 @@ p {
 
 .btn {
     color: #6495ED;
-    /* text-shadow: 0px 3px 15px #8090BC; */
+    text-shadow: 0px 3px 15px #8090BC;
     font-weight: bold;
     background-color: #8090BC;
     display: block;
     padding: 15px;
-    width: 85%;
-    min-width: 180px;
+    width: 65%;
+    min-width: 145px;
     margin: 15px auto;
     font-family: comfortaa, sans-serif;
     font-size: 1.5rem;
     border: none;
     border-radius: 15px;
-    /* box-shadow: 0px 0px 10px 10px #8090BC; */
     color: #FFFFFF;  
 }
 
@@ -86,7 +84,7 @@ p {
     padding: 0 15px;
     background-color: #8090BC;
     font-size: 0.9rem;
-    color: black;
+    color: #FFFFFF;
     border: none;
     border-radius: 15px;
     font-family: comfortaa, sans-serif;
@@ -105,15 +103,20 @@ p {
     background-color: #FFFFFF;
 }
 
-/* Container divs styling */
+/* Container styling (learned extra from https://www.youtube.com/watch?v=K24lUqcT0Ms */
 
 .container {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     position: relative;
     background-color: #E6F4F1;
     max-width: 400px;
-    margin-top: 20px;
+    margin-top: 40px;
     padding: 20px;
-    border: 2px solid #8090BC;
+    border: 0.5rem solid #7189cb; /* tone color variation from: https://www.colorhexa.com/8090bc */
     border-radius: 15px;
     box-shadow: 0px 0px 15px 10px;
 }
@@ -192,80 +195,53 @@ footer > p {
     box-shadow: 0px 0px 10px 5px #8090BC;
 }
 
-/* Media Queries */
-/* Media Queries for screens larger than 670px */
+/* Media Queries - stlying for xs, s, etc learned from https://www.youtube.com/watch?v=K24lUqcT0Ms*/
 
-@media screen and (min-width: 670px) {
-    h1 {
-        margin-top: 20px;
-        font-size: 4rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
+/* Media Queries for 'XXS' screens */
+@media (min-width: 320px) {
     .container {
-        min-width: 550px;
-        margin: 35px auto;
+        max-width: 320px;
     }
-
-    #timer {
-        margin-left: 85px;
-    }  
 }
 
-/* Media Queries for screens larger than 670px */
-
-@media only screen and (min-width: ) and (max-width: 670px) {
-    h1 {
-        margin-top: 20px;
-        font-size: 3rem;
-    }
-
-    h2 {
-        font-size: 1.2rem;
-    }
-
+/* Media Queries for 'XS' screens */
+@media (min-width: 475px) {
     .container {
-        max-width: 350px;
-        margin: 35px;
+        max-width: 475px;
     }
-
-    #timer {
-        margin-left: 85px;
-    }  
 }
 
-@media screen {
-    
+/* Media Queries for 'S' screens */
+@media (min-width: 648px) {
+    .container {
+        max-width: 648px;
+    }
 }
 
-@media only screen and (max-width: 230px) {
-    h1 {
-        margin-top: 15px;
-        font-size: 1.5rem;
-    }
-
-    h2 {
-        font-size: 0.5rem;
-    }
-
+/* Media Queries for 'M' screens */
+@media (min-width: 768px) {
     .container {
-        position: center;
-        margin-right: 15px;
-        padding-right: 2px;
-        padding-left: 2px;
+        max-width: 768px;
     }
+}
 
-    .main_menu_btn {
-        display: flex;
-        justify-content: center;
-        padding: 5px;
-        font-size: 1.0rem;
+/* Media Queries for 'L' screens */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
     }
+}
 
-    #timer {
-        margin-left: 20px;
+/* Media Queries for 'XL' screens */
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+/* Media Queries for 'XXL' screens */
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
     }
 }
