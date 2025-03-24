@@ -1,6 +1,7 @@
 # Estonia Quiz 
 
-Estonia quiz has been created by a Software Development student, as part of Code Institute's Javascript project. This quiz may benefit anyone who:
+Estonia quiz has been created by a Software Development student, as part of Code Institute's Javascript project.
+This quiz is suitable for anyone who:
 - would like to test their knowledge about Estonia
 - likes to do quizzes
 - wishes to learn something (new) about Estonia
@@ -52,22 +53,27 @@ Image of the Estonia Quiz site, from [Am I Responsive?](https://ui.dev/amirespon
 
 ## User Experience
 
-### User Stories
-
 #### First Time User:
 
-First time user, may want to:
+First time user, may:
 
-- Check their knowledge about Estonia
+- Want to check their knowledge about Estonia
 - Learn something new about Estonia
-- Click on "Start Estonia Quiz" button
-- Experience that all buttons work on the website
+- Click on 'Read About Guidelines' button
+- Read Guidelines on 'Guidelines' page
+- Click on 'Back to Main Menu' button to return to Main menu from 'Guidelines' page
+
+- Click on 'Choose Your Quiz Level' button
+- Choose Level for the Quiz
+- Click on 'Beginner', 'Intermediate' or 'Expert' Level button
+
+- Test that all buttons work on the website
 - See one question at a time displayed on the screen
 - Click on any of the answer options
-- Find out which answer was correct when the correct answer option turns green
-- Click on the button: "Next Question"
-- Go through all of the questions
-- Restart the quiz at the end of 10 questions by clicking on "Restart Quiz" button
+- Find out which answer was correct when the correct answer option turns green, and incorrect answers turn red
+- Click on the button: 'Next Question'
+- Go through all of the 5 questions
+- Exit quiz any time during the quiz
 
 
 #### Returning User:
@@ -75,12 +81,9 @@ First time user, may want to:
 Returning user may want to:
 
 - Do all that First Time User may do, as well as:
-  - See different quiz options (future feature)
   - Test their knowledge again
-  - See updated info on the website, if any details should change (eg population)
-  - Improve their score (score counting: future feature)
-  - See new buttons added (future feature: eg Quit Quiz button, check your best score, choose type of quiz)
-  - Be able to click on links (future feature, links to resources)
+  - Choose a different Quiz Level
+  - Improve their score
 
 [Back to top](#contents)
 
@@ -108,9 +111,6 @@ Returning user may want to:
 ![Wireframe Guidelines Page](assets/images/readmeimg/wireframe_guidelines_opt_50.png)
   
 - Screenshot of Estonia Quiz test score page, created with Balsamiq Wireframes:
-
-
-
 
 
 
@@ -193,44 +193,9 @@ from https://fonts.google.com/specimen/Crimson+Text?preview.text=Estonia%20Quiz&
   - Guidelines heading
   - List of Guidelines for the player
 
-#### 
-
-
-
-
-
-
-This website is for anyone interested in doing a quiz, or who wants to learn more about Estonia.
-
-Goal of the quiz is to:
-  - test knowledge
-  - play a game
-  - see one question at a time displayed on the screen, without the correct answer option being highlighted,
-    until the player has chosen one option for their answer
-  - be able to click on any option for an answer
-  - see the correct answer displayed as green
-  - see incorrect answers turn red
-  - have an option to restart the quiz (either by refreshing the page or at the end of 10 questions)
-  
-
-Website visitors are likely to:
-  - click on "Start Estonia Quiz"
-  - read the questions
-  - answer the questions by clicking on any answer option
-  - click on "Next Question"
-  - try again by clicking on "Restart Quiz"
- 
-
-Screenshot of Estonia Quiz Home page:
-
 
 ### Future Features
 
-- Estonia Quiz instructions displayed before the quiz starts
-- Clear indicator of which option was correct, and which option was chosen by the player, and if those options matched or not
-- Add buttons for different languages, for example English and Estonian
-- How many questions answered indicator
-- Percentage of correct vs incorrect answer options chosen
 - Player can choose how many questions they want to answer per game
 - Increased number of questions
 - Add variations of the quiz eg wildlife, culture, music, authors, movies, national symbols and so on
@@ -240,11 +205,8 @@ Screenshot of Estonia Quiz Home page:
 - Add "Extra" button to the website, which would bring visitors to an area with links and images to find out more about Estonia 
 - Add code to make images pop up when visitor has made their choice. Image of the correct answer (eg picture of lynx)
 - Ensure that links open in a new tab, to keep Estonia Quiz page open
-
-Buttons top left, languages:
-  - English
-  - Eesti (Estonian)
-(Part of Future Development plan due to time constraint, and developer being a beginner in coding)
+- Player can enter a Username before starting Quiz
+- Top scores displayed
 
 [Back to top](#contents)
 
@@ -298,14 +260,16 @@ Developer used these sites/apps to create Estonia Quiz:
 
 | Tested Item | Expected Outcome                                                      | Outcome     |
 | ----------- | --------------------------------------------------------------------- | ------------|
-| Home        | Background image displayed                                            | as expected |
+| Home        | Background image displayed behind the container                       | as expected |
 |             | Container is placed in the middle of the screen, all screen sizes     | as expected |
 |             | Background-color of the container is #E6F4F1                        | as expected |
 |             | Header displayed on top of the container                              | as expected |
 |             | 'Read about Guidelines' button displayed below Header                 | as expected |
 |             | 'Choose Your Quiz Level' button displayed below 'Read Guidelines' btn | as expected |         
-|             | Color of Header and buttons #8090BC                                 |             |
-|             | Shadow effect visible when hovering over buttons                      |             |
+|             | Color of Header and buttons #8090BC                                 | as expected |
+|             | Container's background color is #E6F4F1                             | as expected |
+|             | Border color of the container is #7189cb                            | as expected |
+|             | Shadow effect visible when hovering over buttons                      | as expected |
 |             | 'Read about Guidelines' button is clickable, and                      | as expected |
 |             | it opens up 'Guidelines'.                                             | as expected |
 |             | 'Choose Your Quiz Level' button is clickable,                         | as expected |
@@ -320,11 +284,21 @@ Developer used these sites/apps to create Estonia Quiz:
 
 ### 'Read about Guidelines' Menu testing
 
-| Tested Item | Expected Outcome                                      | Outcome     |
-| ----------- | ----------------------------------------------------- | ----------- |
-| Guidelines  | 'Back to Main Menu' button displayed top right                                            | as expected |
-|             | Guidelines heading displayed middle of the screen                                       | as expected |
-
+| Tested Item | Expected Outcome                                                           | Outcome     |
+| ----------- | -------------------------------------------------------------------------- | ----------- |
+| Guidelines  | 'Guidelines' menu accessed via 'Read about Guidelines' button on Home page | as expected | 
+|             | 'Back to Main Menu' button displayed top right                             | as expected |
+|             | Guidelines heading displayed middle of the screen                          | as expected |
+|             | List of guidelines displayed                                               | as expected |         
+|             | Background image displayed behind the conta                                | as expected |
+|             | Container is placed in the middle of the screen, for all screen sizes      | as expected |
+|             | Click on 'Back to Main Menu' brings user back to Home page                 | as expected |
+|             | Color of heading and list items is #8090BC                               | as expected |
+|             | Color of 'Back to Main Menu' text is #FFFFFF                             | as expected |
+|             | 'Back to Main Menu' background color is #8090BC                          | as expected |         
+|             | Container's background color is #E6F4F1                                  | as expected |
+|             | Border color of the container is #7189cb                                 | as expected |
+|             | 'Back to Main Menu' text is on 2 lines                                     | as expected |
 
 
 
