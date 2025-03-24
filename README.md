@@ -7,7 +7,7 @@ Estonia quiz has been created by a Software Development student, as part of Code
 
 Link to the live GitHub site: [Estonia Quiz](https://barbykelly.github.io/quizproject/)
 
-Image from [Am I Responsive?](https://ui.dev/amiresponsive?url=https://barbykelly.github.io/quizproject/) to show how website looks on different screen sizes.
+Image of the Estonia Quiz site, from [Am I Responsive?](https://ui.dev/amiresponsive) to show how website looks on different screen sizes:
 
 ![Am I Responsive]()
 
@@ -87,51 +87,33 @@ Returning user may want to:
 
 ## Website Structure
 
-This website includes one page:
-- With "Start Estonia Quiz" button
-- Leading player to questions, answer options
-- And an option to click "Next Question" button, when player wants to see another question displayed
-- At the end of the quiz i.e. 10 questions, "Restart Quiz" button appears
-- Clicking on "Reset Quiz" starts the same 10 questions all over again, shuffled in a different order 
-
-
 ### Wireframes
 
-This website is for anyone interested in doing a quiz, or who wants to learn more about Estonia.
+- Ideas, how to articulate user's goals, written down after reading this [article](https://balsamiq.com/learn/articles/five-steps-to-great-wireframes/)
 
-Goal of the quiz is to:
-  - test knowledge
-  - play a game
-  - see one question at a time displayed on the screen, without the correct answer option being highlighted,
-    until the player has chosen one option for their answer
-  - be able to click on any option for an answer
-  - see the correct answer displayed as green
-  - see incorrect answers turn red
-  - have an option to restart the quiz (either by refreshing the page or at the end of 10 questions)
+![Articulate article screenshot](assets/images/readmeimg/articulate.png)
+
+- The developer learned how to use Wirefames from [this Youtube video](https://www.youtube.com/watch?v=9Pv002d0Kls&list=PLVlyYfbClWxQDCGC-A1FkbGyIxtuIN5IM&index=1)
+
+- All Wireframes created with [Balsamic Wireframes](https://balsamiq.com/)
+
+- Estonia Quiz home page Wireframe:
+
+![Wireframe Home Page](assets/images/readmeimg/wireframe_quiz_opt_50.png)
+
+
+
+- Guidelines page Wireframe:
+
+![Wireframe Guidelines Page](assets/images/readmeimg/wireframe_guidelines_opt_50.png)
   
-
-Website visitors are likely to:
-  - click on "Start Estonia Quiz"
-  - read the questions
-  - answer the questions by clicking on any answer option
-  - click on "Next Question"
-  - try again by clicking on "Restart Quiz"
- 
-
-Screenshot of Estonia Quiz Home Page with the original image idea, with Estonian books and DVD's, Wireframe:
-
-![Image of Estonian books, dvds](assets/images/readmeimg/wireframehomepageestquiz.png)
+- Screenshot of Estonia Quiz test score page, created with Balsamiq Wireframes:
 
 
-Screenshot of Estonia Quiz "Quiz Score" view, Wireframe
-
-![Quiz Score view](assets/images/readmeimg/wireframequizscore.png)
 
 
-Buttons top left, languages:
-  - English
-  - Eesti (Estonian)
-(Part of Future Development plan due to time constraint, and developer being a beginner in coding)
+
+
 
 [Back to top](#contents)
 
@@ -180,21 +162,66 @@ from https://fonts.google.com/specimen/Crimson+Text?preview.text=Estonia%20Quiz&
 
 ## Features
 
-### Existing Features 
+### Existing Features
 
-- Favicon icon
-- Background image of Estonian national flower, cornflower
-- Clickable "Start Estonia Quiz" button
-- Ten questions, shuffled in random order
-- After clicking on "Start Estonia Quiz", one random question is displayed
-- Player then has an option to click on any of the answer option buttons
-- Correct answer option turns green, and incorrect options turn red, when any of the options is chosen as an answer
-- "Next Question" button appears when the first question has been answered, if correct or incorrect
-- Player can click on the "Next Question" button
-- "Restart Quiz" button shows up when all 10 questions have been answered
-- Clicking on "Restart Quiz" button or refreshing browser, will start the game again, with the same questions shuffled in a different order
-- Footer text with copyright sign
-- Player can exit the game at any time by closing the webpage or browser
+#### Home page:
+
+  ![Home Page](assets/images/readmeimg/home_page_opt_50.png)
+
+  with:
+
+  - Background image of Estonian national flower, cornflower
+  - Header
+  - 'Read About Guidelines' button
+  - 'Choose Your Quiz Level' button
+  - Footer
+
+#### Favicon icon:
+
+  Visible at all times while Estonia Quiz site is open:
+
+  ![Favicon](assets/images/readmeimg/favicon.png)
+
+#### Guidelines page:
+
+  ![Guidelines page](assets/images/readmeimg/guidelines_page_opt_50.png)
+
+  with:
+
+  - Background image of Estonian national flower, cornflower
+  - 'Back to Main Menu' button in top right corner
+  - Guidelines heading
+  - List of Guidelines for the player
+
+#### 
+
+
+
+
+
+
+This website is for anyone interested in doing a quiz, or who wants to learn more about Estonia.
+
+Goal of the quiz is to:
+  - test knowledge
+  - play a game
+  - see one question at a time displayed on the screen, without the correct answer option being highlighted,
+    until the player has chosen one option for their answer
+  - be able to click on any option for an answer
+  - see the correct answer displayed as green
+  - see incorrect answers turn red
+  - have an option to restart the quiz (either by refreshing the page or at the end of 10 questions)
+  
+
+Website visitors are likely to:
+  - click on "Start Estonia Quiz"
+  - read the questions
+  - answer the questions by clicking on any answer option
+  - click on "Next Question"
+  - try again by clicking on "Restart Quiz"
+ 
+
+Screenshot of Estonia Quiz Home page:
 
 
 ### Future Features
@@ -213,6 +240,11 @@ from https://fonts.google.com/specimen/Crimson+Text?preview.text=Estonia%20Quiz&
 - Add "Extra" button to the website, which would bring visitors to an area with links and images to find out more about Estonia 
 - Add code to make images pop up when visitor has made their choice. Image of the correct answer (eg picture of lynx)
 - Ensure that links open in a new tab, to keep Estonia Quiz page open
+
+Buttons top left, languages:
+  - English
+  - Eesti (Estonian)
+(Part of Future Development plan due to time constraint, and developer being a beginner in coding)
 
 [Back to top](#contents)
 
@@ -264,38 +296,34 @@ Developer used these sites/apps to create Estonia Quiz:
 
 ### Homepage Testing
 
-| Tested Item | Expected Outcome                                                      | Outcome         |
-| ----------- | --------------------------------------------------------------------- | --------------- |
-| Home        | Background image displayed                                            | as expected     |
-|             | Container is placed in the middle of the screen - large screen        | as expected     |
-|             | Container is placed in the middle of the screen - medium screen       | as expected     |
-|             | Container is placed in the middle of the screen - medium/small screen | not as expected |
-|             | (container on the right of the screen )                               |                 | 
-|             | Container is placed in the middle of the screen - small screen        | not as expected |
-|             | (Heading and buttons out of the container )                           |                 |
-|             | Background-color of the container is #E6F4F1                        | as expected     |
-|             | Header displayed on top of the container                              | as expected     |
-|             | 'Read about Guidelines' button displayed below Header                 | as expected     |
-|             | 'Choose Your Quiz Level' button displayed below 'Read Guidelines' btn | as expected     |         
-|             | Color of Header and buttons #8090BC                                 |                 |
-|             | Shadow effect visible when hovering over buttons                      |                 |
-|             | 'Read about Guidelines' button is clickable                           | as expected     |
-|             | 'Read about Guidelines' button opens up 'Guidelines'                  | as expected     |
-|             | 'Choose Your Quiz Level' button is clickable                          | not as expected |
-|             | (nothing happens when clicking on it)                                 |                 |
-|             |                                                                       |                 |
-| Footer      | Footer is displayed at the bottom of the page                         | as expected     |
-|             | Copyright year is up to date                                          | as expected     |
-|             | Footer color is #FFFFFF                                             | as expected     |
-|             | Project's name and developer's name are displayed with Copyright      | as expected     |
-|             | Statement 'This website has no commercial intention' is displayed     | as expected     |
-|             | Footer is responsive on all screen sizes                              | as expected     |  
+| Tested Item | Expected Outcome                                                      | Outcome     |
+| ----------- | --------------------------------------------------------------------- | ------------|
+| Home        | Background image displayed                                            | as expected |
+|             | Container is placed in the middle of the screen, all screen sizes     | as expected |
+|             | Background-color of the container is #E6F4F1                        | as expected |
+|             | Header displayed on top of the container                              | as expected |
+|             | 'Read about Guidelines' button displayed below Header                 | as expected |
+|             | 'Choose Your Quiz Level' button displayed below 'Read Guidelines' btn | as expected |         
+|             | Color of Header and buttons #8090BC                                 |             |
+|             | Shadow effect visible when hovering over buttons                      |             |
+|             | 'Read about Guidelines' button is clickable, and                      | as expected |
+|             | it opens up 'Guidelines'.                                             | as expected |
+|             | 'Choose Your Quiz Level' button is clickable,                         | as expected |
+|             | and it opens up 'Quiz Levels Menu'.                                   | as expected |
+|             |                                                                       |             |
+| Footer      | Footer is displayed at the bottom of the page                         | as expected |
+|             | Copyright year is up to date                                          | as expected |
+|             | Footer color is #FFFFFF                                             | as expected |
+|             | Project's name and developer's name are displayed with Copyright      | as expected |
+|             | Statement 'This website has no commercial intention' is displayed     | as expected |
+|             | Footer is responsive on all screen sizes                              | as expected |  
 
+### 'Read about Guidelines' Menu testing
 
-
-
-
-
+| Tested Item | Expected Outcome                                      | Outcome     |
+| ----------- | ----------------------------------------------------- | ----------- |
+| Guidelines  | 'Back to Main Menu' button displayed top right                                            | as expected |
+|             | Guidelines heading displayed middle of the screen                                       | as expected |
 
 
 
@@ -377,7 +405,7 @@ commented out text no longer appeared on 404 error page.
 
 - Background-image for 404 error page was not showing. Developer removed the background-image from error-container styling, which fixed the issue
 
-![404 error page](assets/images/readmeimg/errorpageongithub.png)
+![404 error page](assets/images/readmeimg/errorpageongithub_opt_50.png)
 
 ### HTML code lines not showing in README
 
@@ -415,7 +443,7 @@ commented out text no longer appeared on 404 error page.
 
 - After fixing html error, Developer used [jshint.com](https://jshint.com/) to validate js files. And lots of errors where shown as: "...available in ES6(use     'esversion:6'):
 
-  ![js validation before](assets/images/readmeimg/jshint_test_before.png)
+  ![js validation before](assets/images/readmeimg/jshint_test_before_opt_50.png)
 
   Developer checked Google, and found a solution on [Stack overflow](https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const):
 
@@ -486,25 +514,25 @@ commented out text no longer appeared on 404 error page.
   - Next, when inspecting the page after clicking on 'Guidelines' button, Uncaught TypeError: Cannot read properties of null (reading 'classList')
     Error showed up for line 46 script.js:
 
-  ![Uncaught type error](assets/images/readmeimg/uncaught_type_error.png)
+    ![Uncaught type error](assets/images/readmeimg/uncaught_type_error.png)
 
   - Guidelines were now visible, but Main Menu was not hidden as expected:
 
-  ![Guidelines visible, and main menu](assets/images/readmeimg/guidelines_visible.png)
+   ![Guidelines visible, and main menu](assets/images/readmeimg/guidelines_visible_opt_50.png)
 
   - Developer checked if all Main menu wording was same in all files, and noticed that she had 
     used camelCase instead of 'id' in const line 8 script.js. Developer fixed the error:
 
-  ![camelCase error](assets/images/readmeimg/camelcase_error.png)
+    ![camelCase error](assets/images/readmeimg/camelcase_error.png)
 
   - Developer tested website again after this fix, and Guidelines opened as expected, 
-  while Main Menu became hidden, as expected
+    while Main Menu became hidden, as expected
 
 ### Nothing happened when clicked on 'Choose Your Quiz Level' Button
 
 - Developer inspected the button and script.js error was shown in the console:
 
-![Uncaught type error, Quiz Levels](assets/images/readmeimg/uncaught_type_error_levels.png)
+  ![Uncaught type error, Quiz Levels](assets/images/readmeimg/uncaught_type_error_levels.png)
 
 - Developer noticed 'levelPrompt' on line 68 in script.js
 - She checked line 10 in script.js:
@@ -522,7 +550,7 @@ commented out text no longer appeared on 404 error page.
 
 - This fixed the error, and 'Quiz Levels Menu' opened after clicking on "Choose Your Quiz Level":
 
-![Quiz Levels Menu](assets/images/readmeimg/quiz_levels_menu.png)
+  ![Quiz Levels Menu](assets/images/readmeimg/quiz_levels_menu_opt_50.png)
 
 
 
@@ -530,22 +558,8 @@ commented out text no longer appeared on 404 error page.
 
 ## Known Bugs
 
-- When player clicks on any option to answer the question, and then clicks "Next Question", all answer options change color: one correct, and two incorrect ones, 
-  instead of just changing the color of the chosen option, and the correct option (if correct option was not chosen)
-- There is no question counter as part of the game. Developer could not get it to work, and opted to leave it out
-- Developer would have liked to have "Quit" button set up, so player could quit quiz at any time
-- "Next Question" button is more responsive than "Option" buttons, when screen size changes:
 
-![Next Question Btn vs Option Buttons](assets/images/readmeimg/nextbtnvsoptions.png)
 
-- On a smaller screen, developer would have liked to have container in a lower right position, so cornflower would remain more visible. am I responsive test
-  showed the flower covered by the quiz container, while lighthouse testing shows the flower and container box how the developer wanted them to fit together
-
-- There's no option to choose Quiz Level straight from Guidelines Menu, instead user needs to click to exit that menu, and then click on 'Choose quiz level' menu.
-
-- When guiding user to click on 'x' to close Guidelines menu, user might use the 'x' to close the website. Important to make sign clear, and ideally user can just go straight to   Quiz levels, without having to close Guidelines menu. Or to add a rotate-left icon, to return to main menu. Or burger menu, to return to main menu.
-
-- 'Close modal' * is clickable on all screen sizes, yet on a smallest screen size, it doesn't change when hovering over it, and hovering isn't working for Main menu buttons on a smallest screen
 
 [Back to top](#contents)
 
@@ -554,25 +568,25 @@ commented out text no longer appeared on 404 error page.
 
 - Developer clicked on [GitHub link](https://github.com/Code-Institute-Org/ci-full-template) under Love Maths "Getting Set Up" video.
 
-![link for code template](assets/images/readmeimg/citemplate.png)
+  ![link for code template](assets/images/readmeimg/citemplate.png)
 
 
 
 - As the original template was for CodeAnywhere, and developer works with GitPod, developer clicked on [GitPod template](https://github.com/Code-Institute-Org/ci-full-template)
 
-![gitpod template](assets/images/readmeimg/githubTemplate.png)
+  ![gitpod template](assets/images/readmeimg/githubTemplate.png)
 
 
 
 - Next the developer clicked on "Use this template", and then clicked on "Create a new repository":
 
-![use this template](assets/images/readmeimg/repolink.png)
+  ![use this template](assets/images/readmeimg/repolink.png)
 
 
 
-- Filled in Repository name, and clicked on "Create repository"
+- Developer filled in Repository name, and clicked on "Create repository"
 
-![create repo](assets/images/readmeimg/createRepo.png)
+  ![create repo](assets/images/readmeimg/createRepo.png)
 
 
 ## Deployment
@@ -594,85 +608,57 @@ commented out text no longer appeared on 404 error page.
 
 ### Favicon 
 
-Favicon created using [favicon converter](https://favicon.io/favicon-converter/)
+- Favicon created using [favicon converter](https://favicon.io/favicon-converter/)
 
-These 3 lines of code, for favicon, were copied from Love Running:
-```
-<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-```
-This line of code:
-```
-<link rel="manifest" href="/site.webmanifest"> 
-```
+- These 3 lines of code, for favicon, were copied from [Code Institute's 'Love Running' Walk-Through](https://github.com/Code-Institute-Solutions/Love-Running-Solutions)
+- ```
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  ```
 
-for Favicon, was copied from
-https://favicon.io/favicon-converter/
+- This line of code:
+  ```
+  <link rel="manifest" href="/site.webmanifest"> 
+  ```
 
-Rest of the code credited in index.html, script.js, questions.js, style.css and in other parts of README.
+  for Favicon, was copied from
+  https://favicon.io/favicon-converter/
 
+  and with tutor's guidance, developer adjusted 'webmanifest' line to suit her project:
 
-### Readme
-
-Parts of the Readme template used from [Code Institute's Sample README](https://github.com/Code-Institute-Solutions/SampleREADME?tab=readme-ov-file) 
-
-The Contents menu learned from: [Everything Quiz](https://github.com/Tony118g/the-everything-quiz/blob/main/README.md) 
-
-Reading The Everything Quiz README, highlighted for the developer the level of details that Quiz website README needs, and demonstrated the value of README. 
+  <link rel="manifest" href="/assets/favicons/site.webmanifest" crossorigin="anonymous">
 
 
-### User Stories:
+### README
 
-Template used from
-[Atlassian.com](https://www.atlassian.com/agile/project-management/user-stories)
+- Parts of the README template used from [Code Institute's Sample README](https://github.com/Code-Institute-Solutions/SampleREADME?tab=readme-ov-file) 
 
+- Contents menu learned from: [Everything Quiz](https://github.com/Tony118g/the-everything-quiz/blob/main/README.md) 
 
-### Wirefames
-
-- Ideas, how to articulate user's goals, written down after reading this [article](https://balsamiq.com/learn/articles/five-steps-to-great-wireframes/)
-
-![Articulate article screenshot](assets/images/readmeimg/articulate.png)
-
-- The developer learned how to use Wirefames from [this Youtube video](https://www.youtube.com/watch?v=9Pv002d0Kls&list=PLVlyYfbClWxQDCGC-A1FkbGyIxtuIN5IM&index=1)
-
-- All Wireframes created with [Balsamic Wireframes](https://balsamiq.com/)
-
-- Estonia Quiz home page Wireframe:
-
-![Wireframe Home Page](assets/images/readmeimg/wireframe_quiz_opt_50.png)
-
-Photo taken by the developer. Developer opted for a photo with Cornwlower, as it's the national flower of Estonia.
-
-- Guidelines page Wireframe:
-
-![Wireframe Guidelines Page](assets/images/readmeimg/wireframe_guidelines_opt_50.png)
-  
-- Screenshot of Estonia Quiz test score page, created with Balsamiq Wireframes:
-
-
-
+- Reading The Everything Quiz's README, highlighted for the developer level of details that Quiz website README needs, and demonstrated the value of README. 
 
 
 ### Code
 
 - At the start Developer followed code for Estonia quiz from [Build A Quiz App With JavaScript](https://youtu.be/riDzcEQbX6k?feature=shared). Most of the code for this project is credit to Web Dev Simplified's quiz.
 
-- Code for the Final version of Estonia Quiz, learned from: [The Everything Quiz](https://tony118g.github.io/the-everything-quiz/) . Developer found the layout and functionality of The Everything Quiz, more suitable for Estonia Quiz.
+- Code for the Final version of Estonia Quiz, learned from: [The Everything Quiz](https://tony118g.github.io/the-everything-quiz/).
+  Developer found the layout and functionality of The Everything Quiz, more suitable for  Estonia Quiz.
 
 - Developer learned more about Media Queries and followed the styling for Media Queries from [this YouTube video](https://www.youtube.com/watch?v=K24lUqcT0Ms*/)
 
 - Footer:
 
-Developer learned how to make Copyright sign &copy; from [Mental-Arithmetic-Quiz project](https://github.com/Shida18719/Mental-Arithmetic-Quiz/blob/main/index.html)
+  Developer learned how to make Copyright sign &copy; from [Mental-Arithmetic-Quiz project](https://github.com/Shida18719/Mental-Arithmetic-Quiz/blob/main/index.html)
 
 
 
 ### Questions
 
-All of the questions created by the developer, from her own experience, her own knowledge or researching updated information eg population details. 
+- All of the questions created by the developer, from her own experience, her own knowledge or researching updated information eg population details. 
 
-Below are the websites/images that developer used to validate the answers for the Estonia quiz:
+- Below are some of the websites/images that developer used to validate the answers for the Estonia quiz:
 
 - Northern Europe, screenshot from [gisgeography.com](https://gisgeography.com/europe-map/)
 
@@ -680,9 +666,11 @@ Below are the websites/images that developer used to validate the answers for th
 
 
 
-- The developer found this Story about colors of Estonian flag some time ago, unfortunately the link to this article's origin has gone missing. Developer did not take this photo, it's visible on the screenshot who took the photo. Developer did not write this story about the flag. Developer is continuing search to find the origin of this flag story. The previous link no longer seems to be available
+- The developer found this Story about colors of Estonian flag some time ago, unfortunately the link to this article's origin has gone missing.
+  Developer did not take this photo, it's visible on the screenshot who took  the photo. Developer did not write this story about the flag. Developer
+  is continuing search to find the origin of this flag story. The previous link no longer seems to be available
 
-![Flag story](assets/images/popupextraimages/flagstory.png)
+  ![Flag story](assets/images/popupextraimages/flagstory.png)
 
 
 - [eesti.ee](https://www.eesti.ee/en/republic-of-estonia/republic-of-estonia/state-insignia)
@@ -690,7 +678,7 @@ Below are the websites/images that developer used to validate the answers for th
 
 - Estonian national bird: 
 
-![Barn swallow](assets/images/popupextraimages/nationalbird.png)
+  ![Barn swallow](assets/images/popupextraimages/nationalbird.png)
 
 
 
@@ -702,10 +690,10 @@ Below are the websites/images that developer used to validate the answers for th
 
 - Due to covid, the Estonian Song and Dance festival is after 4 years this time:
 
-![Different years notice](assets/images/readmeimg/differentyears.png) 
+  ![Different years notice](assets/images/readmeimg/differentyears_opt_50.png) 
 
 
-Usually every 5 years [the Estonian Song and Dance Festival](https://www.visitestonia.com/en/why-estonia/welcome-to-the-estonian-song-and-dance-celebration)
+  Usually every 5 years [the Estonian Song and Dance Festival](https://www.visitestonia.com/en/why-estonia/welcome-to-the-estonian-song-and-dance-celebration)
 
 - To hear numbers in Estonian, visitor can watch this [Youtube video](https://youtube.com/shorts/y2RQWWda-Nc?feature=shared)
 
@@ -713,13 +701,15 @@ Usually every 5 years [the Estonian Song and Dance Festival](https://www.visites
 
 ### Images 
 
-Website's background image, cornflower, and the image with Estonian books and DVD's (wireframe), both taken by the developer.
+- Website's background image, with cornflower, taken by the developer. For developer usin image with a Cornflower was meaningful, as it's Quiz about Estonia,
+  and Cornflower is Estonia-n national flower.
 
-Same background image used to create a favicon image, using [favicon converter](https://favicon.io/favicon-converter/)
+- Same background image used to create a favicon image, using [favicon converter](https://favicon.io/favicon-converter/)
 
 #### Resized Images
 
 - Developer used [Simple image resizer](https://www.simpleimageresizer.com/resize-image-to-50-kb) to reduce README images
+- Developer marked all resized images with 'opt_50'
 
 [Back to top](#contents)
 
@@ -737,12 +727,16 @@ Same background image used to create a favicon image, using [favicon converter](
 
 - Code for the Final version of Estonia Quiz, learned from: [The Everything Quiz](https://tony118g.github.io/the-everything-quiz/) . Developer liked the layout and functionality of The Everything Quiz.
 
-- Grateful to my Mentor Lauren-Nicole Popich for supporting me with my project, for listening, for sharing examples like the Leeds Quiz, for guiding me to improve my project, and for suggesting to convert the links into clickable text, among other suggestions.
+- Grateful to my Mentor Lauren-Nicole Popich for supporting me with my project, for listening, for sharing examples like the Leeds Quiz,
+  for guiding me to improve my project, and for suggesting to convert the links into  clickable text, among other suggestions.
 
-- Grateful to Coding Group member Patrick Hladun for guiding developer via Slack, to get console errors to show up, and how to track errors one by one. He also pointed out where names of the functions were clashing, and some ; vs : errors in developer's code.
+- Grateful to Coding Group member Patrick Hladun for guiding developer via Slack, to get console errors to show up,
+  and how to track errors one by one. He also pointed out where names of the functions were clashing, and some ; vs : errors in developer's code.
 
-- Thank you to Laura Mayock, group's Cohort Facilitator, for our weekly group meetings and guidance, encouraging students to show and talk about their projects. And to everyone who took part of the group meetings, shared their projects, and everyone who supported via Slack.
+- Thank you to Laura Mayock, group's Cohort Facilitator, for our weekly group meetings and guidance, encouraging students to show and talk about their projects.
+  And to everyone who took part of the group meetings, shared their projects, and everyone who supported via Slack.
 
-- On the 31st of January 2024, while testing Estonia Quiz in a different browser (Microsoft Edge), and placing developer's own GitHub Estonia Quiz link into search bar, the developer came across [Estonian quizzes](https://www.visitestonia.com/en/why-estonia/play-quizzes-and-test-your-knowledge-about-estonia#). The developer was previously not aware of this Estonian quizzes page, even though she had seen other parts of www.visitestonia.com website, and credited the main page in README. The developer understands for the future that it is important to Google first, to see if there are similar named projects.
+- On the 31st of January 2024, while testing Estonia Quiz in a different browser (Microsoft Edge), and placing developer's own GitHub Estonia Quiz link into search bar,
+  the developer came across [Estonian quizzes] (https://www.visitestonia.com/en/why-estonia/play-quizzes-and-test-your-knowledge-about-estonia#). The developer was previously not aware of this Estonian quizzes page, even though she had seen other parts of www.visitestonia.com website, and she had previously credited the main page in README. The developer understands for the future that it is important to Google first, to see if there are similar named projects.
 
 [Back to top](#contents)
