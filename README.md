@@ -10,7 +10,7 @@ Link to the live GitHub site: [Estonia Quiz](https://barbykelly.github.io/quizpr
 
 Image of the Estonia Quiz site, from [Am I Responsive?](https://ui.dev/amiresponsive) to show how website looks on different screen sizes:
 
-![Am I Responsive]()
+![Am I Responsive](assets/images/readmeimg/am_i_responsive_opt_50.png)
 
 
 ## Contents
