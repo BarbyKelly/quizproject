@@ -42,12 +42,6 @@ h2 {
     color: #8090BC;
 }
 
-/* Quiz Levels, Back to Main Menu button styling */
-
-#close_level {
-    text-wrap: wrap;
-}
-
 /* Quiz Timer styling */
 
 #timer {
