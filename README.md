@@ -69,8 +69,8 @@ First time user, may:
 
 - Test that all buttons work on the website
 - See one question at a time displayed on the screen
-- Click on any of the answer options
-- Find out which answer was correct when the correct answer option turns green, and incorrect answers turn red
+- Click on any of the answers
+- Find out which answer was correct when the correct answer turns green, and incorrect answers turn red
 - Click on the button: 'Next Question'
 - Go through all of the 5 questions
 - Exit quiz any time during the quiz
@@ -199,10 +199,10 @@ from https://fonts.google.com/specimen/Crimson+Text?preview.text=Estonia%20Quiz&
 - Player can choose how many questions they want to answer per game
 - Increased number of questions
 - Add variations of the quiz eg wildlife, culture, music, authors, movies, national symbols and so on
-- Add Buttons on top of the page with different languages, for the quiz and for the "Extra" area:
+- Add Buttons on top of the page with different languages, for the quiz and for the "Extra" section:
   - English
   - Eesti (Estonian)
-- Add "Extra" button to the website, which would bring visitors to an area with links and images to find out more about Estonia 
+- Add "Extra" button to the website, which would bring visitors to a section with links and images to find out more about Estonia 
 - Add code to make images pop up when visitor has made their choice. Image of the correct answer (eg picture of lynx)
 - Ensure that links open in a new tab, to keep Estonia Quiz page open
 - Player can enter a Username before starting Quiz
@@ -352,11 +352,11 @@ Error had been caused by startQuizBtn, were it was supposed to be startQuizBtnFu
 
 ### Color of correct/incorrect answer
 
-When developer tested answer options, and chose the correct or incorrect option, color of the answer options did not change. After checking out [this page](https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/), the developer noticed that script should be in a different place. Once script was moved into the container, green and red colors showed up for correct/incorrect options, when "Next Question" button was clicked. This testing led to the next bug:
+When developer tested answers, and chose the correct or incorrect answer, color of the answers did not change. After checking out [this page](https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/), the developer noticed that script should be in a different place. Once script was moved into the container, green and red colors showed up for correct/incorrect answers, when "Next Question" button was clicked. This testing led to the next bug:
 
-### One of the questions had no correct answer option
+### One of the questions had no correct answer
 
-Once color showed up correctly for correct vs incorrect answers, developer noticed one of the questions had all options showing up as incorrect. Developer realised that she must have typed 'false' instead of 'true' for all of the options. After setting the correct option as "true", the error remained. Developer cleared the cache, started port again, and then the correct answer turned green.
+Once color showed up correctly for correct vs incorrect answers, developer noticed one of the questions had all answers showing up as incorrect. Developer realised that she must have typed 'false' instead of 'true' for all of the answers, for that question. After setting the correct answer as "true", the error remained. Developer cleared the cache, started port again, and then the correct answer turned green.
 
 ### Commented out text showing up on deployed version
 
@@ -475,13 +475,6 @@ commented out text no longer appeared on 404 error page.
 
   ![Unexpected token error](assets/images/readmeimg/unexpected_token.png)
 
-  - While investing where this error was coming from, developer noticed
-  that she hadn't swapped 'LevelPrompt' for 'QuizLevelPrompt' on line 35 in script.js,
-  while she had swapped it on line 62 in index.html, and on line 10 in script.js.
-  Developer corrected the error.
-
-  - Developer deleted ')' from line 289 script.js, to be able to see other errors, as she hadn't located
-  the opening '(', to fix that error.
 
   #### Uncaught TypeError: Cannot read properties of null (reading 'classList')
 
@@ -526,9 +519,18 @@ commented out text no longer appeared on 404 error page.
 
   ![Quiz Levels Menu](assets/images/readmeimg/quiz_levels_menu_opt_50.png)
 
+### NextQuestionButton error
+
+- When developer clicked on 'Beginner' level, an error showed up in the console:
+
+  Uncaught TypeError: nextQuestionButton is not a function
+    at startBeginnerQuiz (script.js:119:4)
+    at HTMLButtonElement.<anonymous> (script.js:79:13)
+
+- Developer  in index.html and in script.js
 
 
-  
+
 
 ## Known Bugs
 

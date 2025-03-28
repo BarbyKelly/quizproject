@@ -51,7 +51,7 @@
 
     <!-- Prompt with Quiz Levels -->
     
-    <div id="quiz_level_prompt" class="container hide">
+    <div id="level_prompt" class="container hide">
         <button id="close_level" class="close_modal">Back to<br/> Main Menu</button>
         <h2>Select a level to begin</h2>
         <div>
@@ -61,21 +61,21 @@
         </div>
     </div>
 
-    <!-- Quiz area -->
+    <!-- Quiz section -->
 
-    <div id="quiz_area" class="container hide">
+    <div id="quiz_section" class="container hide">
         <button id="exit_quiz" class="close_modal">Exit Quiz</button>
 
-        <!-- Quiz Questions area with timer -->
+        <!-- Quiz Questions section with timer -->
         
-        <div id="quizquestion_area">
-            <h2>Question <span id="quizquestion_number">0</span>5 <span id="timer">0</span></h2>
-            <p id="quizquestion">Question content goes here</p>
+        <div id="question_section">
+            <h2>Question <span id="question_number">0</span>5 <span id="timer">0</span></h2>
+            <p id="question">Question goes here</p>
         </div>
 
-        <!-- Answer options container, and score display -->
+        <!-- Answers container, and score display -->
         
-        <div id="answer_area">    
+        <div id="answers_section">    
         </div>
         <button id="next_question_button" class="btn hide">Next Question</button>
         <p>Score: <span id="score">0</span></p>
@@ -87,7 +87,7 @@
             <h2>Finished!</h2>
             <p> Your Final Score is <span id="final_score">0</span>5</p>
             <button id="retry_quiz_button" class="btn quiz_finish_btn">Play again</button>
-            <button id="main_menu_button" class="btn quiz_finish_btn">Main Menu</button>
+            <button id="main_menu_btn" class="btn quiz_finish_btn">Main Menu</button>
         </div>
 
         <!-- Footer copyright script code from this video: https://youtu.be/US_3XvufMLU?feature=shared -->
@@ -96,8 +96,8 @@
             <p> Copyright &copy; 2025 Estonia Quiz (JS project) by Barby Kelly <br> This website has no commercial intention </p>
         </footer>
         
-        <!-- Script -->
-        <script src="assets/js/script.js"></script>
-        <script src="assets/js/questions.js"></script>
+    <!-- Script -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/questions.js"></script>
 </body>
 </html>

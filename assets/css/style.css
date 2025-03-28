@@ -91,15 +91,15 @@ p {
     font-family: comfortaa, sans-serif;
 }
 
-/* Question area styling */
+/* Question section styling */
 
-#quizquestion_area {
+#question_section {
     margin-top: 20px;
 }
 
-/* Answer area buttons styling */
+/* Answer section buttons styling */
 
-#answer_area > .btn {
+#answer_section > .btn {
     color: #6495ED;
     background-color: #FFFFFF;
 }
@@ -158,7 +158,7 @@ li {
     box-shadow: 0px 0px 10px 5px #8090BC;
 }
 
-/* Styling to prevent clicks in the Answer Area when the no-pointer class is applied */
+/* Styling to prevent clicks in the Answer section when the no-pointer class is applied */
 
 .no-pointer {
     pointer-events: none;
@@ -190,7 +190,7 @@ footer > p {
     box-shadow: 0px 0px 10px 5px #8090BC;
 }
 
-#answer_area > .btn:hover {
+#answer_section > .btn:hover {
     background-color: #8090BC;
     color: #8090BC;
     box-shadow: 0px 0px 10px 5px #8090BC;
