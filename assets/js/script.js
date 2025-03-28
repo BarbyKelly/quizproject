@@ -4,7 +4,7 @@
 
 // Const Variables (Variables with consistent value)
 
-const heading = document.getElementById("heading");
+const quizHeading = document.getElementById("heading");
 const mainMenu = document.getElementById("main_menu");
 const guidelinesModal = document.getElementById("guidelines");
 const levelPrompt = document.getElementById("level_prompt");
@@ -23,7 +23,7 @@ let quizScore;
 let answeringTimeLeft;
 let quizTimerInterval;
 
-// Main Menu buttons
+// DOMContentLoaded, Main Menu buttons
 
 document.addEventListener("DOMContentLoaded", function() {
    const mainMenuButtons = this.querySelectorAll(".main_menu_btn");
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
          if (this.getAttribute("id") === "guidelines_button") {
             displayGuidelines();
          } else if (this.getAttribute("id") === "quiz_button") {
-            levelPrompt();
+            quizLevelPrompt();
          }
       });
    });
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function displayGuidelines() {
    guidelinesModal.classList.remove("hide");
-   heading.classList.add("hide");
+   quizHeading.classList.add("hide");
    mainMenu.classList.add("hide");
    const closeGuidelinesButton = document.getElementById("close_guidelines");
    closeGuidelinesButton.addEventListener("click", closeGuidelines);
@@ -52,13 +52,13 @@ function displayGuidelines() {
 
 function closeGuidelines() {
    guidelinesModal.classList.add("hide");
-   heading.classList.remove("hide");
+   quizHeading.classList.remove("hide");
    mainMenu.classList.remove("hide");
 }
 
 // Display Levels Menu while hiding Main Menu
 
-function levelPrompt() {
+function quizLevelPrompt() {
 
    const closeLevelButton = document.getElementById("close_level");
    closeLevelButton.addEventListener("click", closeLevelMenu);
@@ -66,7 +66,7 @@ function levelPrompt() {
    // Displays Quiz Levels Menu
 
    levelPrompt.classList.remove("hide");
-   heading.classList.add("hide");
+   quizHeading.classList.add("hide");
    mainMenu.classList.add("hide");
 
    // Const to get buttons for Levels, add event listeners to them
@@ -95,7 +95,7 @@ function levelPrompt() {
 
 function closeLevelMenu() {
    levelPrompt.classList.add("hide");
-   heading.classList.remove("hide");
+   quizHeading.classList.remove("hide");
    mainMenu.classList.remove("hide");
 }
 
@@ -104,9 +104,9 @@ function closeLevelMenu() {
 function exitQuiz() {
    currentQuizQuestionIndex = 0;
    clearInterval(quizTimerInterval);
-   resetScore();
+   resetQuizScore();
    quizSection.classList.add("hide");
-   heading.classList.remove("hide");
+   quizHeading.classList.remove("hide");
    mainMenu.classList.remove("hide");
 }
 
@@ -116,7 +116,7 @@ function startBeginnerQuiz() {
    quizSection.classList.remove("hide");
    shuffledQuizQuestions = beginnerQuestions.sort(() => 0.5 - Math.random()).slice(0, 5);
    currentQuizQuestionIndex = 0;
-   nextQuestionButton();
+   nextQuestion();
 }
 
 // Function to display Intermediate Questions
@@ -125,7 +125,7 @@ function startIntermediateQuiz() {
    quizSection.classList.remove("hide");
    shuffledQuizQuestions = intermediateQuestions.sort(() => 0.5 - Math.random()).slice(0, 5);
    currentQuizQuestionIndex = 0;
-   nextQuestionButton();
+   nextQuestion();
 }
 
 // Function to display Expert Questions:
@@ -134,7 +134,7 @@ function startExpertQuiz() {
    quizSection.classList.remove("hide");
    shuffledQuizQuestions = expertQuestions.sort(() => 0.5 - Math.random()).slice(0, 5);
    currentQuizQuestionIndex = 0;
-   nextQuestionButton();
+   nextQuestion();
 }
 
 // Function nextQuestion, check if currentQuestionIndex < 5
@@ -145,7 +145,7 @@ function nextQuestion() {
       resetQuizContent();
       displayContent(shuffledQuizQuestions[currentQuizQuestionIndex]);
       currentQuizQuestionIndex++;
-      timer();
+      quizTimer();
    } else {
       finalScore();
    }
@@ -177,7 +177,7 @@ function displayContent(question) {
 
       // Adds an event listener to button, and append it to answer area
 
-      button.addEventListener("click", checkAnswer);
+      button.addEventListener("click", checkQuizAnswer);
       answersSection.appendChild(button);
    });
 
@@ -194,18 +194,18 @@ function displayQuizQuestionNumber() {
 // Quiz Timer function
 
 function startQuizTimer() {
-   quizTimerInterval = setInterval(timer, 1000);
+   quizTimerInterval = setInterval(quizTimer, 1000);
 }
 
-// Function to check time left - like in The Everything Quiz
+// Function to check time left to answer
 
 function quizTimer() {
-   if (timeLeft <= 0) {
-      timeUp();
+   if (answeringTimeLeft <= 0) {
+      quizTimeUp();
    } else {
-      timeLeft--;
+      answeringTimeLeft--;
    }
-   quizTimerDisplay.innerHTML = 'Time: ' + timeLeft;
+   quizTimerDisplay.innerHTML = 'Time: ' + answeringTimeLeft;
 }
 
 // Quiz Time is up function
@@ -227,78 +227,79 @@ function quizTimeUp() {
    correctQuizAnswer = document.getElementById("correct");
    correctQuizAnswer.classList.add("correct_answer");
    nextQuestionButton.classList.remove("hide");
+}
 
-   // Function and const for correct answer
+// Function and const for correct answer
 
-   function checkQuizAnswer(event) {
-      clearInterval(quizTimerInterval);
-      answersSection.classList.add("no-pointer");
-      correctQuizAnswer = document.getElementById("correct");
-      const clickedButton = event.target;
-      correctQuizAnswer.classList.add("correct_answer");
-         if (clickedButton === correctQuizAnswer) {
-            incrementScore();
-         } else {
-            this.classList.add("incorrect_answer");
-         }
-      nextQuestionButton.classList.remove("hide");
-   }
-
-   // EventListener for Next button
-
-   nextQuestionButton.addEventListener("click", nextQuestion);
-
-   // Function to get and increment score
-
-   function incrementScore() {
-      quizScore = parseInt(document.getElementById("score").innerText);
-      document.getElementById("score").innerText = ++score;
-   }
-
-   // Function to Reset Quiz Content
-
-   function resetQuizContent() {
-      nextQuestionButton.classList.add("hide");
-      answersSection.classList.remove("no-pointer");
-      timeLeft = 16;
-      startTimer();
-
-      // While to remove previous answer options
-      
-      while (answersSection.firstChild) {
-         answersSection.removeChild(answersSection.firstChild);
+function checkQuizAnswer(event) {
+   clearInterval(quizTimerInterval);
+   answersSection.classList.add("no-pointer");
+   correctQuizAnswer = document.getElementById("correct");
+   const clickedButton = event.target;
+   correctQuizAnswer.classList.add("correct_answer");
+      if (clickedButton === correctQuizAnswer) {
+         incrementQuizScore();
+      } else {
+         this.classList.add("incorrect_answer");
       }
+   nextQuestionButton.classList.remove("hide");
+}
+
+// EventListener for Next button
+
+nextQuestionButton.addEventListener("click", nextQuestion);
+
+// Function to get and increment quiz score
+
+function incrementQuizScore() {
+   quizScore = parseInt(document.getElementById("quiz_score").innerText);
+   document.getElementById("quiz_score").innerText = ++quizScore;
+}
+
+// Function to Reset Quiz Content
+
+function resetQuizContent() {
+   nextQuestionButton.classList.add("hide");
+   answersSection.classList.remove("no-pointer");
+   answeringTimeLeft = 16;
+   startQuizTimer();
+
+   // While to remove previous answer options
+      
+   while (answersSection.firstChild) {
+         answersSection.removeChild(answersSection.firstChild);
    }
+}
 
-   // Function for Final Score
+// Function for Final Score
 
-   function finalScore() {
-      const quizFinish = document.getElementById("quiz_finish");
-      const finalScore = document.getElementById("final_score");
-      quizSection.classList.add("hide");
-      heading.classList.remove("hide");
-      quizFinish.classList.remove("hide");
-      finalScore.innerText = score;
+function finalScore() {
+   const quizFinish = document.getElementById("quiz_finish");
+   const finalScore = document.getElementById("final_score");
+   quizSection.classList.add("hide");
+   quizHeading.classList.remove("hide");
+   quizFinish.classList.remove("hide");
+   finalScore.innerText = finalScore;
 
-      // Const Finish Quiz
+   // Const Finish Quiz
 
-      const finishQuizButtons = document.querySelectorAll(".quiz_finish_btn");
-      finishQuizButtons.forEach((finishQuizButton) => {
-         finishQuizButton.addEventListener("click", function() {
-            resetScore();
-            quizFinish.classList.add("hide");
-            if (this.getAttribute("id") === "retry_quiz_button") {
-               levelPrompt();
-            } else if (this.getAttribute("id") === "main_menu_button") {
-               mainMenu.classList.remove("hide");
-            }
+   const finishQuizButtons = document.querySelectorAll(".quiz_finish_btn");
+   finishQuizButtons.forEach((finishQuizButton) => {
+      finishQuizButton.addEventListener("click", function() {
+         resetQuizScore();
+         quizFinish.classList.add("hide");
+         if (this.getAttribute("id") === "retry_quiz_button") {
+            quizLevelPrompt();
+         } else if (this.getAttribute("id") === "main_menu_button") {
+            mainMenu.classList.remove("hide");
+         }
       });
    });
 }
 
-// Function to reset score
+// Function to reset quiz score
 
 function resetQuizScore() {
-   quizScore = document.getElementById("score");
-   score.innerText = 0;
+   quizScore = document.getElementById("quizScore");
+   quizScore.innerText = 0;
 }
