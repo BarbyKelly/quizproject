@@ -94,7 +94,7 @@ Returning user may want to:
 
 - Ideas, how to articulate user's goals, written down after reading this [article](https://balsamiq.com/learn/articles/five-steps-to-great-wireframes/)
 
-![Articulate article screenshot](assets/images/readmeimg/articulate.png)
+  ![Articulate article screenshot](assets/images/readmeimg/articulate.png)
 
 - The developer learned how to use Wirefames from [this Youtube video](https://www.youtube.com/watch?v=9Pv002d0Kls&list=PLVlyYfbClWxQDCGC-A1FkbGyIxtuIN5IM&index=1)
 
@@ -102,34 +102,29 @@ Returning user may want to:
 
 - Estonia Quiz, Home Page Wireframe:
 
-![Home Page Wireframe ](assets/images/readmeimg/wireframe_quiz_opt_50.png)
+  ![Home Page Wireframe ](assets/images/readmeimg/wireframe_quiz_opt_50.png)
 
 
 
 - Estonia Quiz, Guidelines page Wireframe:
 
-![Wireframe Guidelines Page](assets/images/readmeimg/wireframe_guidelines_opt_50.png)
+  ![Wireframe Guidelines Page](assets/images/readmeimg/wireframe_guidelines_opt_50.png)
   
 - Estonia Quiz, Levels page Wireframe:
 
-![Levels Page Wireframe](assets/images/readmeimg/levels_page_wireframe_opt_50.png)
+  ![Levels Page Wireframe](assets/images/readmeimg/levels_page_wireframe_opt_50.png)
 
 - Estonia Quiz, Question and answer options displayed, Wireframe:
 
-![Question and answers displayed, Wireframe](assets/images/readmeimg/question_page_wireframe_opt_50.png)
+  ![Question and answers displayed, Wireframe](assets/images/readmeimg/question_page_wireframe_opt_50.png)
 
 - Estonia Quiz, Next Question Button visible, Wireframe:
 
-![Next Question Button visible, Wireframe](assets/images/readmeimg/next_question_visible_wireframe_opt_50.png)
+  ![Next Question Button visible, Wireframe](assets/images/readmeimg/next_question_visible_wireframe_opt_50.png)
 
 - Estonia Quiz, Finished, Wireframe:
 
-![Estonia Quiz, Finished, Wireframe](assets/images/readmeimg/finished_quiz_wireframe_opt_50.png)
-
-
-
-
-
+  ![Estonia Quiz, Finished, Wireframe](assets/images/readmeimg/finished_quiz_wireframe_opt_50.png)
 
 
 [Back to top](#contents)
@@ -141,24 +136,24 @@ Returning user may want to:
 
 FAVICON
 
-Developer used an image of a cornflower (Estonian national flower), from her own collection, to create a Favicon.
+- Developer used an image of a cornflower (Estonian national flower), from her own collection, to create a Favicon.
 
-The original image: 
+- The original image: 
 
-![cornflower](assets/images/cornflower.jpg)
-
-
-[Favicon.io](https://favicon.io/favicon-converter/) helped to convert the image into Favicon:
+  ![cornflower](assets/images/cornflower.jpg)
 
 
-Screenshot of favicon on the website:
-![cornflower favicon image](assets/images/readmeimg/faviconreadme.png)
+  [Favicon.io](https://favicon.io/favicon-converter/) helped to convert the image into Favicon:
+
+
+- Screenshot of favicon on the website:
+  ![cornflower favicon image](assets/images/readmeimg/faviconreadme.png)
 
 
 ### Color
 
 - As the Estonian national flower is a Cornflower, developer chose 'cornflower blue' as a Background color for the website. Developer found Cornflower blue color code from 
-![Colorcodes.com](assets/images/readmeimg/cornflowerblue.png)
+  ![Colorcodes.com](assets/images/readmeimg/cornflowerblue.png)
 
 - Color palette from [Mycolor.space](https://mycolor.space/?hex=%236495ED&sub=1)
 
@@ -169,11 +164,7 @@ Screenshot of favicon on the website:
 ### Font/style
 
 - Developer chose Comfortaa as the main Font style
-![Comfortaa](assets/images/readmeimg/comfortaareadme.png) 
-
-- Change over to this style? https://fonts.google.com/?preview.text=Estonia%20Quiz&query=cr
-
-from https://fonts.google.com/specimen/Crimson+Text?preview.text=Estonia%20Quiz&query=cr
+  ![Comfortaa](assets/images/readmeimg/comfortaareadme.png) 
 
 [Back to top](#contents)
 
@@ -188,14 +179,15 @@ from https://fonts.google.com/specimen/Crimson+Text?preview.text=Estonia%20Quiz&
   with:
 
   - Background image of Estonian national flower, cornflower
-  - Header
-  - 'Read About Guidelines' button
-  - 'Choose Your Quiz Level' button
+  - Container with: 
+    - Header
+    - 'Read About Guidelines' button
+    - 'Choose Your Quiz Level' button
   - Footer
 
 #### Favicon icon:
 
-  Visible at all times while Estonia Quiz site is open:
+  Visible at all times on the tab, while Estonia Quiz site is open:
 
   ![Favicon](assets/images/readmeimg/favicon.png)
 
@@ -206,21 +198,39 @@ from https://fonts.google.com/specimen/Crimson+Text?preview.text=Estonia%20Quiz&
   with:
 
   - Background image of Estonian national flower, cornflower
-  - 'Back to Main Menu' button in top right corner
-  - Guidelines heading
-  - List of Guidelines for the player
+  - Container with:
+    - 'Back to Main Menu' button in top right corner
+    - Guidelines heading
+    - List of Guidelines for the player
 
+#### Select Quiz Level page:
+
+  ![Select Quiz Level page](assets/images/readmeimg/select_level_page_opt_50.png)
+
+  with:
+
+  - Background image of Estonian national flower, cornflower
+  - Container with:
+    - 'Back to Main Menu' button in top right corner
+    - Heading: 'Select a level to begin'
+    - Buttons to access different levels of quiz:
+        - Beginner
+        - Intermediate
+        - Expert
+
+#### 
 
 ### Future Features
 
 - Player can choose how many questions they want to answer per game
 - Increased number of questions
-- Add variations of the quiz eg wildlife, culture, music, authors, movies, national symbols and so on
-- Add Buttons on top of the page with different languages, for the quiz and for the "Extra" section:
+- Variations of the quiz eg wildlife, culture, music, authors, movies, national symbols and so on
+- Buttons on top of the page to change language:
   - English
   - Eesti (Estonian)
-- Add "Extra" button to the website, which would bring visitors to a section with links and images to find out more about Estonia 
-- Add code to make images pop up when visitor has made their choice. Image of the correct answer (eg picture of lynx)
+  etc.
+- "Extra" button added to the website, which would bring visitors to a section with links and images to find out more about Estonia 
+- Images popping up when visitor has made their choice. Image of the correct answer (eg picture of lynx)
 - Ensure that links open in a new tab, to keep Estonia Quiz page open
 - Player can enter a Username before starting Quiz
 - Top scores displayed
@@ -230,9 +240,9 @@ from https://fonts.google.com/specimen/Crimson+Text?preview.text=Estonia%20Quiz&
 
 ## Languages Used
 
-- JavaScript
-- CSS
 - HTML
+- CSS
+- JavaScript
 
 ![Languages used](assets/images/readmeimg/languagesused.png)
 
@@ -244,10 +254,10 @@ from https://fonts.google.com/specimen/Crimson+Text?preview.text=Estonia%20Quiz&
 
 Developer used these sites/apps to create Estonia Quiz: 
 
-- [Balsamiq Wireframes](https://balsamiq.com/)
 - [GitHub](https://github.com/)
 - [Gitpod](https://www.gitpod.io/)
 - [VS Code](https://code.visualstudio.com/)
+- [Balsamiq Wireframes](https://balsamiq.com/)
 
 
 [Back to top](#contents)
@@ -265,12 +275,15 @@ Developer used these sites/apps to create Estonia Quiz:
 
 - Tested CSS with [Jigsaw W3](https://jigsaw.w3.org/css-validator/validator)
 
-![Css Validation](assets/images/readmeimg/css_validation_opt_50.png)
+  ![Css Validation](assets/images/readmeimg/css_validation_opt_50.png)
 
 ### JS Validation
 
-- Tested JS with 
+- Tested JS with [Site 24x7](https://www.site24x7.com/tools/javascript-validator.html)
 
+  ![JS Validation](assets/images/readmeimg/js_validation_opt_50.png)
+
+[Back to top](#contents)
 
 
 ### Homepage Testing
@@ -317,22 +330,6 @@ Developer used these sites/apps to create Estonia Quiz:
 |             | Border color of the container is #7189cb                                 | as expected |
 |             | 'Back to Main Menu' text is on 2 lines                                     | as expected |
 
-
-
-### CSS
-
-Tested CSS with
-
-[Jigsaw.W3](https://jigsaw.w3.org/css-validator/)
-
-![CSS validation](assets/images/readmeimg/css_validation_opt_50.png)
-
-
-### JavaScript
-
-[Site 24X7](https://www.site24x7.com/tools/javascript-validator.html)
-
-![JavaScript validation](assets/images/readmeimg/jsvalidator.png)
 
 
 ### Lighthouse
