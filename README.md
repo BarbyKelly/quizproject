@@ -100,17 +100,34 @@ Returning user may want to:
 
 - All Wireframes created with [Balsamic Wireframes](https://balsamiq.com/)
 
-- Estonia Quiz home page Wireframe:
+- Estonia Quiz, Home Page Wireframe:
 
-![Wireframe Home Page](assets/images/readmeimg/wireframe_quiz_opt_50.png)
+![Home Page Wireframe ](assets/images/readmeimg/wireframe_quiz_opt_50.png)
 
 
 
-- Guidelines page Wireframe:
+- Estonia Quiz, Guidelines page Wireframe:
 
 ![Wireframe Guidelines Page](assets/images/readmeimg/wireframe_guidelines_opt_50.png)
   
-- Screenshot of Estonia Quiz test score page, created with Balsamiq Wireframes:
+- Estonia Quiz, Levels page Wireframe:
+
+![Levels Page Wireframe](assets/images/readmeimg/levels_page_wireframe_opt_50.png)
+
+- Estonia Quiz, Question and answer options displayed, Wireframe:
+
+![Question and answers displayed, Wireframe](assets/images/readmeimg/question_page_wireframe_opt_50.png)
+
+- Estonia Quiz, Next Question Button visible, Wireframe:
+
+![Next Question Button visible, Wireframe](assets/images/readmeimg/next_question_visible_wireframe_opt_50.png)
+
+- Estonia Quiz, Finished, Wireframe:
+
+![Estonia Quiz, Finished, Wireframe](assets/images/readmeimg/finished_quiz_wireframe_opt_50.png)
+
+
+
 
 
 
