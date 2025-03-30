@@ -207,6 +207,15 @@ footer > p {
 @media (min-width: 320px) {
     .container {
         max-width: 320px;
+        max-height: min-content;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.8rem;
     }
 }
 

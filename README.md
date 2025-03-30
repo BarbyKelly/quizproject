@@ -533,21 +533,22 @@ commented out text no longer appeared on 404 error page.
 
   ![Quiz Levels Menu](assets/images/readmeimg/quiz_levels_menu_opt_50.png)
 
-### NextQuestionButton error
+### "Exit Quiz" button not working
 
-- When developer clicked on 'Beginner' level, an error showed up in the console:
-
-  Uncaught TypeError: nextQuestionButton is not a function
-    at startBeginnerQuiz (script.js:119:4)
-    at HTMLButtonElement.<anonymous> (script.js:79:13)
-
-- Developer  in index.html and in script.js
+- Uncaught TypeError: Cannot set properties of null (setting 'innerText')
+    at resetQuizScore (script.js:304:24)
+    at HTMLButtonElement.exitQuiz (script.js:107:4)
 
 
 
 
 ## Known Bugs
 
+- "Next Question" button is displayed when last question is displayed:
+
+  ![Next Question btn displayed](assets/images/readmeimg/next_question_btn_visible_opt_50.png) 
+
+  Instead there needs to be button "End Quiz" or "Here's your score", or message saying Quiz is over, and option to "Play again"
 
 
 
