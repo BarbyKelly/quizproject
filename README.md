@@ -533,13 +533,6 @@ commented out text no longer appeared on 404 error page.
 
   ![Quiz Levels Menu](assets/images/readmeimg/quiz_levels_menu_opt_50.png)
 
-### "Exit Quiz" button not working
-
-- Uncaught TypeError: Cannot set properties of null (setting 'innerText')
-    at resetQuizScore (script.js:304:24)
-    at HTMLButtonElement.exitQuiz (script.js:107:4)
-
-
 
 
 ## Known Bugs

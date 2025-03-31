@@ -147,7 +147,7 @@ function nextQuestion() {
       currentQuizQuestionIndex++;
       quizTimer();
    } else {
-      finalScore();
+      finalScoreResult();
    }
 }
 
@@ -273,13 +273,13 @@ function resetQuizContent() {
 
 // Function for Final Score
 
-function finalScore() {
+function finalScoreResult() {
    const quizFinish = document.getElementById("quiz_finish");
    const finalScore = document.getElementById("final_score");
    quizSection.classList.add("hide");
    quizHeading.classList.remove("hide");
    quizFinish.classList.remove("hide");
-   finalScore.innerText = finalScore;
+   finalScore.innerText = quizScore;
 
    // Const Finish Quiz
 
@@ -300,6 +300,6 @@ function finalScore() {
 // Function to reset quiz score
 
 function resetQuizScore() {
-   quizScore = document.getElementById("quizScore");
+   quizScore = document.getElementById("quiz_score");
    quizScore.innerText = 0;
 }
