@@ -159,6 +159,8 @@ FAVICON
 
 - Developer checked [Colorhexa.com website]( https://www.colorhexa.com/8090bc) to find a suitable tone color variation for container border
 
+- Developer looked for a darker color to support #7189cb, and found #405eaf from [colorhexa.com](https://www.colorhexa.com/7189cb)
+
 
 
 ### Font/style
@@ -330,7 +332,7 @@ Developer used these sites/apps to create Estonia Quiz:
 |             | Border color of the container is #7189cb                                 | as expected |
 |             | 'Back to Main Menu' text is on 2 lines                                     | as expected |
 
-
+[Back to top](#contents)        [Back to Testing](#testing)
 
 ### Lighthouse
 
@@ -533,15 +535,36 @@ commented out text no longer appeared on 404 error page.
 
   ![Quiz Levels Menu](assets/images/readmeimg/quiz_levels_menu_opt_50.png)
 
+### No container displayed, when clicked on "Main Menu" after quiz ended:
 
+- Only background image and footer visible after clicking on "Main Menu", when quiz ended.
+
+- Developer inspected the page, and noticed:
+
+  <div id="quiz_finish" class="hide container"> in index.html:
+
+  ![container hidden](assets/images/readmeimg/container_hide_opt_50.png)
+
+- Developer checked wording in index.html vs script.js re "main_menu_btn",
+  and found an error on line 293 in script.js,
+  where she had used "main_menu_button" instead of "main_menu_btn":
+
+  ![main_menu_button](assets/images/readmeimg/main_menu_button.png)
+
+- Developer fixed the error:
+
+  ![btn error fixed](assets/images/readmeimg/btn_error_fixed.png)
+
+- When she clicked on "Main Menu" button at the end of the Quiz, button worked as expected, by displayin Main page 
+
+
+[Back to top](#contents)
 
 ## Known Bugs
 
-- "Next Question" button is displayed when last question is displayed:
+### Only selected incorrect answer turned red after it was selected, while the other incorrect answer didn't change color:
 
-  ![Next Question btn displayed](assets/images/readmeimg/next_question_btn_visible_opt_50.png) 
 
-  Instead there needs to be button "End Quiz" or "Here's your score", or message saying Quiz is over, and option to "Play again"
 
 
 

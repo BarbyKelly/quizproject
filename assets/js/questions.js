@@ -111,9 +111,9 @@ const intermediateQuestions =[
     {
         question: "How many times has Estonia won Eurovision (by March 2025)?",
         answers: [
-            { text: "One", correct: true },
-            { text: "Two", correct: false },
-            { text: "Zero", correct: false },  
+            { text: "Once", correct: true },
+            { text: "Twice", correct: false },
+            { text: "Never", correct: false },  
         ]
     },
     {

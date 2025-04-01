@@ -290,7 +290,7 @@ function finalScoreResult() {
          quizFinish.classList.add("hide");
          if (this.getAttribute("id") === "retry_quiz_button") {
             quizLevelPrompt();
-         } else if (this.getAttribute("id") === "main_menu_button") {
+         } else if (this.getAttribute("id") === "main_menu_btn") {
             mainMenu.classList.remove("hide");
          }
       });

@@ -20,7 +20,7 @@ body {
     background-size: cover;
     background-position: center;
     background-color: #6495ED;
-    color: #333333;
+    color: #405eaf;
     padding-top: 90px;
     padding-bottom: 5px;
     text-align: center;    
@@ -119,7 +119,7 @@ p {
     padding: 20px;
     border: 0.5rem solid #7189cb; /* tone color variation from: https://www.colorhexa.com/8090bc */
     border-radius: 15px;
-    box-shadow: 0px 0px 15px 10px;
+    /* box-shadow: 0px 0px 15px 10px; */
 }
 
 /* Guidelines modal styling */
@@ -147,13 +147,13 @@ li {
 /* Styling for correct and incorrect answer buttons */
 
 .correct_answer {
-    color: black;
+    color: #FFFFFF;
     background-color: green !important;
     box-shadow: 0px 0px 10px 5px #8090BC;
 }
 
 .incorrect_answer {
-    color: black;
+    color: #FFFFFF;
     background-color: red !important;
     box-shadow: 0px 0px 10px 5px #8090BC;
 }
