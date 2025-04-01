@@ -555,7 +555,11 @@ commented out text no longer appeared on 404 error page.
 
   ![btn error fixed](assets/images/readmeimg/btn_error_fixed.png)
 
-- When she clicked on "Main Menu" button at the end of the Quiz, button worked as expected, by displayin Main page 
+- When Developer clicked on "Main Menu" button at the end of the Quiz, button worked as expected, by displaying the Main page 
+
+### Blue background behind footer and container too long, on a small screen
+
+
 
 
 [Back to top](#contents)
