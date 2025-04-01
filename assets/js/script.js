@@ -172,7 +172,7 @@ function displayContent(question) {
       if (answer.correct) {
          button.id = "correct";
       } else {
-         button.classList.add("incorrect");
+         button.classList.add("incorrectAnswer");
       }
 
       // Adds an event listener to button, and append it to answer area
