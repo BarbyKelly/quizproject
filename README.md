@@ -331,6 +331,12 @@ Developer used these sites/apps to create Estonia Quiz:
 
 ## Testing
 
+### Lighthouse Testing
+
+- Tested with Google Dev Tools, Lighthouse:
+
+  ![Lighthouse test](assets/images/readmeimg/lighthouse_test.png)
+
 ### HTML
 
 - Tested HTML with [Validator.W3](https://validator.w3.org/)
@@ -512,15 +518,6 @@ Developer used these sites/apps to create Estonia Quiz:
 
 [Back to Testing](#testing)      
 
-
-
-### Lighthouse
-
-- Tested with Google Dev Tools, Lighthouse:
-
-  ![Lighthouse test]( add a new image here!)
-
-[Back to top](#contents)
 
 
 ## Bug fixing
