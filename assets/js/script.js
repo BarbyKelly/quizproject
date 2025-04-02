@@ -205,7 +205,7 @@ function quizTimer() {
    } else {
       answeringTimeLeft--;
    }
-   quizTimerDisplay.innerHTML = 'Time: ' + answeringTimeLeft;
+   quizTimerDisplay.innerHTML = 'Timer: ' + answeringTimeLeft;
 }
 
 // Quiz Time is up function

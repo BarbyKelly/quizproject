@@ -63,7 +63,7 @@ First time user, may:
 - Read Guidelines on 'Guidelines' page
 - Click on 'Back to Main Menu' button to return to Main menu from 'Guidelines' page
 
-- Click on 'Choose Your Quiz Level' button
+- Click on 'Select Quiz Level' button
 - Choose Level for the Quiz
 - Click on 'Beginner', 'Intermediate' or 'Expert' Level button
 
@@ -184,7 +184,7 @@ FAVICON
   - Container with: 
     - Header
     - 'Read About Guidelines' button
-    - 'Choose Your Quiz Level' button
+    - 'Select Quiz Level' button
   - Footer
 
 #### Favicon icon:
@@ -197,8 +197,6 @@ FAVICON
 
   ![Guidelines page](assets/images/readmeimg/guidelines_page_opt_50.png)
 
-  with:
-
   - Background image of Estonian national flower, cornflower
   - Container with:
     - 'Back to Main Menu' button in top right corner
@@ -209,8 +207,6 @@ FAVICON
 
   ![Select Quiz Level page](assets/images/readmeimg/select_level_page_opt_50.png)
 
-  with:
-
   - Background image of Estonian national flower, cornflower
   - Container with:
     - 'Back to Main Menu' button in top right corner
@@ -220,7 +216,69 @@ FAVICON
         - Intermediate
         - Expert
 
-#### 
+#### Question page:
+
+  - Beginner, Intermediate and Expert Level Quiz Pages look the same, just different questions are displayed.
+
+  ![Question page](assets/images/readmeimg/question_page_opt_50.png)
+
+  - Background image of Estonian national flower, cornflower
+  - Container:
+
+    - Clickable "Exit Quiz" button top right corner
+    - Question count x/5
+    - Timer (counting down from 15 seconds). More details below: [Timer](#timer)
+    - Question (randomly chosen by js, and difficulty depending on player's Quiz Level selection)
+
+    - Three possible answers
+    - All answer options displayed in same neutral color #8090BC, without indicating which answer is correct, or which answers are incorrect
+    - Each question has only one correct answer
+    - Two answers are incorrect for each question
+    - Five different questions are displayed for any quiz level
+
+    - Player can click on any of the answer buttons
+    - Correct answer will turn green when player clicks on the correct answer
+    - When player chooses incorrect answer, player's chosen answer will turn red, and correct answer will turn green. Third answer remains neutral color
+    - When one of the answers is selected, then "Next" button is displayed below Answer options, inside the container
+    - Player can click on "Next" for the Next Question when present question has been answered or "OK" has been clicked if Time ran out
+
+    - Player can click on "Exit Quiz":
+      - After starting the quiz
+      - Before answering the question
+      - After answering the question
+
+    - Score:
+
+      - 'Score: x' is displayed below answers
+      - Score goes up by 1 for each correct answer
+    
+    ##### Timer:
+
+    - "Next" button is not displayed while Timer is running
+    - Timer stops when one of the answer options is chosen, or when Time is up
+
+    - When Timer is up, and no answer was selected:
+      - Timer stops
+      - 'Timer: 0' is displayed
+      - Pop up appears: "barbykelly.github.io says 'Time is up!'", with "OK" button to click on, to close the pop-up:
+
+        ![Pop up "Time is Up!"](assets/images/readmeimg/pop_up_time_is_up_opt_100.png)
+
+      - 'Question x/5' is displayed on the left of the Timer
+      - Question and answer options are displayed
+
+      - Until "OK" is clicked/tapped:
+        - All of the answer options for the question remain neutral, 
+        - "Exit Quiz" button is displayed, yet it isn't available for clicking/tapping
+        - None of the answer options can be selected
+        - "Next" button isn't available
+        - Score remains as from previous question
+        (Developer tested for 15 minutes. Screen remained the same, if "OK" button wasn't clicked)
+
+      - When "OK" button clicked/tapped:
+        - Correct answer turned green
+        - Incorrect answers remained neutral
+
 
 ### Future Features
 
@@ -236,6 +294,8 @@ FAVICON
 - Ensure that links open in a new tab, to keep Estonia Quiz page open
 - Player can enter a Username before starting Quiz
 - Top scores displayed
+- Different scores for different Quiz Levels
+- Option to listen to the question and answers
 
 [Back to top](#contents)
 
@@ -297,14 +357,14 @@ Developer used these sites/apps to create Estonia Quiz:
 |             | Background-color of the container is #E6F4F1                        | as expected |
 |             | Header displayed on top of the container                              | as expected |
 |             | 'Read about Guidelines' button displayed below Header                 | as expected |
-|             | 'Choose Your Quiz Level' button displayed below 'Read Guidelines' btn | as expected |         
+|             | 'Select Quiz Level' button displayed below 'Read Guidelines' btn      | as expected |         
 |             | Color of Header and buttons #8090BC                                 | as expected |
 |             | Container's background color is #E6F4F1                             | as expected |
 |             | Border color of the container is #7189cb                            | as expected |
 |             | Shadow effect visible when hovering over buttons                      | as expected |
 |             | 'Read about Guidelines' button is clickable, and                      | as expected |
 |             | it opens up 'Guidelines'.                                             | as expected |
-|             | 'Choose Your Quiz Level' button is clickable,                         | as expected |
+|             | 'Select Quiz Level' button is clickable,                              | as expected |
 |             | and it opens up 'Quiz Levels Menu'.                                   | as expected |
 |             |                                                                       |             |
 | Footer      | Footer is displayed at the bottom of the page                         | as expected |
@@ -314,25 +374,193 @@ Developer used these sites/apps to create Estonia Quiz:
 |             | Statement 'This website has no commercial intention' is displayed     | as expected |
 |             | Footer is responsive on all screen sizes                              | as expected |  
 
-### 'Read about Guidelines' Menu testing
+[Back to top](#contents)
 
-| Tested Item | Expected Outcome                                                           | Outcome     |
-| ----------- | -------------------------------------------------------------------------- | ----------- |
-| Guidelines  | 'Guidelines' menu accessed via 'Read about Guidelines' button on Home page | as expected | 
-|             | 'Back to Main Menu' button displayed top right                             | as expected |
-|             | Guidelines heading displayed middle of the screen                          | as expected |
-|             | List of guidelines displayed                                               | as expected |         
-|             | Background image displayed behind the conta                                | as expected |
-|             | Container is placed in the middle of the screen, for all screen sizes      | as expected |
-|             | Click on 'Back to Main Menu' brings user back to Home page                 | as expected |
-|             | Color of heading and list items is #8090BC                               | as expected |
-|             | Color of 'Back to Main Menu' text is #FFFFFF                             | as expected |
-|             | 'Back to Main Menu' background color is #8090BC                          | as expected |         
-|             | Container's background color is #E6F4F1                                  | as expected |
-|             | Border color of the container is #7189cb                                 | as expected |
-|             | 'Back to Main Menu' text is on 2 lines                                     | as expected |
+[Back to Testing](#testing)
 
-[Back to top](#contents)        [Back to Testing](#testing)
+### 'Read about Guidelines' button testing
+
+| Tested Item                  | Expected Outcome                                                                         | Outcome     |
+| ---------------------------- | ---------------------------------------------------------------------------------------- | ----------- |
+| Read About Guidelines Button | Button is clickable                                                                      | as expected |
+|                              | Color of the botton is #8090BC                                                         | as expected |
+|                              | Text-color is #FFFFFF                                                                  | as expected |
+|                              | Button is inside the container                                                           | as expected |
+|                              | 'Read about Guidelines' button is displayed below 'Estonia Quiz', and                    | as expected |
+|                              | above 'Select Quiz Level' button                                                         | as expected |
+|                              |                                                                                          |             |
+|                              | Clicking on 'Read about Guidelines' button opens up 'Guidelines' page, and               | as expected |
+|                              | Main Menu is no longer displayed, and                                                    | as expected |
+|                              | 'Back to Main Menu' button becomes available                                             | as expected |
+
+[Back to top](#contents)
+
+[Back to Testing](#testing)
+
+### 'Guidelines' Page testing
+
+| Tested Item       | Expected Outcome                                                      | Outcome     |
+| ----------------- | --------------------------------------------------------------------- | ------------|
+| CSS               | Background image is displayed behind the container                    | as expected |
+|                   | Container is placed in the middle of the screen, for all screen sizes | as expected |
+|                   | Guidelines heading and list are displayed inside the container        | as expected |
+|                   | 'Guidelines' heading is centered above guidelines                     | as expected |
+|                   | List of guidelines displayed                                          | as expected |
+|                   | Color of heading and list items is #8090BC                          | as expected |
+|                   | Container's background color is #E6F4F1                             | as expected |
+|                   | Border color of the container is #7189cb                            | as expected |
+|                   |                                                                       |             |
+| Back to Main Menu | Button is displayed top right corner inside the container             | as expected |
+| Button            | Text Color is #FFFFFF                                               | as expected |
+|                   | Background color is #8090BC                                         | as expected |
+|                   | Button text is displayed on 2 lines                                   | as expected |
+|                   | Clicking on 'Back to Main Menu' brings user back to Home page, and    | as expected |
+|                   | closes 'Guidelines'                                                   | as expected |
+
+
+[Back to top](#contents)
+
+[Back to Testing](#testing)
+
+
+### 'Select Quiz Level' button testing
+
+| Tested Item                | Expected Outcome                                                    | Outcome     |
+| -------------------------- | ------------------------------------------------------------------- | ----------- |
+| 'Select Quiz Level' Button | Button is clickable                                                 | as expected |
+|                            | Color of the botton is #8090BC                                    | as expected |
+|                            | Text-color is #FFFFFF                                             | as expected |
+|                            | Button is inside the container                                      | as expected |
+|                            | 'Select Quiz Level' button is displayed below 'Estonia Quiz', and   | as expected |
+|                            | below 'Read About Guidelines' button                                | as expected |
+|                            |                                                                     |             |
+|                            | Clicking on the button opens up 'Select a level to begin' page, and | as expected |
+|                            | Main Menu is no longer displayed, and                               | as expected |
+|                            | 'Back to Main Menu' button becomes available                        | as expected |
+
+[Back to top](#contents)
+
+[Back to Testing](#testing)
+
+
+### 'Select Quiz Level' Page testing
+
+| Tested Item       | Expected Outcome                                      | Outcome     |
+| ----------------- | ----------------------------------------------------- | ----------- |
+| Acccess           | Accessed via 'Select Quiz Level' button on Home page | as expected |
+|                   |                                                       |             |
+| CSS               | Background image displayed behind the container                            | as expected |
+|                   | Color of the heading and quiz levels is #8090BC                               | as expected |
+|                   | Container is placed in the middle of the screen, for all screen sizes      | as expected |
+|                   | Container's background color is #E6F4F1                                  | as expected |
+|                   | Border color of the container is #7189cb                                 | as expected |
+|                   | 'Select Quiz Level' heading is displayed top centre of the container                          | as expected |
+|                   | Beginner, Intermediate and Expert Quiz Levels are displayed                                               | as expected |
+|                   | Levels are displayed in a column                                      | as expected |
+|                   |                                                       |             |
+| Back to Main Menu | Button is displayed top right corner inside the container             | as expected |
+| Button            | Text Color is #FFFFFF                                               | as expected |
+|                   | Background color is #8090BC                                         | as expected |
+|                   | Button text is displayed on 2 lines                                   | as expected |
+|                   | Clicking on 'Back to Main Menu' brings user back to Home page, and    | as expected |
+|                   | closes 'Select Quiz Level' page                                                   | as expected |
+|                   |                                                       |             |
+| Beginner          |                         | as expected |
+|             |                                       | as expected |
+|             |       | as expected |
+|             |     | as expected |
+|             |                           | as expected |         
+|             |                                                       |             |
+|             |                                             | as expected |
+|             |                                       | as expected |
+|             |       | as expected |
+|             |     | as expected |
+|             |                           | as expected |         
+|             |                                                       |             |
+|         |                                             | as expected |
+|             |                                       | as expected |
+|             |       | as expected |
+|             |     | as expected |
+|             |                           | as expected |         
+|             |                                                       |             |
+
+
+
+  ![Select Quiz Level page](assets/images/readmeimg/select_level_page_opt_50.png)
+
+  - Background image of Estonian national flower, cornflower
+  - Container with:
+    - 'Back to Main Menu' button in top right corner
+    - Heading: 'Select a level to begin'
+    - Buttons to access different levels of quiz:
+        - Beginner
+        - Intermediate
+        - Expert
+
+#### Question page:
+
+  - Beginner, Intermediate and Expert Level Quiz Pages look the same, just different questions are displayed.
+
+  ![Question page](assets/images/readmeimg/question_page_opt_50.png)
+
+  - Background image of Estonian national flower, cornflower
+  - Container:
+
+    - Clickable "Exit Quiz" button top right corner
+    - Question count x/5
+    - Timer (counting down from 15 seconds). More details below: [Timer](#timer)
+    - Question (randomly chosen by js, and difficulty depending on player's Quiz Level selection)
+
+    - Three possible answers
+    - All answer options displayed in same neutral color #8090BC, without indicating which answer is correct, or which answers are incorrect
+    - Each question has only one correct answer
+    - Two answers are incorrect for each question
+    - Five different questions are displayed for any quiz level
+
+    - Player can click on any of the answer buttons
+    - Correct answer will turn green when player clicks on the correct answer
+    - When player chooses incorrect answer, player's chosen answer will turn red, and correct answer will turn green. Third answer remains neutral color,
+      if any answer is clicked on before Time is up
+    - If player runs out of time, correct answer turns green, and both incorrect answers turn red - stopped working!! check!
+    - When an answer is selected, or Timer runs out, "Next" button is displayed below Answer options, inside the container
+    - Player can click on "Next" for the Next Question or, Click on "Exit Quiz"
+
+    #### Score:
+
+    - 'Score: x' is displayed below answers
+    - Score goes up by 1 for each correct answer
+    
+    ##### Timer:
+
+    - "Next" button is not displayed while Timer is running
+    - Timer stops when one of the answer options is chosen, or when Time is up
+
+    - When Timer is up, and no answer was selected:
+      - Timer stops
+      - 'Timer: 0' is displayed
+      - Pop up appears: "barbykelly.github.io says 'Time is up!'", with a button to click on "OK":
+      - 'Question x/5' is displayed on the left of the Timer
+      - Question and answers are all displayed
+
+      - Until "OK" is clicked/selected:
+        - All of the answer options for the question remain neutral, 
+        - "Exit Quiz" button is displayed, yet it isn't available for clicking/selecting
+        - None of the answer options can be selected
+        - "Next" button isn't available
+        - Score remains as from previous question
+      
+
+      ![Pop up "Time is Up!"](assets/images/readmeimg/pop_up_time_is_up_opt_100.png)
+
+      - All answers remain neutral color until "OK" is clicked/tapped
+      - Once "OK" is clicked in the pop-up:
+        - Correct answer turns green
+        - "Next" question button becomes available
+        - Timer: 0
+        - "Exit Quiz" button becomes clickabl
+        - Score shows the number of questions answered correctly so far
+        - Question x/5 displays the number of the current question
+
 
 ### Lighthouse
 
@@ -569,9 +797,6 @@ commented out text no longer appeared on 404 error page.
 ### Only selected incorrect answer turned red after it was selected, while the other incorrect answer didn't change color:
 
 
-
-
-
 [Back to top](#contents)
 
 
@@ -719,8 +944,8 @@ commented out text no longer appeared on 404 error page.
 
 #### Resized Images
 
-- Developer used [Simple image resizer](https://www.simpleimageresizer.com/resize-image-to-50-kb) to reduce README images
-- Developer marked all resized images with 'opt_50'
+- Developer used [Simple image resizer](https://www.simpleimageresizer.com/) to reduce README images
+- Developer marked all resized images with 'opt_50' or 'opt_100'
 
 [Back to top](#contents)
 
