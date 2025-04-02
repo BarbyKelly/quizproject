@@ -147,12 +147,15 @@ FAVICON
 
 
 - Screenshot of favicon on the website:
+
   ![cornflower favicon image](assets/images/readmeimg/faviconreadme.png)
 
 
 ### Color
 
-- As the Estonian national flower is a Cornflower, developer chose 'cornflower blue' as a Background color for the website. Developer found Cornflower blue color code from 
+- As the Estonian national flower is a Cornflower, developer chose 'cornflower blue' as a Background color
+  for the website. Developer found Cornflower blue color code from:
+
   ![Colorcodes.com](assets/images/readmeimg/cornflowerblue.png)
 
 - Color palette from [Mycolor.space](https://mycolor.space/?hex=%236495ED&sub=1)
@@ -166,6 +169,7 @@ FAVICON
 ### Font/style
 
 - Developer chose Comfortaa as the main Font style
+
   ![Comfortaa](assets/images/readmeimg/comfortaareadme.png) 
 
 [Back to top](#contents)
@@ -372,7 +376,10 @@ Developer used these sites/apps to create Estonia Quiz:
 |             | Footer color is #FFFFFF                                             | as expected |
 |             | Project's name and developer's name are displayed with Copyright      | as expected |
 |             | Statement 'This website has no commercial intention' is displayed     | as expected |
-|             | Footer is responsive on all screen sizes                              | as expected |  
+|             | Footer is responsive on all screen sizes                              | as expected |
+
+** Developer reported Footer testing only under Homepage testing, as footer style remained the same,
+   except [Blue Footer Background](#footer-blue-background) for certain small screens
 
 [Back to top](#contents)
 
@@ -445,128 +452,73 @@ Developer used these sites/apps to create Estonia Quiz:
 
 ### 'Select Quiz Level' Page testing
 
-| Tested Item       | Expected Outcome                                      | Outcome     |
-| ----------------- | ----------------------------------------------------- | ----------- |
-| Acccess           | Accessed via 'Select Quiz Level' button on Home page | as expected |
+| Tested Item       | Expected Outcome                                                                | Outcome     |
+| ----------------- | ------------------------------------------------------------------------------- | ----------- |
+| Access            | Accessed via 'Select Quiz Level' button on Home page                            | as expected |
+|                   |                                                                                 |             |
+| Styling           | Background image displayed behind the container                                 | as expected |
+|                   | Color of the heading and quiz levels                                            | as expected |
+|                   | Container is placed in the middle of the screen, for all screen sizes           | as expected |
+|                   | Container's background color                                                    | as expected |
+|                   | Border color of the container                                                   | as expected |
+|                   | 'Select Quiz Level' heading is displayed top centre of the container            | as expected |
+|                   | Buttons for Beginner, Intermediate and Expert Quiz Levels are displayed         | as expected |
+|                   | Levels are displayed in a column                                                | as expected |
+|                   |                                                                                 |             |
+| Back to Main Menu | Button is displayed top right corner inside the container                       | as expected |
+| Button            | Text Color is #FFFFFF                                                         | as expected |
+|                   | Background color is #8090BC                                                   | as expected |
+|                   | Button text is displayed on 2 lines                                             | as expected |
+|                   | Clicking on 'Back to Main Menu' brings user back to Home page, and              | as expected |
+|                   | closes 'Select Quiz Level' page                                                 | as expected |
+|                   |                                                                                 |             |
+| Beginner Quiz     | 'Beginner' button is clickable                                                  | as expected |
+|                   | Clicking on 'Beginner' button starts 'Beginner' Level Quiz                      | as expected |
+|                   | Each Question is randomly chosen                                                | as expected |  
+|                   | Question number is displayed x/5                                                | as expected |
+|                   | Question number increases by 1 for each next question                           | as expected |
+|                   | Timer: 15 is displayed for a moment, and                                        | as expected |
+|                   | Timer starts to countdown towards zero                                          | as expected |         
+|                   | Question is displayed below 'Question nr' and Timer                             | as expected |
+|                   | Three Answer buttons are displayed below the Question                           | as expected |
+|                   | All of the Answer buttons are same color #8090BC                              | as expected |
+|                   | 'Score: 0' is displayed below Answer buttons at the start of the quiz           | as expected |
+|                   | All Answer buttons are clickable,                                               | as expected |
+|                   | Player can choose which answer button to click/tap                              | as expected |
+|                   | When correct answer is chosen, only that Answer button turns green              | as expected |
+|                   | If incorrect answer is chosen, correct Answer turns green, and                  | as expected |
+|                   | chosen incorrect answer turns red, while                                        | as expected |
+|                   | the second incorrect answer remains neutral color                               | as expected |
+|                   | Each Quiz has 5 Questions                                                       | as expected |
+|                   | Quiz ends after 5 Questions, or                                                 | as expected |
+|                   | When "Exit Quiz" button is clicked/tapped                                       | as expected |    
+|                   |                                                                                 |             |
+| Intermediate Quiz | 'Intermediate' button is clickable                                              | as expected |
+|                   | Clicking on 'Intermediate' button starts 'Intermediate' Level Quiz              | as expected |
+|                   | 'Intermediate' Quiz Level questions are different to other Levels               | as expected |
+|                   | ** Rest of the 'Intermediate' Quiz testing results identical to 'Beginner Quiz' | as expected |
+|                   |                                                                                 |             |
+| Expert Quiz       | 'Expert' button is clickable                                                    | as expected |
+|                   | Clicking on 'Expert' button starts 'Expert' Level Quiz                          | as expected |
+|                   | 'Expert' Quiz Level questions are different to other levels                     | as expected |
+|                   | ** Rest of the 'Expert' Quiz testing results same as 'Beginner Quiz'            | as expected |
+|                   |                                                                                 |             |
+| Exit Quiz Button  | "Exit Quiz" button displayed at the top right corner of the container           | as expected |         
 |                   |                                                       |             |
-| CSS               | Background image displayed behind the container                            | as expected |
-|                   | Color of the heading and quiz levels is #8090BC                               | as expected |
-|                   | Container is placed in the middle of the screen, for all screen sizes      | as expected |
-|                   | Container's background color is #E6F4F1                                  | as expected |
-|                   | Border color of the container is #7189cb                                 | as expected |
-|                   | 'Select Quiz Level' heading is displayed top centre of the container                          | as expected |
-|                   | Beginner, Intermediate and Expert Quiz Levels are displayed                                               | as expected |
-|                   | Levels are displayed in a column                                      | as expected |
-|                   |                                                       |             |
-| Back to Main Menu | Button is displayed top right corner inside the container             | as expected |
-| Button            | Text Color is #FFFFFF                                               | as expected |
-|                   | Background color is #8090BC                                         | as expected |
-|                   | Button text is displayed on 2 lines                                   | as expected |
-|                   | Clicking on 'Back to Main Menu' brings user back to Home page, and    | as expected |
-|                   | closes 'Select Quiz Level' page                                                   | as expected |
-|                   |                                                       |             |
-| Beginner          |                         | as expected |
-|             |                                       | as expected |
-|             |       | as expected |
-|             |     | as expected |
-|             |                           | as expected |         
-|             |                                                       |             |
-|             |                                             | as expected |
-|             |                                       | as expected |
-|             |       | as expected |
-|             |     | as expected |
-|             |                           | as expected |         
-|             |                                                       |             |
-|         |                                             | as expected |
-|             |                                       | as expected |
-|             |       | as expected |
-|             |     | as expected |
-|             |                           | as expected |         
-|             |                                                       |             |
 
 
 
-  ![Select Quiz Level page](assets/images/readmeimg/select_level_page_opt_50.png)
+[Back to top](#contents)
 
-  - Background image of Estonian national flower, cornflower
-  - Container with:
-    - 'Back to Main Menu' button in top right corner
-    - Heading: 'Select a level to begin'
-    - Buttons to access different levels of quiz:
-        - Beginner
-        - Intermediate
-        - Expert
+[Back to Testing](#testing)      
 
-#### Question page:
-
-  - Beginner, Intermediate and Expert Level Quiz Pages look the same, just different questions are displayed.
-
-  ![Question page](assets/images/readmeimg/question_page_opt_50.png)
-
-  - Background image of Estonian national flower, cornflower
-  - Container:
-
-    - Clickable "Exit Quiz" button top right corner
-    - Question count x/5
-    - Timer (counting down from 15 seconds). More details below: [Timer](#timer)
-    - Question (randomly chosen by js, and difficulty depending on player's Quiz Level selection)
-
-    - Three possible answers
-    - All answer options displayed in same neutral color #8090BC, without indicating which answer is correct, or which answers are incorrect
-    - Each question has only one correct answer
-    - Two answers are incorrect for each question
-    - Five different questions are displayed for any quiz level
-
-    - Player can click on any of the answer buttons
-    - Correct answer will turn green when player clicks on the correct answer
-    - When player chooses incorrect answer, player's chosen answer will turn red, and correct answer will turn green. Third answer remains neutral color,
-      if any answer is clicked on before Time is up
-    - If player runs out of time, correct answer turns green, and both incorrect answers turn red - stopped working!! check!
-    - When an answer is selected, or Timer runs out, "Next" button is displayed below Answer options, inside the container
-    - Player can click on "Next" for the Next Question or, Click on "Exit Quiz"
-
-    #### Score:
-
-    - 'Score: x' is displayed below answers
-    - Score goes up by 1 for each correct answer
-    
-    ##### Timer:
-
-    - "Next" button is not displayed while Timer is running
-    - Timer stops when one of the answer options is chosen, or when Time is up
-
-    - When Timer is up, and no answer was selected:
-      - Timer stops
-      - 'Timer: 0' is displayed
-      - Pop up appears: "barbykelly.github.io says 'Time is up!'", with a button to click on "OK":
-      - 'Question x/5' is displayed on the left of the Timer
-      - Question and answers are all displayed
-
-      - Until "OK" is clicked/selected:
-        - All of the answer options for the question remain neutral, 
-        - "Exit Quiz" button is displayed, yet it isn't available for clicking/selecting
-        - None of the answer options can be selected
-        - "Next" button isn't available
-        - Score remains as from previous question
-      
-
-      ![Pop up "Time is Up!"](assets/images/readmeimg/pop_up_time_is_up_opt_100.png)
-
-      - All answers remain neutral color until "OK" is clicked/tapped
-      - Once "OK" is clicked in the pop-up:
-        - Correct answer turns green
-        - "Next" question button becomes available
-        - Timer: 0
-        - "Exit Quiz" button becomes clickabl
-        - Score shows the number of questions answered correctly so far
-        - Question x/5 displays the number of the current question
 
 
 ### Lighthouse
 
-Tested with Lighthouse:
+- Tested with Google Dev Tools, Lighthouse:
 
-![Lighthouse test](assets/images/readmeimg/lighthousetest.png)
+  ![Lighthouse test]( add a new image here!)
 
 [Back to top](#contents)
 
@@ -575,39 +527,47 @@ Tested with Lighthouse:
 
 ### Favicon
 
-At first favicon icon did not appear on the website. Developer had used the four line code from
-[Favicon.io](https://favicon.io/favicon-converter/)
+- At first favicon icon did not appear on the website. Developer had used the four line code from:
 
-![favicon codes](assets/images/readmeimg/faviconcodes.png)
+  [Favicon.io](https://favicon.io/favicon-converter/)
 
-After comparing Favicon codes vs codes from Love Running, developer noticed that path needed to be adjusted. After adjusting the path, favicon appeared on the website. 
+  ![favicon codes](assets/images/readmeimg/faviconcodes.png)
+
+- After comparing Favicon codes vs codes from Love Running, developer noticed that path needed to be adjusted. After adjusting the path, favicon appeared on the website. 
 
 
 ### HTML error
 
-Developer saw the following error when inspecting the website: "Uncaught TypeError: startQuizBtn is not a function at HTMLButtonElement.onclick".
+- Developer saw the following error when inspecting the website: "Uncaught TypeError: startQuizBtn is not a function at HTMLButtonElement.onclick".
 
-Developer found the solution after reading this [article](https://stackoverflow.com/questions/51282433/typeerror-functionname-is-not-a-function-at-htmlbuttonelement-onclick)
+- Developer found the solution after reading this [article](https://stackoverflow.com/questions/51282433/typeerror-functionname-is-not-a-function-at-htmlbuttonelement-onclick)
 
-Error had been caused by startQuizBtn, were it was supposed to be startQuizBtnFunction instead.
+- Error had been caused by startQuizBtn, were it was supposed to be startQuizBtnFunction instead.
 
 [Back to top](#contents)
 
 
 ### Color of correct/incorrect answer
 
-When developer tested answers, and chose the correct or incorrect answer, color of the answers did not change. After checking out [this page](https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/), the developer noticed that script should be in a different place. Once script was moved into the container, green and red colors showed up for correct/incorrect answers, when "Next Question" button was clicked. This testing led to the next bug:
+- When developer tested answers, and chose the correct or incorrect answer, color of the answers did not change.
+  After checking out [this page](https://www.geeksforgeeks.org/  how-to-create-a-simple-javascript-quiz/),
+  the developer noticed that script should be in a different place. Once script was moved into the container,
+  green and red colors showed up for correct/incorrect answers, when "Next Question" button was clicked. This testing led to the next bug: "One of the questions had no correct answer"
 
 ### One of the questions had no correct answer
 
-Once color showed up correctly for correct vs incorrect answers, developer noticed one of the questions had all answers showing up as incorrect. Developer realised that she must have typed 'false' instead of 'true' for all of the answers, for that question. After setting the correct answer as "true", the error remained. Developer cleared the cache, started port again, and then the correct answer turned green.
+- Once color showed up correctly for correct vs incorrect answers, developer noticed one of the questions had all answers
+  showing up as incorrect. Developer realised that she must have typed 'false' instead of   'true' for all of the answers,
+  for that question. After setting the correct answer as "true", the error remained.
+  Developer cleared the cache, started port again, and then the correct answer turned green.
 
 ### Commented out text showing up on deployed version
 
-404 error page displayed commented out parts. Developer realised, she had used CSS commenting style for HTML. Once the comments were corrected as appropriate for HTML,
-commented out text no longer appeared on 404 error page.
+- 404 error page displayed commented out parts. Developer realised, she had used CSS commenting style for HTML.
+  Once the comments were corrected as appropriate for HTML,
+  commented out text no longer appeared on 404 error page.
 
-![CSS comments instead of HTML](assets/images/readmeimg/csscommentinsteadofhtml.png)
+  ![CSS comments instead of HTML](assets/images/readmeimg/csscommentinsteadofhtml.png)
 
 
 ### Error page styling
@@ -615,24 +575,24 @@ commented out text no longer appeared on 404 error page.
 - Developer needed to check error pages only on the deployed site, as GitPod would only show the default error page.
   Thanks to mentor Lauren-Nicole Popich, developer knew that error page might not show up properly when testing on GitPod
   
-![Error page in GitPod](assets/images/readmeimg/errorpageingitpod.png)
+  ![Error page in GitPod](assets/images/readmeimg/errorpageingitpod.png)
 
 - 404 error page styling was not showing up. Developer edited stylesheet link, which fixed the issue:
 
-![Background-image not displaying](assets/images/readmeimg/imagenotthere.png)
+  ![Background-image not displaying](assets/images/readmeimg/imagenotthere.png)
 
 - Background-image for 404 error page was not showing. Developer removed the background-image from error-container styling, which fixed the issue
 
-![404 error page](assets/images/readmeimg/errorpageongithub_opt_50.png)
+  ![404 error page](assets/images/readmeimg/errorpageongithub_opt_50.png)
 
 ### HTML code lines not showing in README
 
 - Developer noticed that HTML codelines for favicon credit did not show up in README. With tutor Sarah's help, backticks were added, developer
   adjusted the indentation, and the HTML code lines showed up in README
 
-![Backticks for HTML code](assets/images/readmeimg/backticks.png)
+  ![Backticks for HTML code](assets/images/readmeimg/backticks.png)
 
-![Code showing up in README as expected](assets/images/readmeimg/codelinesshowinginreadme.png)
+  ![Code showing up in README as expected](assets/images/readmeimg/codelinesshowinginreadme.png)
 
 ### Button tag error
 
@@ -663,11 +623,11 @@ commented out text no longer appeared on 404 error page.
 
   ![js validation before](assets/images/readmeimg/jshint_test_before_opt_50.png)
 
-  Developer checked Google, and found a solution on [Stack overflow](https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const):
+- Developer checked Google, and found a solution on [Stack overflow](https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const):
 
   ![jshint advice](assets/images/readmeimg/jshint_advice.png)
 
-  She swapped previous:
+- Developer swapped previous:
 
   // jshint esversion: 6 in script.js, 
   
@@ -679,11 +639,11 @@ commented out text no longer appeared on 404 error page.
 
   ![js version fix](assets/images/readmeimg/js_version_fix.png)
 
-  And she added same to the top of questions.js file. After this, jshint found only couple of issues, no more issues with: "...available in ES6(use 'esversion:6'), but issue with '{' :}
+- And she added same to the top of questions.js file. After this, jshint found only couple of issues, no more issues with: "...available in ES6(use 'esversion:6'), but issue with '{' :}
 
   ![jshint after](assets/images/readmeimg/jshint_after.png)
 
-  Developer contacted tutoring, and was given:
+- Developer contacted tutoring, and was given:
 
   //jshint esversion: 8
 
@@ -694,7 +654,7 @@ commented out text no longer appeared on 404 error page.
   - Developer checked id's and classes for Levels, index.html vs script.js, vs questions.js.
   - She noticed that function had 'beginnerQuestions', while in questions.js she had used: 'beginnerLevelQuestions':
 
-  ![Words not matching](assets/images/readmeimg/const_not_matching.png)
+    ![Words not matching](assets/images/readmeimg/const_not_matching.png)
 
   - Developer removed 'level' from all three levels in questions.js,
     to match with script.js's wording.
@@ -703,21 +663,21 @@ commented out text no longer appeared on 404 error page.
 
   - Next developer used DevTools to see what was still blocking Guidelines button from working:
 
-  ![DevTools check](assets/images/readmeimg/devtools.png)
+    ![DevTools check](assets/images/readmeimg/devtools.png)
 
   - She checked line 117 in script.js, and noticed brackets missing:
 
-  ![Missing brackets](assets/images/readmeimg/missing_brackets.png)
+    ![Missing brackets](assets/images/readmeimg/missing_brackets.png)
 
   - Developer fixed line 117 brackets, and also fixed similar issues on lines 126 and 135:
 
-  ![Fixed brackets line 117](assets/images/readmeimg/fixed_brackets.png)
+    ![Fixed brackets line 117](assets/images/readmeimg/fixed_brackets.png)
 
   #### Uncaught SyntaxError: Unexpected token
 
   - After brackets were fixed, script.js line 289 showed an error:
 
-  ![Unexpected token error](assets/images/readmeimg/unexpected_token.png)
+    ![Unexpected token error](assets/images/readmeimg/unexpected_token.png)
 
 
   #### Uncaught TypeError: Cannot read properties of null (reading 'classList')
@@ -746,6 +706,7 @@ commented out text no longer appeared on 404 error page.
   ![Uncaught type error, Quiz Levels](assets/images/readmeimg/uncaught_type_error_levels.png)
 
 - Developer noticed 'levelPrompt' on line 68 in script.js
+
 - She checked line 10 in script.js:
 
   const levelPrompt = document.getElementById("quiz_level_prompt");
@@ -785,10 +746,6 @@ commented out text no longer appeared on 404 error page.
 
 - When Developer clicked on "Main Menu" button at the end of the Quiz, button worked as expected, by displaying the Main page 
 
-### Blue background behind footer and container too long, on a small screen
-
-
-
 
 [Back to top](#contents)
 
@@ -796,6 +753,21 @@ commented out text no longer appeared on 404 error page.
 
 ### Only selected incorrect answer turned red after it was selected, while the other incorrect answer didn't change color:
 
+- Only incorrect answer that is chosen as an answer by the player, turn red, and the other incorrect answer remains neutral color,
+  while correct answer turns green.
+- Developer would like to see all incorrect answers turn red, when correct answer is chosen,
+  when incorrect answer is chosen, or when Player won't make a choice before Timer is Zero
+
+### Footer Blue Background
+
+- When developer tested quiz with Dev Tools for iPhone SE and Samsung Galaxy S8, blue area was shown behind the footer,
+  and quiz container was extended, so developer had to scroll down to see the footer:
+
+  ![Footer not ok on some phones ](assets/images/readmeimg/iphone_se_blue_footer_opt_50.png)
+
+- With other phones eg iPhone XR, Samsung Galaxy S20 Ultra, Quiz and footer were displayed as expected:
+
+  ![Footer displayed ok on Other phones](assets/images/readmeimg/other_phones_footer_ok_opt_50.png)
 
 [Back to top](#contents)
 
@@ -877,10 +849,11 @@ commented out text no longer appeared on 404 error page.
 
 ### Code
 
-- At the start Developer followed code for Estonia quiz from [Build A Quiz App With JavaScript](https://youtu.be/riDzcEQbX6k?feature=shared). Most of the code for this project is credit to Web Dev Simplified's quiz.
+- At the start Developer followed code for Estonia quiz from [Build A Quiz App With JavaScript](https://youtu.be/riDzcEQbX6k?feature=shared).
+  Then tried to learn quiz code from Web Dev Simplified's quiz.
 
 - Code for the Final version of Estonia Quiz, learned from: [The Everything Quiz](https://tony118g.github.io/the-everything-quiz/).
-  Developer found the layout and functionality of The Everything Quiz, more suitable for  Estonia Quiz.
+  Developer found the layout and functionality of The Everything Quiz, suitable for Estonia Quiz
 
 - Developer learned more about Media Queries and followed the styling for Media Queries from [this YouTube video](https://www.youtube.com/watch?v=K24lUqcT0Ms*/)
 
@@ -898,7 +871,7 @@ commented out text no longer appeared on 404 error page.
 
 - Northern Europe, screenshot from [gisgeography.com](https://gisgeography.com/europe-map/)
 
-![Northern Europe](assets/images/popupextraimages/northerneurope.png)
+  ![Northern Europe](assets/images/popupextraimages/northerneurope.png)
 
 
 
