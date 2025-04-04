@@ -570,7 +570,7 @@ Developer used these sites/apps to create Estonia Quiz:
 ### Error page styling
 
 - Developer needed to check error pages only on the deployed site, as GitPod would only show the default error page.
-  Thanks to mentor Lauren-Nicole Popich, developer knew that error page might not show up properly when testing on GitPod
+  Thanks to my mentor [Lauren-Nicole Popich](https://github.com/CluelessBiker), developer knew that error page might not show up properly when testing on GitPod
   
   ![Error page in GitPod](assets/images/readmeimg/errorpageingitpod.png)
 
@@ -948,7 +948,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
 - Code for the Final version of Estonia Quiz, learned from: [The Everything Quiz](https://tony118g.github.io/the-everything-quiz/) . Developer liked the layout and functionality of The Everything Quiz.
 
-- Grateful to my Mentor Lauren-Nicole Popich for supporting me with my project, for listening, for sharing examples like the Leeds Quiz,
+- Grateful to my Mentor [Lauren-Nicole Popich](https://github.com/CluelessBiker) for supporting me with my project, for listening, for sharing examples like the Leeds Quiz,
   for guiding me to improve my project, and for suggesting to convert the links into  clickable text, among other suggestions.
 
 - Grateful to Coding Group member Patrick Hladun for guiding developer via Slack, to get console errors to show up,
