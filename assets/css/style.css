@@ -200,13 +200,15 @@ footer > p {
     box-shadow: 0px 0px 10px 5px #8090BC;
 }
 
-.error_page_title,
+.error_page,
 .error_container {
     color: #FFFFFF;
     font-weight: 300;
 }
 
-
+.error_page > a {
+    font-size: 1.5rem;
+}
 
 /* Media Queries - stlying for xs, s, etc learned from https://www.youtube.com/watch?v=K24lUqcT0Ms*/
 
