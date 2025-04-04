@@ -212,7 +212,7 @@ footer > p {
     text-align: center;
 }
 
-.error_page > a {
+.page_link {
     font-size: 2.5rem;
     color: #6495ED;
     text-align: center;
