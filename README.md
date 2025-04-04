@@ -741,7 +741,33 @@ Developer used these sites/apps to create Estonia Quiz:
 
   ![btn error fixed](assets/images/readmeimg/btn_error_fixed.png)
 
-- When Developer clicked on "Main Menu" button at the end of the Quiz, button worked as expected, by displaying the Main page 
+- When Developer clicked on "Main Menu" button at the end of the Quiz, button worked as expected, by displaying the Main page
+
+### Footer Blue Background
+
+- When developer tested quiz with Dev Tools for iPhone SE and Samsung Galaxy S8, blue area was shown behind the footer,
+  and quiz container was extended, so developer had to scroll down to see the footer:
+
+  ![Footer not ok on some phones ](assets/images/readmeimg/iphone_se_blue_footer_opt_50.png)
+
+- With other phones eg iPhone XR, Samsung Galaxy S20 Ultra, Quiz and footer were displayed as expected:
+
+  ![Footer displayed ok on Other phones](assets/images/readmeimg/other_phones_footer_ok_opt_50.png)
+
+- Developer couldn't solve the issue with styling footer or body height.
+
+- Tutor [Rebecca](https://github.com/rebeccatraceyt) helped developer to fix it, by suggesting to use min-height instead of height,
+  when none of developer's options worked
+
+- Adding 'min' fixed the error:
+
+  ![Min-height instead](assets/images/readmeimg/min_height_vs_height.png)
+  
+- No more blue back-ground color behind footer.
+
+- Background image was now displayed for all screensizes
+
+
 
 
 [Back to top](#contents)
@@ -754,17 +780,6 @@ Developer used these sites/apps to create Estonia Quiz:
   while correct answer turns green.
 - Developer would like to see all incorrect answers turn red, when correct answer is chosen,
   when incorrect answer is chosen, or when Player won't make a choice before Timer is Zero
-
-### Footer Blue Background
-
-- When developer tested quiz with Dev Tools for iPhone SE and Samsung Galaxy S8, blue area was shown behind the footer,
-  and quiz container was extended, so developer had to scroll down to see the footer:
-
-  ![Footer not ok on some phones ](assets/images/readmeimg/iphone_se_blue_footer_opt_50.png)
-
-- With other phones eg iPhone XR, Samsung Galaxy S20 Ultra, Quiz and footer were displayed as expected:
-
-  ![Footer displayed ok on Other phones](assets/images/readmeimg/other_phones_footer_ok_opt_50.png)
 
 [Back to top](#contents)
 
