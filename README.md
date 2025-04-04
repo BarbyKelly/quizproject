@@ -772,6 +772,36 @@ Developer used these sites/apps to create Estonia Quiz:
 
 [Back to top](#contents)
 
+### Part of the Container and Footer not displayed, without scrolling for certain screen sizes
+
+- When developer clicked to start any quiz, Container became too long for certain screen sizes, and Footer was not visible without scrolling,
+  and Container became even longer when "Next" question became unhidden
+
+- Developer compared the height of gadgets which displayed Quiz page as expected:
+
+  ![Container and Footer displaying ok](assets/images/readmeimg/quiz_fitting_ok_opt_150.png)
+
+- versus gadgets where Container became too long, when Quiz started, and where footer was not visible, without scrolling:
+
+  ![Container not displaying ok](assets/images/readmeimg/quiz_not_fitting_ok_opt_150.png)
+
+  ![Bottom of the screen](assets/images/readmeimg/bottom_of_the_screen_opt_100.png)
+
+- Developer compared screen height of gadgets that displayed quiz as expected (container and footer fitting on the screen),
+  vs gadgets with whole Container and footer not fitting on the screen.
+
+- She noticed gadgets with screen height between 600 and 740 (eg iPhone SE, Nest Hub and so on), were the ones where Container became too long when Quiz had started,
+  and hidden items were displayed in the Container
+
+- Developer adjusted padding, margins, width, max-width, media queries, body, container, buttons, headings, to get container to fit right for different 
+  screen sizes.
+
+- As a result, Container and Footer fitted on all screen sizes, without needing to scroll:
+
+  ![Fitted ok](assets/images/readmeimg/quiz_fits_ok_opt_100.png)
+
+  [Back to top](#contents)
+  
 ## Known Bugs
 
 ### Only selected incorrect answer turned red after it was selected, while the other incorrect answer didn't change color:

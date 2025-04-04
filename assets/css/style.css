@@ -21,7 +21,6 @@ body {
     background-position: center;
     background-color: #6495ED;
     color: #405eaf;
-    padding-top: 90px;
     padding-bottom: 5px;
     text-align: center;    
 }
@@ -31,13 +30,13 @@ body {
 h1 {
     font-size: 2.5rem;
     color: #8090BC;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 h2 {
-    font-size: 2.5rem;
-    margin-top: 15px;
-    padding: 15px;
+    font-size: 2.8rem;
+    margin-top: 13px;
+    padding: 5px;
     font-weight: bold;
     color: #8090BC;
 }
@@ -79,7 +78,7 @@ p {
 
 .close_modal {
     position: absolute;
-    top: 15px;
+    top: 5px;
     text-wrap: wrap;
     right: 15px;
     padding: 0 15px;
@@ -94,7 +93,7 @@ p {
 /* Question section styling */
 
 #question_section {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 /* Answer section buttons styling */
@@ -107,7 +106,8 @@ p {
 /* Container styling (learned extra from https://www.youtube.com/watch?v=K24lUqcT0Ms */
 
 .container {
-    width: fit-content;
+    width: 90%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     padding-left: 0.5rem;
@@ -177,7 +177,7 @@ footer {
 }
 
 footer > p {
-    font-size: 1.0rem;
+    font-size: 0.9rem;
 }
 
 /* Provides feedback when user hovers over buttons, styling */
@@ -220,11 +220,22 @@ footer > p {
 
 /* Media Queries - stlying for xs, s, etc learned from https://www.youtube.com/watch?v=K24lUqcT0Ms*/
 
+/* Media Queries for 'XXXS' screens */
+@media (max-width: 320px) {
+    .container {
+        max-width: 250px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
 /* Media Queries for 'XXS' screens */
 @media (min-width: 320px) {
     .container {
-        max-width: 320px;
-        max-height: min-content;
+        max-width: 300px;
+       /* max-height: min-content;*/
     }
 
     h2 {
@@ -232,48 +243,63 @@ footer > p {
     }
 
     p {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
+        font-weight: bold;  
+    }
+
+    .btn {
+        font-size: 1.3rem;
+        padding: 5px;
+        margin: 5px auto;
     }
 }
 
 /* Media Queries for 'XS' screens */
 @media (min-width: 475px) {
     .container {
-        max-width: 475px;
+        max-width: 380px;
     }
 }
 
 /* Media Queries for 'S' screens */
 @media (min-width: 648px) {
     .container {
-        max-width: 648px;
+        max-width: 400px;
     }
 }
 
 /* Media Queries for 'M' screens */
 @media (min-width: 768px) {
     .container {
-        max-width: 768px;
+        max-width: 400px;
     }
 }
 
 /* Media Queries for 'L' screens */
 @media (min-width: 1024px) {
     .container {
-        max-width: 1024px;
+        max-width: 500px;
     }
 }
 
 /* Media Queries for 'XL' screens */
 @media (min-width: 1280px) {
     .container {
-        max-width: 1280px;
+        max-width: 500px;
     }
 }
 
 /* Media Queries for 'XXL' screens */
 @media (min-width: 1536px) {
+    .body {
+        padding-top: 50px;
+    }
+
     .container {
-        max-width: 1536px;
+        max-width: 500px;
+    }
+
+    .btn {
+        padding: auto;
     }
 }
