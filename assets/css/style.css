@@ -66,7 +66,7 @@ p {
     padding: 15px;
     width: 65%;
     min-width: 165px;
-    margin: 15px auto;
+    margin: 15px;
     font-family: comfortaa, sans-serif;
     font-size: 1.5rem;
     border: none;
@@ -110,8 +110,6 @@ p {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
     position: relative;
     background-color: #E6F4F1;
     max-width: 400px;
@@ -240,6 +238,10 @@ footer > p {
        /* max-height: min-content;*/
     }
 
+    h1 {
+        font-size: 1.8rem;
+    }
+
     h2 {
         font-size: 1.5rem;
     }
@@ -252,7 +254,7 @@ footer > p {
     .btn {
         font-size: 1.3rem;
         padding: 5px;
-        margin: 5px auto;
+        margin: 10px auto;*/
     }
 }
 
@@ -260,6 +262,10 @@ footer > p {
 @media (min-width: 475px) {
     .container {
         max-width: 380px;
+    }
+
+    h1 {
+        font-size: 2rem;
     }
 }
 

@@ -8,7 +8,7 @@ This quiz is suitable for anyone who:
 
 Link to the live GitHub site: [Estonia Quiz](https://barbykelly.github.io/quizproject/)
 
-Image of the Estonia Quiz site, from [Am I Responsive?](https://ui.dev/amiresponsive) to show how website looks on different screen sizes:
+Image of the Estonia Quiz site, created with [Am I Responsive?](https://ui.dev/amiresponsive?url=https://barbykelly.github.io/quizproject/), to show how website looks on different screen sizes:
 
 ![Am I Responsive](assets/images/readmeimg/am_i_responsive_opt_50.png)
 
@@ -962,9 +962,6 @@ Developer used these sites/apps to create Estonia Quiz:
 - Developer used [Simple image resizer](https://www.simpleimageresizer.com/) to reduce README images
 - Developer marked all resized images with 'opt_50' or 'opt_100'
 
-[Back to top](#contents)
-
-
 
 ### Error pages
 
@@ -972,7 +969,11 @@ Developer used these sites/apps to create Estonia Quiz:
 
 - Developer learned from [this site](https://www.presslabs.com/how-to/error-pages/) how site visitors may help themselves with error pages, and added these tips to html
 
+### Am I Responsive image
 
+- Created with [Am I Responsive]( https://ui.dev/amiresponsive)
+
+[Back to top](#contents)
 
 ## Acknowledgements
 
