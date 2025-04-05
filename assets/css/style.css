@@ -213,14 +213,13 @@ footer > p {
 }
 
 .error_page,
-.error_container,
-.options_list {
+.error_container {
     position: relative;
     display: block;
     color: #FFFFFF;
     font-weight: 300;
     text-align: center;
-    padding: auto;
+    padding: 15px;
 }
 
 .page_link {
