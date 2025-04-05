@@ -203,10 +203,12 @@ footer > p {
 .error_page_title {
     color: #6495ED;
     text-align: center;
+    padding: 10px;
 }
 
 .error_page,
-.error_container {
+.error_container,
+.options_list {
     color: #FFFFFF;
     font-weight: 300;
     text-align: center;
