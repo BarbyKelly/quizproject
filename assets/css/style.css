@@ -215,13 +215,16 @@ footer > p {
 .error_page,
 .error_container,
 .options_list {
+    position: relative;
+    display: block;
     color: #FFFFFF;
     font-weight: 300;
     text-align: center;
+    padding: auto;
 }
 
 .page_link {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #6495ED;
     text-align: center;
 }
