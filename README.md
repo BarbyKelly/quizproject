@@ -73,7 +73,7 @@ First time user, may:
 - Find out which answer was correct when the correct answer turns green, and incorrect answers turn red
 - Click on the button: 'Next Question'
 - Go through all of the 5 questions
-- Exit quiz any time during the quiz
+- Exit quiz via "Exit Quiz" button any time during the quiz, except when pop up with Time up is displayed 
 
 
 #### Returning User:
@@ -329,7 +329,7 @@ Developer used these sites/apps to create Estonia Quiz:
 [Back to top](#contents)
 
 
-## Testing
+## Testing and Validation
 
 ### Lighthouse Testing
 
@@ -347,7 +347,18 @@ Developer used these sites/apps to create Estonia Quiz:
 
 - Tested CSS with [Jigsaw W3](https://jigsaw.w3.org/css-validator/validator)
 
-  ![Css Validation](assets/images/readmeimg/css_validation_opt_50.png)
+- ![CSS errors](assets/images/readmeimg/css_errors_opt_100.png)
+
+- To fix the errors, developer:
+ - Removed */ from line 265
+ - Deleted from line 319:
+    .btn {
+        padding: auto;
+    }
+
+- CSS Validation after fixing errors:
+
+  ![CSS Validation](assets/images/readmeimg/css_validator_opt_100.png)
 
 ### JS Validation
 
@@ -445,7 +456,7 @@ Developer used these sites/apps to create Estonia Quiz:
 |                            | Text-color is #FFFFFF                                             | as expected |
 |                            | Button is inside the container                                      | as expected |
 |                            | 'Select Quiz Level' button is displayed below 'Estonia Quiz', and   | as expected |
-|                            | below 'Read About Guidelines' button                                | as expected |
+|                            | below 'Quiz Guidelines' button                                      | as expected |
 |                            |                                                                     |             |
 |                            | Clicking on the button opens up 'Select a level to begin' page, and | as expected |
 |                            | Main Menu is no longer displayed, and                               | as expected |
@@ -480,7 +491,17 @@ Developer used these sites/apps to create Estonia Quiz:
 |                   |                                                                                 |             |
 | Beginner Quiz     | 'Beginner' button is clickable                                                  | as expected |
 |                   | Clicking on 'Beginner' button starts 'Beginner' Level Quiz                      | as expected |
-|                   | Each Question is randomly chosen                                                | as expected |  
+| Intermediate Quiz | 'Intermediate' button is clickable                                              | as expected |
+|                   | Clicking on 'Intermediate' button starts 'Intermediate' Level Quiz              | as expected |
+| Expert Quiz       | 'Expert' button is clickable                                                    | as expected |
+|                   | Clicking on 'Expert' button starts 'Expert' Level Quiz                          | as expected |
+
+
+### 'Beginner Quiz' testing
+
+| Tested Item       | Expected Outcome                                                                | Outcome     |
+| ----------------- | ------------------------------------------------------------------------------- | ----------- |
+| Beginner          | Each Question is randomly chosen                                                | as expected |  
 |                   | Question number is displayed x/5                                                | as expected |
 |                   | Question number increases by 1 for each next question                           | as expected |
 |                   | Timer: 15 is displayed for a moment, and                                        | as expected |
@@ -497,21 +518,28 @@ Developer used these sites/apps to create Estonia Quiz:
 |                   | the second incorrect answer remains neutral color                               | as expected |
 |                   | Each Quiz has 5 Questions                                                       | as expected |
 |                   | Quiz ends after 5 Questions, or                                                 | as expected |
-|                   | When "Exit Quiz" button is clicked/tapped                                       | as expected |    
+|                   | When "Exit Quiz" button is clicked/tapped                                       | as expected |  
 |                   |                                                                                 |             |
-| Intermediate Quiz | 'Intermediate' button is clickable                                              | as expected |
-|                   | Clicking on 'Intermediate' button starts 'Intermediate' Level Quiz              | as expected |
-|                   | 'Intermediate' Quiz Level questions are different to other Levels               | as expected |
+| Intermediate      | 'Intermediate' Quiz Level questions are different to other Levels               | as expected |
 |                   | ** Rest of the 'Intermediate' Quiz testing results identical to 'Beginner Quiz' | as expected |
 |                   |                                                                                 |             |
-| Expert Quiz       | 'Expert' button is clickable                                                    | as expected |
-|                   | Clicking on 'Expert' button starts 'Expert' Level Quiz                          | as expected |
-|                   | 'Expert' Quiz Level questions are different to other levels                     | as expected |
+| Expert            | 'Expert' Quiz Level questions are different to other levels                     | as expected |
 |                   | ** Rest of the 'Expert' Quiz testing results same as 'Beginner Quiz'            | as expected |
 |                   |                                                                                 |             |
-| Exit Quiz Button  | "Exit Quiz" button displayed at the top right corner of the container           | as expected |         
-|                   |                                                       |             |
-
+| Exit Quiz Button  | "Exit Quiz" button hidden before Quiz Level is chosen                           | as expected |
+|                   | Displayed at the top right corner of the container, when quiz starts            | as expected |
+|                   | Color of the button: #8090BC                                                  | as expected |
+|                   | Text color #FFFFFF                                                            | as expected |
+|                   | When "Exit Quiz" button is clicked/tapped, Home page/Main menu opens            | as expected |           
+|                   | Can be clicked when Question is displayed                                       | as expected |
+|                   | Button not clickable when pop-up "Time is up" is displayed                      | as expected |
+|                   | "Exit Quiz" Button ends the Quiz (unless player answered all 5 questions)       | as expected |
+|                   | Can be clicked before answering the Question                                    | as expected |
+|                   | Can be clicked when next Question is displayed                                  | as expected |
+|                   | Can be clicked before answering the next Question                               | as expected |
+|                   | Can be clicked before answering the next Question                               | as expected |
+|                   | "Exit Quiz" button hidden when game ends                                        | as expected |
+|                   | "Exit Quiz" button hidden when player returns to Home Page/Main Menu            | as expected |
 
 
 [Back to top](#contents)

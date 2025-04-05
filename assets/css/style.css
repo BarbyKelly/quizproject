@@ -262,7 +262,7 @@ footer > p {
     .btn {
         font-size: 1.3rem;
         padding: 5px;
-        margin: 10px auto;*/
+        margin: 10px auto;
     }
 }
 
@@ -313,9 +313,5 @@ footer > p {
 
     .container {
         max-width: 500px;
-    }
-
-    .btn {
-        padding: auto;
     }
 }
