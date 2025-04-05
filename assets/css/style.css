@@ -78,12 +78,12 @@ p {
 
 .close_modal {
     position: absolute;
-    top: 5px;
+    top: 7px;
     text-wrap: wrap;
     right: 15px;
-    padding: 0 15px;
+    padding: 3px;
     background-color: #8090BC;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     color: #FFFFFF;
     border: none;
     border-radius: 15px;
@@ -165,6 +165,14 @@ li {
 .no-pointer {
     pointer-events: none;
 }
+
+/* Exit Quiz button styling */
+
+/*#exit_quiz {
+    font-size: 0.9rem;
+    margin-top: 3px;
+    margin-bottom: 2px;
+}*/
 
 /* Footer styling */
 
