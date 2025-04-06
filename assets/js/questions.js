@@ -170,11 +170,11 @@ const expertQuestions =[
         ]
     },
     {
-        question: "How do you write 'One, two, three' in Estonian?",
+        question: "How do you write 'Zero, One, Two, Three' in Estonian?",
         answers: [
-            { text: "Yksi, kaksi, kolme", correct: false }, // Finnish
-            { text: "Eins, zwei, drei", correct: false }, // German
-            { text: "Üks, kaks, kolm", correct: true }, // Estonian      
+            { text: "Nolla, Yksi, Kaksi, Kolme", correct: false }, // Finnish
+            { text: "Null, Eins, Zwei, Drei", correct: false }, // German
+            { text: "Null, Üks, Kaks, Kolm", correct: true }, // Estonian      
         ]
     },
     {

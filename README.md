@@ -13,10 +13,12 @@ Image of the Estonia Quiz site, created with [Am I Responsive?](https://ui.dev/a
 ![Am I Responsive](assets/images/readmeimg/am_i_responsive_opt_50.png)
 
 
-## Contents
+# Contents
 
 [User Experience](#user-experience)
-  - [User Stories](#user-stories)
+  - [First Time User](#first-time-user)
+  - [Returning User](#returning-user)
+
 
 [Wireframes](#wireframes)
 
@@ -35,11 +37,35 @@ Image of the Estonia Quiz site, created with [Am I Responsive?](https://ui.dev/a
 
 [Sites, Apps Used](#sites-apps-used)
 
-[Testing](#testing)
+[Testing and Validation](#testing-and-validation)
+
+  - [Lighthouse Testing](#lighthouse-testing)
+
+  - [HTML Validation](#html-validation)
+
+  - [JS Validation](#js-validation)
+
+  - [Homepage Testing](#homepage-testing)
+
+  - [Quiz Guidelines button testing](#quiz-guidelines-button-testing)
+
+  - ['Guidelines' Page testing](#guidelines-page-testing)
+
+  - ['Select Quiz Level' button testing](#select-quiz-level-button-testing)
+
+  - ['Select Quiz Level' Page testing](#select-quiz-level-page-testing)
+
+  - ['Beginner Level Quiz' testing](#beginner-level-quiz-testing)
+
+  - ['Intermediate Level Quiz' testing](#intermediate-level-quiz-testing)
+
+  - ['Expert Level Quiz' testing](#expert-level-quiz-testing)
 
 [Bug fixing](#bug-fixing)
 
 [Known Bugs](#known-bugs)
+
+[Creating a Github Repo](#creating-a-github-repo)
 
 [Deployment](#deployment)
 
@@ -51,15 +77,15 @@ Image of the Estonia Quiz site, created with [Am I Responsive?](https://ui.dev/a
 [Acknowledgements](#acknowledgements)
 
 
-## User Experience
+# User Experience
 
-#### First Time User:
+## First Time User:
 
 First time user, may:
 
 - Want to check their knowledge about Estonia
 - Learn something new about Estonia
-- Click on 'Read About Guidelines' button
+- Click on 'Quiz Guidelines' button
 - Read Guidelines on 'Guidelines' page
 - Click on 'Back to Main Menu' button to return to Main menu from 'Guidelines' page
 
@@ -75,8 +101,9 @@ First time user, may:
 - Go through all of the 5 questions
 - Exit quiz via "Exit Quiz" button any time during the quiz, except when pop up with Time up is displayed 
 
+[Back to top](#contents)
 
-#### Returning User:
+## Returning User:
 
 Returning user may want to:
 
@@ -88,9 +115,9 @@ Returning user may want to:
 [Back to top](#contents)
 
 
-## Website Structure
+# Website Structure
 
-### Wireframes
+## Wireframes
 
 - Ideas, how to articulate user's goals, written down after reading this [article](https://balsamiq.com/learn/articles/five-steps-to-great-wireframes/)
 
@@ -104,7 +131,7 @@ Returning user may want to:
 
   ![Home Page Wireframe ](assets/images/readmeimg/wireframe_quiz_opt_50.png)
 
-
+[Back to top](#contents)
 
 - Estonia Quiz, Guidelines page Wireframe:
 
@@ -130,9 +157,9 @@ Returning user may want to:
 [Back to top](#contents)
 
 
-## Design
+# Design
 
-### Images
+## Images
 
 FAVICON
 
@@ -150,8 +177,9 @@ FAVICON
 
   ![cornflower favicon image](assets/images/readmeimg/faviconreadme.png)
 
+[Back to top](#contents)
 
-### Color
+## Color
 
 - As the Estonian national flower is a Cornflower, developer chose 'cornflower blue' as a Background color
   for the website. Developer found Cornflower blue color code from:
@@ -164,9 +192,9 @@ FAVICON
 
 - Developer looked for a darker color to support #7189cb, and found #405eaf from [colorhexa.com](https://www.colorhexa.com/7189cb)
 
+[Back to top](#contents)
 
-
-### Font/style
+## Font/style
 
 - Developer chose Comfortaa as the main Font style
 
@@ -174,11 +202,11 @@ FAVICON
 
 [Back to top](#contents)
 
-## Features
+# Features
 
-### Existing Features
+## Existing Features
 
-#### Home page:
+### Home page:
 
   ![Home Page](assets/images/readmeimg/home_page_opt_50.png)
 
@@ -187,17 +215,21 @@ FAVICON
   - Background image of Estonian national flower, cornflower
   - Container with: 
     - Header
-    - 'Read About Guidelines' button
+    - 'Quiz Guidelines' button
     - 'Select Quiz Level' button
   - Footer
 
-#### Favicon icon:
+[Back to top](#contents)
+
+### Favicon icon:
 
   Visible at all times on the tab, while Estonia Quiz site is open:
 
   ![Favicon](assets/images/readmeimg/favicon.png)
 
-#### Guidelines page:
+[Back to top](#contents)
+
+### Guidelines page:
 
   ![Guidelines page](assets/images/readmeimg/guidelines_page_opt_50.png)
 
@@ -207,7 +239,9 @@ FAVICON
     - Guidelines heading
     - List of Guidelines for the player
 
-#### Select Quiz Level page:
+[Back to top](#contents)
+
+### Select Quiz Level page:
 
   ![Select Quiz Level page](assets/images/readmeimg/select_level_page_opt_50.png)
 
@@ -220,7 +254,9 @@ FAVICON
         - Intermediate
         - Expert
 
-#### Question page:
+[Back to top](#contents)
+
+### Question page:
 
   - Beginner, Intermediate and Expert Level Quiz Pages look the same, just different questions are displayed.
 
@@ -283,8 +319,9 @@ FAVICON
         - Correct answer turned green
         - Incorrect answers remained neutral
 
+[Back to top](#contents)
 
-### Future Features
+## Future Features
 
 - Player can choose how many questions they want to answer per game
 - Increased number of questions
@@ -304,7 +341,7 @@ FAVICON
 [Back to top](#contents)
 
 
-## Languages Used
+# Languages Used
 
 - HTML
 - CSS
@@ -316,7 +353,7 @@ FAVICON
 [Back to top](#contents)
 
 
-## Sites, Apps Used
+# Sites, Apps Used
 
 Developer used these sites/apps to create Estonia Quiz: 
 
@@ -329,21 +366,29 @@ Developer used these sites/apps to create Estonia Quiz:
 [Back to top](#contents)
 
 
-## Testing and Validation
+# Testing and Validation
 
-### Lighthouse Testing
+## Lighthouse Testing
 
 - Tested with Google Dev Tools, Lighthouse:
 
   ![Lighthouse test](assets/images/readmeimg/lighthouse_test.png)
 
-### HTML
+[Back to top](#contents)
+
+[Back to Testing and Validation](#testing-and-validation)
+
+## HTML Validation
 
 - Tested HTML with [Validator.W3](https://validator.w3.org/)
 
   ![HTML Validation](assets/images/readmeimg/htmlvalidation.png)
 
-### CSS
+[Back to top](#contents)
+
+[Back to Testing and Validation](#testing-and-validation)
+
+## CSS Validation
 
 - Tested CSS with [Jigsaw W3](https://jigsaw.w3.org/css-validator/validator)
 
@@ -360,7 +405,11 @@ Developer used these sites/apps to create Estonia Quiz:
 
   ![CSS Validation](assets/images/readmeimg/css_validator_opt_100.png)
 
-### JS Validation
+[Back to top](#contents)
+
+[Back to Testing and Validation](#testing-and-validation)
+
+## JS Validation
 
 - Tested JS with [Site 24x7](https://www.site24x7.com/tools/javascript-validator.html)
 
@@ -368,8 +417,10 @@ Developer used these sites/apps to create Estonia Quiz:
 
 [Back to top](#contents)
 
+[Back to Testing and Validation](#testing-and-validation)
 
-### Homepage Testing
+
+## Homepage Testing
 
 | Tested Item | Expected Outcome                                                      | Outcome     |
 | ----------- | --------------------------------------------------------------------- | ------------|
@@ -377,13 +428,13 @@ Developer used these sites/apps to create Estonia Quiz:
 |             | Container is placed in the middle of the screen, all screen sizes     | as expected |
 |             | Background-color of the container is #E6F4F1                        | as expected |
 |             | Header displayed on top of the container                              | as expected |
-|             | 'Read about Guidelines' button displayed below Header                 | as expected |
+|             | 'Quiz Guidelines' button displayed below Header                       | as expected |
 |             | 'Select Quiz Level' button displayed below 'Read Guidelines' btn      | as expected |         
 |             | Color of Header and buttons #8090BC                                 | as expected |
 |             | Container's background color is #E6F4F1                             | as expected |
 |             | Border color of the container is #7189cb                            | as expected |
 |             | Shadow effect visible when hovering over buttons                      | as expected |
-|             | 'Read about Guidelines' button is clickable, and                      | as expected |
+|             | 'Quiz Guidelines' button is clickable, and                            | as expected |
 |             | it opens up 'Guidelines'.                                             | as expected |
 |             | 'Select Quiz Level' button is clickable,                              | as expected |
 |             | and it opens up 'Quiz Levels Menu'.                                   | as expected |
@@ -395,33 +446,33 @@ Developer used these sites/apps to create Estonia Quiz:
 |             | Statement 'This website has no commercial intention' is displayed     | as expected |
 |             | Footer is responsive on all screen sizes                              | as expected |
 
-** Developer reported Footer testing only under Homepage testing, as footer style remained the same,
-   except [Blue Footer Background](#footer-blue-background) for certain small screens
+** Developer reported Footer testing only under Homepage testing, as footer style remained similar on all pages
 
 [Back to top](#contents)
 
-[Back to Testing](#testing)
+[Back to Testing and Validation](#testing-and-validation)
 
-### 'Read about Guidelines' button testing
 
-| Tested Item                  | Expected Outcome                                                                         | Outcome     |
-| ---------------------------- | ---------------------------------------------------------------------------------------- | ----------- |
-| Read About Guidelines Button | Button is clickable                                                                      | as expected |
-|                              | Color of the botton is #8090BC                                                         | as expected |
-|                              | Text-color is #FFFFFF                                                                  | as expected |
-|                              | Button is inside the container                                                           | as expected |
-|                              | 'Read about Guidelines' button is displayed below 'Estonia Quiz', and                    | as expected |
-|                              | above 'Select Quiz Level' button                                                         | as expected |
-|                              |                                                                                          |             |
-|                              | Clicking on 'Read about Guidelines' button opens up 'Guidelines' page, and               | as expected |
-|                              | Main Menu is no longer displayed, and                                                    | as expected |
-|                              | 'Back to Main Menu' button becomes available                                             | as expected |
+## 'Quiz Guidelines' button testing
+
+| Tested Item            | Expected Outcome                                                     | Outcome     |
+| ---------------------- | -------------------------------------------------------------------- | ----------- |
+| Quiz Guidelines Button | Button is clickable                                                  | as expected |
+|                        | Color of the botton is #8090BC                                     | as expected |
+|                        | Text-color is #FFFFFF                                              | as expected |
+|                        | Button is inside the container                                       | as expected |
+|                        | 'Quiz Guidelines' button is displayed below 'Estonia Quiz', and      | as expected |
+|                        | above 'Select Quiz Level' button                                     | as expected |
+|                        |                                                                      |             |
+|                        | Clicking on 'Quiz Guidelines' button opens up 'Guidelines' page, and | as expected |
+|                        | Main Menu is no longer displayed, and                                | as expected |
+|                        | 'Back to Main Menu' button becomes available                         | as expected |
 
 [Back to top](#contents)
 
-[Back to Testing](#testing)
+[Back to Testing and Validation](#testing-and-validation)
 
-### 'Guidelines' Page testing
+## 'Guidelines' Page testing
 
 | Tested Item       | Expected Outcome                                                      | Outcome     |
 | ----------------- | --------------------------------------------------------------------- | ------------|
@@ -444,10 +495,10 @@ Developer used these sites/apps to create Estonia Quiz:
 
 [Back to top](#contents)
 
-[Back to Testing](#testing)
+[Back to Testing and Validation](#testing-and-validation)
 
 
-### 'Select Quiz Level' button testing
+## 'Select Quiz Level' button testing
 
 | Tested Item                | Expected Outcome                                                    | Outcome     |
 | -------------------------- | ------------------------------------------------------------------- | ----------- |
@@ -464,10 +515,10 @@ Developer used these sites/apps to create Estonia Quiz:
 
 [Back to top](#contents)
 
-[Back to Testing](#testing)
+[Back to Testing and Validation](#testing-and-validation)
 
 
-### 'Select Quiz Level' Page testing
+## 'Select Quiz Level' Page testing
 
 | Tested Item       | Expected Outcome                                                                | Outcome     |
 | ----------------- | ------------------------------------------------------------------------------- | ----------- |
@@ -496,8 +547,13 @@ Developer used these sites/apps to create Estonia Quiz:
 | Expert Quiz       | 'Expert' button is clickable                                                    | as expected |
 |                   | Clicking on 'Expert' button starts 'Expert' Level Quiz                          | as expected |
 
+[Back to top](#contents)
 
-### 'Beginner Quiz' testing
+[Back to Testing and Validation](#testing-and-validation)
+
+## Testing of Quiz Levels
+
+### 'Beginner Level Quiz' testing
 
 | Tested Item       | Expected Outcome                                                                | Outcome     |
 | ----------------- | ------------------------------------------------------------------------------- | ----------- |
@@ -518,14 +574,36 @@ Developer used these sites/apps to create Estonia Quiz:
 |                   | the second incorrect answer remains neutral color                               | as expected |
 |                   | Each Quiz has 5 Questions                                                       | as expected |
 |                   | Quiz ends after 5 Questions, or                                                 | as expected |
-|                   | When "Exit Quiz" button is clicked/tapped                                       | as expected |  
+|                   | When "Exit Quiz" button is clicked/tapped                                       | as expected |
+
+[Back to top](#contents)
+
+[Back to Testing and Validation](#testing-and-validation)
+
+### 'Intermediate Level Quiz' testing
+
+| Tested Item       | Expected Outcome                                                                | Outcome     |
+| ----------------- | ------------------------------------------------------------------------------- | ----------- |
 |                   |                                                                                 |             |
-| Intermediate      | 'Intermediate' Quiz Level questions are different to other Levels               | as expected |
-|                   | ** Rest of the 'Intermediate' Quiz testing results identical to 'Beginner Quiz' | as expected |
+| Intermediate      | 'Intermediate Level Quiz' questions are different to other Levels               | as expected |
 |                   |                                                                                 |             |
-| Expert            | 'Expert' Quiz Level questions are different to other levels                     | as expected |
-|                   | ** Rest of the 'Expert' Quiz testing results same as 'Beginner Quiz'            | as expected |
+|                   | ** Rest of the 'Intermediate Level Quiz' testing results identical to           |             |
+|                   | [Beginner Quiz Testing](#beginner-level-quiz-testing) results                   | as expected |
+
+### 'Expert Level Quiz' testing
+
+| Tested Item       | Expected Outcome                                                                | Outcome     |
+| ----------------- | ------------------------------------------------------------------------------- | ----------- |
 |                   |                                                                                 |             |
+| Expert            | Questions for 'Expert Level Quiz' are different to other levels                 | as expected |
+|                   |                                                                                 |             |
+|                   | ** Rest of the 'Expert Level Quiz' testing results same as                      |             |
+|                   | [Beginner Quiz Testing](#beginner-level-quiz-testing) results                   | as expected |
+
+### 'Exit Quiz' button testing
+
+| Tested Item       | Expected Outcome                                                                | Outcome     |
+| ----------------- | ------------------------------------------------------------------------------- | ----------- |
 | Exit Quiz Button  | "Exit Quiz" button hidden before Quiz Level is chosen                           | as expected |
 |                   | Displayed at the top right corner of the container, when quiz starts            | as expected |
 |                   | Color of the button: #8090BC                                                  | as expected |
@@ -541,16 +619,14 @@ Developer used these sites/apps to create Estonia Quiz:
 |                   | "Exit Quiz" button hidden when game ends                                        | as expected |
 |                   | "Exit Quiz" button hidden when player returns to Home Page/Main Menu            | as expected |
 
-
 [Back to top](#contents)
 
-[Back to Testing](#testing)      
+[Back to Testing and Validation](#testing-and-validation)      
 
 
+# Bug fixing
 
-## Bug fixing
-
-### Favicon
+## Favicon
 
 - At first favicon icon did not appear on the website. Developer had used the four line code from:
 
@@ -560,8 +636,11 @@ Developer used these sites/apps to create Estonia Quiz:
 
 - After comparing Favicon codes vs codes from Love Running, developer noticed that path needed to be adjusted. After adjusting the path, favicon appeared on the website. 
 
+[Back to top](#contents)
 
-### HTML error
+[Back to Testing and Validation](#testing-and-validation)
+
+## HTML error
 
 - Developer saw the following error when inspecting the website: "Uncaught TypeError: startQuizBtn is not a function at HTMLButtonElement.onclick".
 
@@ -571,22 +650,31 @@ Developer used these sites/apps to create Estonia Quiz:
 
 [Back to top](#contents)
 
+[Back to Testing and Validation](#testing-and-validation)
 
-### Color of correct/incorrect answer
+## Color of correct/incorrect answer
 
 - When developer tested answers, and chose the correct or incorrect answer, color of the answers did not change.
   After checking out [this page](https://www.geeksforgeeks.org/  how-to-create-a-simple-javascript-quiz/),
   the developer noticed that script should be in a different place. Once script was moved into the container,
   green and red colors showed up for correct/incorrect answers, when "Next Question" button was clicked. This testing led to the next bug: "One of the questions had no correct answer"
 
-### One of the questions had no correct answer
+[Back to top](#contents)
+
+[Back to Testing and Validation](#testing-and-validation)
+
+## One of the questions had no correct answer
 
 - Once color showed up correctly for correct vs incorrect answers, developer noticed one of the questions had all answers
   showing up as incorrect. Developer realised that she must have typed 'false' instead of   'true' for all of the answers,
   for that question. After setting the correct answer as "true", the error remained.
   Developer cleared the cache, started port again, and then the correct answer turned green.
 
-### Commented out text showing up on deployed version
+[Back to top](#contents)
+
+[Back to Testing and Validation](#testing-and-validation)
+
+## Commented out text showing up on deployed version
 
 - 404 error page displayed commented out parts. Developer realised, she had used CSS commenting style for HTML.
   Once the comments were corrected as appropriate for HTML,
@@ -594,8 +682,12 @@ Developer used these sites/apps to create Estonia Quiz:
 
   ![CSS comments instead of HTML](assets/images/readmeimg/csscommentinsteadofhtml.png)
 
+[Back to top](#contents)
 
-### Error page styling
+[Back to Testing and Validation](#testing-and-validation)
+
+
+## Error page styling
 
 - Developer needed to check error pages only on the deployed site, as GitPod would only show the default error page.
   Thanks to my mentor [Lauren-Nicole Popich](https://github.com/CluelessBiker), developer knew that error page might not show up properly when testing on GitPod
@@ -610,16 +702,24 @@ Developer used these sites/apps to create Estonia Quiz:
 
   ![404 error page](assets/images/readmeimg/errorpageongithub_opt_50.png)
 
-### HTML code lines not showing in README
+[Back to top](#contents)
 
-- Developer noticed that HTML codelines for favicon credit did not show up in README. With tutor Sarah's help, backticks were added, developer
+[Back to Testing and Validation](#testing-and-validation)
+
+## HTML code lines not showing in README
+
+- Developer noticed that HTML code lines for favicon credit did not show up in README. With tutor Sarah's help, backticks were added, developer
   adjusted the indentation, and the HTML code lines showed up in README
 
   ![Backticks for HTML code](assets/images/readmeimg/backticks.png)
 
   ![Code showing up in README as expected](assets/images/readmeimg/codelinesshowinginreadme.png)
 
-### Button tag error
+[Back to top](#contents)
+
+[Back to Testing and Validation](#testing-and-validation)
+
+## Button tag error
 
 - When 'Guidelines' and 'Choose Quiz level' buttons were not responsive, developer first checked html validation.
 
@@ -642,7 +742,11 @@ Developer used these sites/apps to create Estonia Quiz:
 
 - Developer learned from this bug how it's important to look at lines before and after the error, not just the line marked with an error.
 
-#### js version error
+[Back to top](#contents)
+
+[Back to Testing and Validation](#testing-and-validation)
+
+### js version error
 
 - After fixing html error, Developer used [jshint.com](https://jshint.com/) to validate js files. And lots of errors where shown as: "...available in ES6(use     'esversion:6'):
 
@@ -654,13 +758,17 @@ Developer used these sites/apps to create Estonia Quiz:
 
 - Developer swapped previous:
 
+  ```
   // jshint esversion: 6 in script.js, 
-  
+  ```
+
   for
 
+  ```
   {
    "esversion: 6"
   }
+  ```
 
   ![js version fix](assets/images/readmeimg/js_version_fix.png)
 
@@ -669,22 +777,32 @@ Developer used these sites/apps to create Estonia Quiz:
   ![jshint after](assets/images/readmeimg/jshint_after.png)
 
 - Developer contacted tutoring, and was given:
-
+  
+  ```
   //jshint esversion: 8
+  ```
 
-  to be used instead. This finally fixed esversion error.
+  to be used instead. This change fixed esversion error.
 
-  #### Const and function wording not matching
+[Back to top](#contents)
 
-  - Developer checked id's and classes for Levels, index.html vs script.js, vs questions.js.
-  - She noticed that function had 'beginnerQuestions', while in questions.js she had used: 'beginnerLevelQuestions':
+[Back to Testing and Validation](#testing-and-validation)
 
-    ![Words not matching](assets/images/readmeimg/const_not_matching.png)
+## Const and function wording not matching
 
-  - Developer removed 'level' from all three levels in questions.js,
-    to match with script.js's wording.
+ - Developer checked id's and classes for Levels, index.html vs script.js, vs questions.js.
+ - She noticed that function had 'beginnerQuestions', while in questions.js she had used: 'beginnerLevelQuestions':
 
-  #### Uncaught Syntax Error: brackets missing
+   ![Words not matching](assets/images/readmeimg/const_not_matching.png)
+
+- Developer removed 'level' from all three levels in questions.js,
+  to match with script.js's wording.
+
+[Back to top](#contents)
+
+[Back to Testing and Validation](#testing-and-validation)
+
+## Uncaught Syntax Error: brackets missing
 
   - Next developer used DevTools to see what was still blocking Guidelines button from working:
 
@@ -698,14 +816,22 @@ Developer used these sites/apps to create Estonia Quiz:
 
     ![Fixed brackets line 117](assets/images/readmeimg/fixed_brackets.png)
 
-  #### Uncaught SyntaxError: Unexpected token
+[Back to top](#contents)
+
+[Back to Testing and Validation](#testing-and-validation)
+
+ ## Uncaught SyntaxError: Unexpected token
 
   - After brackets were fixed, script.js line 289 showed an error:
 
     ![Unexpected token error](assets/images/readmeimg/unexpected_token.png)
 
+[Back to top](#contents)
 
-  #### Uncaught TypeError: Cannot read properties of null (reading 'classList')
+[Back to Testing and Validation](#testing-and-validation)
+
+
+  ## Uncaught TypeError: Cannot read properties of null (reading 'classList')
 
   - Next, when inspecting the page after clicking on 'Guidelines' button, Uncaught TypeError: Cannot read properties of null (reading 'classList')
     Error showed up for line 46 script.js:
@@ -714,7 +840,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
   - Guidelines were now visible, but Main Menu was not hidden as expected:
 
-   ![Guidelines visible, and main menu](assets/images/readmeimg/guidelines_visible_opt_50.png)
+    ![Guidelines visible, and main menu](assets/images/readmeimg/guidelines_visible_opt_50.png)
 
   - Developer checked if all Main menu wording was same in all files, and noticed that she had 
     used camelCase instead of 'id' in const line 8 script.js. Developer fixed the error:
@@ -724,7 +850,11 @@ Developer used these sites/apps to create Estonia Quiz:
   - Developer tested website again after this fix, and Guidelines opened as expected, 
     while Main Menu became hidden, as expected
 
-### Nothing happened when clicked on 'Choose Your Quiz Level' Button
+[Back to top](#contents)
+
+[Back to Testing and Validation](#testing-and-validation)
+
+## Nothing happened when clicked on 'Choose Your Quiz Level' Button
 
 - Developer inspected the button and script.js error was shown in the console:
 
@@ -740,7 +870,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
   <div id="quiz_level_prompt" class="container hide">
 
-- Developer realised she had updated 'level_prompt' for 'quiz_level_prompt' in script.js line 10,
+- Developer realized she had updated 'level_prompt' for 'quiz_level_prompt' in script.js line 10,
   but not updated 'id' in index.html.
 
 - Developer updated 'level_prompt' for 'quiz_level_prompt' for the 'id' in index.html line 54.
@@ -749,7 +879,11 @@ Developer used these sites/apps to create Estonia Quiz:
 
   ![Quiz Levels Menu](assets/images/readmeimg/quiz_levels_menu_opt_50.png)
 
-### No container displayed, when clicked on "Main Menu" after quiz ended:
+[Back to top](#contents)
+
+[Back to Testing and Validation](#testing-and-validation)
+
+## No container displayed, when clicked on "Main Menu" after quiz ended:
 
 - Only background image and footer visible after clicking on "Main Menu", when quiz ended.
 
@@ -771,7 +905,11 @@ Developer used these sites/apps to create Estonia Quiz:
 
 - When Developer clicked on "Main Menu" button at the end of the Quiz, button worked as expected, by displaying the Main page
 
-### Footer Blue Background
+[Back to top](#contents)
+
+[Back to Testing and Validation](#testing-and-validation)
+
+## Footer Blue Background
 
 - When developer tested quiz with Dev Tools for iPhone SE and Samsung Galaxy S8, blue area was shown behind the footer,
   and quiz container was extended, so developer had to scroll down to see the footer:
@@ -793,14 +931,11 @@ Developer used these sites/apps to create Estonia Quiz:
   
 - No more blue back-ground color behind footer.
 
-- Background image was now displayed for all screensizes
-
-
-
+- Background image was now displayed for all screen sizes
 
 [Back to top](#contents)
 
-### Part of the Container and Footer not displayed, without scrolling for certain screen sizes
+## Part of the Container and Footer not displayed, without scrolling for certain screen sizes
 
 - When developer clicked to start any quiz, Container became too long for certain screen sizes, and Footer was not visible without scrolling,
   and Container became even longer when "Next" question became unhidden
@@ -828,11 +963,13 @@ Developer used these sites/apps to create Estonia Quiz:
 
   ![Fitted ok](assets/images/readmeimg/quiz_fits_ok_opt_100.png)
 
-  [Back to top](#contents)
-  
-## Known Bugs
+[Back to top](#contents)
 
-### Only selected incorrect answer turned red after it was selected, while the other incorrect answer didn't change color:
+[Back to Testing and Validation](#testing-and-validation)
+  
+# Known Bugs
+
+## Only selected incorrect answer turned red after it was selected, while the other incorrect answer didn't change color:
 
 - Only incorrect answer that is chosen as an answer by the player, turn red, and the other incorrect answer remains neutral color,
   while correct answer turns green.
@@ -842,7 +979,7 @@ Developer used these sites/apps to create Estonia Quiz:
 [Back to top](#contents)
 
 
-## Creating a GitHub repo:
+# Creating a GitHub repo:
 
 - Developer clicked on [GitHub link](https://github.com/Code-Institute-Org/ci-full-template) under Love Maths "Getting Set Up" video.
 
@@ -866,6 +1003,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
   ![create repo](assets/images/readmeimg/createRepo.png)
 
+[Back to top](#contents)
 
 ## Deployment
 
@@ -907,6 +1045,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
   <link rel="manifest" href="/assets/favicons/site.webmanifest" crossorigin="anonymous">
 
+[Back to top](#contents)
 
 ### README
 
@@ -916,6 +1055,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
 - Reading The Everything Quiz's README, highlighted for the developer level of details that Quiz website README needs, and demonstrated the value of README. 
 
+[Back to top](#contents)
 
 ### Code
 
@@ -931,26 +1071,29 @@ Developer used these sites/apps to create Estonia Quiz:
 
   Developer learned how to make Copyright sign &copy; from [Mental-Arithmetic-Quiz project](https://github.com/Shida18719/Mental-Arithmetic-Quiz/blob/main/index.html)
 
-
+[Back to top](#contents)
 
 ### Questions
 
 - All of the questions created by the developer, from her own experience, her own knowledge or researching updated information eg population details. 
 
-- Below are some of the websites/images that developer used to validate the answers for the Estonia quiz:
+- Below are some of the websites/images that developer used to validate some of the answers for the Estonia quiz:
 
 - Northern Europe, screenshot from [gisgeography.com](https://gisgeography.com/europe-map/)
 
   ![Northern Europe](assets/images/popupextraimages/northerneurope.png)
 
+[Back to top](#contents)
 
-
-- The developer found this Story about colors of Estonian flag some time ago, unfortunately the link to this article's origin has gone missing.
-  Developer did not take this photo, it's visible on the screenshot who took  the photo. Developer did not write this story about the flag. Developer
+- The developer found this Story about colors of Estonian flag some time ago,
+  unfortunately the link to this article's origin has gone missing.
+  Developer did not take this photo. It's visible on the screenshot who took the photo.
+  Developer did not write this story about the flag. Developer
   is continuing search to find the origin of this flag story. The previous link no longer seems to be available
 
   ![Flag story](assets/images/popupextraimages/flagstory.png)
 
+[Back to top](#contents)
 
 - [eesti.ee](https://www.eesti.ee/en/republic-of-estonia/republic-of-estonia/state-insignia)
 
@@ -959,7 +1102,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
   ![Barn swallow](assets/images/popupextraimages/nationalbird.png)
 
-
+[Back to top](#contents)
 
 - [Lynx watching tour](https://www.visitestonia.com/en/lynx-and-bear-watching-tour-in-alutaguse-and-lahemaa-national-park?gad_source=5&gclid=EAIaIQobChMI5f2Whpa_gwMVhJhQBh28dgSrEAAYASAAEgIPl_D_BwE)
 
@@ -974,8 +1117,9 @@ Developer used these sites/apps to create Estonia Quiz:
 
   Usually every 5 years [the Estonian Song and Dance Festival](https://www.visitestonia.com/en/why-estonia/welcome-to-the-estonian-song-and-dance-celebration)
 
-- To hear numbers in Estonian, visitor can watch this [Youtube video](https://youtube.com/shorts/y2RQWWda-Nc?feature=shared)
+[Back to top](#contents)
 
+- To hear numbers in Estonian, visitor can watch this [Youtube video](https://youtube.com/shorts/y2RQWWda-Nc?feature=shared)
 
 
 ### Images 
@@ -985,17 +1129,22 @@ Developer used these sites/apps to create Estonia Quiz:
 
 - Same background image used to create a favicon image, using [favicon converter](https://favicon.io/favicon-converter/)
 
+[Back to top](#contents)
+
 #### Resized Images
 
 - Developer used [Simple image resizer](https://www.simpleimageresizer.com/) to reduce README images
 - Developer marked all resized images with 'opt_50' or 'opt_100'
 
+[Back to top](#contents)
 
 ### Error pages
 
 - Developer created Error pages by following code from [this article](https://www.geeksforgeeks.org/create-a-404-page-using-html-and-css/)
 
-- Developer learned from [this site](https://www.presslabs.com/how-to/error-pages/) how site visitors may help themselves with error pages, and added these tips to html
+- Developer learned from [presslabs.com](https://www.presslabs.com/how-to/error-pages/) how site visitors may help themselves with error pages, and added these tips to html
+
+[Back to top](#contents)
 
 ### Am I Responsive image
 
@@ -1008,15 +1157,17 @@ Developer used these sites/apps to create Estonia Quiz:
 - Code for the Final version of Estonia Quiz, learned from: [The Everything Quiz](https://tony118g.github.io/the-everything-quiz/) . Developer liked the layout and functionality of The Everything Quiz.
 
 - Grateful to my Mentor [Lauren-Nicole Popich](https://github.com/CluelessBiker) for supporting me with my project, for listening, for sharing examples like the Leeds Quiz,
-  for guiding me to improve my project, and for suggesting to convert the links into  clickable text, among other suggestions.
+  for guiding me to improve my project, and for suggesting to convert the links into clickable text, among other suggestions. And for encouraging me to take time for my health,
+  and believing in me.
 
-- Grateful to Coding Group member Patrick Hladun for guiding developer via Slack, to get console errors to show up,
+- Delighted for having support of my kids, and their eagerness to test out Estonia Quiz. 
+
+- Thankful to Coding Group member Patrick Hladun for guiding developer via Slack, to get console errors to show up,
   and how to track errors one by one. He also pointed out where names of the functions were clashing, and some ; vs : errors in developer's code.
 
-- Thank you to Laura Mayock, group's Cohort Facilitator, for our weekly group meetings and guidance, encouraging students to show and talk about their projects.
-  And to everyone who took part of the group meetings, shared their projects, and everyone who supported via Slack.
+- Grateful to Laura Mayock, group's Cohort Facilitator at the time, for our weekly group meetings and guidance, encouraging students to show and talk about their projects.
+  And to everyone who took part of the group meetings, shared their projects, and each person who supported via Slack.
 
-- On the 31st of January 2024, while testing Estonia Quiz in a different browser (Microsoft Edge), and placing developer's own GitHub Estonia Quiz link into search bar,
-  the developer came across [Estonian quizzes] (https://www.visitestonia.com/en/why-estonia/play-quizzes-and-test-your-knowledge-about-estonia#). The developer was previously not aware of this Estonian quizzes page, even though she had seen other parts of www.visitestonia.com website, and she had previously credited the main page in README. The developer understands for the future that it is important to Google first, to see if there are similar named projects.
+- Thankful to tutors and their patience, guiding Developer to figure out the next steps, or sharing info about the correct version of software.
 
 [Back to top](#contents)
