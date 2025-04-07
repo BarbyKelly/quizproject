@@ -963,6 +963,42 @@ Developer used these sites/apps to create Estonia Quiz:
 
   ![Fitted ok](assets/images/readmeimg/quiz_fits_ok_opt_100.png)
 
+## Error, 'undefined' if score: 0
+
+- Developer posted code for #peer-review (Slack channel for Code Institute students), and Matthew J found the issue with score zero. 
+  Developer had not tested quiz with zero score. Grateful to Matthew J for finding and highlighting this bug.
+  Quiz works ok with all other scores.
+
+- Developer recreated 'Score: 0' error, to inspect it:
+
+  ![Undefined, score:0 error ](assets/images/readmeimg/undefined_score.png)
+
+- She didn't see anything in console to help to solve it
+
+- Developer tested other quizzes, to see how they worked with score: 0.
+  Score 0 was displayed nicely in [Leeds Quiz](https://andreas-ka.github.io/leeds-quiz/).
+  Developer noticed, that quiz had on line 14 in script.js:
+
+  ```
+  let userScore = 0;
+  ```
+
+  while line 22 script.js in Estonia Quiz had:
+
+  ```
+  let quizScore;
+  ```
+
+- Developer added '= 0' to line 22:
+
+  ```
+  let quizScore = 0;
+  ```
+
+  and this fixed the error:
+
+  ![Zero score works](assets/images/readmeimg/zero_score_works.png)
+
 [Back to top](#contents)
 
 [Back to Testing and Validation](#testing-and-validation)
@@ -975,6 +1011,7 @@ Developer used these sites/apps to create Estonia Quiz:
   while correct answer turns green.
 - Developer would like to see all incorrect answers turn red, when correct answer is chosen,
   when incorrect answer is chosen, or when Player won't make a choice before Timer is Zero
+
 
 [Back to top](#contents)
 
@@ -1165,8 +1202,10 @@ Developer used these sites/apps to create Estonia Quiz:
 - Thankful to Coding Group member Patrick Hladun for guiding developer via Slack, to get console errors to show up,
   and how to track errors one by one. He also pointed out where names of the functions were clashing, and some ; vs : errors in developer's code.
 
-- Grateful to Laura Mayock, group's Cohort Facilitator at the time, for our weekly group meetings and guidance, encouraging students to show and talk about their projects.
-  And to everyone who took part of the group meetings, shared their projects, and each person who supported via Slack.
+- Grateful to Cohort Facilitators, Laura Mayock and Kristyna, for weekly group meetings and guidance, encouraging students to show and talk about their projects.
+  And to everyone who took part of those group meetings, shared their projects.
+
+- Appreciating everyone who supported via Slack, who tested Estonia Quiz in #peer-review channel, and gave their feedback.
 
 - Thankful to tutors and their patience, guiding Developer to figure out the next steps, or sharing info about the correct version of software.
 

@@ -19,7 +19,7 @@ const nextQuestionButton = document.getElementById('next_question_button');
 let shuffledQuizQuestions;
 let currentQuizQuestionIndex;
 let correctQuizAnswer;
-let quizScore;
+let quizScore = 0;
 let answeringTimeLeft;
 let quizTimerInterval;
 
