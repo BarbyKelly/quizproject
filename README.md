@@ -8,7 +8,8 @@ This quiz is suitable for anyone who:
 
 Link to the live GitHub site: [Estonia Quiz](https://barbykelly.github.io/quizproject/)
 
-Image of the Estonia Quiz site, created with [Am I Responsive?](https://ui.dev/amiresponsive?url=https://barbykelly.github.io/quizproject/), to show how website looks on different screen sizes:
+Image of the Estonia Quiz site, created with [Am I Responsive?](https://ui.dev/amiresponsive?url=https://barbykelly.github.io/quizproject/),
+to show how website looks on different screen sizes:
 
 ![Am I Responsive](assets/images/readmeimg/am_i_responsive_opt_50.png)
 
@@ -76,6 +77,7 @@ Image of the Estonia Quiz site, created with [Am I Responsive?](https://ui.dev/a
 
 [Acknowledgements](#acknowledgements)
 
+** Developer used 'click/clickable' throughout this project, instead of 'click/tap', for readability
 
 # User Experience
 
@@ -258,7 +260,8 @@ FAVICON
 
 ### Question page:
 
-  - Beginner, Intermediate and Expert Level Quiz Pages look the same, just different questions are displayed.
+  - Beginner, Intermediate and Expert Level Quiz Pages look similar in style,
+    displaying different selection of questions than other Levels.
 
   ![Question page](assets/images/readmeimg/question_page_opt_50.png)
 
@@ -271,14 +274,19 @@ FAVICON
     - Question (randomly chosen by js, and difficulty depending on player's Quiz Level selection)
 
     - Three possible answers
-    - All answer options displayed in same neutral color #8090BC, without indicating which answer is correct, or which answers are incorrect
+    - All answer options displayed in same neutral color #8090BC,
+      without indicating which answer is correct, or which answers are incorrect
     - Each question has only one correct answer
     - Two answers are incorrect for each question
     - Five different questions are displayed for any quiz level
 
     - Player can click on any of the answer buttons
-    - Correct answer will turn green when player clicks on the correct answer
-    - When player chooses incorrect answer, player's chosen answer will turn red, and correct answer will turn green. Third answer remains neutral color
+    - Correct answer will turn green when player clicks on the correct answer,
+      and both incorrect answers turn red
+    - When player chooses incorrect answer:
+      - player's chosen answer will turn red,
+      - correct answer will turn green, and
+      - the other incorrect answer will turn red
     - When one of the answers is selected, then "Next" button is displayed below Answer options, inside the container
     - Player can click on "Next" for the Next Question when present question has been answered or "OK" has been clicked if Time ran out
 
@@ -337,6 +345,11 @@ FAVICON
 - Top scores displayed
 - Different scores for different Quiz Levels
 - Option to listen to the question and answers
+- Players can choose different lengths of Time to play the quiz
+- Different Time limits for different levels of quizzes
+- Player can fill in suggestion box, what kind of questions could be added to quiz, 
+  and players can be created beside their suggested questions
+  (Developer would confirm validity and relevance of the questions and answers before they are made public)
 
 [Back to top](#contents)
 
@@ -392,7 +405,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
 - Tested CSS with [Jigsaw W3](https://jigsaw.w3.org/css-validator/validator)
 
-- ![CSS errors](assets/images/readmeimg/css_errors_opt_100.png)
+  ![CSS errors](assets/images/readmeimg/css_errors_opt_100.png)
 
 - To fix the errors, developer:
  - Removed */ from line 265
@@ -560,21 +573,20 @@ Developer used these sites/apps to create Estonia Quiz:
 | Beginner          | Each Question is randomly chosen                                                | as expected |  
 |                   | Question number is displayed x/5                                                | as expected |
 |                   | Question number increases by 1 for each next question                           | as expected |
-|                   | Timer: 15 is displayed for a moment, and                                        | as expected |
-|                   | Timer starts to countdown towards zero                                          | as expected |         
+|                   | Timer is displayed, and starts to countdown towards zero                        | as expected |         
 |                   | Question is displayed below 'Question nr' and Timer                             | as expected |
 |                   | Three Answer buttons are displayed below the Question                           | as expected |
 |                   | All of the Answer buttons are same color #8090BC                              | as expected |
 |                   | 'Score: 0' is displayed below Answer buttons at the start of the quiz           | as expected |
 |                   | All Answer buttons are clickable,                                               | as expected |
-|                   | Player can choose which answer button to click/tap                              | as expected |
+|                   | Player can choose which answer button to choose                                 | as expected |
 |                   | When correct answer is chosen, only that Answer button turns green              | as expected |
 |                   | If incorrect answer is chosen, correct Answer turns green, and                  | as expected |
-|                   | chosen incorrect answer turns red, while                                        | as expected |
-|                   | the second incorrect answer remains neutral color                               | as expected |
+|                   | chosen incorrect answer turns red, and                                          | as expected |
+|                   | the second incorrect answer turns red too.                                      | as expected |
 |                   | Each Quiz has 5 Questions                                                       | as expected |
 |                   | Quiz ends after 5 Questions, or                                                 | as expected |
-|                   | When "Exit Quiz" button is clicked/tapped                                       | as expected |
+|                   | When "Exit Quiz" button is clicked                                              | as expected |
 
 [Back to top](#contents)
 
@@ -1000,7 +1012,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
   ![Zero score works](assets/images/readmeimg/zero_score_works.png)
 
-## 'Object HTMLSpanElement' - 2nd error for Zero Score:
+## 'Object HTMLSpanElement' - 2nd error for Zero Score
 
 - Developer was able to recreate 2nd error for Zero Score:
 
@@ -1037,6 +1049,27 @@ Developer used these sites/apps to create Estonia Quiz:
 
   ![Final Score worked ok](assets/images/readmeimg/final_score_zero_fixed_opt_50.png)
 
+## Selected incorrect answer turned red, while the other incorrect answer didn't change color (CheckQuizAnswer function)
+
+  - If player chose incorrect answer, that answer turned red, and the other incorrect answer remained neutral color,
+    while correct answer turned green:
+
+    ![Only one incorrect answer red](assets/images/readmeimg/only_one_red.png)
+
+  - Developer preferred to see all incorrect answers turn red when:
+    - correct answer was chosen, or
+    - incorrect answer was chosen, or
+    - no answer chosen before Time was up
+  
+  - None of Developer's attempts turned both incorrect answers red.
+  
+  - Tutor Roman Rakic guided Developer how to fix this bug, by adjusting 'CheckQuizAnswer function':
+
+    ![Function fix](assets/images/readmeimg/checkquizanswer_funcion_fix.png)
+  
+  - Both incorrect answers turned red after this fix:
+
+    ![Both incorrect answers turned red](assets/images/readmeimg/both_incorrect_red_opt_100.png)
 
 [Back to top](#contents)
 
@@ -1044,13 +1077,17 @@ Developer used these sites/apps to create Estonia Quiz:
   
 # Known Bugs
 
-## Only selected incorrect answer turned red after it was selected, while the other incorrect answer didn't change color:
+## Final score is displaying incorrect results
 
-- Only incorrect answer that is chosen as an answer by the player, turn red, and the other incorrect answer remains neutral color,
-  while correct answer turns green.
-- Developer would like to see all incorrect answers turn red, when correct answer is chosen,
-  when incorrect answer is chosen, or when Player won't make a choice before Timer is Zero
+- Developer tested Final Score result, and Final Score was 1/5 or 2/5,
+  even when all questions were answered correctly.
 
+## No clear indication of chosen answer, when correct/incorrect results are displayed
+
+- It would be helpful if player's chosen answer remained different, so player knows that was their chosen answer.
+  Once all answers change color, it's hard to tell which one was player's choice.
+  Developer understands better now why some other quizzes had only one or two of the answer buttons change color:
+  it made more clear if player chose the correct or incorrect answer.
 
 [Back to top](#contents)
 
@@ -1246,6 +1283,6 @@ Developer used these sites/apps to create Estonia Quiz:
 
 - Appreciating everyone who supported via Slack, who tested Estonia Quiz in #peer-review channel, and gave their feedback.
 
-- Thankful to tutors and their patience, guiding Developer to figure out the next steps, or sharing info about the correct version of software.
+- Thankful to tutors and their patience, guiding Developer to figure out the next steps, sharing info about the correct version of software, and helping Developer learn more.
 
 [Back to top](#contents)

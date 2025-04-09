@@ -1,6 +1,6 @@
 //jshint esversion: 8
 
-// script.js final version - all code for js learned from: [The Everything Quiz](https://github.com/Tony118g/the-everything-quiz/blob/main/assets/js/script.js)
+// script.js final version - most of the code for js learned from: [The Everything Quiz](https://github.com/Tony118g/the-everything-quiz/blob/main/assets/js/script.js)
 
 // Const Variables (Variables with consistent value)
 
@@ -22,6 +22,7 @@ let correctQuizAnswer;
 let quizScore = 0;
 let answeringTimeLeft;
 let quizTimerInterval;
+let finalScore = 0;
 
 // DOMContentLoaded, Main Menu buttons
 
@@ -229,7 +230,7 @@ function quizTimeUp() {
    nextQuestionButton.classList.remove("hide");
 }
 
-// Function and const for correct answer
+// CheckQuizAnswer Function - credit in README
 
 function checkQuizAnswer(event) {
    clearInterval(quizTimerInterval);
@@ -237,11 +238,19 @@ function checkQuizAnswer(event) {
    correctQuizAnswer = document.getElementById("correct");
    const clickedButton = event.target;
    correctQuizAnswer.classList.add("correct_answer");
+   const allAnswerButtons = answersSection.querySelectorAll("button");
       if (clickedButton === correctQuizAnswer) {
          incrementQuizScore();
-      } else {
-         this.classList.add("incorrect_answer");
       }
+      
+      allAnswerButtons.forEach(button => {
+         if (button.id === "correct") {
+            button.classList.add("correct_answer");
+         } else {
+            button.classList.add("incorrect_answer");
+      }
+      });
+
    nextQuestionButton.classList.remove("hide");
 }
 
@@ -274,8 +283,9 @@ function resetQuizContent() {
 // Function for Final Score
 
 function finalScoreResult() {
-   const quizFinish = document.getElementById("quiz_finish");
-   const finalScore = document.getElementById("final_score");
+   let quizFinish = document.getElementById("quiz_finish");
+   finalScore = parseInt(document.getElementById("final_score").innerText);
+   document.getElementById("final_score").innerText = ++finalScore;
    quizSection.classList.add("hide");
    quizHeading.classList.remove("hide");
    quizFinish.classList.remove("hide");
