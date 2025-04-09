@@ -965,11 +965,12 @@ Developer used these sites/apps to create Estonia Quiz:
 
 ## Error, 'undefined' if score: 0
 
-- Developer posted code for #peer-review (Slack channel for Code Institute students), and Matthew J found the issue with score zero. 
-  Developer had not tested quiz with zero score. Grateful to Matthew J for finding and highlighting this bug.
-  Quiz works ok with all other scores.
+- Developer posted code for #peer-review (Slack channel for Code Institute students), and Matthew J found issues with score zero, 2 different errors:
+  'undefined score: 0 error', and 'object HTMLSpanElement' error.
 
-- Developer recreated 'Score: 0' error, to inspect it:
+- Developer had not tested quiz with zero score. Grateful to Matthew J for finding and highlighting this bug.
+
+- Developer recreated 'underfined score: 0 error' to inspect it:
 
   ![Undefined, score:0 error ](assets/images/readmeimg/undefined_score.png)
 
@@ -998,6 +999,44 @@ Developer used these sites/apps to create Estonia Quiz:
   and this fixed the error:
 
   ![Zero score works](assets/images/readmeimg/zero_score_works.png)
+
+## 'Object HTMLSpanElement' - 2nd error for Zero Score:
+
+- Developer was able to recreate 2nd error for Zero Score:
+
+  ![Object HTMLSpanElement](assets/images/readmeimg/no_error_in_console.png)
+
+- There was no error displayed in console
+
+- On some occasions, when Developer tried to get Zero score for testing, 0/5 score displayed as expected.
+
+- Developer checked index.html line 83:
+
+  ```
+  <p>Final Score <span id="final_score">0</span>/5</p>
+  ```
+
+- Developer checked Leeds Quiz final score line, with Zero score, to see how that looked in Dev Tools
+
+- Developer tried different versions for line 83 in index.html, to fix the error.
+
+- Tutor Rebecca helped Developer to see js was causing the issue:
+
+  ```
+  finalScore.innerText = quizScore;
+  ```
+
+- Once this was changed for:
+
+  ```
+  finalScore = quizScore;
+  ```
+
+- Error didn't occur again during testing,
+  and Final Score result looked ok:
+
+  ![Final Score worked ok](assets/images/readmeimg/final_score_zero_fixed_opt_50.png)
+
 
 [Back to top](#contents)
 

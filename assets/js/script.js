@@ -279,7 +279,7 @@ function finalScoreResult() {
    quizSection.classList.add("hide");
    quizHeading.classList.remove("hide");
    quizFinish.classList.remove("hide");
-   finalScore.innerText = quizScore;
+   finalScore = quizScore;
 
    // Const Finish Quiz
 
