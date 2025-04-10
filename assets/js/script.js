@@ -285,7 +285,7 @@ function resetQuizContent() {
 function finalScoreResult() {
    let quizFinish = document.getElementById("quiz_finish");
    finalScore = parseInt(document.getElementById("final_score").innerText);
-   document.getElementById("final_score").innerText = ++finalScore;
+   document.getElementById("final_score").innerText = quizScore;
    quizSection.classList.add("hide");
    quizHeading.classList.remove("hide");
    quizFinish.classList.remove("hide");

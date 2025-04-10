@@ -1071,16 +1071,23 @@ Developer used these sites/apps to create Estonia Quiz:
 
     ![Both incorrect answers turned red](assets/images/readmeimg/both_incorrect_red_opt_100.png)
 
+## Final score is displaying incorrect result
+
+- Developer tested Final Score result, and Final Score was 1/5 or 2/5,
+  even when all questions were answered correctly.
+- Final Score seemed to count how many times quiz was played (before page was refreshed),
+  instead of reflecting Score
+- With Tutor Oisin Tohak's help, Developer fixed the error:
+
+  ![Line 288 script.js fix](assets/images/readmeimg/final_score_function_fixed.png)
+
+  and Final Score once again reflected the actual score
+
 [Back to top](#contents)
 
 [Back to Testing and Validation](#testing-and-validation)
   
 # Known Bugs
-
-## Final score is displaying incorrect results
-
-- Developer tested Final Score result, and Final Score was 1/5 or 2/5,
-  even when all questions were answered correctly.
 
 ## No clear indication of chosen answer, when correct/incorrect results are displayed
 
@@ -1281,8 +1288,8 @@ Developer used these sites/apps to create Estonia Quiz:
 - Grateful to Cohort Facilitators, Laura Mayock and Kristyna, for weekly group meetings and guidance, encouraging students to show and talk about their projects.
   And to everyone who took part of those group meetings, shared their projects.
 
-- Appreciating everyone who supported via Slack, who tested Estonia Quiz in #peer-review channel, and gave their feedback.
-
 - Thankful to tutors and their patience, guiding Developer to figure out the next steps, sharing info about the correct version of software, and helping Developer learn more.
+
+- Appreciating everyone who supported via Slack, who tested Estonia Quiz in #peer-review channel, and gave their feedback.
 
 [Back to top](#contents)
