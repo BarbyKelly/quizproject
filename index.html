@@ -71,7 +71,7 @@
         <!-- Quiz Questions section with timer -->
         
         <div id="question_section">
-            <h2>Question <span id="question_number">0</span>/5 <br> <span id="timer">0</span></h2>
+            <h3>Question <span id="question_number">0</span>/5 <br> <span id="timer">0</span></h3>
             <p id="question">Question goes here</p>
         </div>
 
@@ -80,7 +80,7 @@
         <div id="answers_section"></div>
         <div>
             <button id="next_question_button" class="btn hide">Next</button>
-                <p>Score: <span id="quiz_score">0/5</span></p>
+                <p class="score">Score: <span id="quiz_score">0/5</span></p>
         </div>
     </div>
 
@@ -88,7 +88,9 @@
         
         <div id="quiz_finish" class="hide container">
             <h2>End of Quiz!</h2>
-            <p>Final Score <span id="final_score">0</span>/5</p>
+            <div class="final_score">
+                <p>Final Score <span id="final_score">0</span>/5</p>
+            </div>
             <button id="retry_quiz_button" class="btn quiz_finish_btn">Play Again</button>
             <button id="main_menu_btn" class="btn quiz_finish_btn">Main Menu</button>
         </div>
@@ -96,7 +98,7 @@
         <!-- Footer copyright script code from this video: https://youtu.be/US_3XvufMLU?feature=shared -->
 
         <footer>
-            <p> Copyright &copy; 2025 Estonia Quiz (JS project) by Barby Kelly <br> This website has no commercial intention </p>
+            <p id="footer"> Copyright &copy; 2025 Estonia Quiz (JS project) by Barby Kelly <br> This website has no commercial intention </p>
         </footer>
         
     <!-- Script -->

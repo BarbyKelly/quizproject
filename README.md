@@ -282,7 +282,7 @@ FAVICON
     - Question (randomly chosen by js, and difficulty depending on player's Quiz Level selection)
 
     - Three possible answers
-    - All answer options displayed in same neutral color #8090BC,
+    - All answer options displayed in same neutral color #394A6F,
       without indicating which answer is correct, or which answers are incorrect
     - Each question has only one correct answer
     - Two answers are incorrect for each question
@@ -451,9 +451,9 @@ Developer used these sites/apps to create Estonia Quiz:
 |             | Header displayed on top of the container                              | as expected |
 |             | 'Quiz Guidelines' button displayed below Header                       | as expected |
 |             | 'Select Quiz Level' button displayed below 'Read Guidelines' btn      | as expected |         
-|             | Color of Header and buttons #8090BC                                 | as expected |
+|             | Color of Header and buttons #394A6F                                 | as expected |
 |             | Container's background color is #E6F4F1                             | as expected |
-|             | Border color of the container is #7189cb                            | as expected |
+|             | Border color of the container is #394A6F                            | as expected |
 |             | Shadow effect visible when hovering over buttons                      | as expected |
 |             | 'Quiz Guidelines' button is clickable, and                            | as expected |
 |             | it opens up 'Guidelines'.                                             | as expected |
@@ -479,7 +479,7 @@ Developer used these sites/apps to create Estonia Quiz:
 | Tested Item            | Expected Outcome                                                     | Outcome     |
 | ---------------------- | -------------------------------------------------------------------- | ----------- |
 | Quiz Guidelines Button | Button is clickable                                                  | as expected |
-|                        | Color of the botton is #8090BC                                     | as expected |
+|                        | Color of the botton is #394A6F                                     | as expected |
 |                        | Text-color is #FFFFFF                                              | as expected |
 |                        | Button is inside the container                                       | as expected |
 |                        | 'Quiz Guidelines' button is displayed below 'Estonia Quiz', and      | as expected |
@@ -502,13 +502,13 @@ Developer used these sites/apps to create Estonia Quiz:
 |                   | Guidelines heading and list are displayed inside the container        | as expected |
 |                   | 'Guidelines' heading is centered above guidelines                     | as expected |
 |                   | List of guidelines displayed                                          | as expected |
-|                   | Color of heading and list items is #8090BC                          | as expected |
+|                   | Color of heading and list items is #394A6F                          | as expected |
 |                   | Container's background color is #E6F4F1                             | as expected |
-|                   | Border color of the container is #7189cb                            | as expected |
+|                   | Border color of the container is #394A6F                            | as expected |
 |                   |                                                                       |             |
 | Back to Main Menu | Button is displayed top right corner inside the container             | as expected |
 | Button            | Text Color is #FFFFFF                                               | as expected |
-|                   | Background color is #8090BC                                         | as expected |
+|                   | Background color is #394A6F                                         | as expected |
 |                   | Button text is displayed on 2 lines                                   | as expected |
 |                   | Clicking on 'Back to Main Menu' brings user back to Home page, and    | as expected |
 |                   | closes 'Guidelines'                                                   | as expected |
@@ -524,7 +524,7 @@ Developer used these sites/apps to create Estonia Quiz:
 | Tested Item                | Expected Outcome                                                    | Outcome     |
 | -------------------------- | ------------------------------------------------------------------- | ----------- |
 | 'Select Quiz Level' Button | Button is clickable                                                 | as expected |
-|                            | Color of the botton is #8090BC                                    | as expected |
+|                            | Color of the botton is #394A6F                                    | as expected |
 |                            | Text-color is #FFFFFF                                             | as expected |
 |                            | Button is inside the container                                      | as expected |
 |                            | 'Select Quiz Level' button is displayed below 'Estonia Quiz', and   | as expected |
@@ -556,7 +556,7 @@ Developer used these sites/apps to create Estonia Quiz:
 |                   |                                                                                 |             |
 | Back to Main Menu | Button is displayed top right corner inside the container                       | as expected |
 | Button            | Text Color is #FFFFFF                                                         | as expected |
-|                   | Background color is #8090BC                                                   | as expected |
+|                   | Background color is #394A6F                                                   | as expected |
 |                   | Button text is displayed on 2 lines                                             | as expected |
 |                   | Clicking on 'Back to Main Menu' brings user back to Home page, and              | as expected |
 |                   | closes 'Select Quiz Level' page                                                 | as expected |
@@ -584,7 +584,7 @@ Developer used these sites/apps to create Estonia Quiz:
 |                   | Timer is displayed, and starts to countdown towards zero                        | as expected |         
 |                   | Question is displayed below 'Question nr' and Timer                             | as expected |
 |                   | Three Answer buttons are displayed below the Question                           | as expected |
-|                   | All of the Answer buttons are same color #8090BC                              | as expected |
+|                   | All of the Answer buttons are same color #394A6F                              | as expected |
 |                   | 'Score: 0' is displayed below Answer buttons at the start of the quiz           | as expected |
 |                   | All Answer buttons are clickable                                                | as expected |
 |                   | Player can choose which answer button to choose                                 | as expected |
@@ -634,7 +634,7 @@ Developer used these sites/apps to create Estonia Quiz:
 | ----------------- | ------------------------------------------------------------------------------- | ----------- |
 | Exit Quiz Button  | "Exit Quiz" button hidden before Quiz Level is chosen                           | as expected |
 |                   | Displayed at the top right corner of the container, when quiz starts            | as expected |
-|                   | Color of the button: #8090BC                                                  | as expected |
+|                   | Color of the button: #394A6F                                                  | as expected |
 |                   | Text color #FFFFFF                                                            | as expected |
 |                   | When "Exit Quiz" button is clicked/tapped, Home page/Main menu opens            | as expected |           
 |                   | Can be clicked when Question is displayed                                       | as expected |

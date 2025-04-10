@@ -20,7 +20,7 @@ body {
     background-size: cover;
     background-position: center;
     background-color: #6495ED;
-    color: #405eaf;
+    color: #394A6F;
     padding-bottom: 5px;
     text-align: center;    
 }
@@ -29,7 +29,7 @@ body {
 
 h1 {
     font-size: 2.5rem;
-    color: #8090BC;
+    color: #394A6F;
     padding-top: 5px;
 }
 
@@ -39,7 +39,7 @@ h2 {
     width: 100%;
     padding: 5px;
     font-weight: bold;
-    color: #8090BC;
+    color: #394A6F;
 }
 
 /* Quiz Timer styling */
@@ -54,15 +54,16 @@ p {
     font-size: 1.2rem;
     padding: 12px;
     font-weight: bold;
+    color: #394A6F;
 }
 
 /* Buttons styling */
 
 .btn {
     color: #6495ED;
-    text-shadow: 0px 3px 15px #8090BC;
+    text-shadow: 0px 3px 15px #394A6F;
     font-weight: bold;
-    background-color: #8090BC;
+    background-color: #394A6F;
     display: block;
     padding: 10px;
     width: 60%;
@@ -83,7 +84,7 @@ p {
     text-wrap: wrap;
     right: 1px;
     width: 20%;
-    background-color: #8090BC;
+    background-color: #394A6F;
     font-size: 0.7rem;
     color: #FFFFFF;
     border: 0.5px;
@@ -95,6 +96,12 @@ p {
 
 #question_section {
     margin-top: 10px;
+}
+
+#question {
+    font-weight: bold;
+    color: #26364F;
+    text-shadow: #394A6F;
 }
 
 /* Answer section buttons styling */
@@ -119,7 +126,7 @@ p {
     background-color: #E6F4F1;
     max-width: 400px;
     padding: 20px;
-    border: 0.5rem solid #7189cb; /* tone color variation from: https://www.colorhexa.com/8090bc */
+    border: 0.5rem solid #394A6F; /* tone color variation from: https://www.colorhexa.com/8090bc */
     border-radius: 15px;
 }
 
@@ -147,7 +154,7 @@ p {
 #guidelines_heading {
     font-size: 2rem;
     padding-left: 1px;
-    color: #8090BC;
+    color: #394A6F;
 }
 
 li {
@@ -156,7 +163,7 @@ li {
     padding: 5px;
     font-weight: bold;
     font-size: 1.2rem;
-    color: #8090BC;
+    color: #394A6F;
 }
 
 /* Styling to hide containers */
@@ -185,24 +192,31 @@ li {
 .correct_answer {
     color: #FFFFFF;
     background-color: green !important;
-    box-shadow: 0px 0px 10px 5px #8090BC;
+    box-shadow: 0px 0px 10px 5px #394A6F;
 }
 
 .incorrect_answer {
     color: #FFFFFF;
     background-color: red !important;
-    box-shadow: 0px 0px 10px 5px #8090BC;
+    box-shadow: 0px 0px 10px 5px #394A6F;
 }
 
 #next_question_button {
-    color: #6495ED;
-    background-color: #FFFFFF
+    color: #394A6F;
+    background-color: #FFFFFF;
+    text-shadow: none;
 }
 
 /* Styling to prevent clicks in the Answer section when no-pointer class is applied */
 
 .no-pointer {
     pointer-events: none;
+}
+
+/* Score styling */
+
+.score {
+    font-size: 1.17em;
 }
 
 /* Exit Quiz button styling */
@@ -219,9 +233,23 @@ li {
     font-size: 1rem;
 }
 
+/* Final Score styling */
+
+.final_score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+#final_score {
+    width: 100%;
+}
+
 /* Footer styling */
 
-footer {
+#footer {
     margin-top: auto;
     color: #FFFFFF;
     text-align: center;
@@ -234,21 +262,21 @@ footer > p {
 /* Provides feedback when user hovers over buttons, styling */
 
 .btn:hover {
-    border-color: #8090BC;
+    border-color: #394A6F;
     color: #E6F4F1;
-    box-shadow: 0px 0px 10px 5px #8090BC;
+    box-shadow: 0px 0px 10px 5px #394A6F;
 }
 
 .close_modal:hover {
-    background-color: #8090BC;
-    border-color: #8090BC;
-    box-shadow: 0px 0px 10px 5px #8090BC;
+    background-color: #394A6F;
+    border-color: #394A6F;
+    box-shadow: 0px 0px 10px 5px #394A6F;
 }
 
 #answer_section > .btn:hover {
-    background-color: #8090BC;
-    color: #8090BC;
-    box-shadow: 0px 0px 10px 5px #8090BC;
+    background-color: #394A6F;
+    color: #394A6F;
+    box-shadow: 0px 0px 10px 5px #394A6F;
 }
 
 /* Styling for Error Pages */
@@ -303,8 +331,7 @@ footer > p {
     }
 
     p {
-        font-size: 1.4rem;
-        font-weight: bold;  
+        font-size: 1.6rem;  
     }
 
     .btn {
