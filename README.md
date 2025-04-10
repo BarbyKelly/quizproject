@@ -578,13 +578,15 @@ Developer used these sites/apps to create Estonia Quiz:
 |                   | Three Answer buttons are displayed below the Question                           | as expected |
 |                   | All of the Answer buttons are same color #8090BC                              | as expected |
 |                   | 'Score: 0' is displayed below Answer buttons at the start of the quiz           | as expected |
-|                   | All Answer buttons are clickable,                                               | as expected |
+|                   | All Answer buttons are clickable                                                | as expected |
 |                   | Player can choose which answer button to choose                                 | as expected |
 |                   | When correct answer is chosen, only that Answer button turns green              | as expected |
 |                   | If incorrect answer is chosen, correct Answer turns green, and                  | as expected |
 |                   | chosen incorrect answer turns red, and                                          | as expected |
 |                   | the second incorrect answer turns red too.                                      | as expected |
 |                   | Each Quiz has 5 Questions                                                       | as expected |
+|                   | Next button is displayed when correct answer has turned green                   | as expected |
+|                   | Player can only use Next button after correct answer is displayed as green      | as expected |
 |                   | Quiz ends after 5 Questions, or                                                 | as expected |
 |                   | When "Exit Quiz" button is clicked                                              | as expected |
 
@@ -596,7 +598,6 @@ Developer used these sites/apps to create Estonia Quiz:
 
 | Tested Item       | Expected Outcome                                                                | Outcome     |
 | ----------------- | ------------------------------------------------------------------------------- | ----------- |
-|                   |                                                                                 |             |
 | Intermediate      | 'Intermediate Level Quiz' questions are different to other Levels               | as expected |
 |                   |                                                                                 |             |
 |                   | ** Rest of the 'Intermediate Level Quiz' testing results identical to           |             |
@@ -606,7 +607,6 @@ Developer used these sites/apps to create Estonia Quiz:
 
 | Tested Item       | Expected Outcome                                                                | Outcome     |
 | ----------------- | ------------------------------------------------------------------------------- | ----------- |
-|                   |                                                                                 |             |
 | Expert            | Questions for 'Expert Level Quiz' are different to other levels                 | as expected |
 |                   |                                                                                 |             |
 |                   | ** Rest of the 'Expert Level Quiz' testing results same as                      |             |
@@ -630,6 +630,28 @@ Developer used these sites/apps to create Estonia Quiz:
 |                   | Can be clicked before answering the next Question                               | as expected |
 |                   | "Exit Quiz" button hidden when game ends                                        | as expected |
 |                   | "Exit Quiz" button hidden when player returns to Home Page/Main Menu            | as expected |
+
+### End of Quiz and Final Score Page Testing
+
+
+| Tested Item       | Expected Outcome                                                            | Outcome     |
+| ----------------- | --------------------------------------------------------------------------- | ----------- |
+| End of Quiz! text | At the end of the Quiz, 'End of Quiz!' text is displayed                    | as expected |
+|                   | Text is displayed above other items in the container                        | as expected |
+|                   | 'End of Quiz!' text is not clickable                                        | as expected |
+|                   |                                                                             |             |
+| Final Score       | Final Score is displayed below 'End of Quiz!' text                          | as expected |
+|                   | 'Final Score' is not clickable                                              | as expected |
+|                   | Displayed as 'Final Score x/5' depending on the Score (eg 3/5 if 3 correct) | as expected |
+|                   |                                                                             |             |
+| Play Again Button | 'Play Again' Button is displayed below 'Final Score x/5'                    | as expected |
+|                   | Button is clickable                                                         | as expected |
+|                   | Clicking on 'Play Again' brings player back to 'Select Quiz Level' page     | as expected |
+|                   |                                                                             |             |
+| Main Menu Button  | 'Main Menu' Button is displayed below 'Play Again' Button                   | as expected |
+|                   | Button is clickable                                                         | as expected |
+|                   | Clicking on 'Main Menu' brings player back to 'Home Page'                   | as expected |
+
 
 [Back to top](#contents)
 
