@@ -48,21 +48,29 @@ to show how website looks on different screen sizes:
 
   - [Homepage Testing](#homepage-testing)
 
-  - [Quiz Guidelines button testing](#quiz-guidelines-button-testing)
+  - [Quiz Guidelines button Testing](#quiz-guidelines-button-testing)
 
-  - ['Guidelines' Page testing](#guidelines-page-testing)
+  - ['Guidelines' Page Testing](#guidelines-page-testing)
 
-  - ['Select Quiz Level' button testing](#select-quiz-level-button-testing)
+  - ['Select Quiz Level' button Testing](#select-quiz-level-button-testing)
 
-  - ['Select Quiz Level' Page testing](#select-quiz-level-page-testing)
+  - ['Select Quiz Level' Page Testing](#select-quiz-level-page-testing)
 
-  - ['Beginner Level Quiz' testing](#beginner-level-quiz-testing)
+  - ['Beginner Level Quiz' Testing](#beginner-level-quiz-testing)
 
-  - ['Intermediate Level Quiz' testing](#intermediate-level-quiz-testing)
+  - ['Intermediate Level Quiz' Testing](#intermediate-level-quiz-testing)
 
-  - ['Expert Level Quiz' testing](#expert-level-quiz-testing)
+  - ['Expert Level Quiz' Testing](#expert-level-quiz-testing)
 
-[Bug fixing](#bug-fixing)
+  - ['Exit Quiz' button Testing](#exit-quiz-button-testing)
+
+  - ['End of Quiz' and 'Final Score' Page Testing](#end-of-quiz-and-final-score-page-testing)
+
+  - [Error Page 404 Testing](#error-page-404-testing)
+
+  - [Error Page 500 Testing](#error-page-500-testing)
+
+[Fixed Bugs](#fixed-bugs)
 
 [Known Bugs](#known-bugs)
 
@@ -603,6 +611,10 @@ Developer used these sites/apps to create Estonia Quiz:
 |                   | ** Rest of the 'Intermediate Level Quiz' testing results identical to           |             |
 |                   | [Beginner Quiz Testing](#beginner-level-quiz-testing) results                   | as expected |
 
+[Back to top](#contents)
+
+[Back to Testing and Validation](#testing-and-validation)
+
 ### 'Expert Level Quiz' testing
 
 | Tested Item       | Expected Outcome                                                                | Outcome     |
@@ -611,6 +623,10 @@ Developer used these sites/apps to create Estonia Quiz:
 |                   |                                                                                 |             |
 |                   | ** Rest of the 'Expert Level Quiz' testing results same as                      |             |
 |                   | [Beginner Quiz Testing](#beginner-level-quiz-testing) results                   | as expected |
+
+[Back to top](#contents)
+
+[Back to Testing and Validation](#testing-and-validation)
 
 ### 'Exit Quiz' button testing
 
@@ -631,7 +647,11 @@ Developer used these sites/apps to create Estonia Quiz:
 |                   | "Exit Quiz" button hidden when game ends                                        | as expected |
 |                   | "Exit Quiz" button hidden when player returns to Home Page/Main Menu            | as expected |
 
-### End of Quiz and Final Score Page Testing
+[Back to top](#contents)
+
+[Back to Testing and Validation](#testing-and-validation)
+
+### 'End of Quiz' and 'Final Score' Page Testing
 
 
 | Tested Item       | Expected Outcome                                                            | Outcome     |
@@ -652,13 +672,45 @@ Developer used these sites/apps to create Estonia Quiz:
 |                   | Button is clickable                                                         | as expected |
 |                   | Clicking on 'Main Menu' brings player back to 'Home Page'                   | as expected |
 
+[Back to top](#contents)
+
+[Back to Testing and Validation](#testing-and-validation)
+
+### 'Error Page 404' Testing
+
+| Tested Item    | Expected Outcome                                                 | Outcome     |
+| -------------- | ---------------------------------------------------------------- | ------------|
+| Error Page 404 | Background image is displayed behind the content                 | as expected |
+|                | 404 Error is displayed above rest of the content                 | as expected |
+|                | Text is displayed to notify user of incorrect URL                | as expected |
+|                | Options, how to fix this error, are displayed                    | as expected |
+|                | Link to access 'Estonia Quiz' is displayed                       | as expected |
+|                | Link is clickable                                                | as expected |
+|                | Link is in a different color than rest of 404 error page content | as expected |
+|                | 'Estonia Quiz' with correct URL opens up after link is clicked   | as expected |
 
 [Back to top](#contents)
 
-[Back to Testing and Validation](#testing-and-validation)      
+[Back to Testing and Validation](#testing-and-validation)
 
+### 'Error Page 500' Testing
 
-# Bug fixing
+| Tested Item    | Expected Outcome                                                 | Outcome     |
+| -------------- | ---------------------------------------------------------------- | ------------|
+| Error Page 500 | Background image is displayed behind the content                 | as expected |
+|                | 500 Error is displayed above rest of the content                 | as expected |
+|                | Text is displayed to notify user of 'Internal Server Error'      | as expected |
+|                | Options, how to fix this error, are displayed                    | as expected |
+|                | Link to access 'Estonia Quiz' is displayed                       | as expected |
+|                | Link is clickable                                                | as expected |
+|                | Link is in a different color than rest of 500 error page content | as expected |
+|                | 'Estonia Quiz' with correct URL opens up after link is clicked   | as expected |
+
+[Back to top](#contents)
+
+[Back to Testing and Validation](#testing-and-validation)
+
+# Fixed Bugs
 
 ## Favicon
 

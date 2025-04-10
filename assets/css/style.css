@@ -216,8 +216,8 @@ footer > p {
 
 .page_link {
     font-size: 2rem;
-    color: #6495ED;
     text-align: center;
+    background-color: #E6F4F1;
 }
 
 /* Media Queries - stlying for xs, s, etc learned from https://www.youtube.com/watch?v=K24lUqcT0Ms*/
