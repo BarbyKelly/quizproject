@@ -385,7 +385,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
 - Tested with Google Dev Tools, Lighthouse:
 
-  ![Lighthouse test](assets/images/readmeimg/lighthouse_test.png)
+  ![Lighthouse test](assets/images/readmeimg/lighthouse_test_opt_50.png)
 
 [Back to top](#contents)
 
