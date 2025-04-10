@@ -215,7 +215,7 @@ FAVICON
   with:
 
   - Background image of Estonian national flower, cornflower
-  - Container with: 
+  - Container including: 
     - Header
     - 'Quiz Guidelines' button
     - 'Select Quiz Level' button
@@ -236,7 +236,7 @@ FAVICON
   ![Guidelines page](assets/images/readmeimg/guidelines_page_opt_50.png)
 
   - Background image of Estonian national flower, cornflower
-  - Container with:
+  - Container including:
     - 'Back to Main Menu' button in top right corner
     - Guidelines heading
     - List of Guidelines for the player
@@ -248,7 +248,7 @@ FAVICON
   ![Select Quiz Level page](assets/images/readmeimg/select_level_page_opt_50.png)
 
   - Background image of Estonian national flower, cornflower
-  - Container with:
+  - Container including:
     - 'Back to Main Menu' button in top right corner
     - Heading: 'Select a level to begin'
     - Buttons to access different levels of quiz:
@@ -266,7 +266,7 @@ FAVICON
   ![Question page](assets/images/readmeimg/question_page_opt_50.png)
 
   - Background image of Estonian national flower, cornflower
-  - Container:
+  - Container including:
 
     - Clickable "Exit Quiz" button top right corner
     - Question count x/5
@@ -360,7 +360,7 @@ FAVICON
 - CSS
 - JavaScript
 
-![Languages used](assets/images/readmeimg/languagesused.png)
+![Languages used](assets/images/readmeimg/languages_used.png)
 
 
 [Back to top](#contents)
@@ -438,7 +438,7 @@ Developer used these sites/apps to create Estonia Quiz:
 | Tested Item | Expected Outcome                                                      | Outcome     |
 | ----------- | --------------------------------------------------------------------- | ------------|
 | Home        | Background image displayed behind the container                       | as expected |
-|             | Container is placed in the middle of the screen, all screen sizes     | as expected |
+|             | Container is placed mainly closer to top of the screen                | as expected |
 |             | Background-color of the container is #E6F4F1                        | as expected |
 |             | Header displayed on top of the container                              | as expected |
 |             | 'Quiz Guidelines' button displayed below Header                       | as expected |
@@ -490,7 +490,7 @@ Developer used these sites/apps to create Estonia Quiz:
 | Tested Item       | Expected Outcome                                                      | Outcome     |
 | ----------------- | --------------------------------------------------------------------- | ------------|
 | CSS               | Background image is displayed behind the container                    | as expected |
-|                   | Container is placed in the middle of the screen, for all screen sizes | as expected |
+|                   | Container is usually placed closer to top of the screen               | as expected |
 |                   | Guidelines heading and list are displayed inside the container        | as expected |
 |                   | 'Guidelines' heading is centered above guidelines                     | as expected |
 |                   | List of guidelines displayed                                          | as expected |
@@ -539,7 +539,7 @@ Developer used these sites/apps to create Estonia Quiz:
 |                   |                                                                                 |             |
 | Styling           | Background image displayed behind the container                                 | as expected |
 |                   | Color of the heading and quiz levels                                            | as expected |
-|                   | Container is placed in the middle of the screen, for all screen sizes           | as expected |
+|                   | Container is usually placed closer to top of the screen                         | as expected |
 |                   | Container's background color                                                    | as expected |
 |                   | Border color of the container                                                   | as expected |
 |                   | 'Select Quiz Level' heading is displayed top centre of the container            | as expected |
@@ -712,7 +712,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
 - Background-image for 404 error page was not showing. Developer removed the background-image from error-container styling, which fixed the issue
 
-  ![404 error page](assets/images/readmeimg/errorpageongithub_opt_50.png)
+  ![404 error page](assets/images/readmeimg/404_error_page_opt_50.png)
 
 [Back to top](#contents)
 
@@ -954,7 +954,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
 - Developer compared the height of gadgets which displayed Quiz page as expected:
 
-  ![Container and Footer displaying ok](assets/images/readmeimg/quiz_fitting_ok_opt_150.png)
+  ![Container and Footer displaying ok](assets/images/readmeimg/quiz_fitting_ok_opt_50.png)
 
 - versus gadgets where Container became too long, when Quiz started, and where footer was not visible, without scrolling:
 
@@ -1095,6 +1095,16 @@ Developer used these sites/apps to create Estonia Quiz:
   Once all answers change color, it's hard to tell which one was player's choice.
   Developer understands better now why some other quizzes had only one or two of the answer buttons change color:
   it made more clear if player chose the correct or incorrect answer.
+
+## Only correct answer changes color, when time is up
+
+- When Time is up, and Player didn't choose any answer, correct answer will turn green,
+  both incorrect answers remain neutral color
+
+## Container position
+
+- Container is placed closer to top of the screen than the middle of the page.
+  
 
 [Back to top](#contents)
 
