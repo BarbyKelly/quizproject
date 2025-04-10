@@ -730,7 +730,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
 [Back to top](#contents)
 
-[Back to Testing and Validation](#testing-and-validation)
+[Back to Fixed Bugs](#fixed-bugs)
 
 ## HTML error
 
@@ -742,7 +742,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
 [Back to top](#contents)
 
-[Back to Testing and Validation](#testing-and-validation)
+[Back to Fixed Bugs](#fixed-bugs)
 
 ## Color of correct/incorrect answer
 
@@ -753,7 +753,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
 [Back to top](#contents)
 
-[Back to Testing and Validation](#testing-and-validation)
+[Back to Fixed Bugs](#fixed-bugs)
 
 ## One of the questions had no correct answer
 
@@ -764,7 +764,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
 [Back to top](#contents)
 
-[Back to Testing and Validation](#testing-and-validation)
+[Back to Fixed Bugs](#fixed-bugs)
 
 ## Commented out text showing up on deployed version
 
@@ -776,7 +776,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
 [Back to top](#contents)
 
-[Back to Testing and Validation](#testing-and-validation)
+[Back to Fixed Bugs](#fixed-bugs)
 
 
 ## Error page styling
@@ -796,7 +796,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
 [Back to top](#contents)
 
-[Back to Testing and Validation](#testing-and-validation)
+[Back to Fixed Bugs](#fixed-bugs)
 
 ## HTML code lines not showing in README
 
@@ -809,7 +809,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
 [Back to top](#contents)
 
-[Back to Testing and Validation](#testing-and-validation)
+[Back to Fixed Bugs](#fixed-bugs)
 
 ## Button tag error
 
@@ -836,9 +836,9 @@ Developer used these sites/apps to create Estonia Quiz:
 
 [Back to top](#contents)
 
-[Back to Testing and Validation](#testing-and-validation)
+[Back to Fixed Bugs](#fixed-bugs)
 
-### js version error
+## js version error
 
 - After fixing html error, Developer used [jshint.com](https://jshint.com/) to validate js files. And lots of errors where shown as: "...available in ES6(use     'esversion:6'):
 
@@ -878,7 +878,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
 [Back to top](#contents)
 
-[Back to Testing and Validation](#testing-and-validation)
+[Back to Fixed Bugs](#fixed-bugs)
 
 ## Const and function wording not matching
 
@@ -892,7 +892,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
 [Back to top](#contents)
 
-[Back to Testing and Validation](#testing-and-validation)
+[Back to Fixed Bugs](#fixed-bugs)
 
 ## Uncaught Syntax Error: brackets missing
 
@@ -910,9 +910,9 @@ Developer used these sites/apps to create Estonia Quiz:
 
 [Back to top](#contents)
 
-[Back to Testing and Validation](#testing-and-validation)
+[Back to Fixed Bugs](#fixed-bugs)
 
- ## Uncaught SyntaxError: Unexpected token
+## Uncaught SyntaxError: Unexpected token
 
   - After brackets were fixed, script.js line 289 showed an error:
 
@@ -920,10 +920,10 @@ Developer used these sites/apps to create Estonia Quiz:
 
 [Back to top](#contents)
 
-[Back to Testing and Validation](#testing-and-validation)
+[Back to Fixed Bugs](#fixed-bugs)
 
 
-  ## Uncaught TypeError: Cannot read properties of null (reading 'classList')
+## Uncaught TypeError: Cannot read properties of null (reading 'classList')
 
   - Next, when inspecting the page after clicking on 'Guidelines' button, Uncaught TypeError: Cannot read properties of null (reading 'classList')
     Error showed up for line 46 script.js:
@@ -944,7 +944,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
 [Back to top](#contents)
 
-[Back to Testing and Validation](#testing-and-validation)
+[Back to Fixed Bugs](#fixed-bugs)
 
 ## Nothing happened when clicked on 'Choose Your Quiz Level' Button
 
@@ -973,7 +973,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
 [Back to top](#contents)
 
-[Back to Testing and Validation](#testing-and-validation)
+[Back to Fixed Bugs](#fixed-bugs)
 
 ## No container displayed, when clicked on "Main Menu" after quiz ended:
 
@@ -999,7 +999,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
 [Back to top](#contents)
 
-[Back to Testing and Validation](#testing-and-validation)
+[Back to Fixed Bugs](#fixed-bugs)
 
 ## Footer Blue Background
 
@@ -1026,6 +1026,8 @@ Developer used these sites/apps to create Estonia Quiz:
 - Background image was now displayed for all screen sizes
 
 [Back to top](#contents)
+
+[Back to Fixed Bugs](#fixed-bugs)
 
 ## Part of the Container and Footer not displayed, without scrolling for certain screen sizes
 
@@ -1054,6 +1056,10 @@ Developer used these sites/apps to create Estonia Quiz:
 - As a result, Container and Footer fitted on all screen sizes, without needing to scroll:
 
   ![Fitted ok](assets/images/readmeimg/quiz_fits_ok_opt_100.png)
+
+[Back to top](#contents)
+
+[Back to Fixed Bugs](#fixed-bugs)
 
 ## Error, 'undefined' if score: 0
 
@@ -1092,6 +1098,10 @@ Developer used these sites/apps to create Estonia Quiz:
 
   ![Zero score works](assets/images/readmeimg/zero_score_works.png)
 
+[Back to top](#contents)
+
+[Back to Fixed Bugs](#fixed-bugs)
+
 ## 'Object HTMLSpanElement' - 2nd error for Zero Score
 
 - Developer was able to recreate 2nd error for Zero Score:
@@ -1129,6 +1139,10 @@ Developer used these sites/apps to create Estonia Quiz:
 
   ![Final Score worked ok](assets/images/readmeimg/final_score_zero_fixed_opt_50.png)
 
+[Back to top](#contents)
+
+[Back to Fixed Bugs](#fixed-bugs)
+
 ## Selected incorrect answer turned red, while the other incorrect answer didn't change color (CheckQuizAnswer function)
 
   - If player chose incorrect answer, that answer turned red, and the other incorrect answer remained neutral color,
@@ -1151,6 +1165,10 @@ Developer used these sites/apps to create Estonia Quiz:
 
     ![Both incorrect answers turned red](assets/images/readmeimg/both_incorrect_red_opt_100.png)
 
+[Back to top](#contents)
+
+[Back to Fixed Bugs](#fixed-bugs)
+
 ## Final score is displaying incorrect result
 
 - Developer tested Final Score result, and Final Score was 1/5 or 2/5,
@@ -1163,9 +1181,24 @@ Developer used these sites/apps to create Estonia Quiz:
 
   and Final Score once again reflected the actual score
 
+
+## Container position
+
+- Developer tried a few times to fix Container position, to have it closer to center,
+  only to face more errors, as previous Container styling did not match flex styling eg
+  close_modal buttons ended up being outside of the Container, as they had still
+  ```
+  position: absolute;
+  ```
+
+  ![Button out of container](assets/images/readmeimg/button-out-of-container_opt_50.png)
+
+- With Tutor Rebecca's guidance Developer managed to position Container closer to center of the page,
+  and adjust styling so that close_modals were back inside Container
+
 [Back to top](#contents)
 
-[Back to Testing and Validation](#testing-and-validation)
+[Back to Fixed Bugs](#fixed-bugs)
   
 # Known Bugs
 
@@ -1179,12 +1212,7 @@ Developer used these sites/apps to create Estonia Quiz:
 ## Only correct answer changes color, when time is up
 
 - When Time is up, and Player didn't choose any answer, correct answer will turn green,
-  both incorrect answers remain neutral color
-
-## Container position
-
-- Container is placed closer to top of the screen than the middle of the page.
-  
+  both incorrect answers remain neutral color 
 
 [Back to top](#contents)
 

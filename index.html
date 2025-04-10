@@ -34,19 +34,10 @@
     <!-- Guidelines modal -->
     
     <div id="guidelines" class="container hide">
-        <div class="guidelines_top" style="
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            width: 100%;">
-            <button id="close_guidelines" class="close_modal" style="
-                width: 30%;">
-                Back to<br/> Main Menu</button>
-            <h2 id="guidelines_heading" style="
-                align-items: center;
-                width: 100%;">
-            Guidelines</h2>
+        <div id="guidelines_top">
+            <button id="close_guidelines" class="close_modal">Back to<br/>Main Menu</button>
         </div>
+            <h2 id="guidelines_heading">Guidelines</h2>
         <ul>
             <li>Each Quiz has 5 random questions</li>
             <li>15 seconds to select your answer</li>
@@ -59,19 +50,10 @@
     <!-- Prompt with Quiz Levels -->
     
     <div id="level_prompt" class="container hide">
-        <div class="select_quiz_level_top" style="
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            width: 100%;">
-            <button id="close_level" class="close_modal" style="
-                width: 30%;">
-                Back to<br/> Main Menu</button>
-            <h2 style="
-                align-items: center;
-                width: 100%;">
-                Select Quiz Level</h2>
+        <div id="select_quiz_level_top">
+            <button id="close_level" class="close_modal">Back to<br/> Main Menu</button>
         </div>
+            <h2>Select Quiz Level</h2>
         <div>
             <button id="beginner" class="btn level_option">Beginner</button>
             <button id="intermediate" class="btn level_option">Intermediate</button>
@@ -82,14 +64,8 @@
     <!-- Quiz section -->
 
     <div id="quiz_section" class="container hide">
-        <div class="exit_quiz_top" style="
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            width: 100%;">
-            <button id="exit_quiz" class="close_modal" style="
-                width: 30%;">
-                Exit Quiz</button>
+        <div class="exit_quiz_top">
+            <button id="exit_quiz" class="close_modal">Exit Quiz</button>
         </div>
 
         <!-- Quiz Questions section with timer -->
@@ -102,8 +78,10 @@
         <!-- Answers container, and score display -->
         
         <div id="answers_section"></div>
-        <button id="next_question_button" class="btn hide">Next</button>
-        <p>Score: <span id="quiz_score">0/5</span></p>
+        <div>
+            <button id="next_question_button" class="btn hide">Next</button>
+                <p>Score: <span id="quiz_score">0/5</span></p>
+        </div>
     </div>
 
         <!-- Final score message for finished quiz, all levels -->

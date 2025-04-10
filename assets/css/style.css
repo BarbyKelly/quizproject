@@ -1,4 +1,4 @@
-/* CSS learned from: "The Everything Quiz": https://github.com/Tony118g/the-everything-quiz/blob/main/assets/css/style.css */
+/* Base for CSS learned from: "The Everything Quiz": https://github.com/Tony118g/the-everything-quiz/blob/main/assets/css/style.css */
 /* Google Fonts link */
 
 @import url('https://fonts.googleapis.com/css?family=Raleway%7CRighteous');
@@ -25,7 +25,7 @@ body {
     text-align: center;    
 }
 
-/* Headings styling */
+/* Styling of Headings */
 
 h1 {
     font-size: 2.5rem;
@@ -35,7 +35,8 @@ h1 {
 
 h2 {
     font-size: 2.8rem;
-    /*margin-top: 13px;*/
+    align-items: center;
+    width: 100%;
     padding: 5px;
     font-weight: bold;
     color: #8090BC;
@@ -63,8 +64,8 @@ p {
     font-weight: bold;
     background-color: #8090BC;
     display: block;
-    padding: 15px;
-    width: 65%;
+    padding: 10px;
+    width: 60%;
     min-width: 165px;
     margin: 15px;
     font-family: comfortaa, sans-serif;
@@ -77,9 +78,11 @@ p {
 /* Buttons to close Modals, styling */
 
 .close_modal {
+    align-items: flex-end;
     top: 7px;
     text-wrap: wrap;
     right: 1px;
+    width: 20%;
     background-color: #8090BC;
     font-size: 0.7rem;
     color: #FFFFFF;
@@ -127,24 +130,19 @@ p {
 #quiz_finish {
     margin: auto;
 }
+ 
+/* Guidelines styling */
 
-/* #guidelines {
-    margin: auto
+#guidelines_top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
 }
 
-#level_prompt {
-    margin: auto;
+#close_guidelines {
+    width: 20%;
 }
-
- {
-    margin: auto;
-}
-
- {
-    margin: auto;
-}
-*/ 
-/* Guidelines modal styling */
 
 #guidelines_heading {
     font-size: 2rem;
@@ -165,6 +163,21 @@ li {
 
 .hide {
     display: none;
+}
+
+/* 'Select Quiz Levels' top styling */
+
+#select_quiz_level_top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+
+/* Close 'Select Quiz Levels' page, btn styling */
+
+#close_level {
+    width: 30%;
 }
 
 /* Styling for correct and incorrect answer buttons */
@@ -190,6 +203,20 @@ li {
 
 .no-pointer {
     pointer-events: none;
+}
+
+/* Exit Quiz button styling */
+
+.exit_quiz_top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+
+#exit_quiz {
+    width: 25%;
+    font-size: 1rem;
 }
 
 /* Footer styling */
@@ -224,6 +251,8 @@ footer > p {
     box-shadow: 0px 0px 10px 5px #8090BC;
 }
 
+/* Styling for Error Pages */
+
 .error_page_title {
     color: #6495ED;
     text-align: center;
@@ -246,7 +275,7 @@ footer > p {
     background-color: #E6F4F1;
 }
 
-/* Media Queries - styling for xs, s, etc learned from https://www.youtube.com/watch?v=K24lUqcT0Ms*/
+/* Media Queries - styling for XS, S, M etc learned from https://www.youtube.com/watch?v=K24lUqcT0Ms*/
 
 /* Media Queries for 'XXXS' screens */
 @media (max-width: 320px) {
@@ -263,7 +292,6 @@ footer > p {
 @media (min-width: 320px) {
     .container {
         max-width: 300px;
-       /* max-height: min-content;*/
     }
 
     h1 {
