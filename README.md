@@ -678,6 +678,8 @@ Developer used these sites/apps to create Estonia Quiz:
 
 ### 'Error Page 404' Testing
 
+![Error Page 404](assets/images/readmeimg/error_page_404_opt_50.png)
+
 | Tested Item    | Expected Outcome                                                 | Outcome     |
 | -------------- | ---------------------------------------------------------------- | ------------|
 | Error Page 404 | Background image is displayed behind the content                 | as expected |
@@ -687,6 +689,7 @@ Developer used these sites/apps to create Estonia Quiz:
 |                | Link to access 'Estonia Quiz' is displayed                       | as expected |
 |                | Link is clickable                                                | as expected |
 |                | Link is in a different color than rest of 404 error page content | as expected |
+|                | Background color behind the link is displayed                    | as expected |
 |                | 'Estonia Quiz' with correct URL opens up after link is clicked   | as expected |
 
 [Back to top](#contents)
@@ -694,6 +697,8 @@ Developer used these sites/apps to create Estonia Quiz:
 [Back to Testing and Validation](#testing-and-validation)
 
 ### 'Error Page 500' Testing
+
+
 
 | Tested Item    | Expected Outcome                                                 | Outcome     |
 | -------------- | ---------------------------------------------------------------- | ------------|
@@ -704,6 +709,7 @@ Developer used these sites/apps to create Estonia Quiz:
 |                | Link to access 'Estonia Quiz' is displayed                       | as expected |
 |                | Link is clickable                                                | as expected |
 |                | Link is in a different color than rest of 500 error page content | as expected |
+|                | Background color behind the link is displayed                    | as expected |
 |                | 'Estonia Quiz' with correct URL opens up after link is clicked   | as expected |
 
 [Back to top](#contents)
