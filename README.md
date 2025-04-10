@@ -698,7 +698,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
 ### 'Error Page 500' Testing
 
-
+![Error Page 500](assets/images/readmeimg/error_page_500_opt_50.png)
 
 | Tested Item    | Expected Outcome                                                 | Outcome     |
 | -------------- | ---------------------------------------------------------------- | ------------|

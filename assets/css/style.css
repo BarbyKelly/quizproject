@@ -35,7 +35,7 @@ h1 {
 
 h2 {
     font-size: 2.8rem;
-    margin-top: 13px;
+    /*margin-top: 13px;*/
     padding: 5px;
     font-weight: bold;
     color: #8090BC;
@@ -77,15 +77,13 @@ p {
 /* Buttons to close Modals, styling */
 
 .close_modal {
-    position: absolute;
     top: 7px;
     text-wrap: wrap;
-    right: 15px;
-    padding: 3px;
+    right: 1px;
     background-color: #8090BC;
     font-size: 0.7rem;
     color: #FFFFFF;
-    border: none;
+    border: 0.5px;
     border-radius: 15px;
     font-family: comfortaa, sans-serif;
 }
@@ -106,23 +104,51 @@ p {
 /* Container styling (learned extra from https://www.youtube.com/watch?v=K24lUqcT0Ms */
 
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
     width: 90%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
     background-color: #E6F4F1;
     max-width: 400px;
-    margin-top: 40px;
     padding: 20px;
     border: 0.5rem solid #7189cb; /* tone color variation from: https://www.colorhexa.com/8090bc */
     border-radius: 15px;
 }
 
+#main_menu,
+#guidelines,
+#level_prompt,
+#quiz_section,
+#quiz_finish {
+    margin: auto;
+}
+
+/* #guidelines {
+    margin: auto
+}
+
+#level_prompt {
+    margin: auto;
+}
+
+ {
+    margin: auto;
+}
+
+ {
+    margin: auto;
+}
+*/ 
 /* Guidelines modal styling */
 
 #guidelines_heading {
     font-size: 2rem;
+    padding-left: 1px;
     color: #8090BC;
 }
 
@@ -160,7 +186,7 @@ li {
     background-color: #FFFFFF
 }
 
-/* Styling to prevent clicks in the Answer section when the no-pointer class is applied */
+/* Styling to prevent clicks in the Answer section when no-pointer class is applied */
 
 .no-pointer {
     pointer-events: none;
@@ -220,7 +246,7 @@ footer > p {
     background-color: #E6F4F1;
 }
 
-/* Media Queries - stlying for xs, s, etc learned from https://www.youtube.com/watch?v=K24lUqcT0Ms*/
+/* Media Queries - styling for xs, s, etc learned from https://www.youtube.com/watch?v=K24lUqcT0Ms*/
 
 /* Media Queries for 'XXXS' screens */
 @media (max-width: 320px) {
