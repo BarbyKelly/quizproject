@@ -231,6 +231,8 @@ FAVICON
 
 [Back to top](#contents)
 
+[Back to Features](#features)
+
 ### Favicon icon:
 
   Visible at all times on the tab, while Estonia Quiz site is open:
@@ -238,6 +240,8 @@ FAVICON
   ![Favicon](assets/images/readmeimg/favicon.png)
 
 [Back to top](#contents)
+
+[Back to Features](#features)
 
 ### Guidelines page:
 
@@ -250,6 +254,8 @@ FAVICON
     - List of Guidelines for the player
 
 [Back to top](#contents)
+
+[Back to Features](#features)
 
 ### Select Quiz Level page:
 
@@ -265,6 +271,8 @@ FAVICON
         - Expert
 
 [Back to top](#contents)
+
+[Back to Features](#features)
 
 ### Question page:
 
@@ -290,7 +298,10 @@ FAVICON
 
     - Player can click on any of the answer buttons
     - Correct answer will turn green when player clicks on the correct answer,
-      and both incorrect answers turn red
+      and both incorrect answers turn red:
+
+      ![Correct vs Incorrect](assets/images/readmeimg/correct_green_incorrect_red_opt_50.png)
+
     - When player chooses incorrect answer:
       - player's chosen answer will turn red,
       - correct answer will turn green, and
@@ -337,6 +348,36 @@ FAVICON
 
 [Back to top](#contents)
 
+[Back to Features](#features)
+
+### 'End of Quiz' Page
+
+- 'End of Quiz' page is displayed when Player clicks 'Next' after final question:
+
+  ![End of Quiz page](assets/images/readmeimg/end_of_quiz_opt_50.png)
+
+- If player opts for 'Exit Quiz' before all 5 questions are done,
+  then 'End of Quiz' page won't be displayed,
+  and Player returns to Home Page
+
+- 'End of Quiz!' text is displayed above rest of the container contents
+- 'Final Score x/5' is displayed below 'End of Quiz!'
+- 'Play Again' button is displayed below the Final Score:
+  - Clicking on this button brings player back to 'Select Quiz Level' page,
+    where played has on option:
+    - to choose the same or different Quiz Level,
+    - or to click on 'Back to Main Menu',
+    - which would return player back to 'Main Menu'
+
+- 'Main Menu' button is displayed below 'Play Again' button
+  - Clicking on this button brings player back to 'Main Menu', where player can choose to:
+    - Click on 'Quiz Guidelines', or
+    - Click on 'Select Quiz Level'
+
+[Back to top](#contents)
+
+[Back to Features](#features)
+
 ## Future Features
 
 - Player can choose how many questions they want to answer per game
@@ -358,9 +399,11 @@ FAVICON
 - Player can fill in suggestion box, what kind of questions could be added to quiz, 
   and players can be created beside their suggested questions
   (Developer would confirm validity and relevance of the questions and answers before they are made public)
+- Displaying the name of the chosen Quiz Level, throughout the Quiz
 
 [Back to top](#contents)
 
+[Back to Features](#features)
 
 # Languages Used
 
@@ -1250,7 +1293,26 @@ Developer used these sites/apps to create Estonia Quiz:
 ## Only correct answer changes color, when time is up
 
 - When Time is up, and Player didn't choose any answer, correct answer will turn green,
-  both incorrect answers remain neutral color 
+  both incorrect answers remain neutral color
+
+## 'Object HTML Span Element' error, again
+
+  ![Object HTML Span Element error, again](assets/images/readmeimg/html-object-error_again_opt_50.png)
+
+  - Developer fixed this error twice, once with tutor's help (script.js fix) and next time by herself, editing Final Score in index.html,
+    and in CSS.
+  
+  - After both times, Final Score displayed ok, even if score was 0 (which previously had thrown this HTML Span element error)
+
+  - Developer decided to do one final testing, with all of the quiz levels, to see if Final Score Zero still works ok, 
+    and sometimes Final Score 0/5 displayed ok, and sometimes not.
+  - Developer tested localhost and deployed site, both had the same error with 0 Score:
+    - With any Quiz Level,
+    - And sometimes 0 Score was displayed as expected: 0/5,
+    - When allowed Timer to run out for each question, and had not refreshed the page, same error
+  - When Developer refreshed page after Quiz, this error didn't seem to happen for the next quiz,
+    but would happen for the following Quiz, if page was not refreshed again
+  
 
 [Back to top](#contents)
 
@@ -1296,9 +1358,9 @@ Developer used these sites/apps to create Estonia Quiz:
 [Back to top](#contents)
 
 
-## Credits
+# Credits
 
-### Favicon 
+## Favicon 
 
 - Favicon created using [favicon converter](https://favicon.io/favicon-converter/)
 
@@ -1325,7 +1387,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
 [Back to top](#contents)
 
-### README
+## README
 
 - Parts of the README template used from [Code Institute's Sample README](https://github.com/Code-Institute-Solutions/SampleREADME?tab=readme-ov-file) 
 
@@ -1335,7 +1397,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
 [Back to top](#contents)
 
-### Code
+## Code
 
 - At the start Developer followed code for Estonia quiz from [Build A Quiz App With JavaScript](https://youtu.be/riDzcEQbX6k?feature=shared).
   Then tried to learn quiz code from Web Dev Simplified's quiz.
@@ -1351,7 +1413,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
 [Back to top](#contents)
 
-### Questions
+## Questions
 
 - All of the questions created by the developer, from her own experience, her own knowledge or researching updated information eg population details. 
 
@@ -1400,7 +1462,7 @@ Developer used these sites/apps to create Estonia Quiz:
 - To hear numbers in Estonian, visitor can watch this [Youtube video](https://youtube.com/shorts/y2RQWWda-Nc?feature=shared)
 
 
-### Images 
+## Images 
 
 - Website's background image, with cornflower, taken by the developer. For developer usin image with a Cornflower was meaningful, as it's Quiz about Estonia,
   and Cornflower is Estonia-n national flower.
@@ -1409,14 +1471,14 @@ Developer used these sites/apps to create Estonia Quiz:
 
 [Back to top](#contents)
 
-#### Resized Images
+## Resized Images
 
 - Developer used [Simple image resizer](https://www.simpleimageresizer.com/) to reduce README images
 - Developer marked all resized images with 'opt_50' or 'opt_100'
 
 [Back to top](#contents)
 
-### Error pages
+## Error pages
 
 - Developer created Error pages by following code from [this article](https://www.geeksforgeeks.org/create-a-404-page-using-html-and-css/)
 
@@ -1424,13 +1486,18 @@ Developer used these sites/apps to create Estonia Quiz:
 
 [Back to top](#contents)
 
-### Am I Responsive image
+## Am I Responsive image
 
 - Created with [Am I Responsive]( https://ui.dev/amiresponsive)
 
+## Color Contrast Testing
+
+- Thanks to Lighthouse Testing, Developer found out about [Deque University](https://dequeuniversity.com/rules/axe/4.10/color-contrast) to test Color Contrast,
+  and improve her Quiz page
+
 [Back to top](#contents)
 
-## Acknowledgements
+# Acknowledgements
 
 - Code for the Final version of Estonia Quiz, learned from: [The Everything Quiz](https://tony118g.github.io/the-everything-quiz/) . Developer liked the layout and functionality of The Everything Quiz.
 

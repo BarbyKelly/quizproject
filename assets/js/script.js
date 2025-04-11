@@ -1,6 +1,6 @@
 //jshint esversion: 8
 
-// script.js final version - most of the code for js learned from: [The Everything Quiz](https://github.com/Tony118g/the-everything-quiz/blob/main/assets/js/script.js)
+// script.js final version - most of the code for this project, learned from: [The Everything Quiz](https://github.com/Tony118g/the-everything-quiz/blob/main/assets/js/script.js)
 
 // Const Variables (Variables with consistent value)
 
@@ -60,7 +60,6 @@ function closeGuidelines() {
 // Display Levels Menu while hiding Main Menu
 
 function quizLevelPrompt() {
-
    const closeLevelButton = document.getElementById("close_level");
    closeLevelButton.addEventListener("click", closeLevelMenu);
 
