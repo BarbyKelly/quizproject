@@ -215,7 +215,7 @@ Returning user may want to:
 
 - Developer chose Comfortaa as the main Font style
 
-  ![Comfortaa](assets/images/readmeimg/comfortaareadme.png) 
+  ![Comfortaa](assets/images/readmeimg/comfortaa_font_readme.png) 
 
 [Back to top](#contents)
 
@@ -407,6 +407,7 @@ Returning user may want to:
   and players can be created beside their suggested questions
   (Developer would confirm validity and relevance of the questions and answers before they are made public)
 - Displaying the name of the chosen Quiz Level, throughout the Quiz
+- Next Question comes up once previous question has been answered or Time is up, and answer has been revealed
 
 [Back to top](#contents)
 
@@ -418,7 +419,7 @@ Returning user may want to:
 - CSS
 - JavaScript
 
-![Languages used](assets/images/readmeimg/languages_used.png)
+![Languages used](assets/images/readmeimg/languages_quiz_project.png)
 
 
 [Back to top](#contents)
@@ -1380,7 +1381,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
 [Back to top](#contents)
 
-## Deployment
+# Deployment
 
 - Click on Github project that you wish to deploy
 - Go to Settings (menu at the top)
@@ -1549,6 +1550,8 @@ Developer used these sites/apps to create Estonia Quiz:
 
 - Grateful to Cohort Facilitators, Laura Mayock and Kristyna, for weekly group meetings and guidance, encouraging students to show and talk about their projects.
   And to everyone who took part of those group meetings, shared their projects.
+
+- Developer appreciates help, support provided by Code Institute's Student Care, especially Kim, for understanding, and caring.
 
 - Thankful to tutors and their patience, guiding Developer to figure out the next steps, sharing info about the correct version of software, and helping Developer learn more.
 
