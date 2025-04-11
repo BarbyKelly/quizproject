@@ -24,7 +24,8 @@ to show how website looks on different screen sizes:
 [Wireframes](#wireframes)
 
 [Design](#design)
-  - [Images](#images)
+  - [Background-Image](#background-image)
+  - [Favicon](#favicon)
   - [Color](#color)
   - [Font/Style](#fontstyle)
 
@@ -97,7 +98,7 @@ First time user, may:
 - Learn something new about Estonia
 - Click on 'Quiz Guidelines' button
 - Read Guidelines on 'Guidelines' page
-- Click on 'Back to Main Menu' button to return to Main menu from 'Guidelines' page
+- Click on 'Back to Main Menu' button to return to Main menu
 
 - Click on 'Select Quiz Level' button
 - Choose Level for the Quiz
@@ -169,9 +170,7 @@ Returning user may want to:
 
 # Design
 
-## Images
-
-FAVICON
+## Background Image
 
 - Developer used an image of a cornflower (Estonian national flower), from her own collection, to create a Favicon.
 
@@ -179,11 +178,15 @@ FAVICON
 
   ![cornflower](assets/images/cornflower.jpg)
 
+[Back to top](#contents)
 
-  [Favicon.io](https://favicon.io/favicon-converter/) helped to convert the image into Favicon:
+## Favicon
 
+- To convert image into Favicon, Developer used:
 
-- Screenshot of favicon on the website:
+  [Favicon.io](https://favicon.io/favicon-converter/)
+
+- Screenshot of Favicon on the website:
 
   ![cornflower favicon image](assets/images/readmeimg/faviconreadme.png)
 
@@ -201,6 +204,10 @@ FAVICON
 - Developer checked [Colorhexa.com website]( https://www.colorhexa.com/8090bc) to find a suitable tone color variation for container border
 
 - Developer looked for a darker color to support #7189cb, and found #405eaf from [colorhexa.com](https://www.colorhexa.com/7189cb)
+
+- Before submission, testing Site with Lighthouse, Developer changed colors used for Estonia Quiz, to improve color contrast:
+
+  [Color Contrast Testing here](#color-contrast)
 
 [Back to top](#contents)
 
