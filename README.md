@@ -318,7 +318,7 @@ FAVICON
       - 'Timer: 0' is displayed
       - Pop up appears: "barbykelly.github.io says 'Time is up!'", with "OK" button to click on, to close the pop-up:
 
-        ![Pop up "Time is Up!"](assets/images/readmeimg/pop_up_time_is_up_opt_100.png)
+        ![Pop up "Time is Up!"](assets/images/readmeimg/pop_up_time_is_up_opt_50.png)
 
       - 'Question x/5' is displayed on the left of the Timer
       - Question and answer options are displayed
@@ -393,7 +393,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
 - Tested with Google Dev Tools, Lighthouse:
 
-  ![Lighthouse test](assets/images/readmeimg/lighthouse_test_opt_50.png)
+  ![Lighthouse test](assets/images/readmeimg/lighthouse_test_final_opt_50.png)
 
 [Back to top](#contents)
 
@@ -446,7 +446,7 @@ Developer used these sites/apps to create Estonia Quiz:
 | Tested Item | Expected Outcome                                                      | Outcome     |
 | ----------- | --------------------------------------------------------------------- | ------------|
 | Home        | Background image displayed behind the container                       | as expected |
-|             | Container is placed mainly closer to top of the screen                | as expected |
+|             | Container is placed near centre of the screen                         | as expected |
 |             | Background-color of the container is #E6F4F1                        | as expected |
 |             | Header displayed on top of the container                              | as expected |
 |             | 'Quiz Guidelines' button displayed below Header                       | as expected |
@@ -479,7 +479,7 @@ Developer used these sites/apps to create Estonia Quiz:
 | Tested Item            | Expected Outcome                                                     | Outcome     |
 | ---------------------- | -------------------------------------------------------------------- | ----------- |
 | Quiz Guidelines Button | Button is clickable                                                  | as expected |
-|                        | Color of the botton is #394A6F                                     | as expected |
+|                        | Color of the button is #394A6F                                     | as expected |
 |                        | Text-color is #FFFFFF                                              | as expected |
 |                        | Button is inside the container                                       | as expected |
 |                        | 'Quiz Guidelines' button is displayed below 'Estonia Quiz', and      | as expected |
@@ -498,7 +498,7 @@ Developer used these sites/apps to create Estonia Quiz:
 | Tested Item       | Expected Outcome                                                      | Outcome     |
 | ----------------- | --------------------------------------------------------------------- | ------------|
 | CSS               | Background image is displayed behind the container                    | as expected |
-|                   | Container is usually placed closer to top of the screen               | as expected |
+|                   | Container is displayed near centre of the screen                      | as expected |
 |                   | Guidelines heading and list are displayed inside the container        | as expected |
 |                   | 'Guidelines' heading is centered above guidelines                     | as expected |
 |                   | List of guidelines displayed                                          | as expected |
@@ -524,7 +524,7 @@ Developer used these sites/apps to create Estonia Quiz:
 | Tested Item                | Expected Outcome                                                    | Outcome     |
 | -------------------------- | ------------------------------------------------------------------- | ----------- |
 | 'Select Quiz Level' Button | Button is clickable                                                 | as expected |
-|                            | Color of the botton is #394A6F                                    | as expected |
+|                            | Color of the button is #394A6F                                    | as expected |
 |                            | Text-color is #FFFFFF                                             | as expected |
 |                            | Button is inside the container                                      | as expected |
 |                            | 'Select Quiz Level' button is displayed below 'Estonia Quiz', and   | as expected |
@@ -547,7 +547,7 @@ Developer used these sites/apps to create Estonia Quiz:
 |                   |                                                                                 |             |
 | Styling           | Background image displayed behind the container                                 | as expected |
 |                   | Color of the heading and quiz levels                                            | as expected |
-|                   | Container is usually placed closer to top of the screen                         | as expected |
+|                   | Container is usually displayed close to the centre of the screen                | as expected |
 |                   | Container's background color                                                    | as expected |
 |                   | Border color of the container                                                   | as expected |
 |                   | 'Select Quiz Level' heading is displayed top centre of the container            | as expected |
@@ -1068,7 +1068,7 @@ Developer used these sites/apps to create Estonia Quiz:
 
 - Developer had not tested quiz with zero score. Grateful to Matthew J for finding and highlighting this bug.
 
-- Developer recreated 'underfined score: 0 error' to inspect it:
+- Developer recreated 'undefined score: 0 error' to inspect it:
 
   ![Undefined, score:0 error ](assets/images/readmeimg/undefined_score.png)
 
@@ -1182,11 +1182,12 @@ Developer used these sites/apps to create Estonia Quiz:
   and Final Score once again reflected the actual score
 
 
-## Container position
+## Container Position
 
-- Developer tried a few times to fix Container position, to have it closer to center,
+- Developer tried a few times to fix Container's position, to have it closer to center,
   only to face more errors, as previous Container styling did not match flex styling eg
   close_modal buttons ended up being outside of the Container, as they had still
+
   ```
   position: absolute;
   ```
@@ -1195,6 +1196,43 @@ Developer used these sites/apps to create Estonia Quiz:
 
 - With Tutor Rebecca's guidance Developer managed to position Container closer to center of the page,
   and adjust styling so that close_modals were back inside Container
+
+[Back to top](#contents)
+
+[Back to Fixed Bugs](#fixed-bugs)
+
+## Color Contrast
+
+- Previous Lighthouse test highlighted contrast issues:
+
+  ![Contrast Suggestions](assets/images/readmeimg/contrast_suggestions.png)
+
+- Developer checked out link in Lighthouse:
+
+  [Deque University](https://dequeuniversity.com/rules/axe/4.10/color-contrast)
+
+- And she tested colors and background-colors of Estonia Quiz with [Deque University](https://dequeuniversity.com/rules/axe/4.10/color-contrast):
+
+  ![Color Contrast test](assets/images/readmeimg/deque_color_contrast_at_the_start_opt_50.png)
+
+- Developer adjusted the colors, to see which combination would pass,
+  while keeping background-color the same:
+
+  ![Color Contrast that was ok](assets/images/readmeimg/suitable_color_contrast.png)
+
+- Developer updated colors of Estonia Quiz, based on this Color Contrast Test
+
+- She did another Lighthouse test with new color contrast, and passed all with 100.
+
+- Developer learned the importance of color contrast, how big impact it can have
+
+- Estonia Quiz before color contrast fix:
+
+  ![Previous color combination](assets/images/readmeimg/previous_color_combination.png)
+
+- Estonia Quiz after color contrast fix:
+
+  ![Color Contrast after fix](assets/images/readmeimg/color_contrast_after_fix.png)
 
 [Back to top](#contents)
 
@@ -1264,14 +1302,16 @@ Developer used these sites/apps to create Estonia Quiz:
 
 - Favicon created using [favicon converter](https://favicon.io/favicon-converter/)
 
-- These 3 lines of code, for favicon, were copied from [Code Institute's 'Love Running' Walk-Through](https://github.com/Code-Institute-Solutions/Love-Running-Solutions)
-- ```
+- These 3 lines of code, for favicon, were copied from [Code Institute's 'Love Running' Walk-Through](https://github.com/Code-Institute-Solutions/Love-Running-Solutions):
+
+  ```
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
   ```
 
 - This line of code:
+
   ```
   <link rel="manifest" href="/site.webmanifest"> 
   ```
