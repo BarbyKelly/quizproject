@@ -180,7 +180,6 @@ function displayContent(question) {
       button.addEventListener("click", checkQuizAnswer);
       answersSection.appendChild(button);
    });
-
    displayQuizQuestionNumber();
 }
 
@@ -249,7 +248,7 @@ function checkQuizAnswer(event) {
             button.classList.add("incorrect_answer");
       }
       });
-
+   
    nextQuestionButton.classList.remove("hide");
 }
 
@@ -260,7 +259,6 @@ nextQuestionButton.addEventListener("click", nextQuestion);
 // Function to get and increment quiz score
 
 function incrementQuizScore() {
-   quizScore = parseInt(document.getElementById("quiz_score").innerText);
    document.getElementById("quiz_score").innerText = ++quizScore;
 }
 
@@ -309,6 +307,7 @@ function finalScoreResult() {
 // Function to reset quiz score
 
 function resetQuizScore() {
-   quizScore = document.getElementById("quiz_score");
-   quizScore.innerText = 0;
+   document.getElementById("quiz_score").innerText = 0;
+   quizScore = document.getElementById("quiz_score").innerText;
+   quizScore = 0;
 }

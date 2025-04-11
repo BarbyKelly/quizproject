@@ -1277,24 +1277,6 @@ Developer used these sites/apps to create Estonia Quiz:
 
   ![Color Contrast after fix](assets/images/readmeimg/color_contrast_after_fix.png)
 
-[Back to top](#contents)
-
-[Back to Fixed Bugs](#fixed-bugs)
-  
-# Known Bugs
-
-## No clear indication of chosen answer, when correct/incorrect results are displayed
-
-- It would be helpful if player's chosen answer remained different, so player knows that was their chosen answer.
-  Once all answers change color, it's hard to tell which one was player's choice.
-  Developer understands better now why some other quizzes had only one or two of the answer buttons change color:
-  it made more clear if player chose the correct or incorrect answer.
-
-## Only correct answer changes color, when time is up
-
-- When Time is up, and Player didn't choose any answer, correct answer will turn green,
-  both incorrect answers remain neutral color
-
 ## 'Object HTML Span Element' error, again
 
   ![Object HTML Span Element error, again](assets/images/readmeimg/html-object-error_again_opt_50.png)
@@ -1313,6 +1295,54 @@ Developer used these sites/apps to create Estonia Quiz:
   - When Developer refreshed page after Quiz, this error didn't seem to happen for the next quiz,
     but would happen for the following Quiz, if page was not refreshed again
   
+  - Tutor helped to fix the error. Instead of:
+
+  ```
+  function resetQuizScore() {
+    quizScore = document.getElementById("quiz_score");
+    quizScore.innerText = 0;
+  }
+  ```
+
+  - Changed if for:
+
+  ```
+  function resetQuizScore() {
+    quizScore = document.getElementById("quiz_score").innerText;
+    quizScore = 0;
+  }
+  ```
+
+  - This fix resulted in Score from previous Quiz showing up as start of the Quiz Score for the next quiz,
+    if page wasn't refreshed:
+
+    ![Score over 5](assets/images/readmeimg/question-five.png)
+  
+  - Tutor helped to figure out this error. Error before and after:
+  
+    [Score Error fix](assets/images/readmeimg/reset_quiz_score_error_fix.png)
+
+    and rest of the Quiz score worked ok again, 
+    and HTML error didn't show up when Developer played Quiz again, without refreshing the page:
+
+[Back to top](#contents)
+
+[Back to Fixed Bugs](#fixed-bugs)
+  
+# Known Bugs
+
+## No clear indication of chosen answer, when correct/incorrect results are displayed
+
+- It would be helpful if player's chosen answer remained different, so player knows that was their chosen answer.
+  Once all answers change color, it's hard to tell which one was player's choice.
+  Developer understands better now why some other quizzes had only one or two of the answer buttons change color:
+  it made more clear if player chose the correct or incorrect answer.
+
+## Only correct answer changes color, when time is up
+
+- When Time is up, and Player didn't choose any answer, correct answer will turn green,
+  both incorrect answers remain neutral color
+
 
 [Back to top](#contents)
 
